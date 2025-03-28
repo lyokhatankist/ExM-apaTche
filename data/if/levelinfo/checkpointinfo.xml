@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<CheckpointInfoResource>
+
+	<CheckpointInfo
+		id			= "dv1_AfterSwamp"
+		levelName	= "dv1"
+		fullName	= "Шоссе в никуда"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv1_AfterSwamp2"
+		levelName	= "dv1"
+		fullName	= "Трасса 60"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv1_BeforeCaravan"
+		levelName	= "dv1"
+		fullName	= "Мародёры"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "dv2_AfterJump"
+		levelName	= "dv2"
+		fullName	= "Далёкая лаборатория"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv2_AfterTown2"
+		levelName	= "dv2"
+		fullName	= "В поисках профессора"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "dv4_After3item"
+		levelName	= "dv4"
+		fullName	= "Поиск продолжается"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv4_AfterAloneTown"
+		levelName	= "dv4"
+		fullName	= "Дальше по следам"
+		diz			= ""
+	/>
+
+
+	<CheckpointInfo
+		id			= "dv5_AfterFall"
+		levelName	= "dv5"
+		fullName	= "Дикие джунгли"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv5_DarkSwamp"
+		levelName	= "dv5"
+		fullName	= "Болото"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "dv6_AfterProf"
+		levelName	= "dv6"
+		fullName	= "Встречный огонь"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv6_startRun"
+		levelName	= "dv6"
+		fullName	= "В погоне за &quot;Z-120&quot;"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv6_AfterFirstTrck"
+		levelName	= "dv6"
+		fullName	= "Последняя цистерна"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "dv7_AfterRun"
+		levelName	= "dv7"
+		fullName	= "Остановить безумие"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "dv8_BeforeZombie"
+		levelName	= "dv8"
+		fullName	= "Сборщики"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv8_BeforeAngar"
+		levelName	= "dv8"
+		fullName	= "Флай-Хилл"
+		diz			= ""
+	/>
+
+
+	<CheckpointInfo
+		id			= "dv9_Before1Swamp"
+		levelName	= "dv9"
+		fullName	= "Погоня"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "dv9_BeforeBoss"
+		levelName	= "dv9"
+		fullName	= "Паперс должен умереть"
+		diz			= ""
+	/>
+
+	
+<!-- apaTche -->
+	<CheckpointInfo
+		id			= "dv1_BeforeSwamp"
+		levelName	= "dv1"
+		fullName	= "Топь"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv1_AfterPolice"
+		levelName	= "dv1"
+		fullName	= "Каньон"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv2_AfterVill"
+		levelName	= "dv2"
+		fullName	= "Дезертхоул"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv4_Before3item"
+		levelName	= "dv4"
+		fullName	= "Первые улики"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv4_Defense"
+		levelName	= "dv4"
+		fullName	= "Оборона"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv4_AfterTurret"
+		levelName	= "dv4"
+		fullName	= "Дельта в опасности"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv5_Valley"
+		levelName	= "dv5"
+		fullName	= "Долина"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv6_BeforeFortress"
+		levelName	= "dv6"
+		fullName	= "Штурм"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv6_Clearing"
+		levelName	= "dv6"
+		fullName	= "Зачистка"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv7_Run"
+		levelName	= "dv7"
+		fullName	= "Заражение"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv8_Valley"
+		levelName	= "dv8"
+		fullName	= "Ущелье"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv8_AfterAngar"
+		levelName	= "dv8"
+		fullName	= "Дорога на Большую землю"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "dv9_Timer"
+		levelName	= "dv9"
+		fullName	= "Гонка со временем"
+		diz			= ""
+	/>
+	
+	
+<!-- New Game + -->
+	<CheckpointInfo
+		id			= "ng1_dv1_AfterSwamp"
+		levelName	= "ng1_dv1"
+		fullName	= "Шоссе в никуда"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv1_AfterSwamp2"
+		levelName	= "ng1_dv1"
+		fullName	= "Трасса 60"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv1_BeforeCaravan"
+		levelName	= "ng1_dv1"
+		fullName	= "Мародёры"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "ng1_dv2_AfterJump"
+		levelName	= "ng1_dv2"
+		fullName	= "Далёкая лаборатория"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv2_AfterTown2"
+		levelName	= "ng1_dv2"
+		fullName	= "В поисках профессора"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "ng1_dv4_After3item"
+		levelName	= "ng1_dv4"
+		fullName	= "Поиск продолжается"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv4_AfterAloneTown"
+		levelName	= "ng1_dv4"
+		fullName	= "Дальше по следам"
+		diz			= ""
+	/>
+
+
+	<CheckpointInfo
+		id			= "ng1_dv5_AfterFall"
+		levelName	= "ng1_dv5"
+		fullName	= "Дикие джунгли"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv5_DarkSwamp"
+		levelName	= "ng1_dv5"
+		fullName	= "Болото"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "ng1_dv6_AfterProf"
+		levelName	= "ng1_dv6"
+		fullName	= "Встречный огонь"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv6_startRun"
+		levelName	= "ng1_dv6"
+		fullName	= "В погоне за &quot;Z-120&quot;"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv6_AfterFirstTrck"
+		levelName	= "ng1_dv6"
+		fullName	= "Последняя цистерна"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "ng1_dv7_AfterRun"
+		levelName	= "ng1_dv7"
+		fullName	= "Остановить безумие"
+		diz			= ""
+	/>
+
+	<CheckpointInfo
+		id			= "ng1_dv8_BeforeZombie"
+		levelName	= "ng1_dv8"
+		fullName	= "Сборщики"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv8_BeforeAngar"
+		levelName	= "ng1_dv8"
+		fullName	= "Флай-Хилл"
+		diz			= ""
+	/>
+
+
+	<CheckpointInfo
+		id			= "ng1_dv9_Before1Swamp"
+		levelName	= "ng1_dv9"
+		fullName	= "Погоня"
+		diz			= ""
+	/>
+	<CheckpointInfo
+		id			= "ng1_dv9_BeforeBoss"
+		levelName	= "ng1_dv9"
+		fullName	= "Паперс должен умереть"
+		diz			= ""
+	/>
+	
+	
+	
+	<CheckpointInfo
+		id			= "ng1_dv1_BeforeSwamp"
+		levelName	= "ng1_dv1"
+		fullName	= "Топь"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv1_AfterPolice"
+		levelName	= "ng1_dv1"
+		fullName	= "Каньон"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv2_AfterVill"
+		levelName	= "ng1_dv2"
+		fullName	= "Дезертхоул"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv4_Before3item"
+		levelName	= "ng1_dv4"
+		fullName	= "Первые улики"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv4_Defense"
+		levelName	= "ng1_dv4"
+		fullName	= "Оборона"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv4_AfterTurret"
+		levelName	= "ng1_dv4"
+		fullName	= "Дельта в опасности"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv5_Valley"
+		levelName	= "ng1_dv5"
+		fullName	= "Долина"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv6_BeforeFortress"
+		levelName	= "ng1_dv6"
+		fullName	= "Штурм"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv6_Clearing"
+		levelName	= "ng1_dv6"
+		fullName	= "Зачистка"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv7_Run"
+		levelName	= "ng1_dv7"
+		fullName	= "Заражение"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv8_Valley"
+		levelName	= "ng1_dv8"
+		fullName	= "Ущелье"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv8_AfterAngar"
+		levelName	= "ng1_dv8"
+		fullName	= "Дорога на Большую землю"
+		diz			= ""
+	/>
+	
+	<CheckpointInfo
+		id			= "ng1_dv9_Timer"
+		levelName	= "ng1_dv9"
+		fullName	= "Гонка со временем"
+		diz			= ""
+	/>
+</CheckpointInfoResource>

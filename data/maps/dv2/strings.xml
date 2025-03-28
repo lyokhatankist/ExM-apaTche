@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Двигаясь согласно маршруту, указанному на карте, вы достигнете объекта, обозначенного как База №31."
+		sound="data\sounds\dv_sounds\dialogs\dv2_2.wav"
+		time="8" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Проникнув на территорию объекта, вам необходимо отыскать и эвакуировать оттуда профессора Паперса."
+		sound="data\sounds\dv_sounds\dialogs\dv2_3.wav"
+		time="7" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Профессор вёл анализ остатков сбитого инопланетного корабля, и спасти лучшего в стране специалиста в этой теме - вопрос национальной безопасности. Это – ваша главная цель."
+		sound="data\sounds\dv_sounds\dialogs\dv2_4.wav"
+		time="11" />
+	<string
+		id="5"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Важное уточнение: окружающая местность подвергается воздействию мощного биотоксина."
+		sound="data\sounds\dv_sounds\dialogs\dv2_5.wav"
+		time="7" />
+	<string
+		id="6"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Предположительно, источник этого токсина - гигантские грибы. Уничтожив не менее сотни этих созданий, вы сможете остановить заражение местности."
+		sound="data\sounds\dv_sounds\dialogs\dv2_6.wav"
+		time="9" />
+	
+	<string
+		id="2001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Где-то в этой пустыне пропал наш отряд специального назначения, посланный на разведку."
+		sound="data\sounds\dv_sounds\dialogs\dv2_7.wav"
+		time="8" />
+	<string
+		id="2002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я не верю, что они все погибли, ведь это были подготовленные бойцы, а не горе-вояки из Национальной гвардии."
+		sound="data\sounds\dv_sounds\dialogs\dv2_8.wav"
+		time="8" />
+	<string
+		id="2003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Если вам удастся найти их, немедленно сообщите в штаб."
+		sound="data\sounds\dv_sounds\dialogs\dv2_9.wav"
+		time="4" />
+
+
+	<string
+		id="20031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Дезертхоул - маленький шахтёрский городок."
+		sound="data\sounds\dv_sounds\dialogs\dv2_10.wav"
+		time="4" />
+	<string
+		id="20032"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="После закрытия шахты жители лишились работы, и их основным занятием стало изготовление, продажа, а так же употребление самогонки из кактусов."
+		sound="data\sounds\dv_sounds\dialogs\dv2_11.wav"
+		time="9" />
+	<string
+		id="20033"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Но, как бы то ни было, наша страна  не бросает своих граждан в беде, и потому обеспечить эвакуацию жителей Дезертхоула - ваш долг!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_12.wav"
+		time="9" />
+
+
+	<string
+		id="2004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вам необходимо избавить славных жителей Дезертхоула от мародёров."
+		sound="data\sounds\dv_sounds\dialogs\dv2_13.wav"
+		time="4" />
+
+	<string
+		id="2005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Полдела сделано, все выжившие будут эвакуированы в кратчайший срок. Продолжайте выполнение задания."
+		sound="data\sounds\dv_sounds\dialogs\dv2_14.wav"
+		time="7" />
+
+	<string
+		id="20051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Возмутительное пренебрежение техникой безопасности! "
+		sound="data\sounds\dv_sounds\dialogs\dv2_15.wav"
+		time="3" />
+	<string
+		id="20052"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Оставленный без присмотра химический реактор секретной лаборатории осуществляет бесконтрольный выброс ядовитых веществ. "
+		sound="data\sounds\dv_sounds\dialogs\dv2_16.wav"
+		time="8" />
+	<string
+		id="20053"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Физическое уничтожение лаборатории приведёт к ещё большему загрязнению окружающей среды, но разрушение местной энергостанции стало бы идеальным решением проблемы."
+		sound="data\sounds\dv_sounds\dialogs\dv2_17.wav"
+		time="10" />
+
+
+	<string
+		id="2006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Слишком поздно! Похоже, что коллекторы сброса не выдержали, и лаборатория взорвалась. Облако ядовитого газа накрыло весь район. Думаю, что выживших нет."
+		sound="data\sounds\dv_sounds\dialogs\dv2_18.wav"
+		time="11" />
+
+	<string
+		id="20061"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Сообщения о мгновенных мутациях, вызываемых веществом Z-120, оказались правдой."
+		sound="data\sounds\dv_sounds\dialogs\dv2_19.wav"
+		time="6" />
+	<string
+		id="20062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Кем бы не были в прошлом эти существа, теперь они не люди! Немедленно уничтожьте их во имя идеалов демократии и спокойствия всех жителей нашей страны."
+		sound="data\sounds\dv_sounds\dialogs\dv2_20.wav"
+		time="9" />
+
+	<string
+		id="2008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ну что ж, тут ваша работа завершена. Пришло время продолжить выполнение основной миссии."
+		sound="data\sounds\dv_sounds\dialogs\dv2_21.wav"
+		time="6" />
+
+	<string
+		id="20081"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вы приступаете к выполнению своей основной задачи. Вам необходимо найти профессора Паперса и эвакуировать его с базы любой ценой."
+		sound="data\sounds\dv_sounds\dialogs\dv2_22.wav"
+		time="9" />
+	<string
+		id="20082"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Миссия по спасению профессора имеет приоритет наивысшего значения. Помните об этом!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_23.wav"
+		time="5" />                
+
+	<string
+		id="2009"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Боюсь, что мы снова опоздали."
+		sound="data\sounds\dv_sounds\dialogs\dv2_24.wav"
+		time="2" />
+
+	<string
+		id="20091"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Это не похоже на случайную аварию. Выглядит, как хорошо спланированная диверсия. Похоже, что База полностью уничтожена и утечка Z-120 произошла именно отсюда."
+		sound="data\sounds\dv_sounds\dialogs\dv2_25.wav"
+		time="12" />
+	<string
+		id="20092"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Необходимо уточнить число выживших и выяснить судьбу Паперса. Обыщите развалины."
+		sound="data\sounds\dv_sounds\dialogs\dv2_26.wav"
+		time="5" />
+
+
+	<string
+		id="2010"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Эти яйцеголовые, в нарушение всех инструкций, вместо того, чтобы ожидать эвакуации в положенном месте, просто разбежались кто куда!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_27.wav"
+		time="9" />
+
+	<string
+		id="2011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Теперь, определить точное число выживших по количеству трупов будет практически невозможно. Задача номер один - выяснить судьбу профессора Паперса."
+		sound="data\sounds\dv_sounds\dialogs\dv2_28.wav"
+		time="10" />
+
+	<string
+		id="2012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Немедленно возвращайтесь на базу."
+		sound="data\sounds\dv_sounds\dialogs\dv2_29.wav"
+		time="3" />
+
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

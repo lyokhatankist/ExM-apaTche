@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+
+	<Node
+		name				= "loadingScreen"
+		class				= "LoadingScreen"
+		org					= "-0.5 -0.5 1024 768"
+		paneFlags			= "0"
+		style				= "768"
+		topOverlayRect		= "0 0 1024 128"
+		bottomOverlayRect	= "0 630 1024 64"
+		bottomOverlayBgRect	= "0 635 1024 133"
+		levelImageRect		= "0 123 1024 512"
+		levelNameRect		= "352 33 640 52"
+		tipRect				= "100 701 824 50"
+		pressKeyRect		= "100 701 824 50"
+		levelNameFont		= "SM_Impact"
+		levelNameFontSz		= "30"
+		tipFont				= "SM_Tahoma"	
+		tipFontSz			= "14"
+		pressKeyFont		= "SM_Impact"
+		pressKeyFontSz		= "18"
+		levelNameColor		= "ffffddaa"
+		tipColor			= "ffffffff"
+		pressKeyColor		= "ffffffff"
+		levelNameFormat		= "2"
+		tipFormat			= "0"
+		pressKeyFormat		= "0"
+		maxTips				= "23"
+		pressKeyTwinkleTime	= "2"
+		topOverlayTex		= "LoadingScreen_top"
+		bottomOverlayTex	= "LoadingScreen_bottom"
+		bottomOverlayBgTex	= "LoadingScreen_bottomBg"
+		koljaHumorTime		= "3">
+
+   		<Node
+   			name			= "bar"
+   			class			= "ProgressBarWnd"
+   			org				= "40 644 944 32"
+   			paneFlags		= "0"
+   			style			= "768"
+   			orientation		= "2"
+   			barTexture		= "data/if_dv/ico/LoadingScreen/l_load_stripe.tga"
+   			textureStyle	= "1"
+   		/>
+
+	</Node>
+
+</Prefabs>
+
+	

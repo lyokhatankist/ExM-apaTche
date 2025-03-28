@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons--><!-- Общие в т.ч. вне игры -->
+	<string
+		id="ok"
+		value="OK" />
+
+	<string
+		id="cancel"
+		value="Отмена" />
+
+	<string
+		id="Cancel"
+		value="Отмена" />
+
+	<string
+		id="yes"
+		value="Да" />
+
+	<string
+		id="no"
+		value="Нет" />
+
+	<string
+		id="error"
+		value="Ошибка" />
+
+	<string
+		id="save"
+		value="Сохранить" />
+
+	<string
+		id="Default"
+		value="По умолчанию" />
+
+	<string
+		id="Close"
+		value="Закрыть" />
+
+	<string
+		id="Control"
+		value="Управление" />
+
+	<string
+		id="Exit"
+		value="Выход" />
+
+	<string
+		id="Delete"
+		value="Удалить" />
+
+	<string
+		id="CloseWindow"
+		value="Закрыть окно" />
+
+	<string
+		id="Date"
+		value="Дата" />
+
+	<string
+		id="SaveName"
+		value="Название" />
+
+	<string
+		id="SortByName"
+		value="Сортировать по названию сохранения" />
+
+	<string
+		id="SortByDate"
+		value="Сортировать по времени сохранения" />
+
+	<string
+		id="ServiceSymbolsUsed"
+		value="Не допускается использование в имени|следующих служебных символов:|@ff904040%s" />
+
+	<string
+		id="quitGame"
+		value="Вы хотите покинуть игру?" />
+
+	<string
+		id="ChoseDifficultyLevel"
+		value="Выбрать уровень сложности и начать игру" />
+
+	<string
+		id="ChoseDifficultyLevelBack"
+		value="Вернуться в главное меню" />
+<!-- Главное меню -->
+	<string
+		id="New Game"
+		value="Одиночная игра" />
+
+	<string
+		id="StartNetGame"
+		value="Начать новую игру" />
+
+	<string
+		id="Credits"
+		value="Разработчики" />
+
+	<string
+		id="Load Game"
+		value="Загрузить игру" />
+
+	<string
+		id="Options"
+		value="Настройки" />
+
+	<string
+		id="Quit to Windows"
+		value="Выйти из игры"/>
+
+	<string
+		id="Profile"
+		value="Профиль" />
+
+	<string
+		id="ProfileDontChosen"
+		value="Не выбран"/>
+
+	<string
+		id="Intro"
+		value="Вступительный ролик" />
+		
+	<string
+		id="MultiplayerOptions"
+		value="Сетевая игра" />
+		
+	<string
+		id="Audioplayer"
+		value="Радио" />
+
+	<string
+		id="AudioplayerInMultiplayer"
+		value="Сетевое радио" />
+
+	<string
+		id="OpenSavesList"
+		value="Открыть список сохранённых игр" />
+
+	<string
+		id="ShowIntro"
+		value="Начать игру по сети" />
+
+	<string
+		id="HandleGameOptions"
+		value="Регулировать настройки игры" />
+
+	<string
+		id="ShowCredits"
+		value="Просмотреть список разработчиков" />
+<!-- Окно загрузки -->
+	<string
+		id="load"
+		value="Запустить" />
+
+	<string
+		id="LoadGame"
+		value="Загрузить сохранённую игру" />
+
+	<string
+		id="SavedGameLoading"
+		value="Загрузка сохранённой игры" />
+<!-- Профиль -->
+	<string
+		id="DeleteProfileWarning"
+		value="Все сохраненные игры будут удалены.|Продолжить?" />
+
+	<string
+		id="DefaultProfileName"
+		value="Игрок" />
+
+	<string
+		id="Create"
+		value="Создать" />
+
+	<string
+		id="CreateProfile"
+		value="Создать новый профиль" />
+
+	<string
+		id="NewProfile"
+		value="Новый профиль" />
+
+	<string
+		id="ProfileExists"
+		value="Профиль с таким именем уже существует.|Введите другое имя" />
+
+	<string
+		id="EmptyProfileName"
+		value="Нельзя создать профиль без имени" />
+
+	<string
+		id="ProfileCreateError"
+		value="Ошибка создания профиля" />
+
+	<string
+		id="ProfileDeleteError"
+		value="Ошибка удаления профиля" />
+
+	<string
+		id="Chose"
+		value="Выбрать" />
+
+	<string
+		id="DeleteProfile"
+		value="Удалить профиль" />
+
+	<string
+		id="ChoseProfile"
+		value="Выбрать профиль в качестве текущего" />
+
+	<string
+		id="CancelExit"
+		value="Закрыть окно без сохранения" />
+
+	<string
+		id="ChangePlayerProfile"
+		value="Изменить профиль игрока" />
+
+	<string
+		id="ChangeProfile"
+		value="Изменить профиль" />
+
+	<string
+		id="CurProfile"
+		value="Текущий профиль" />
+
+	<string
+		id="InvalidProfileName"
+		value="Недопустимое имя профиля" />
+<!-- Текст сплэшей -->
+	<string
+		id="Loading"
+		value="Загрузка" />
+
+	<string
+		id="LoadingDots"
+		value="ЗАГРУЗКА ..." />
+
+	<string
+		id="LoadWorld"
+		value="ЗАГРУЗКА УРОВНЯ" />
+
+	<string
+		id="InitWorld"
+		value="ИНИЦИАЛИЗАЦИЯ УРОВНЯ" />
+
+	<string
+		id="MainMenuLoading"
+		value="Загрузка" />
+
+	<string
+		id="AnimatedModelsServer"
+		value="анимационных объектов" />
+
+	<string
+		id="StaticModelsServer"
+		value="статических объектов" />
+
+	<string
+		id="LightsServer"
+		value="источников света" />
+
+	<string
+		id="SpritesServer"
+		value="спрайтов" />
+
+	<string
+		id="ParticlesServer"
+		value="систем частиц" />
+
+	<string
+		id="SoundsServer"
+		value="звуков" />
+
+	<string
+		id="MusicServer"
+		value="музыки" />
+<!-- замените это на более благозвучное -->
+	<string
+		id="ProjectorsServer"
+		value="прожекторов" />
+
+	<string
+		id="DecalsServer"
+		value="деколов" />
+
+	<string
+		id="Precaching"
+		value="Кэширование" />
+<!-- Окно настроек -->
+	<string
+		id="Video"
+		value="Графика" />
+
+	<string
+		id="Sound"
+		value="Звук" />
+
+	<string
+		id="Game"
+		value="Игра" />
+
+	<string
+		id="Video settings"
+		value="Настройки графики" />
+
+	<string
+		id="Far dist"
+		value="Дальность обзора" />
+
+	<string
+		id="Gamma"
+		value="Гамма" />
+
+	<string
+		id="Resolution"
+		value="Разрешение" />
+
+	<string
+		id="GraphicQuality"
+		value="Качество графики" />
+
+	<string
+		id="Grass"
+		value="Трава" />
+
+	<string
+		id="TextureResolution"
+		value="Разрешение текстур" />
+
+	<string
+		id="Antialiasing"
+		value="Сглаживание" />
+
+	<string
+		id="Filtration"
+		value="Фильтрация" />
+
+	<string
+		id="BloomQuality"
+		value="Качество блума" />
+
+	<string
+		id="WaterQuality"
+		value="Качество воды" />
+
+	<string
+		id="Audio settings"
+		value="Настройки звука" />
+
+	<string
+		id="Fx vol"
+		value="Громкость эффектов" />
+
+	<string
+		id="Music vol"
+		value="Громкость музыки" />
+
+	<string
+		id="Speak vol"
+		value="Громкость речи" />
+
+	<string
+		id="Game settings"
+		value="Настройки игры" />
+
+	<string
+		id="DialogPause"
+		value="Пауза в диалогах" />
+
+	<string
+		id="AutoHelp"
+		value="Автоматические подсказки" />
+
+	<string
+		id="MouseSensitivity"
+		value="Чувствительность мыши" />
+
+	<string
+		id="MouseYAxisFlip"
+		value="Инверсия по оси Y"/>
+
+	<string
+		id="MouseXAxisFlip"
+		value="Инверсия  по оси X" />
+
+	<string
+		id="Keys"
+		value="Значения клавиш" />
+
+	<string
+		id="RestoreDef"
+		value="Вернуть значение по умолчанию" />
+
+	<string
+		id="Apply"
+		value="Применить" />
+
+	<string
+		id="Recommended"
+		value="Рекомендованные" />
+
+	<string
+		id="None"
+		value="Нет" />
+
+	<string
+		id="Near"
+		value="Близко" />
+
+	<string
+		id="Far"
+		value="Далеко" />
+
+	<string
+		id="LowQuality"
+		value="Низкое" />
+
+	<string
+		id="MediumQuality"
+		value="Среднее" />
+
+	<string
+		id="HighQuality"
+		value="Высокое" />
+
+	<string
+		id="CustomQuality"
+		value="Пользовательское" />
+
+	<string
+		id="MaxQuality"
+		value="Максимальное" />
+
+	<string
+		id="LowResolution"
+		value="Низкое" />
+
+	<string
+		id="HighResolution"
+		value="Высокое" />
+
+	<string
+		id="CustomResolution"
+		value="Пользовательское" />
+
+	<string
+		id="BilinearFiltration"
+		value="Билинейная" />
+
+	<string
+		id="TrilinearFiltration"
+		value="Трилинейная" />
+
+	<string
+		id="AnisotropFiltration"
+		value="Анизотропная" />
+
+	<string
+		id="CustomFiltration"
+		value="Пользовательская" />
+
+	<string
+		id="Antialiasing_x2"
+		value="x2" />
+
+	<string
+		id="Antialiasing_x4"
+		value="x4" />
+
+	<string
+		id="Antialiasing_x8"
+		value="x8" />
+
+	<string
+		id="Antialiasing_x16"
+		value="x16" />
+
+	<string
+		id="CustomAntialiasing"
+		value="Пользовательский" />
+
+	<string
+		id="OptionsChanged"
+		value="Настройки были изменены. Сохранить изменения?" />
+
+	<string
+		id="ShadowsQuality"
+		value="Качество теней" />
+
+	<string
+		id="NumBattleReplies"
+		value="Количество реплик в бою" />
+
+	<string
+		id="Control settings"
+		value="Настройки управления" />
+
+	<string
+		id="BindingsChanged"
+		value="Управляющие клавиши были изменены. Сохранить изменения?" />
+
+	<string
+		id="GameDifficulty"
+		value="Уровень сложности" />
+
+	<string
+		id="EasyLevel"
+		value="Чайник" />
+
+	<string
+		id="MediumLevel"
+		value="Автолюбитель" />
+
+	<string
+		id="HardLevel"
+		value="Крутой водила" />
+
+	<string
+		id="ImpossibleLevel"
+		value="Ас" />
+<!-- DemoSplashWnd -->
+	<string
+		id="Targem Link Tip"
+		value="Таргем" />
+
+	<string
+		id="Buka Link Tip"
+		value="Бука" />
+
+	<string
+		id="ExMachina URL"
+		value="http://www.targem.ru" />
+
+	<string
+		id="Buka URL"
+		value="http://www.buka.ru" />
+
+	<string
+		id="Nival URL"
+		value="http://www.nival.com" />
+
+	<string
+		id="AutoSave"
+		value="Автосохранение" />
+<!-- MultiplayerOptionsWnd -->
+	<string
+		id="ServerCaption"
+		value="Сервер" />
+
+	<string
+		id="ServerCaptionTip"
+		value="Настроить и запустить сервер сетевой игры" />
+
+	<string
+		id="ClientCaption"
+		value="Клиент" />
+
+	<string
+		id="ClientCaptionTip"
+		value="Найти сетевую игру и присоединиться к ней" />
+
+	<string
+		id="OptionsCaption"
+		value="Настройки" />
+	<string
+		id="OptionsCaptionTip"
+		value="Изменить настройки игрока для сетевой игры" />
+<!-- Server settings -->
+	<string
+		id="Server settings"
+		value="Создание сетевой игры" />
+		
+	<string
+		id="ServerName"
+		value="Имя сервера" />
+		
+	<string
+		id="GameDescription"
+		value="Описание игры" />
+		
+	<string
+		id="Port"
+		value="Порт" />
+		
+	<string
+		id="GameType"
+		value="Тип игры" />
+		
+	<string
+		id="Map"
+		value="Карта" />
+		
+	<string
+		id="CarType"
+		value="Тип машины" />
+		
+	<string
+		id="FragLimit"
+		value="Лимит количества убитых" />
+		
+	<string
+		id="TimeLimit"
+		value="Лимит времени игры" />
+		
+	<string
+		id="PlayersLimit"
+		value="Количество игроков" />
+		
+	<string
+		id="MoreAbbrev"
+		value="..." />
+		
+	<string
+		id="MoreAbbrevCarTip"
+		value="Подробная информация о машинах" />
+		
+	<string
+		id="MoreAbbrevMapTip"
+		value="Подробная информация о картах" />
+		
+	<string
+		id="TeamOptions"
+		value="Настройка команд" />
+		
+	<string
+		id="ServerDefault"
+		value="По умолчанию" />
+		
+	<string
+		id="StartGame"
+		value="Начать игру" />
+		
+	<string
+		id="FriendlyFire"
+		value="Дружественный огонь" />
+		
+	<string
+		id="NumBots"
+		value="Количество ботов" />
+		
+	<string
+		id="GameType_Deathmatch"
+		value="Сражение" />
+	
+	<string
+		id="GameType_Team2"
+		value="Командное сражение (2 к.)" />
+		
+	<string
+		id="GameType_Team3"
+		value="Командное сражение (3 к.)" />
+		
+	<string
+		id="GameType_Team4"
+		value="Командное сражение (4 к.)" />
+		
+	<string
+		id="GameType_Team5"
+		value="Командное сражение (5 к.)" />
+		
+	<string
+		id="GameType_Team6"
+		value="Командное сражение (6 к.)" />
+		
+	<string
+		id="GameType_Team7"
+		value="Командное сражение (7 к.)" />
+		
+	<string
+		id="GameType_Team8"
+		value="Командное сражение (8 к.)" />
+		
+	<string
+		id="GameType_DeathmatchAbbrev"
+		value="Сраж." />
+	
+	<string
+		id="GameType_TeamAbbrev"
+		value="Кмнд." />
+		
+	<string
+		id="Fraglimit0"
+		value="Без ограничений" />
+		
+	<string
+		id="Fraglimit10"
+		value="10" />
+		
+	<string
+		id="Fraglimit15"
+		value="15" />
+		
+	<string
+		id="Fraglimit20"
+		value="20" />
+		
+	<string
+		id="Fraglimit25"
+		value="25" />
+		
+	<string
+		id="Fraglimit50"
+		value="50" />
+		
+	<string
+		id="Fraglimit75"
+		value="75" />
+		
+	<string
+		id="Fraglimit100"
+		value="100" />
+		
+	<string
+		id="Timelimit0"
+		value="Без ограничений" />
+		
+	<string
+		id="Timelimit5"
+		value="5 минут" />
+		
+	<string
+		id="Timelimit10"
+		value="10 минут" />
+		
+	<string
+		id="Timelimit15"
+		value="15 минут" />
+		
+	<string
+		id="Timelimit30"
+		value="30 минут" />
+		
+	<string
+		id="Timelimit60"
+		value="60 минут" />
+		
+	<string
+		id="EasyMultiplayerLevel"
+		value="Легкий" />
+		
+	<string
+		id="MediumMultiplayerLevel"
+		value="Средний" />
+		
+	<string
+		id="HeavyMultiplayerLevel"
+		value="Тяжелый" />
+<!-- Client settings -->
+	<string
+		id="Client settings"
+		value="Подключение к сетевой игре" />
+		
+	<string
+		id="RefreshList"
+		value="Обновить список" />
+		
+	<string
+		id="ClientAdditional"
+		value="Дополнительно" />
+		
+	<string
+		id="ClientAdditionalTip"
+		value="Присоединиться к сетевой игре, указав адрес сервера и порт" />
+		
+	<string
+		id="ClientConnect"
+		value="Присоединиться" />
+		
+	<string
+		id="CaptionGameName"
+		value="Имя игры" />
+		
+	<string
+		id="CaptionGameMap"
+		value="Карта" />
+		
+	<string
+		id="CaptionCarType"
+		value="Машина" />
+		
+	<string
+		id="CaptionPlayers"
+		value="Игроки" />
+		
+	<string
+		id="CaptionGameType"
+		value="Тип" />
+		
+	<string
+		id="CaptionPing"
+		value="Пинг" />
+		
+	<string
+		id="ServerNameD"
+		value="Имя сервера: " />
+		
+	<string
+		id="GameTypeD"
+		value="Тип игры: " />
+<!-- Player settings -->
+	<string
+		id="Player settings"
+		value="Настройки игрока" />
+		
+	<string
+		id="PlayerDefault"
+		value="По умолчанию" />
+		
+	<string
+		id="PlayerApply"
+		value="Применить" />
+		
+	<string
+		id="POPlayerName"
+		value="Имя игрока" />
+		
+	<string
+		id="POSheme"
+		value="Схема раскраски" />
+	
+	<string
+		id="POColors"
+		value="Цвета" />
+		
+	<string
+		id="POLogo"
+		value="Логотип" />
+	
+	<string
+		id="POAutochange"
+		value="Автосмена оружия" />
+		
+	<string
+		id="Sheme_Combat"
+		value="Военная (-1 из Харизмы)" />
+		
+	<string
+		id="Sheme_Peace"
+		value="Мирная (+1 к Харизме)" />
+		
+	<string
+		id="Sheme_Combat_MP"
+		value="Военная" />
+		
+	<string
+		id="Sheme_Peace_MP"
+		value="Мирная" />
+<!-- Teams settings -->
+	<string
+		id="Teams settings"
+		value="Создание сетевой игры > Настройка команд" />
+		
+	<string
+		id="Team1"
+		value="Команда 1" />
+		
+	<string
+		id="Team2"
+		value="Команда 2" />
+		
+	<string
+		id="Team3"
+		value="Команда 3" />
+		
+	<string
+		id="Team4"
+		value="Команда 4" />
+		
+	<string
+		id="Team5"
+		value="Команда 5" />
+		
+	<string
+		id="Team6"
+		value="Команда 6" />
+		
+	<string
+		id="Team7"
+		value="Команда 7" />
+		
+	<string
+		id="Team8"
+		value="Команда 8" />
+		
+	<string
+		id="TeamsDefault"
+		value="По умолчанию" />
+		
+	<string
+		id="TeamsBack"
+		value="Вернуться" />
+		
+	<string
+		id="ColorScheme_0"
+		value="Вариант 1" />
+		
+	<string
+		id="ColorScheme_1"
+		value="Вариант 2" />
+				
+	<string
+		id="ColorScheme_2"
+		value="Вариант 3" />
+		
+	<string
+		id="ColorScheme_3"
+		value="Вариант 4" />
+				
+	<string
+		id="ColorScheme_4"
+		value="Вариант 5" />
+		
+	<string
+		id="ColorScheme_5"
+		value="Вариант 6" />
+				
+	<string
+		id="ColorScheme_6"
+		value="Вариант 7" />
+		
+	<string
+		id="ColorScheme_7"
+		value="Вариант 8" />
+				
+	<string
+		id="ColorScheme_8"
+		value="Вариант 9" />
+		
+	<string
+		id="ColorScheme_9"
+		value="Вариант 10" />
+						
+	<string
+		id="ColorScheme_10"
+		value="Вариант 11" />
+		
+	<string
+		id="ColorScheme_11"
+		value="Вариант 12" />
+				
+	<string
+		id="ColorScheme_12"
+		value="Вариант 13" />
+		
+	<string
+		id="ColorScheme_13"
+		value="Вариант 14" />
+				
+	<string
+		id="ColorScheme_14"
+		value="Вариант 15" />
+		
+	<string
+		id="ColorScheme_15"
+		value="Вариант 16" />
+				
+	<string
+		id="ColorScheme_16"
+		value="Вариант 17" />
+		
+	<string
+		id="ColorScheme_17"
+		value="Вариант 18" />
+						
+	<string
+		id="LogoName_0"
+		value="Нет логотипа" />
+						
+	<string
+		id="LogoName_1"
+		value="Бандиты" />
+
+	<string
+		id="LogoName_2"
+		value="Охотники за головами" />
+						
+	<string
+		id="LogoName_3"
+		value="Искатели приключений" />
+						
+	<string
+		id="LogoName_4"
+		value="Исследователи" />
+						
+	<string
+		id="LogoName_5"
+		value="Бюрократы" />
+						
+	<string
+		id="LogoName_6"
+		value="Гризли" />
+						
+	<string
+		id="LogoName_7"
+		value="Альянс торговцев" />
+						
+	<string
+		id="LogoName_8"
+		value="Мировой порядок" />
+						
+	<string
+		id="LogoName_9"
+		value="Фермеры" />
+						
+	<string
+		id="LogoName_10"
+		value="Дети Земли" />
+						
+	<string
+		id="LogoName_11"
+		value="Падшие" />
+						
+	<string
+		id="LogoName_12"
+		value="Потерянные" />
+						
+	<string
+		id="LogoName_13"
+		value="Техники" />
+						
+	<string
+		id="LogoName_14"
+		value="Ученики Оракула" />
+						
+	<string
+		id="LogoName_15"
+		value="Дьявол" />
+						
+	<string
+		id="LogoName_16"
+		value="Звезды" />
+						
+	<string
+		id="LogoName_17"
+		value="Грызун" />
+						
+	<string
+		id="LogoName_18"
+		value="Ниндзя" />
+						
+	<string
+		id="LogoName_19"
+		value="Хиппи" />
+						
+	<string
+		id="LogoName_20"
+		value="Панк" />
+						
+	<string
+		id="LogoName_21"
+		value="СССР" />
+						
+	<string
+		id="LogoName_22"
+		value="Робот" />
+						
+	<string
+		id="LogoName_23"
+		value="Бригада" />
+						
+	<string
+		id="LogoName_24"
+		value="Ньери" />
+						
+	<string
+		id="LogoName_25"
+		value="Ловцы" />
+
+	<string
+		id="LogoName_fetish_moouse_01.dds"
+		value="Грызун(-2 из Харизмы)" />
+
+	<string
+		id="LogoName_fetish_qqqr_01.dds"
+		value="СССР (-1 из Харизмы)" />						
+
+	<string
+		id="LogoName_fetish_skull_01.dds"
+		value="Робот (+1 к Харизме)" />
+
+	<string
+		id="LogoName_fetish_peace_01.dds"
+		value="Хиппи (+2 к Харизме)" />
+						
+	<string
+		id="LogoName_fetish_devil_01.dds"
+		value="Дьявол (-2 из Харизмы)" />
+
+	<string
+		id="LogoName_fetish_military_01.dds"
+		value="Звезды (+0 к Харизме)" />
+
+	<string
+		id="LogoName_fetish_ninja_01.dds"
+		value="Ниндзя (+2 к Харизме)" />
+
+	<string
+		id="LogoName_fetish_punk_01.dds"
+		value="Панк (-1 из Харизмы)" />
+<!-- Client Add settings -->
+	<string
+		id="Client Add settings"
+		value="Подключение к сетевой игре > Дополнительно" />
+		
+	<string	
+		id="ClientAddDefault"
+		value="По умолчанию" />
+		
+	<string
+		id="ClientAddServer"
+		value="Имя сервера" />
+		
+	<string
+		id="ClientAddPort"
+		value="Порт" />
+	
+	<string
+		id="ClientAddBack"
+		value="Вернуться" />
+<!-- View Map&Car settings -->
+	<string
+		id="View Map settings"
+		value="Создание сетевой игры > Просмотр карт" />
+		
+	<string
+		id="View Car settings"
+		value="Создание сетевой игры > Просмотр машин" />
+		
+	<string
+		id="ViewMapBack"
+		value="Вернуться" />
+	
+	<string
+		id="Return"
+		value="Вернуться" />
+
+<!-- Multiplayer messages -->
+
+	<string
+		id="ServerHasNewerProtocolVersion"
+		value="Невозможно подключиться: сервер работает по более новой версии протокола." />
+
+	<string
+		id="ServerHasOlderProtocolVersion"
+		value="Невозможно подключиться: сервер работает по более старой версии протокола." />
+
+	<string
+		id="TooManyPlayersOnServer"
+		value="Невозможно подключиться: сервер полон." />
+
+	<string
+		id="ServerHasLeftTheGame"
+		value="Сервер покинул игру." />
+
+	<string
+		id="ServerDied"
+		value="Соединение с сервером потеряно." />
+
+	<string
+		id="NetworkErrorOnServer"
+		value="Сетевая ошибка. Сервер будет закрыт." />
+
+	<string
+		id="NetworkErrorOnClientPreUpdateThread"
+		value="Сетевая ошибка. Не удалось поддержать соединение с сервером." />
+
+	<string
+		id="ServerMapDoesntExistOnClient"
+		value="Карта, запущенная на сервере, отсутствует." />
+
+	<string
+		id="ServerNotReady"
+		value="Сервер не готов." />
+		
+
+	<string
+		id="PressAnyKey"
+		value="Нажмите любую клавишу..." />
+
+	<string
+		id="Play"
+		value="Игра" />
+
+	<string
+		id="Player"
+		value="Игрок" />
+
+	<string
+		id="Mission"
+		value="Миссия" />
+
+	<string
+		id="Unknown"
+		value="Неизвестно" />
+
+	<string
+		id="Back"
+		value="Назад" />
+
+	<string
+		id="Keyboard"
+		value="Клавиатура" />
+
+	<string
+		id="Mouse"
+		value="Мышь" />
+
+	<string
+		id="Audio"
+		value="Звук" />
+
+	<string
+		id="Briefing"
+		value="Брифинг" />
+
+	<string
+		id="Garage"
+		value="Гараж" />
+
+	<string
+		id="StartMission"
+		value="Начать миссию" />
+
+	<string
+		id="MainMenu"
+		value="Главное меню" />
+
+	<string
+		id="lev"
+		value="mk" />
+
+	<string
+		id="Structure"
+		value="Автомобиль" />
+
+	<string
+		id="Upgrade_Health"
+		value="Броня" />
+
+	<string
+		id="Upgrade_Speed"
+		value="Скорость" />
+
+	<string
+		id="Upgrade_Thorns"
+		value="Таранное приспособление" />
+
+	<string
+		id="Upgrade_Mines"
+		value="Миноукладчик" />
+
+	<string
+		id="Upgrade_Jumper"
+		value="Прыжковый аппарат" />
+
+	<string
+		id="Upgrade_Nitro"
+		value="Ускоритель" />
+
+	<string
+		id="Upgrade_BaseGun"
+		value="Пулемёт" />
+
+	<string
+		id="Upgrade_RocketGun"
+		value="Ракетная установка" />
+
+	<string
+		id="Upgrade_FireThower"
+		value="Дробовик" />
+
+	<string
+		id="Upgrade_ZenithGun"
+		value="Зенитное орудие" />
+
+	<string
+		id="UninstallAll"
+		value="Удалить всё" />
+
+	<string
+		id="TipUninstallAll"
+		value="Снять всё установленное оборудование с машины" />
+
+	<string
+		id="RequestUninstallAll"
+		value="Вы уверены, что хотите снять все установленное оборудование с машины?" />
+
+	<string
+		id="Weapon"
+		value="Оружие"/>
+
+	<string
+		id="Gadgets"
+		value="Устройства" />
+
+	<string
+		id="Results"
+		value="Итоги" />
+
+	<string
+		id="max"
+		value="макс." />
+
+
+</resource>

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<triggers>
+<!--  -->
+
+	<trigger	Name="GlobalVar"	active="0">
+		<event	timeout="0.1"		eventid="GE_TIME_PERIOD" />
+		<script>
+    	trigger:Deactivate()
+		</script>
+	</trigger>
+
+	<trigger	Name="trStartMap"	active="0">
+		<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+		<script>
+			RuleConsole("currentRadarScanRadius 100")
+
+			TActivate( "trStartQuest" )
+    	trigger:Deactivate()
+		</script>
+	</trigger>
+
+<trigger	Name="RestoreTolerance"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>
+   	trigger:Deactivate()
+   	RestoreAllToleranceStatus()
+</script>
+</trigger>
+
+	<trigger	Name="trGameSart"	active="1">
+		<event	eventid="GE_GAME_LOADED" ObjName="Player1"/>
+		<script>			
+			function SaveGame( name )
+				rockFall = rockFall or {}
+				local str =  			 "Nav = 		" .. serialize ( Nav 			) .. "; "
+				local str = str .. "Ambushs = " .. serialize ( Ambushs 	) .. "; "
+				local str = str .. "rockFall = " .. serialize ( rockFall ) .. "; "
+
+				--dostring( "a = serialize ( Nav )")
+				SetVar( "SavedTables", str )
+				SavesManager:SaveCheckpoint( name )
+			end
+
+			function LoadingGame()
+				local str = GetVar( "SavedTables" ).AsString
+				dostring( str )
+			end
+
+			local loaded = GetVar( "loaded" ).AsInt
+			OnAnyRestart()
+			if ( loaded == -1 ) or ( loadedStatus == "firstLoad" ) then
+				loadedStatus = "Loaded"
+				SetVar( "loaded", 1 )
+				LOG("TRIGGERS: SEE - GAME STARTED SUSSFULLLL")
+				TActivate("trStartMap")	
+				TActivate("trAmbInit")
+				TActivate("trNavInit")
+--				TActivate("trRockFallInit")
+--				TActivate("trRadiationInit")
+--				TActivate("trBurnInit")
+--				TActivate("trStormInit")
+--				TActivate("trTimersInit")
+--				TActivate("trJumpCamInit")
+			else
+				LoadingGame()
+				LOG("SEE - GAME LOADED SUSSFULLLL")
+			end
+		</script>
+	</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****													‡ б ¤л						 				                  						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trAmbInit"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+
+ 	Ambushs = {
+		{ onEnter = "Ambush_00", onSpawn = "Ambush_00_s", spawnTeam = { "Scout_00", "Scout_00", "Scout_01" } };
+		{ onEnter = "Ambush_01", onSpawn = "Ambush_01_s", spawnTeam = { "Scout_02", "Scout_02" }, belong = 1116 };
+		{ onEnter = "Ambush_02", onSpawn = "Ambush_02_s", spawnTeam = { "Rogue_01", "Scout_00", "Scout_01" } };
+		{ onEnter = "Ambush_03", onSpawn = "Ambush_03_s", spawnTeam = { "Rogue_00", "Scout_00", "Scout_01" } };
+		{ onEnter = "Ambush_04", onSpawn = "Ambush_04_s", spawnTeam = { "Rogue_01", "Scout_01", "Scout_01" } };
+		{ onEnter = "Ambush_05", onSpawn = "Ambush_05_s", spawnTeam = { "Police_00", "Scout_02", "Scout_02", "Police_02" }, belong = 1116 };
+		{ onEnter = "Ambush_06", onSpawn = "Ambush_06_s", spawnTeam = { "Scout_00", "Scout_01" } };
+		{ onEnter = "Ambush_07", onSpawn = "Ambush_07_s", spawnTeam = { "Scout_02", "Scout_02", "Police_02", "Police_00" }, belong = 1116 };
+		{ onEnter = "Ambush_08", onSpawn = "Ambush_08_s", spawnTeam = { "Rogue_00", "Rogue_00", "Scout_01" } };
+		{ onEnter = "Ambush_09", onSpawn = "Ambush_09_s", spawnTeam = { "Scout_00", "Scout_00", "Scout_01", "Scout_01" } };
+		{ onEnter = "Ambush_10", onSpawn = "Ambush_10_s", spawnTeam = { "Scout_02", "Scout_02", "Police_00", "Police_02" }, belong = 1116 };
+		{ onEnter = "Ambush_11", onSpawn = "Ambush_11_s", spawnTeam = { "Rogue_01", "Scout_00", "Scout_01" } };
+		{ onEnter = "Ambush_12", onSpawn = "Ambush_12_s", spawnTeam = { "Scout_01", "Scout_00", "Scout_01", "Rogue_00" } };
+		{ onEnter = "Ambush_13", onSpawn = "Ambush_13_s", spawnTeam = { "Rogue_01", "Scout_00", "Scout_01" } };
+		{ onEnter = "Ambush_14", onSpawn = "Ambush_14_s", spawnTeam = { "Scout_02", "Scout_02", "Police_01" }, belong = 1116 };
+		{ onEnter = "Ambush_15", onSpawn = "Ambush_15_s", spawnTeam = { "Scout_02", "Police_00" }, belong = 1116 };
+		{ onEnter = "Ambush_16", onSpawn = "Ambush_16_s", spawnTeam = { "Scout_02", "Scout_02", "Scout_02" }, belong = 1116 };
+		{ onEnter = "Ambush_17", onSpawn = "Ambush_17_s", spawnTeam = { "Rogue_01", "Scout_01", "Scout_01" }, belong = 1114 };
+		{ onEnter = "Ambush_18", onSpawn = "Ambush_18_s", spawnTeam = { "Rogue_01", "Scout_01", "Scout_01" }, belong = 1114 };
+		{ onEnter = "Ambush_19", onSpawn = "Ambush_19_s", spawnTeam = { "Scout_00", "Scout_01", "Scout_00", "Rogue_01" }, belong = 1114, notActivate = 1 };
+		{ onEnter = "Ambush_20", onSpawn = "Ambush_20_s", spawnTeam = { "Scout_02", "Scout_02", "Police_02", "Police_02" }, belong = 1116, notActivate = 1 };
+		{ onEnter = "Ambush_21", onSpawn = "Ambush_21_s", spawnTeam = { "Scout_01", "Scout_01", "Hunter_01" }, belong = 1114, notActivate = 1 };
+ 		};
+
+	local tr_Start = getObj("trAmbStart")
+	tr_Start:Deactivate()			
+  for i, v in Ambushs do
+  	if not( v.notActivate ) then
+			tr_Start:AddEvent	( "GE_OBJECT_ENTERS_LOCATION", v.onEnter ) 	
+		end
+	end;      
+	tr_Start:Activate()
+</script>
+</trigger>
+
+<trigger	Name="trAmbStart"	active="0">
+	<script>
+		local loc = trigger:GetCallObjName() 
+		trigger:DelEventObj( "GE_OBJECT_ENTERS_LOCATION", loc )
+
+		local amb = nil
+		for i,v in Ambushs do
+			if v.onEnter == loc then 
+				amb = v 
+				break
+			end
+		end
+
+		local belong = amb.belong or (1110 + math.random(3))
+		-- m = "Scout_01"
+		--  CreateTeam( "T_" , 1101, getPos("Ambush_00"  ), { m, m, m ,m ,m } )
+		CreateTeam( "ambTeam_"..amb.onEnter , belong, getPos( amb.onSpawn ), amb.spawnTeam, getPos( loc ))
+	</script>
+</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												Ќ ўЁЈ жЁп						 				                  						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trNavInit"	active="0">
+		<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+
+  Nav = {
+  	Points = {
+  	[1] = 	{ isPrimary = 1; Connected = { 2 	  }; 			Point = "Way_01"  };
+  	[2] = 	{ isPrimary = 1; Connected = { 3, 1 }; 			Point = "Way_02"  };
+  	[3] = 	{ isPrimary = 1; Connected = { 4, 2 }; 			Point = "Way_03"  };
+  	[4] = 	{ isPrimary = 1; Connected = { 5, 3 }; 			Point = "Way_04"  };
+  	[5] = 	{ isPrimary = 1; Connected = { 6, 4, 16 }; 	Point = "Way_05"  };
+  	[6] = 	{ isPrimary = 1; Connected = { 7, 5 }; 			Point = "Way_06"  };
+  	[7] = 	{ isPrimary = 1; Connected = { 8, 6 }; 			Point = "Way_07"  };
+  	[8] = 	{ isPrimary = 1; Connected = { 9, 7 }; 			Point = "Way_08"  };
+  	[9] = 	{ isPrimary = 1; Connected = { 10, 8 };			Point = "Way_09"  };
+  	[10] = 	{ isPrimary = 1; Connected = { 11, 9 }; 		Point = "Way_10"  };
+  	[11] = 	{ isPrimary = 1; Connected = { 12, 10 }; 		Point = "Way_11"  };
+  	[12] = 	{ isPrimary = 1; Connected = { 13, 11 };		Point = "Way_12"  };
+  	[13] = 	{ isPrimary = 1; Connected = { 14, 12 }; 		Point = "Way_13"  };
+  	[14] = 	{ isPrimary = 1; Connected = { 15, 13 }; 		Point = "Way_14"  };
+  	[15] = 	{ isPrimary = 1; Connected = { 14, 5 }; 		Point = "Way_15"  };
+  	[16] = 	{ isPrimary = 1; Connected = { 5 };					Point = "Way_16"  };
+  	};
+  	Destination = 15;
+	  Next_way_point = 2;
+  }
+	CompasCore( trigger )
+	</script>
+</trigger>
+<trigger	Name="trNavWork"	active="0">
+<script>
+	CompasWork( trigger )
+</script>
+</trigger>
+<trigger	Name="NavDraw"	active="0">
+		<event	timeout="0.05"		eventid="GE_TIME_PERIOD" />
+<script>
+	CompasShow( trigger )
+</script>
+</trigger>
+
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												ЃЋЌ“‘ ’…Љ‘’›															    						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+
+<trigger	Name="trBonusText_00"	active="1">
+	<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Unique_SecretPlace_01"/>
+<script>           
+	TakeQuest( "dv4_t0" )	
+	CompleteQuest( "dv4_t0" )
+	
+--	local object = trigger:GetCallObjName()
+--	if object then
+--		object:Remove()
+--	end
+	
+	trigger:Deactivate()
+</script>
+</trigger>
+<trigger	Name="trBonusText_01"	active="1">
+	<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Unique_SecretPlace_02"/>
+<script>           
+	TakeQuest( "dv4_t1" )	
+	CompleteQuest( "dv4_t1" )
+	
+--	local object = trigger:GetCallObjName()
+--	if object then
+--		object:Remove()
+--	end
+	
+	trigger:Deactivate()
+</script>
+</trigger>
+
+<trigger	Name="trBonusText_02"	active="1">
+	<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Beacon_1"/>
+<script>           
+	TakeQuest( "dv4_t2" )	
+	CompleteQuest( "dv4_t2" )
+	
+--	local object = trigger:GetCallObjName()
+--	if object then
+--		object:Remove()
+--	end
+	
+	trigger:Deactivate()
+</script>
+</trigger>
+<trigger	Name="trBonusText_03"	active="1">
+	<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Beacon_3"/>
+<script>           
+	TakeQuest( "dv4_t3" )	
+	CompleteQuest( "dv4_t3" )
+	
+--	local object = trigger:GetCallObjName()
+--	if object then
+--		object:Remove()
+--	end
+	
+	trigger:Deactivate()
+</script>
+</trigger>
+<trigger	Name="trBonusText_04"	active="1">
+	<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Beacon_2"/>
+<script>           
+	TakeQuest( "dv4_t4" )	
+	CompleteQuest( "dv4_t4" )
+	
+--	local object = trigger:GetCallObjName()
+--	if object then
+--		object:Remove()
+--	end
+	
+	trigger:Deactivate()
+</script>
+</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												’аЁЈЈҐал бо¦Ґв  													    						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trStartQuest"	active="0">
+		<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>
+ 	trigger:Deactivate()
+
+	TakeQuest( "dv4_q1" )
+
+	CompasOn( 7, 2 )
+	FlyShort ( { time = 9 , msg = { 40001, 40002, 40003, 40004, 40005, 40011, 40012 }} )	
+</script>
+</trigger>
+
+
+<trigger	Name="trTalk_01"	active="1">
+	<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Ambush_19"/>
+<script>           
+		trigger:Deactivate()
+		TakeQuest( "dv4_q2" )
+		FlyShort ( { time = 9 , msg = { 40052, 40053 }} )	
+</script>
+</trigger>
+
+
+<trigger	Name="trSwampInit"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Swamp"/>
+	<script>           
+		trigger:Deactivate()
+
+		TActivate( "trSwampBonuses" )
+		CompasOff()
+		FlyShort ( { time = 9 , msg = { 40072 }, saveMap = "dv4_Before3item"} )			
+    QuestCounter:Setup( 3 )
+		QuestCounter:Show()
+--ЉўҐбв б®Ўа вм ¬ пЄЁ  ўЄ«озЁвм
+	</script>
+</trigger>
+
+
+<trigger	Name="trSwampBonuses"	active="0">
+		<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Beacon_1"/>
+		<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Beacon_2"/>
+		<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Beacon_3"/>
+	<script>
+--"Bonus_Beacon_1"  "Bonus_Beacon_2_mp_rs"  "Bonus_Beacon_3"
+--"Bonus_Unique_SecretPlace_01" "Bonus_Unique_SecretPlace_02" "Bonus_Unique_SecretPlace_03"
+--
+--
+--
+
+		local loc = trigger:GetCallObjName() 
+		trigger:DelEventObj( "GE_OBJECT_DIE", loc )
+    trigger:IncCount()
+    QuestCounter:IncValue(1)
+		if trigger:GetCount() == 3 then
+			-- ‚Є«озЁвм Є®¬Ї б
+			-- ЉўҐбв б®Ўа вм ¬ пЄЁ  ўлЇ®«­Ёвм
+			QuestCounter:Hide()
+			FlyShort ( { time = 13 , msg = { 4006, 4007, 40071 }, CompQuest1 = "dv4_q2" } )	
+			CompasOn( 11, 7 )
+--			CompleteQuest( "dv4_q2" )	
+			TakeQuest( "dv4_q2_2" )
+			TActivate( "trQuestScout_1" )
+			TActivate( "trSave1" )
+			trigger:Deactivate()
+		end
+	</script>
+</trigger>
+
+
+
+<trigger	Name="trQuestScout_1"	active="0">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Way_10"/>
+	<script>           
+		trigger:Deactivate()
+		TActivate( "trQuestScout_2" )
+		--‘Є § вм, зв® ­ ©¤Ґ­л ®бв вЄЁ « ЈҐап бЄ гв®ў
+		--!!! ­Ґв вҐЄбв®ў  ­  нв®
+	</script>
+</trigger>
+
+
+<trigger	Name="trQuestScout_2"	active="0">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Way_11"/>
+<script>           
+		trigger:Deactivate()
+		--‘Є § вм, зв® бЄ гвл Ўл«Ё вгв, ­® Ё§Ј­ ­л §®¬Ўп¬Ё?
+		FlyShort ( { time = 13 , msg = { 4008, 4009 }, CompQuest1 ="dv4_q2_2", saveMap = "dv4_AfterAloneTown" } )	
+--		CompleteQuest( "dv4_q2_2" )	
+		CompasOn( 13, 12 )
+--		TActivate( "trSave2" )
+	</script>
+</trigger>
+
+
+<trigger	Name="trGunPreControl"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="GunControl"/>
+<script>           
+		TActivate( "trGunControl" )
+		trigger:Deactivate()
+	</script>
+</trigger>
+
+
+<trigger	Name="trGunControl"	active="0">
+		<event	timeout="2.4"		eventid="GE_TIME_PERIOD" />
+	<script>           
+		trigger:Deactivate()
+		--‘Є § вм, ‡®¬ЎЁ  в Єгов!!!! Ї®¬®ЈЁ!!!
+		FlyShort ( { time = 6 , msg = { 4004, 4005, 4051 }} )	
+		CompasOff()
+		local vehPlayer = GetPlayerVehicle()
+		if vehPlayer then
+			vehPlayer:SetGamePositionOnGround( CVector( 3195.400, 435.649, 2118.292 ) )
+			vehPlayer:SetRotation( qua ( 350 ) )
+			vehPlayer:SetCustomLinearVelocity( 0 )
+			vehPlayer:SetThrottle( 0 )
+			vehPlayer:SetExternalPathByName("StaticGunWay")
+			vehPlayer:SetCustomControlEnabled( true )
+		end
+		TActivate( "trGunControlEnd" )
+	</script>
+</trigger>
+
+
+<trigger	Name="trGunControlEnd"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>  
+		local vehPlayer = GetPlayerVehicle()
+		if vehPlayer then
+			vehPlayer:SetThrottle( 0 )
+			vehPlayer:SetCustomControlEnabled( false )
+		end
+		trigger:Deactivate()
+		CameraModeTurrelM() 
+		TActivate( "trGunEnemySpawn" )
+</script>
+</trigger>
+
+
+<trigger	Name="trGunEnemySpawn"	active="0">
+		<event	timeout="2.5"		eventid="GE_TIME_PERIOD" />
+<script>           
+	local scout = "Rogue_01"  -- "Scout_00"
+	local scout0 = "Scout_02"
+	function spwnZmb( pos, count )
+		for i = 1, count do
+			local mn = "SomeZombie"
+			if random(3) == 2 then mn = "DetonationZombie" end
+			local ZId = CreateNewObject( { belong = 1101; prototypeName 	=	mn; objName = "zz"} )
+			getObj( ZId ):SetPosition( pos  + CVector( random(50) - 25, 0, random(50) - 25 ) )
+		end
+	end
+	trigger:IncCount()
+	if 			trigger:GetCount() == 1 then
+		spwnZmb( getPos( "Way_12" ), 3 )
+		CreateTeam( "ambTeam_000" , 1113, getPos( "Way_12" ), { scout, scout, scout0, scout }, CVector(3195.771, 443.516, 2143.510) )
+--"Ambush_10_s"
+--"Ambush_9"
+--"Way_12"
+	elseif 	trigger:GetCount() == 6  then
+		spwnZmb( getPos( "Ambush_09" ), 2 )
+		spwnZmb( CVector(3116.931, 441.822, 2298.903), 2 )
+		spwnZmb( CVector(3288.320, 442.771, 2221.119), 1 )
+		CreateTeam( "ambTeam_000" , 1113, getPos( "Ambush_10_s" ), { scout0, scout, scout }, CVector(3195.771, 443.516, 2143.510) )
+	elseif 	trigger:GetCount() == 18  then
+		spwnZmb( getPos( "Ambush_09" ), 2 )	
+		CreateTeam( "ambTeam_000" , 1113, getPos( "Ambush_10_s" ), { scout0, scout, scout }, CVector(3195.771, 443.516, 2143.510) )
+	elseif 	trigger:GetCount() == 24  then
+		spwnZmb( getPos( "Ambush_10_s" ), 1 )
+		CreateTeam( "ambTeam_000" , 1112, getPos( "Ambush_10_s" ), { scout0, scout0, scout, scout }, CVector(3195.771, 443.516, 2143.510) )
+	elseif 	trigger:GetCount() == 30 then	
+		local a = CreateTeam( "ambTeam_000" , 1112, getPos( "Ambush_10_s" ), { scout0, scout }, CVector(3195.771, 443.516, 2143.510) )		
+		spwnZmb( CVector(3116.931, 441.822, 2298.903), 1 )
+		spwnZmb( CVector(3288.320, 442.771, 2221.119), 2 )
+		spwnZmb( getPos( "Way_12" ), 3 )
+		local vehPlayer = GetPlayerVehicle()
+		if vehPlayer then
+			vehPlayer:AddModifier( "hp", "+ 10000" )
+		end
+	elseif 	trigger:GetCount() == 34 then	
+		local a = CreateTeam( "ambTeam_000" , 1112, getPos( "Ambush_10_s" ), { scout }, CVector(3195.771, 443.516, 2143.510) )
+	elseif 	trigger:GetCount() == 37 then	
+		local a = CreateTeam( "ambTeam_000" , 1113, getPos( "Ambush_10_s" ), { scout0 }, CVector(3195.771, 443.516, 2143.510) )
+	elseif 	trigger:GetCount() == 40 then	
+		local a = CreateTeam( "ambTeam_000" , 1112, getPos( "Ambush_10_s" ), { scout, scout }, CVector(3195.771, 443.516, 2143.510) )
+		SetVar ( "a", a:GetId() )
+	elseif 	trigger:GetCount() == 48 then
+		TActivate("trGunEnd")
+		forcedEnd = 0
+	elseif 	trigger:GetCount() == 60 then
+		trigger:Deactivate()
+		forcedEnd = 1
+	end
+	</script>
+</trigger>
+
+
+
+<trigger	Name="trGunEnd"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+<script>
+	local a = GetVar ( "a" ).AsInt
+	if not( IsAlive( a ) ) or ( forcedEnd == 1 ) then
+		TDeactivate("trGunEnemySpawn")
+		trigger:Deactivate()
+	--‘Є § вм, ­ ¤® Ґе вм ¤ «миҐ - ў­Ё§ !
+	--‚Є«озЁвм Є®¬Ї б
+		CameraModeRaceM() 
+		CompasOn( 16, 13 )
+
+		--19-21 
+		local tr_Start = getObj("trAmbStart")
+		tr_Start:Deactivate()			
+		local st = 0
+	  for i, v in Ambushs do
+			if v.onEnter == "Ambush19" or st == 1 then
+				tr_Start:AddEvent	( "GE_OBJECT_ENTERS_LOCATION", v.onEnter ) 	
+				st = 1
+			end
+		end;      
+		tr_Start:Activate()
+
+		FlyShort ( { time = 13 , msg = { 4010, 4011, 4012, 40031 }, CompQuest1 ="dv4_q1", saveMap = "dv4_AfterTurret"} )			
+--		CompleteQuest( "dv4_q1" )	
+		TakeQuest( "dv4_q1_2" )		
+		TActivate( "trEndGame" )
+		TActivate("trSave4")
+	end
+</script>
+</trigger>
+
+
+<trigger	Name="trSave1"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>           
+		trigger:Deactivate()
+		SaveGame( "dv4_After3item" )
+</script>
+</trigger>
+<trigger	Name="trSave2"	active="0">
+	<event	timeout="2.5"		eventid="GE_TIME_PERIOD" />
+<script>           
+		trigger:Deactivate()
+		SaveGame( "dv4_AfterAloneTown" )
+</script>
+</trigger>
+
+	<trigger	Name="trSave3"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Ambush_10"/>
+		<script>           
+				trigger:Deactivate()
+				SaveGame( "dv4_Defense" )
+		</script>
+	</trigger>
+
+
+<trigger	Name="trEndGame"	active="0">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="EndGame"/>
+<script>
+	trigger:Deactivate()
+	FlyShort ( { time = 24 , msg = { 11, 12, 13, 14 }, CompQuest1 ="dv4_q1_2"} )	
+	TActivate("trEndGame_end")
+</script>
+</trigger>
+
+<trigger	Name="trEndGame_end"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>           
+		trigger:Deactivate()
+		loadedStatus = "firstLoad"
+		Intermission:Show("dv5", "locStart", 165)
+</script>
+</trigger>
+
+
+<trigger	Name="trNewTalk001"	active="1">
+	<event	eventid="GE_OBJECT_ENTERS_LOCATION"	ObjName="Way_03" />
+<script>
+	trigger:Deactivate()
+	FlyShort ( { time = 56 , msg = { 1, 2, 3, 4, 5, 6, 7 }} )	                    	
+</script>
+</trigger>
+</triggers>

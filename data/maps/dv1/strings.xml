@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Итак, вы агент федерального бюро, присланный сделать то, с чем, похоже, не справился армейский спецназ? Ну что ж, посмотрим."
+		sound="data\sounds\dv_sounds\dialogs\dv1_1.wav"
+		time="8" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Прежде чем сообщить вам суть задания, я  хочу, чтобы вы освоились с автомобилем, на котором вам придётся преодолеть немало миль."
+		sound="data\sounds\dv_sounds\dialogs\dv1_2.wav"
+		time="8" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я знаю, что вы отличный водитель, но у каждого автомобиля есть свои особенности, с которыми лучше познакомиться в относительно спокойной обстановке окрестностей базы."
+		sound="data\sounds\dv_sounds\dialogs\dv1_3.wav"
+		time="10" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Освойтесь с управлением, почувствуйте сцепление, тормоз. Освойте механизмы взятия проб внешней среды."
+		sound="data\sounds\dv_sounds\dialogs\dv1_4.wav"
+		time="8" />
+	<string
+		id="1001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Машина должна вам понравиться. Во-первых, потому, что другой всё равно не получите."
+		sound="data\sounds\dv_sounds\dialogs\dv1_5.wav"
+		time="6" />
+	<string
+		id="10012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Во-вторых, потому, что машина - &quot;зверь&quot;.  Даже в вашем знаменитом бюро таких нет."
+		sound="data\sounds\dv_sounds\dialogs\dv1_6.wav"
+		time="5" />
+
+	<string
+		id="10015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вам надо просто-напросто освоиться с этим автомобилем. Кстати, имейте в виду, что местность не вполне безопасна."
+		sound="data\sounds\dv_sounds\dialogs\dv1_9.wav"
+		time="8" />
+	<string
+		id="10016"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Некоторое количество вооружённых мерзавцев, упорно игнорирующих приказ правительства о введении чрезвычайного положения, продолжают колесить по округе."
+		sound="data\sounds\dv_sounds\dialogs\dv1_10.wav"
+		time="9" />
+	<string
+		id="10017"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Они не упустят случая разрядить в вас свои стволы. Рекомендую не давать им шанс и стрелять первым."
+		sound="data\sounds\dv_sounds\dialogs\dv1_11.wav"
+		time="6" />
+
+	<string
+		id="1002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ну, что скажете? Доводилось ли вам раньше управлять такой машиной? Уверен, что нет."
+		sound="data\sounds\dv_sounds\dialogs\dv1_12.wav"
+		time="6" />
+
+	<string
+		id="10021"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Стоит случиться любой, самой мелкой катастрофе, как в людях просыпается  всё самое плохое."
+		sound="data\sounds\dv_sounds\dialogs\dv1_13.wav"
+		time="6" />
+	<string
+		id="10022"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Едва успели начаться эвакуационные работы, как тут же из всех щелей вылезли орды мародёров. Вывозят награбленное целыми грузовиками."
+		sound="data\sounds\dv_sounds\dialogs\dv1_14.wav"
+		time="8" />
+	<string
+		id="10023"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Как раз одна такая колонна скоро пройдёт мимо вас. Вы понимаете меня?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_15.wav"
+		time="5" />
+	<string
+		id="10024"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Правильно, это отличный повод опробовать на них орудия вашей новой машины. Не дайте уйти грабителям."
+		sound="data\sounds\dv_sounds\dialogs\dv1_16.wav"
+		time="7" />
+
+	<string
+		id="10025"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Агент, ведомство местного шерифа отказалось выполнять нашу директиву о сотрудничестве. Похоже, шериф вконец спятил и вообразил себя местным царьком. "
+		sound="data\sounds\dv_sounds\dialogs\dv1_7.wav"
+		time="9" />
+	<string
+		id="10026"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Имейте в виду, если местные полицейские будут мешать выполнению вашего задания, у вас есть право поступать с ними по закону чрезвычайного положения - то есть чрезвычайно агрессивно."
+		sound="data\sounds\dv_sounds\dialogs\dv1_8.wav"
+		time="12" />
+
+	<string
+		id="1003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="У вас твёрдая рука и меткий глаз, агент."
+		sound="data\sounds\dv_sounds\dialogs\dv1_17.wav"
+		time="3" />
+
+	<string
+		id="10031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Итак, полагаю, что подготовка завершена."
+		sound="data\sounds\dv_sounds\dialogs\dv1_27.wav"
+		time="3" />
+	<string
+		id="10032"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вы ознакомились с машиной, оружием, местностью, а так же с общим положением дел. Настало время перейти к основному заданию."
+		sound="data\sounds\dv_sounds\dialogs\dv1_28.wav"
+		time="9" />
+
+	<string
+		id="10033"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Да, теперь  я готов поверить, что вы действительно сможете пройти там, где сгинуло целое отделение моих лучших парней. "
+		sound="data\sounds\dv_sounds\dialogs\dv1_29.wav"
+		time="7" />
+
+	<string
+		id="1004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мир стал, безусловно, чище."
+		sound="data\sounds\dv_sounds\dialogs\dv1_21.wav"
+		time="2" />
+
+	<string
+		id="10041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Как я вам говорил ранее, в данной местности находится некоторое количество асоциальных субъектов, занимающихся грабежами и мародёрством."
+		sound="data\sounds\dv_sounds\dialogs\dv1_18.wav"
+		time="8" />
+	<string
+		id="10042"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Было принято решение о прекращении подобных явлений, причём любым способом. Абсолютно любым. Вы меня понимаете, агент?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_19.wav"
+		time="9" />
+	<string
+		id="10043"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В настоящий момент, с помощью вертолёта-разведчика мы засекли один из лагерей мародёров. Вам поручается уничтожить этих бандитов."
+		sound="data\sounds\dv_sounds\dialogs\dv1_20.wav"
+		time="8" />
+
+
+	<string
+		id="1005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Не может быть! Эти солдаты самовольно оставили пост?! "
+		sound="data\sounds\dv_sounds\dialogs\dv1_24.wav"
+		time="4" />
+	<string
+		id="1006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Что может быть отвратительнее дезертирства! Мутанты, зомби и прочее тому подобное не оправдание."
+		sound="data\sounds\dv_sounds\dialogs\dv1_25.wav"
+		time="7" />
+	<string
+		id="10062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Солдат американской армии, если и должен кого-то бояться, то своего сержанта, а не какого-то безмозглого зомби!"
+		sound="data\sounds\dv_sounds\dialogs\dv1_26.wav"
+		time="8" />
+
+
+	<string
+		id="10063"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Честно говоря, мне непонятно, откуда на плотно оцепленной территории столько вооружённых посторонних? Каким образом они попадают сюда?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_22.wav"
+		time="8" />
+	<string
+		id="10064"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Необходимо выяснить это, и чем скорее, тем лучше."
+		sound="data\sounds\dv_sounds\dialogs\dv1_23.wav"
+		time="4" />
+
+
+	<string
+		id="1900"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="И так, вы агент федерального бюро, присланный сделать то, с чем, похоже, не справилась армейская разведка? Ну что ж посмотрим. Прежде чем сообщить вам суть задания, я  хочу, чтобы вы освоились с автомобилем, на котором вам придется преодолеть немало миль."
+		time="13"
+		numButtons="1" />
+
+	<string
+		id="1901"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я знаю, что вы отличный водитель, но у каждого автомобиля есть свои особенности, с которыми лучше познакомиться в относительно спокойной обстановке окрестностей базы. Освойтесь с управлением, почувствуйте, сцепление, тормоз. Освойте механизмы взятия проб внешней среды."
+		time="12"
+		numButtons="1" />
+
+
+	<string
+		id="1902"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Не забывайте, машина снабжена автоматическим штурманом - тот заумный прибор на панели слева. Парни заложили в эту штуковину маршрут вашей миссии, так что она всегда подскажет, куда вертеть руль..."
+		sound="data\sounds\dv_sounds\dialogs\dv0_2.wav"
+		time="13" />
+
+
+	<string
+		id="1903"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Здесь, похоже, не только люди, но и природа сошла с ума. Местами в  регионе были замечены блуждающие торнадо - избегайте их, если только не хотите почувствовать себя участником адской карусели. "
+		sound="data\sounds\dv_sounds\dialogs\dv0_1.wav"
+		time="12" />
+
+	<string
+		id="1904"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Впереди поселение гражданского персонала базы. По данным разведки, там расположился блокпост неизвестной нам банды. Прогоните мерзавцев!"
+		sound="data\sounds\dv_sounds\dialogs\dv0_3.wav"
+		time="9" />
+
+
+
+
+	<string
+		id="1050"
+		value="Итак, вы агент федерального бюро, присланный сделать то, с чем, похоже, не справилась армейская разведка? Ну что ж посмотрим. Прежде чем сообщить вам суть задания, я  хочу, чтобы вы освоились с автомобилем, на котором вам придется преодолеть немало миль. Я знаю, что вы отличный водитель, но у каждого автомобиля есть свои особенности, с которыми лучше познакомиться в относительно спокойной обстановке окрестностей базы. Освойтесь с управлением, почувствуйте, сцепление, тормоз. Освойте механизмы взятия проб внешней среды.|  Дополнительное условие:|                Взять пробы грунта и воздуха (не менее 100)"
+		numButtons="1" />
+	<string
+		id="1051"
+		value="Итак, полагаю, что подготовка завершена. Вы ознакомились с машиной, оружием, местностью, а так же с общим положением дел. Настало время перейти к основному заданию."
+		numButtons="1" />
+	
+	<string
+		id="1486"
+		value="@ffef8d00Бонус «Ремонт»| | |@ffccccccЭтот бонус восстанавливает @ffab1e1e75 единиц прочности@ffcccccc конструкции машины.| |Максимальное значение прочности конструкции вашего автомобиля составляет @ffab1e1e300 единиц@ffcccccc. Улучшение брони в гараже увеличит это значение до @ffab1e1e450@ffcccccc и @ffab1e1e600@ffcccccc на втором и третьем уровне улучшения соответственно."
+		numButtons="1" />
+		
+	<string
+		id="1487"
+		value="@ffef8d00Бонус «Броня»| | |@ffccccccЭтот бонус восстанавливает @ffab1e1e75 единиц брони@ffcccccc машины. Броня снижает весь урон по вашей машине, чем её больше - тем выше уровень защищённости.| |Максимальное значение брони вашего автомобиля составляет @ffab1e1e150 единиц@ffcccccc. Улучшение брони в гараже увеличит это значение до @ffab1e1e225@ffcccccc и @ffab1e1e300@ffcccccc на втором и третьем уровне улучшения соответственно."
+		numButtons="1" />
+		
+	<string
+		id="1489"
+		value="@ffef8d00Бонус «Усилитель оружия»| | |@ffccccccЭтот бонус увеличивает весь наносимый вами урон в @ffab1e1e4 раза@ffcccccc.| |Продолжительность эффекта - @ffab1e1e30 секунд@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1490"
+		value="@ffef8d00Бонус «Нитро»| | |@ffccccccЭтот бонус восстанавливает заряды @ffab1e1eТурбо-ускорения@ffcccccc и @ffab1e1eПрыжкового аппарата@ffcccccc.| |Турбо-ускорение активируется зажатием клавиши @ffab1e1eAlt@ffcccccc и имеет продолжительность @ffab1e1e55 секунд@ffcccccc непрерывного использования на первом уровне улучшения.| |Прыжковый аппарат активируется клавишей @ffab1e1eSpace@ffcccccc. На первом уровне улучшения у вас в распоряжении всего @ffab1e1e11 зарядов@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1491"
+		value="@ffef8d00Бонус «Вспомогательное оружие»| | |@ffccccccЭтот бонус временно устанавливает в дополнительный оружейный слот @ffab1e1eвспомогательное вооружение@ffcccccc.| |Стрельба из вспомогательного оружия производится @ffab1e1eПравой кнопкой мыши@ffcccccc. Продолжительность эффекта - @ffab1e1e45 секунд@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1492"
+		value="@ffef8d00Предмет «Проба вируса»| | |@ffccccccЗа подбор этого предмета вы получаете дополнительное вознаграждение. Информация о количестве таких проб на уровне содержится в брифингах перед миссиями.| |Максимальная награда может составлять до @ffab1e1e2000 очков вознаграждения@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1493"
+		value="@ffef8d00Предмет «Информация»| | |@ffccccccЗа подбор этого предмета вы получаете дополнительное вознаграждение. На каждом уровне спрятан как минимум 1 такой диск.| |Общая награда за нахождение предмета составляет @ffab1e1e4500 очков вознаграждения@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="627"
+		value="@ffccccccДобро пожаловать в режим @ffab1e1eНовая игра@ffef8d00+@ffcccccc. Новые правила игры:| |- Более опасные враги (изменённое вооружение, агрессивность в бою и скорость наведения ракетных установок);|- Спидраннерам тут не место: для успешного завершения миссии необходимо проехать все чекпоинты;|- Бонусы «Усилитель оружия» и «Нитро» больше недоступны."
+		numButtons="1" />
+		
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

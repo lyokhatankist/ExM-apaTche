@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Есть дополнительное задание."
+		sound="data\sounds\dv_sounds\dialogs\dv5_5.wav"
+		time="2" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В штаб поступают данные о биогенном заражении местности, в связи с чем группа химзащиты просит вас собрать образцы почвы из разных мест каньона."
+		sound="data\sounds\dv_sounds\dialogs\dv5_6.wav"
+		time="9" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Естественно, это не должно идти в ущерб спасению профессора. И остерегайтесь гигантских грибов, мне кажется, что вся зараза собирается в них."
+		sound="data\sounds\dv_sounds\dialogs\dv5_7.wav"
+		time="8" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мой вам совет: расстреливайте грибы при каждом удобном случае."
+		sound="data\sounds\dv_sounds\dialogs\dv5_8.wav"
+		time="4" />
+		
+	<string
+		id="11"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Проблема имеет предельно простое решение, да. Ничего сложного."
+		sound="data\sounds\dv_sounds\dialogs\dv6_1.wav"
+		time="4" />
+	<string
+		id="12"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ваши солдаты наверняка уже загнали бандитов в топь и всех победили. У них же всякие там пушки, гранаты и прочие страсти, да."
+		sound="data\sounds\dv_sounds\dialogs\dv6_2.wav"
+		time="9" />
+	<string
+		id="13"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Но мои исследования! Мои материалы! Солдаты не догадаются подобрать их, я уверен! Что я, военных не знаю?"
+		sound="data\sounds\dv_sounds\dialogs\dv6_3.wav"
+		time="9" />
+	<string
+		id="14"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Они расстреляют там всё подряд, вызовут утечку Z–120, уничтожат ценные образцы!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_4.wav"
+		time="7" />
+	<string
+		id="15"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В общем – или вы или я! В смысле или вы добываете бумаги, или я остаюсь здесь, ага! Так что идите-ка вы в болото, вот!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_5.wav"
+		time="12" />
+		
+	<string
+		id="5001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ничего не понимаю. Передо мной на столе фотоснимки месячной давности. Тогда никаких джунглей там и в помине не было."
+		sound="data\sounds\dv_sounds\dialogs\dv5_9.wav"
+		time="7" />
+
+	<string
+		id="50011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мы знаем, где находится профессор Паперс, дело остается за малым - вытащить его живым и невредимым."
+		sound="data\sounds\dv_sounds\dialogs\dv5_10.wav"
+		time="5" />
+
+
+	<string
+		id="5002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Агент, как слышите меня? Приём! Перейдите на запасную частоту! Приём! Агент, ответьте!"
+		sound="data\sounds\dv_sounds\dialogs\dv5_11.wav"
+		time="4" />   
+	<string
+		id="5003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Агент, если вы меня слышите, нажмите два раза на клавишу &quot;приём&quot;. Ага, отлично! Похоже, это место находится в радиотени..."
+		sound="data\sounds\dv_sounds\dialogs\dv5_12.wav"
+		time="6" />
+	<string
+		id="5004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Как только вытащите профессора... У входа в каньон вас будет ждать... Как поняли?"
+		sound="data\sounds\dv_sounds\dialogs\dv5_13.wav"
+		time="7" />
+
+	<string
+		id="50041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Главное - не попасть под огонь &quot;Дельты&quot;, спасая профессора из рук контрабандистов."
+		sound="data\sounds\dv_sounds\dialogs\dv5_14.wav"
+		time="4" />
+
+
+	<string
+		id="5007"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вы пришли меня спасать? О, отменно, отменно! Моё правительство наконец-то озаботилось спасением меня от бандитов."
+		sound="data\sounds\dv_sounds\dialogs\dv5_15.wav"
+		time="5" />
+	<string
+		id="5008"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Правда, от бандитов я спасся уже сам, да! Сбежал, пока они заправлялись. Их преследовали армейцы, и тем и другим было не до меня. Так, что я и без вас обошёлся, да."
+		sound="data\sounds\dv_sounds\dialogs\dv5_16.wav"
+		time="7" />
+
+	<string
+		id="5009"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Нам удалось задействовать спутник наблюдения, проходящий над этой местностью."
+		sound="data\sounds\dv_sounds\dialogs\dv5_17.wav"
+		time="3" />
+	<string
+		id="50091"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Похоже, что стоянка бандитов находится неподалеку от вас. Это несколько больших куполообразных палаток, есть вероятность, что профессора держат в одной из них."
+		sound="data\sounds\dv_sounds\dialogs\dv5_18.wav"
+		time="7" />
+	<string
+		id="50092"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Никаких признаков ведущихся рядом боёв не замечено. В любом случае, вам необходимо обследовать это место."
+		sound="data\sounds\dv_sounds\dialogs\dv5_19.wav"
+		time="6" />
+
+	<string
+		id="5010"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Но не думайте, что я пойду с вами! У контрабандистов остались все образцы и материалы моих исследований, да."
+		sound="data\sounds\dv_sounds\dialogs\dv5_20.wav"
+		time="6" />
+	<string
+		id="50101"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Без них я никуда не пойду. Это же многолетний труд, ага! Отбейте мои бумаги у бандитов и я с вами, иначе - ни за что!"
+		sound="data\sounds\dv_sounds\dialogs\dv5_21.wav"
+		time="7" />
+	<string
+		id="50102"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Бандиты уходят от армейцев в сторону болот. Вы ещё  сможете догнать их."
+		sound="data\sounds\dv_sounds\dialogs\dv5_22.wav"
+		time="4" />
+
+
+
+	<string
+		id="50103"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ваша машина хорошо защищена от радиации, это очень плохо."
+		sound="data\sounds\dv_sounds\dialogs\dv5_23.wav"
+		time="3" />
+	<string
+		id="50104"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="То есть хорошо, но плохо, в том смысле, что тяжёлая броня, а местность тут топкая, да. Потому, что болота вокруг."
+		sound="data\sounds\dv_sounds\dialogs\dv5_24.wav"
+		time="6" />
+
+
+	<string
+		id="5011"
+		modelName="mask_oracul"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="БОРТОВОЙ КОМПЬЮТЕР|Сканирование..."
+		sound=""
+		time="3" />
+	<string
+		id="5012"
+		modelName="mask_oracul"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="БОРТОВОЙ КОМПЬЮТЕР|Объекты, зафиксированные камерами спутника наблюдения, палатками не являются. Это гигантские яйца. Предположительно птичьи. "
+		sound=""
+		time="7.5" />
+	
+	
+	
+	
+	
+	
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<triggers>
+<!--  -->
+
+	<trigger	Name="GlobalVar"	active="1">
+		<event	timeout="0.1"		eventid="GE_TIME_PERIOD" />
+		<script>
+    	trigger:Deactivate()
+		</script>
+	</trigger>
+
+<trigger	Name="RestoreTolerance"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>
+   	trigger:Deactivate()
+   	RestoreAllToleranceStatus()
+</script>
+</trigger>
+
+
+
+	<trigger	Name="trStartMap"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+		<script>
+			RuleConsole("currentRadarScanRadius 100")
+			trigger:Deactivate()
+			
+			local tables = {{11095, 11110}, {11134, 11172}, {11179, 11208}, {13811, 13970}}
+			ShroomCalc(tables)
+			SetVar("ShroomCalcParam", "{6360, 30, 125000, 166}") -- minReward, maxReward, maxBonus, reachable
+			SetVar("Checkpoints", 0)
+			SetVar("ToxicityCount", 30)
+		</script>
+	</trigger>
+
+	<trigger	Name="trGameSart"	active="1">
+		<event	eventid="GE_GAME_LOADED" ObjName="Player1"/>
+		<script>			
+			function SaveGame( name )
+				rockFall = rockFall or {}
+				local str =  			 "Nav = 		" .. serialize ( Nav 			) .. "; "
+				local str = str .. "Ambushs = " .. serialize ( Ambushs 	) .. "; "
+				local str = str .. "rockFall = " .. serialize ( rockFall ) .. "; "
+
+				--dostring( "a = serialize ( Nav )")
+				SetVar( "SavedTables", str )
+				SavesManager:SaveCheckpoint( name )
+			end
+
+			function LoadingGame()
+				local str = GetVar( "SavedTables" ).AsString
+				dostring( str )
+			end
+
+			local loaded = GetVar( "loaded" ).AsInt
+			OnAnyRestart()
+			if ( loaded == -1 ) or ( loadedStatus == "firstLoad" ) then
+				loadedStatus = "Loaded"
+				SetVar( "loaded", 1 )
+				LOG("TRIGGERS: SEE - GAME STARTED SUSSFULLLL")
+				TActivate("trStartMap")
+--				TActivate("trStartQuest")	
+				TActivate("trRol1")
+				TActivate("trAmbInit")
+				TActivate("trNavInit")
+				TActivate("trRockFallInit")
+				TActivate("trRadiationInit")
+				TActivate("trBurnInit")				
+--				TActivate("trStormInit")
+--				TActivate("trTimersInit")
+				TActivate("trJumpCamInit")				
+			else
+				LoadingGame()
+				LOG("SEE - GAME LOADED SUSSFULLLL")
+			end
+		</script>
+	</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****													‡ б ¤л						 				                  						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin, mass )
+-->
+<trigger	Name="trAmbInit"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+
+ 	Ambushs = {
+		{ onEnter = "Ambush10", onSpawn = "Ambush10_spawn", spawnTeam = { "NG1_Humvee_01" }, belong = 1115 };
+		{ onEnter = "Ambush12", onSpawn = "Ambush12_spawn", spawnTeam = { "NG1_Shotgun_05", "NG1_Humvee_01", "NG1_Humvee_01", "NG1_Light_05" }, belong = 1115 };
+		{ onEnter = "Ambush13", onSpawn = "Ambush13_spawn", spawnTeam = { "NG1_Medium_04", "NG1_Heavy_02" }, belong = 1114 };
+		{ onEnter = "Ambush14", onSpawn = "Ambush14_spawn", spawnTeam = { "NG1_Light_04", "NG1_Shotgun_04","NG1_Medium_04" } };
+		{ onEnter = "Ambush15", onSpawn = "Ambush15_spawn", spawnTeam = { "NG1_Heavy_03","NG1_Medium_01","NG1_Heavy_02" }, belong = 1114 };
+ 		}
+
+	local tr_Start = getObj("trAmbStart")
+			
+  for i,v in Ambushs do
+		tr_Start:AddEvent	( "GE_OBJECT_ENTERS_LOCATION", v.onEnter ) 	
+	end;      
+
+	tr_Start:Activate()
+</script>
+</trigger>
+
+<trigger	Name="trAmbStart"	active="0">
+	<script>
+		local loc = trigger:GetCallObjName() 
+		trigger:DelEventObj( "GE_OBJECT_ENTERS_LOCATION", loc )
+
+		local amb = nil
+		for i,v in Ambushs do
+			if v.onEnter == loc then 
+				amb = v 
+				break
+			end
+		end
+
+		local belong = amb.belong or (1110 + math.random(5))
+
+		CreateTeam( "ambTeam_"..amb.onEnter , belong, getPos( amb.onSpawn ), amb.spawnTeam, getPos( loc ))
+	</script>
+</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												Ќ ўЁЈ жЁп						 				                  						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trNavInit"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+	<script>	
+ 	trigger:Deactivate()
+
+  Nav = {
+  	Points = {
+  	[1] = { isPrimary = 1; Connected = { 2 	  }; 	Point = "WayPoint1056"  };
+  	[2] = { isPrimary = 1; Connected = { 3, 1 }; 	Point = "WayPoint1057"  };
+  	[3] = { isPrimary = 1; Connected = { 4, 2 }; 	Point = "WayPoint1058"  };
+  	[4] = { isPrimary = 1; Connected = { 5, 3 }; 	Point = "WayPoint1059"  };
+  	[5] = { isPrimary = 1; Connected = { 6, 4 }; 	Point = "WayPoint1060"  };
+  	[6] = { isPrimary = 1; Connected = { 7, 5 }; 	Point = "WayPoint1061"  };
+  	[7] = { isPrimary = 1; Connected = { 8, 6 }; 	Point = "WayPoint1062"  };
+  	[8] = { isPrimary = 1; Connected = { 9, 7 }; 	Point = "WayPoint1063"  };
+  	[9] = { isPrimary = 1; Connected = { 10, 8, 31 }; 	Point = "WayPoint1064"  };
+  	[10] = { isPrimary = 1; Connected = { 11, 9 }; 	Point = "WayPoint1065"  };
+  	[11] = { isPrimary = 1; Connected = { 12, 10 }; 	Point = "WayPoint1066"  };
+  	[12] = { isPrimary = 1; Connected = { 13, 11, 31 }; 	Point = "WayPoint1067"  };
+  	[13] = { isPrimary = 1; Connected = { 14, 12 }; 	Point = "WayPoint1068"  };
+  	[14] = { isPrimary = 1; Connected = { 15, 13 }; 	Point = "WayPoint1069"  };
+  	[15] = { isPrimary = 1; Connected = { 16, 14 }; 	Point = "WayPoint1070"  };
+  	[16] = { isPrimary = 1; Connected = { 17, 15, 33 }; 	Point = "WayPoint1071"  };
+  	[17] = { isPrimary = 1; Connected = { 18, 16 }; 	Point = "WayPoint1072"  };  	  	  	  	  	
+  	[18] = { isPrimary = 1; Connected = { 20, 17 }; 	Point = "WayPoint1073"  };  	  	  	  	  	
+  	[19] = { isPrimary = 1; Connected = {  }; 	Point = "WayPoint1074"  };  	-- Ў«п Ў Ј Є Є®©в® (
+  	[20] = { isPrimary = 1; Connected = { 21, 18 }; 	Point = "WayPoint1075"  };  	  	  	  	  	
+		[21] = { isPrimary = 1; Connected = { 22, 20 }; 	Point = "WayPoint1076"  };  	  	  	  	  	
+		[22] = { isPrimary = 1; Connected = { 23, 21 }; 	Point = "WayPoint1077"  };  	  	  	  	  	
+		[23] = { isPrimary = 1; Connected = { 24, 22 }; 	Point = "WayPoint1078"  };  	  	  	  	  	
+		[24] = { isPrimary = 1; Connected = { 25, 23 }; 	Point = "WayPoint1079"  };  	  	  	  	  	
+		[25] = { isPrimary = 1; Connected = { 26, 24 }; 	Point = "WayPoint1080"  };  	  	  	  	  	
+		[26] = { isPrimary = 1; Connected = { 27, 25 }; 	Point = "WayPoint1081"  };  	  	  	  	  	
+		[27] = { isPrimary = 1; Connected = { 28, 26 }; 	Point = "WayPoint1082"  };  	  	  	  	  	
+		[28] = { isPrimary = 1; Connected = { 29, 27 }; 	Point = "WayPoint1083"  };  	  	  	  	  	
+		[29] = { isPrimary = 1; Connected = { 30, 28 }; 	Point = "WayPoint1084"  };  	  	  	  	  	
+		[30] = { isPrimary = 1; Connected = { 31, 29 }; 	Point = "WayPoint1085"  };  	  	  	  	  	
+
+		[31] = { isPrimary = 1; Connected = { 9, 12 }; 	Point = "WayPoint1086"  };
+		[32] = { isPrimary = 1; Connected = { 33 }; 	Point = "WayPoint1087"  };
+		[33] = { isPrimary = 1; Connected = { 32, 16 }; 	Point = "WayPoint1088"  };
+		[34] = { isPrimary = 1; Connected = { 35, 24 }; 	Point = "WayPoint1089"  };
+		[35] = { isPrimary = 1; Connected = { 34, 29 }; 	Point = "WayPoint1090"  };
+  	};
+  	Destination = 32;
+	  Next_way_point = 23;
+  }
+	CompasCore( trigger )
+	</script>
+</trigger>
+<trigger	Name="trNavWork"	active="0">
+<script>
+	CompasWork( trigger )
+</script>
+</trigger>
+<trigger	Name="NavDraw"	active="0">
+		<event	timeout="0.05"		eventid="GE_TIME_PERIOD" />
+<script>
+	CompasShow( trigger )
+</script>
+</trigger>
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****													Љ ¬Ґ­ЁбвлҐ ®Ўў «л 				    v1.0           						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trRockFallInit"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+
+ 	rockFall = {}
+ 	local base = "RockFall_"
+ 	local start = 902
+	local end_l = 915
+
+	local tr_Start = getObj("trRockFallStart")
+	local tr_End = getObj("trRockFallEnd")
+			
+  for i = start, end_l do
+		tr_Start:AddEvent	( "GE_OBJECT_ENTERS_LOCATION", base .. tostring( i ) ) 	
+--		tr_End:AddEvent		( "GE_OBJECT_LEAVES_LOCATION", base .. tostring( i ) ) 	
+	end;      
+
+	tr_Start:Activate()
+--	tr_End:Activate()
+	TActivate("trRockFallTTL")
+</script>
+</trigger>
+
+<trigger	Name="trRockFallStart"	active="0">
+	<script>
+		local loc = trigger:GetCallObjName() 
+		trigger:DelEventObj( "GE_OBJECT_ENTERS_LOCATION", loc )
+		local pos = getObj(loc):GetPosition() + CVector( 0, 14, 0 )
+		trigger:DelEventObj( "GE_OBJECT_ENTERS_LOCATION", loc )
+		local b = { 
+--			{ name = "big_stone_01", mass = 200 };
+			{ name = "middle_stone_01", mass = 900 };
+			{ name = "small_stone_01", mass = 600 };
+			{ name = "small_stone_01", mass = 600 };
+			}
+--		println	( "location! "..tostring( getObj(loc):GetPosition() ) )
+--		println( "veh!      "..tostring( GetPlayerVehicle():GetPosition() ) )
+	  local bw = CreateNewObject({prototypeName = "MushroomsBlastWave", objName = "tempwave" }) 	  getObj(bw):SetPosition(GetCameraPos() + CVector(0, 10,0))
+
+		for i = 1, 9 do
+  		local n = random(3)
+  		local a = random(360)
+  		local r = CVector(random(),random(),random()):normalize()
+			local st = CreateNewPhysicDummyObject( b[n].name, b[n].name .."__"..tostring(i), -1, -1, 
+																	pos + CVector(random(10)-5,0,random(10)-5), Quaternion( r.x * sin(a / 2), r.y * sin(a / 2), r.z * sin(a / 2), cos(a / 2)), 1, b[n].mass )
+			table.insert( rockFall, { stone = st:GetId(); ttl = 30 } )
+		end;
+
+	</script>
+</trigger>
+
+<trigger	Name="trRockFallEnd"	active="0">
+	<script>
+		SetVar( "PlayersRadioactiveZones", GetVar("PlayersRadioactiveZones").AsInt - 1 )
+	</script>
+</trigger>
+
+<trigger	Name="trRockFallTTL"	active="0">
+		<event	timeout="3"		eventid="GE_TIME_PERIOD" />
+	<script>
+		for i, v in rockFall do
+			v.ttl = v.ttl - 3
+			if 0 >= v.ttl then
+				SafeRemove( v.stone )
+				table.remove( rockFall, i )
+			end
+		end
+	</script>
+</trigger>
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****													ђ ¤Ё® ЄвЁў­лҐ «г¦Ё                   v1.1    						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+
+<trigger	Name="trRadiationInit"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+		<script>
+		--ET_LS_RADIATION_LIGHTING
+    	trigger:Deactivate()
+			
+			local damage_per_second_from_one_zone = 20
+			local start_loc = 0
+			local end_loc 	= 20
+			local name_loc = "Radioactive_"
+			
+			local tr_Start = getObj("trRadiationStart")
+			local tr_End = getObj("trRadiationEnd")
+			
+		  for i = start_loc, end_loc do
+				tr_Start:AddEvent	( "GE_OBJECT_ENTERS_LOCATION", name_loc .. tostring( i ) ) 	
+				tr_End:AddEvent		( "GE_OBJECT_LEAVES_LOCATION", name_loc .. tostring( i ) ) 	
+				local l = getObj( name_loc .. tostring( i ))
+				if l then
+					CreateNewSgNodeObject( "ET_LS_RADIATION_LIGHTING", "rl_"..name_loc .. tostring( i ), -1, -1, l:GetPosition() + CVector( 0, 2.5, 0 ) )					
+					CreateNewSgNodeObject( "ET_PS_GREEN_SMOKE1", "rls_"..name_loc .. tostring( i ), -1, -1, l:GetPosition() + CVector( 0, 2.5, 0 ) )										
+				end
+			end;      
+
+			SetVar( "PlayersRadioactiveZones", 0 )
+			SetVar( "damage_per_second_from_one_zone", damage_per_second_from_one_zone )
+			tr_Start:Activate()
+			tr_End:Activate()
+			TActivate("trRadiationWork")
+	</script>
+</trigger>
+
+<trigger	Name="trRadiationStart"	active="0">
+	<script>
+		SetVar( "PlayersRadioactiveZones", GetVar("PlayersRadioactiveZones").AsInt + 1 )
+	</script>
+</trigger>
+
+<trigger	Name="trRadiationEnd"	active="0">
+	<script>
+		SetVar( "PlayersRadioactiveZones", GetVar("PlayersRadioactiveZones").AsInt - 1 )
+	</script>
+</trigger>
+
+<trigger	Name="trRadiationWork"	active="0">
+		<event	timeout="0.2"		eventid="GE_TIME_PERIOD" />
+	<script>
+		local count_R = GetVar("PlayersRadioactiveZones").AsInt
+		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+		if count_R > 0 then
+			local v = GetPlayerVehicle()
+			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )					
+		end
+	</script>
+</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												Ѓ®«®в­® / а ¤Ё® ЄвЁў­л©  Їг§лам 		   v1.0    						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trInitSwampBall"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	local base = "SwampBall_"
+ 	local start = 0
+	local end_l = 16
+ 	
+ 	SwampBall = {}
+
+	for i = start, end_l do		
+		local bl = getObj( base..tostring( i ) )
+		if bl then
+			local bpp = bl:GetPosition()
+			local b = { Point = base..tostring( i ); Pos = bpp; Timeout = 0; WorkTimeout = 0; BubbleId = -1 }
+			table.insert( SwampBall, b )
+		end
+	end
+	TActivate( "trSwampBall" )
+ 	trigger:Deactivate()
+</script>
+</trigger>
+
+
+<trigger	Name="trSwampBall"	active="0">
+	<event	timeout=	".5"		eventid="GE_TIME_PERIOD" />
+<script>	
+-- 	trigger:Deactivate()
+	local TriggerTime		= .5
+	local TimeBetween 	= 5
+	local timeRandom 		= 2
+	local timeWorkBuble	= 2.5
+	local workDist			= 320
+	local bubbleModel		= "waterfall"
+	local bubbleDeathEff= "ET_PS_GREEN_SMOKE1"
+	local explodeName		= "BubbleBum"
+
+	local veh = GetPlayerVehicle()
+	local v_pos = CVector( 0, 0, 0 ) 
+	if veh then		
+		v_pos = veh:GetPosition()
+	end 
+
+	for i, v in SwampBall do
+		v.Timeout = v.Timeout - TriggerTime
+	  v.WorkTimeout = v.WorkTimeout - TriggerTime
+
+	  if v.WorkTimeout == 0 then
+		  local bw = CreateNewObject( { prototypeName = explodeName, objName = "tempwave" } ) 	  
+		  getObj( bw ):SetPosition( v.Pos )
+		  CreateEffectTTLed( bubbleDeathEff, v.Pos, Quaternion(0.0000, 0.0000, 0.0000, 1.0000), TimeBetween )	  	
+--		  local bubble = getObj( v.BubbleId ) if bubble then bubble:Remove() end
+			SafeRemove( v.BubbleId )
+	  end
+
+		if v.Timeout == 0 then
+			if workDist > (v_pos - v.Pos):length() then
+--				v.BubbleId = CreateNewSgNodeObject( bubbleModel, "bbbb_"..tostring( i ), -1, 1101, v.Pos )
+				v.BubbleId = CreateNewDummyObject( bubbleModel, "compas", -1, 1101, v.Pos )
+				local Bubble = getObj( v.BubbleId )
+				if Bubble then
+					Bubble:SetNodeAction( AT_MOVE1 )
+					Bubble:SetScale ( 10 )
+				end
+				v.WorkTimeout = timeWorkBuble
+			end
+		end		
+
+		if TriggerTime > v.Timeout and TriggerTime > v.WorkTimeout then
+			v.Timeout = TimeBetween + random( timeRandom )
+		end
+	end
+
+</script>
+</trigger>
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												ЃЋЌ“‘ ’…Љ‘’›															    						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+
+<trigger	Name="trBonusText_00"	active="1">
+	<event	eventid="GE_OBJECT_DIE" ObjName="Bonus_Unique_SecretPlace_01"/>
+<script>           
+	TakeQuest( "ng1_dv7_t0" )	
+	CompleteQuest( "ng1_dv7_t0" )
+	trigger:Deactivate()
+</script>
+</trigger>
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****													ЃҐЈ ®в в®ЄбЁ			 				                  						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trToxiInit"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+  toxic = {
+  	[1] = { Point = "ToxicWay_15"  };
+  	[2] = { Point = "ToxicWay_16"  };
+  	[3] = { Point = "ToxicWay_17"  };
+  	[4] = { Point = "ToxicWay_18"  };
+  	[5] = { Point = "ToxicWay_19"  };
+  	[6] = { Point = "ToxicWay_20"  };
+  	[7] = { Point = "ToxicWay_21"  };
+  	[8] = { Point = "ToxicWay_22"  };
+  	[9] = { Point = "ToxicWay_23"  };
+  	[10]= { Point = "ToxicWay_24"  };
+  	[11]= { Point = "ToxicWay_25"  };
+  	[12]= { Point = "ToxicWay_26"  };
+  	[13]= { Point = "ToxicWay_27"  };
+  	[14]= { Point = "ToxicWay_28"  };
+  	[15]= { Point = "ToxicWay_29"  };
+  	[16]= { Point = "ToxicWay_30"  };
+  	[17]= { Point = "ToxicWay_31"  };
+  	[18]= { Point = "ToxicWay_32"  };
+  	[19]= { Point = "ToxicWay_33"  }
+  }
+	curPoint 		= 1  	-- Ї®б«Ґ¤­пп Їа®©¤Ґ­­ п в®зЄ 
+	curLength 	= 0   -- а ббв®п­ЁҐ ®в Ї®б«Ґ¤­Ґ© Їа®©¤Ґ­­®© в®зЄЁ
+	curSpeed 		= 16 	-- 16 ў бҐЄг­¤г (г¬­®¦ Ґвбп ­  1.5 Ї®б«Ґ ­ бҐЄг­¤: ўаҐ¬Ґ­­® г¬­®¦ Ґвбп ­  accelIfFar Ґб«Ё гЈ­ «Ё ¤ «ҐЄ® )
+  TActivate( "trToxicGo" )
+  TActivate( "trToxicFaster" )
+</script>
+</trigger>
+
+
+<trigger	Name="trToxicGo"	active="0">
+		<event	timeout=	"1"		eventid="GE_TIME_PERIOD" />
+<script>
+	trToxicGo( trigger )
+</script>
+</trigger>
+
+<trigger	Name="trToxicFaster"	active="0">
+		<event	timeout="12"		eventid="GE_TIME_PERIOD" />
+<script>
+ 	trigger:Deactivate()
+	curSpeed = curSpeed * 1.1
+</script>
+</trigger>
+
+
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****													Џ®б«Ґ¤­пп бв ¤Ёп ЎЁвўл		                  						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+<trigger	Name="trPreInitFightBoss"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>
+		trigger:Deactivate()
+		if GetVar( "BossHack" ).AsInt == -1 then
+			TActivate( "trInitFightBoss" )
+		end
+		SetVar( "BossHack", 1 )
+</script>
+</trigger>
+
+
+<trigger	Name="DBoss"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+<script>
+	trigger:Deactivate()
+	GetPlayerVehicle():SetPosition( GetPos( "WayPoint1087" )+CVector(0,15,0) )
+	dontLoad = 1
+	-- TActivate("DBoss")  --  getObj( "boss" ):GetVehicle( 0 ):GetRole():LogIds()
+</script>
+</trigger>
+
+
+<trigger	Name="trInitFightBoss"	active="0">
+		<event	timeout="6"		eventid="GE_TIME_PERIOD" />
+<script>
+ 	trigger:Deactivate()
+ 	TActivate("trAnalitic")
+
+	local vehPlayer = GetPlayerVehicle() -- Їа®ўҐаЄ  ЇаЁҐе « «Ё ЁЈа®Є ­  ¬Ґбв®
+	if vehPlayer then
+		local d = (getPos(vehPlayer) - getPos("Boss_mimic_zone")):length()
+		if d > 320 then
+			TActivate( "trDeath" )			
+		end		
+	end
+
+	local bt = CreateTeam( "boss", 1115, CVector( 2605.692, 0, 267.777 ), 	{ "NG1_Boss_02" }, nil, nil, nil) 		
+	local b = bt:GetVehicle( 0 )
+	BossHp:Setup( b:GetId() )
+	BossHp:Show()
+	TActivate( "trBossToxicGate" )
+	TActivate( "trBossToxicDie" )
+</script>
+</trigger>
+
+
+<trigger	Name="trAnalitic"	active="0">
+		<event	timeout="50"		eventid="GE_TIME_PERIOD" />
+<script>
+	trigger:Deactivate()
+	TakeQuest( "boss_1" )	
+	CompleteQuest( "boss_1" )
+</script>
+</trigger>
+
+
+<trigger	Name="trBossToxicGate"	active="0">
+		<event	timeout="2"		eventid="GE_TIME_PERIOD" />
+<script>
+	--LOG("hui")
+	eff_t = eff_t or 1
+	eff_t = eff_t - 1
+	--WayPoint1087      r 60 +5   2497.236 287.667 527.278
+	local cp = getObj("WayPoint1087"):GetPosition()
+	for i = -5, 5 do
+		for j = -5, 5 do
+			local pp 	= cp + CVector ( i * 13 , 0, j * 13 )
+		  local bw = CreateNewObject( { prototypeName = "ToxicBoss_4", objName = "tempwave" } ) 	  
+			getObj( bw ):SetPosition( pp )
+			if ( random( 6 ) == 1 ) and ( eff_t == 0 ) then
+				local epp = pp + CVector ( random(15) - 7.5, 0, random(15) - 7.5 )
+				CreateEffectTTLed( "ET_PS_GREEN_SMOKE1", epp, Quaternion( 0.0000, 0.0000, 0.0000, 1.0000 ), 33000 )				
+			end
+		end
+	end
+	if eff_t == 0  then  eff_t = 10 end
+</script>
+</trigger>
+
+<trigger	Name="trBossToxicDie"	active="0">
+		<event	eventid="GE_OBJECT_DIE" ObjName="boss_vehicle_0" />
+<script>
+		TDeactivate("trBossToxicGate")
+		println("Complete")
+		BossHp:Hide()
+		TActivate( "trWin1" )
+</script>
+</trigger>
+
+<!-- 
+																	‘в ав ђ®«ЁЄ
+-->
+
+<trigger	Name="trRol1"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>
+ 	trigger:Deactivate()
+	TActivate( "trRol2" )
+--	"Boss_02_dummy"
+
+	local dt = CreateTeam( "boss_d", 1100, CVector ( 844.548, 281.869, 1461.619 ), { "Boss_02_dummy" } )	
+
+--	dt:SetExternalPathByName( "rol1_boss" )
+
+	local vehPlayer = GetPlayerVehicle()
+	if vehPlayer then
+--		vehPlayer:SetGamePositionOnGround( getPos( "locStart" ) )
+--		vehPlayer:SetRotation( qua( -45 ) )
+--		vehPlayer:SetGamePositionOnGround( CVector(954, 261, 1335) )
+		vehPlayer:SetGamePositionOnGround( CVector(824, 261, 1512) )
+		vehPlayer:SetRotation( Quaternion(-0.009, 0.947, 0.084, 0.311) )
+		vehPlayer:SetCustomLinearVelocity( 0 )
+		vehPlayer:SetThrottle( 0 )
+		vehPlayer:SetExternalPathByName("rol1_pl")
+		vehPlayer:LimitMaxSpeed(18)
+		vehPlayer:setGodMode(1)
+	end     
+
+--	Fly	("Start_cam_00", CINEMATIC_NO_AIM, 0, 4, 1, 0); 
+	Fly	("Start_cam_01", CINEMATIC_NO_AIM, 0, 28.15, 0, 0);
+	StartCinematic()
+	 	TActivate("trRol4")
+	TActivate("trRol2")
+</script>
+</trigger>
+
+	
+<trigger	Name="trRol2"	active="0">
+	<event flypath="Start_cam_01" eventid="GE_START_CINEMATIC_FLY" ObjName="Player1" />
+<script>
+--		p("hhh2")
+		trigger:Deactivate()
+--		local vehPlayer = GetPlayerVehicle()
+--		vehPlayer:SetExternalPathByName("rol1_pl2")
+--		vehPlayer:SetExternalPathByName("rol1_pl1")		
+		
+		AddCinematicMessage( 70025, 0.3 )
+		AddCinematicMessage( 70026, 0.3 )
+		AddCinematicMessage( 7000, 0.3 )
+		AddCinematicMessage( 70001, 0.2 )
+
+		TActivate("trRol3")
+</script>
+</trigger>
+
+
+<trigger	Name="trRol3"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+<script>
+ 	trigger:Deactivate()
+	Fly	("Start_cam_00", CINEMATIC_NO_AIM, 0, 25.85, 0, 1);
+	StartCinematic()
+
+		AddCinematicMessage( 7001, 0.2 )
+		AddCinematicMessage( 7002, 0.2 )		
+		AddCinematicMessage( 70021, 0.2 )
+		AddCinematicMessage( 70022, 0.2 )
+		AddCinematicMessage( 70023, 0.2 )
+		
+	local bossDummy = GetEntityByName("boss_d")
+	if bossDummy then
+		bossDummy:StackOpen()
+		bossDummy:SetDestination(CVector(926.170, 279.415, 1356.197))
+		bossDummy:StackClose()
+	end
+	
+	bossDummy = getObj("boss_d_vehicle_0")
+	if bossDummy then
+		bossDummy:SetCruisingSpeed(4.1)
+	end
+	
+	bossDummy = GetPlayerVehicle()
+	bossDummy:PlaceToEndOfPath("rol1_pl")
+
+	TActivate("trRol5")
+	TActivate("trRol4")
+</script>
+</trigger>
+
+
+<trigger	Name="trRol4"	active="0">
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>
+ 	trigger:Deactivate()
+	TActivate("trTT")
+</script>
+</trigger>
+
+
+<trigger	Name="trRol5"	active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+<script>
+ 	trigger:Deactivate()
+	TActivate("trTT")
+</script>
+</trigger>
+
+
+<trigger	Name="trTT"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+ 	TDeactivate("trRol5")
+ 	TDeactivate("trRol4")
+ 	TDeactivate("trRol3")
+ 	TDeactivate("trRol2")
+	SafeRemove( "boss_d" )	
+
+	local vehPlayer = GetPlayerVehicle()
+	if vehPlayer then
+		vehPlayer:PlaceToEndOfPath()
+--		vehPlayer:SetGamePositionOnGround( getPos( "locStart" ) )
+--		vehPlayer:SetRotation( qua( 135 ) )
+		vehPlayer:SetGamePositionOnGround( CVector(999, 264, 1286) )
+		vehPlayer:SetRotation( Quaternion(-0.009, 0.947, 0.084, 0.311) )
+		vehPlayer:SetCustomLinearVelocity( 5 )
+		vehPlayer:SetThrottle( 0 )
+		vehPlayer:UnlimitMaxSpeed()
+		vehPlayer:setGodMode(0)
+	end     
+	TActivate("trStartQuest")
+</script>
+</trigger>
+
+<!-- 
+******************************************************************************************
+******************************************************************************************
+****																																									****
+****												’аЁЈЈҐал бо¦Ґв  													    						****
+****																																									****
+******************************************************************************************
+******************************************************************************************
+-->
+
+
+<trigger	Name="trStartQuest"	active="0">
+	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+<script>
+ 	trigger:Deactivate()
+ 	CompasOn( 32, 23 )
+	TakeQuest( "ng1_dv7_q1" )
+	TActivate( "trTriggerQuest1" )	
+-- 	TActivate("trToxiInit")
+	TActivate("trLLL")
+</script>
+</trigger>
+
+
+<trigger	Name="trLLL"	active="0">
+	<event	timeout="14"		eventid="GE_TIME_PERIOD" />
+<script>	
+ 	trigger:Deactivate()
+	TDeactivate( "trToxicGo" )
+	FlyShort ( { time = 7 , msg = { 7003 }} )	
+	local vehPlayer = GetPlayerVehicle()
+	if vehPlayer then
+		vehPlayer:setGodMode(1)
+	end     
+	TActivate( "trLLL2" )
+</script>
+</trigger>
+
+
+<trigger	Name="trLLL2"	active="0">
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+<script>
+ 	trigger:Deactivate()
+-- 	TActivate( "trToxicGo" )
+	TActivate("trToxiInit")
+	local vehPlayer = GetPlayerVehicle()
+	if vehPlayer then
+		vehPlayer:setGodMode(0)
+	end     
+</script>
+</trigger>
+
+
+<trigger	Name="trTriggerQuest1"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Boss_mimic_zone"/>
+<script>           
+	trigger:Deactivate()	
+	SetVar("Checkpoints", (GetVar("Checkpoints").AsInt + 1))
+	FlyShort ( { time = 7 , msg = { 70031, 70032, 70033, 70034 }, CompQuest1 = "ng1_dv7_q1", saveMap = "ng1_dv7_AfterRun" } )	
+	TakeQuest( "ng1_dv7_q1_2" )
+	--CompleteQuest( "dv7_q1" )	
+--	TActivate( "trSave1" )
+	PlayCustomMusic("CombatBoss1")
+	TActivate( "trPreInitFightBoss" )	
+	
+	TActivate("trShroomNote2")
+</script>
+</trigger>
+
+
+<trigger	Name="trWin1"	active="0">
+	<event	timeout="2"		eventid="GE_TIME_PERIOD" />
+<script>
+ 	trigger:Deactivate()
+	if 1>=GetVar("Checkpoints").AsInt then
+		SpawnMessageBox( "369" )
+		local playa = GetPlayerVehicle()
+		if playa then
+			playa:AddModifier("hp", "- 1337")
+		end
+	else
+		StopPlayingCustomMusic()
+		CompasOff()
+		FlyShort ( { time = 7 , msg = { 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012 }, CompQuest1 = "ng1_dv7_q1_2" } )	
+		--CompleteQuest( "dv7_q1_2" )	
+		if not ( dontLoad == 1 ) then
+			TActivate( "trWin" )
+		end
+		
+		-- there are 564 shrooms on the map in total, but only 294 of them are reachable
+		-- that's why 'reach' param is used
+		local shroomCalcParam = StringToTable(GetVar("ShroomCalcParam").AsString)
+		ShroomRewardGive(shroomCalcParam[1], shroomCalcParam[2], shroomCalcParam[3], shroomCalcParam[4])
+	end
+	
+	TDeactivate("trAnalitic")
+</script>
+</trigger>
+
+
+
+<trigger	Name="trWrongWay"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="WayPoint1070"/>
+<script>           
+	trigger:Deactivate()
+	TActivate( "trDeath" )
+</script>
+</trigger>
+
+
+<trigger	Name="trDeath"	active="0">
+	<event	timeout="2"		eventid="GE_TIME_PERIOD" />
+<script>
+	trigger:Deactivate()
+	local vehPlayer = GetPlayerVehicle()
+	if vehPlayer then
+		local pos  = getPos( vehPlayer )
+		vehPlayer:AddModifier( "hp", "- 1000000" )
+		CreateEffectTTLed( "ET_PS_GREEN_SMOKE1", pos + CVector( 8, 0, 7) , Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 5000 )		
+		CreateEffectTTLed( "ET_PS_GREEN_SMOKE1", pos + CVector( 9, 0, -2) , Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 5000 )		
+		CreateEffectTTLed( "ET_PS_GREEN_SMOKE1", pos + CVector( -4, 0, 4) , Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 5000 )		
+	end
+</script>
+</trigger>
+
+
+<trigger	Name="trSave1"	active="0">
+	<event	timeout="2.5"		eventid="GE_TIME_PERIOD" />
+<script>           
+		trigger:Deactivate()
+		SetVar("Checkpoints", (GetVar("Checkpoints").AsInt + 1))
+		SaveGame( "ng1_dv7_AfterRun" )
+</script>
+</trigger>
+
+	<trigger	Name="trSave2"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="WayPoint1075"/>
+		<script>           
+				trigger:Deactivate()
+				SetVar("Checkpoints", (GetVar("Checkpoints").AsInt + 1))
+				SaveGame( "ng1_dv7_Run" )
+		</script>
+	</trigger>
+
+<trigger	Name="trWin" active="0">
+	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+<script>
+		StopPlayingCustomMusic()
+   	trigger:Deactivate()
+		loadedStatus = "firstLoad"
+		Intermission:Show("ng1_dv8", "locStart", -217)
+</script>
+</trigger>
+
+
+	<trigger	Name="trShroomNote1"	active="1">
+	<event	eventid="GE_OBJECT_ENTERS_LOCATION"	ObjName="WayPoint1078" />
+		<script>           
+			trigger:Deactivate()
+
+			AddImportantFadingMsgId("fm_player_notification_received")
+			AddFadingMsgId("fm_player_shroom_bonus_notification")
+		</script>
+	</trigger>
+	
+	<trigger	Name="trShroomNote2"	active="0">
+	<event	timeout="20"		eventid="GE_TIME_PERIOD" />
+		<script>           
+			trigger:Deactivate()
+
+			local shroomCalcParam = StringToTable(GetVar("ShroomCalcParam").AsString)
+			AddImportantFadingMsgId("fm_player_notification_received")
+			AddFadingMsgByStrIdFormatted("fm_player_shroom_bonus_complete", ShroomRewardCalc(shroomCalcParam[1], shroomCalcParam[2], shroomCalcParam[3], shroomCalcParam[4]))
+		</script>
+	</trigger>
+	
+	<trigger	Name="trToxicity"	active="0">
+		<event	timeout="0.5"		eventid="GE_TIME_PERIOD" />
+		<script>
+			local count = GetVar("ToxicityCount").AsInt
+			local playa = GetPlayerVehicle()
+			local dist
+			if playa then
+				dist = Dist(playa, GetEntityByName("Boss_mimic_zone"))
+				println(dist)
+				if dist>400 then
+					if getObj("trBossToxicGate"):IsActivated() == 0 then
+						playa:AddModifier("hp", "- 5")
+					else
+						playa:AddModifier("hp", "- 30")
+					end
+
+					if math.floor(count/10)==count/10 then
+						RuleConsole("g_postEffect DamageIntegrated")
+						AddImportantFadingMsgId("fm_player_toxicity")
+					end
+					
+					if count>=50 then
+						AddFadingMsgId("fm_player_toxicity_detail")
+						count = 0
+					end
+				end
+			end
+			
+			count = count + 1
+			SetVar("ToxicityCount", count)
+		</script>
+	</trigger>
+</triggers>

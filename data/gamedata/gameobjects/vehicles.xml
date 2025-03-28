@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+  $Id: Vehicles.xml,v 1.8 2006/01/26 09:17:42 vano Exp $
+-->
+
+
+<Prototypes>
+<!-- 
+==========================================================================================
+																				Машина игрока 
+==========================================================================================
+-->
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "MHVehicle"
+		ResourceType					= "VEHICLE"
+		EnemyType				="BOSS"
+		DiffRatio							= "9.0"
+		MaxEngineRpm					= "10000"
+		LowGearShiftLimit			= "5000"
+		HighGearShiftLimit		= "7000"
+		SteeringSpeed					= "0.5"
+		DriftCoeff						= "0.0"
+		HornSound							= "ET_S_HORN01"
+		CameraHeight          = "4"
+		CameraMaxDist					= "50"
+		AdditionalWheelsHover	= "0.2"
+		DecisionMatrix				= "vehiclemain.lua"
+		HitForce              = "10"
+		SteeringN							= "1.4"
+		SteeringTime					= "1.8"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound	= "3000"                                        
+		LookRadius						= "250.0"
+		IntersectionRadius		= "4.5"
+		TakingRadius					= "30.0"
+		ForMultiplayer				= "true"
+		MassSize							= "4 3 9"
+		MassTranslation				= "0 -0.9 -0.2"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		WheelSpringCoeffSmall	= "5000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "400.0f"
+		WheelDownDampingCoeff	= "700.0f"
+		WheelSuspensionRange	= "0.4"
+		WheelCriticalSuspensionDelta	= "0.3"
+		AllowedRoles					= "roleMeat roleCheater"
+		Abstract 			= "true"	>
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "HUNTER_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "HUNTER_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription 	id = "MAIN_GUN_SLOT" 	partResourceType = "SMALL_GUN" 			lpName = "LP_BIG02" />
+				<PartDescription 	id = "AUX_GUN_SLOT" 	partResourceType = "BIG_GUN" 				lpName = "LP_BIG01" />
+				<PartDescription 	id = "THORN_SLOT" 	partResourceType = "SPECIAL_WEAPON" 				lpName = "LP_PART01" />
+				<PartDescription 		id = "MINE_PUSHER_SLOT" 			partResourceType = "SPECIAL_WEAPON" lpName = "LP_GIANT02" />
+				<PartDescription 		id = "JUMPER_SLOT" 					partResourceType = "JUMPER" lpName = "LP_PART02" />
+				<PartDescription 		id = "NITRO_SLOT" 					partResourceType = "NITRO" lpName = "LP_GIANT01" />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 							id = "CHASSIS"					Prototype = "MHChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "MHWheel01l" steering = "correct" />
+			<Wheel Prototype = "MHWheel01r" steering = "correct" />
+			<Wheel Prototype = "MHWheel02l" />
+			<Wheel Prototype = "MHWheel02r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class				= "Vehicle"
+		Name				= "MHCar"
+		VisibleInEncyclopedia   	= "false"
+		ParentPrototype 		= "MHVehicle">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "MHCab" />
+
+			<Part id = "MAIN_GUN_SLOT"		Prototype = "vulcanDV1" /> 
+			<Part id = "NITRO_SLOT"		Prototype = "nitroDV1" />
+			<Part id = "JUMPER_SLOT"		Prototype = "jumperDV1" />
+
+<!--
+			<Part id = "AUX_GUN_SLOT"		Prototype = "rocketDV1" />  
+			<Part id = "AUX_GUN_SLOT"		Prototype = "fireDV1" />  
+			<Part id = "AUX_GUN_SLOT"		Prototype = "zenithDV1" />  
+
+			<Part id = "THORN_SLOT"		Prototype = "pilaDV1" />
+			<Part id = "JUMPER_SLOT"		Prototype = "jumperDV1" />
+			<Part id = "MINE_PUSHER_SLOT"		Prototype = "mineDV1" />
+			<Part id = "NITRO_SLOT"		Prototype = "nitroDV1" />
+-->
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class				= "Vehicle"
+		Name				= "MHBoss"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 		= "MHVehicle">
+		<Parts>
+			<Part id = "CHASSIS"							Prototype = "MHBossChassis" />
+			<Part id = "CABIN"							Prototype = "MHCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "zenithDV3" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "rocketDV2" />  
+			<Part id = "THORN_SLOT"				Prototype = "pilaDV3" />
+			<Part id = "MINE_PUSHER_SLOT"		Prototype = "mineDV3" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "HumveeVehicle"
+		ResourceType					= "VEHICLE"
+		EnemyType				="MINIBOSS"
+		DiffRatio							= "9.0"
+		MaxEngineRpm					= "10000"
+		LowGearShiftLimit			= "5000"
+		HighGearShiftLimit		= "7000"
+		SteeringSpeed					= "0.5"
+		DriftCoeff						= "0.0"
+		HornSound							= "ET_S_HORN01"
+		CameraHeight          = "4"
+		CameraMaxDist					= "50"
+		AdditionalWheelsHover	= "0.2"
+		DecisionMatrix				= "vehiclemain.lua"
+		HitForce              = "10"
+		SteeringN							= "1.4"
+		SteeringTime					= "1.8"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound	= "3000"                                        
+		LookRadius						= "250.0"
+		IntersectionRadius		= "4.5"
+		TakingRadius					= "30.0"
+		ForMultiplayer				= "true"
+		MassSize							= "4 3 9"
+		MassTranslation				= "0 -0.9 -0.2"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		WheelSpringCoeffSmall	= "5000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "400.0f"
+		WheelDownDampingCoeff	= "700.0f"
+		WheelSuspensionRange	= "0.4"
+		WheelCriticalSuspensionDelta	= "0.3"
+		AllowedRoles					= "roleRockets"
+		Abstract 			= "true"	>
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "HUNTER_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "HUNTER_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription 	id = "MAIN_GUN_SLOT" 	partResourceType = "SMALL_GUN" 			lpName = "LP_BIG02" />
+				<PartDescription 	id = "AUX_GUN_SLOT" 	partResourceType = "BIG_GUN" 				lpName = "LP_BIG01" />
+				<PartDescription 	id = "THORN_SLOT" 	partResourceType = "SPECIAL_WEAPON" 				lpName = "LP_PART01" />
+				<PartDescription 		id = "MINE_PUSHER_SLOT" 			partResourceType = "SPECIAL_WEAPON" lpName = "LP_GIANT02" />
+				<PartDescription 		id = "JUMPER_SLOT" 					partResourceType = "JUMPER" lpName = "LP_PART02" />
+				<PartDescription 		id = "NITRO_SLOT" 					partResourceType = "NITRO" lpName = "LP_GIANT01" />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 							id = "CHASSIS"					Prototype = "MHChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "HumveeWheel01l" steering = "correct" />
+			<Wheel Prototype = "HumveeWheel01r" steering = "correct" />
+			<Wheel Prototype = "HumveeWheel01l" />
+			<Wheel Prototype = "HumveeWheel01r" />
+		</Wheels>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "Humvee_00"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "HumveeCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "hunter_00_weapon" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV1" />  
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "Humvee_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleMeat"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "DeltaCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "rogue_01_weapon" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV2" />  
+		</Parts>
+	</Prototype>
+	
+<!-- 
+==========================================================================================
+		Враги																				 
+==========================================================================================
+-->
+
+
+<!-- 
+=================
+	  Scout  Prototypes
+=================
+-->
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Scout"
+		ResourceType					= "VEHICLE"
+		EnemyType						="EASY"
+		DiffRatio							= "2.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1000"
+		HighGearShiftLimit		= "2000"
+		SteeringSpeed					= "1.0"
+		AdditionalWheelsHover	="0.1"
+    ForMultiplayer				= "true"		
+		HornSound							= "ET_S_HORN01"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		DecisionMatrix				= "vehiclemain.lua"
+    HitForce              = "10"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "2.5"
+		TakingRadius					= "30.0"
+		DriftCoeff						= "0.3"
+		MassSize							= "2 1 4"
+		MassTranslation				= "0 -0.5 0"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_SMALL"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_SMALL"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_SMALL"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_SMALL"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "300.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles1					= "roleManiac"
+		AllowedRoles					= "roleMeat"
+		Abstract 							= "true"	>
+		<MainPartDescription	id = "CHASSIS" 					partResourceType = "SML1_CHASSIS" >
+			<PartDescription		id = "CABIN" 						partResourceType = "SML1_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription	id = "CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 		lpName = "LP_SML01" />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 		id = "CHASSIS"			Prototype = "sml1Chassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "sml1Wheel01l"  steering = "correct" />
+			<Wheel Prototype = "sml1Wheel01r"  steering = "correct" />
+			<Wheel Prototype = "sml1Wheel02l" />
+			<Wheel Prototype = "sml1Wheel02r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Fighter"
+		ResourceType					= "VEHICLE"
+		EnemyType						="HARD"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_SMALL"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_SMALL"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_SMALL"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_SMALL"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleRockets"
+		Abstract 		= "true"	>  
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "FIGHTER_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "FIGHTER_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription 	id = "CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 			lpName = "LP_SML01" />
+				<PartDescription 	id = "CABIN_BIG_GUN" 		partResourceType = "BIG_GUN" 				lpName = "LP_BIG01" />
+				<PartDescription 	id = "BASKET_SPECIAL_WEAPON" 		partResourceType = "SPECIAL_WEAPON"/>
+			</PartDescription>  
+		</MainPartDescription>
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "fighterChassis" />
+		</Parts>              
+		<Wheels>
+			<Wheel Prototype = "fighterWheel01l" steering = "correct" />
+			<Wheel Prototype = "fighterWheel01r" steering = "correct" />
+			<Wheel Prototype = "fighterWheel02l" />
+			<Wheel Prototype = "fighterWheel02r" />
+		</Wheels>
+	</Prototype>
+
+<!-- 
+=================
+	  Scout 00
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Scout_00"
+		ParentPrototype 			= "Scout"
+		Skin = "24">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "sml1Cab01" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "scout_00_weapon" />
+		</Parts>
+	</Prototype>
+
+<!-- 
+=================
+	  Scout 01
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Scout_01"
+		ParentPrototype 			= "Scout"
+		Skin 									= "14">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "sml2Chassis" />
+			<Part id = "CABIN"							Prototype = "sml2Cab01" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "scout_01_weapon" />
+		</Parts>
+	</Prototype>
+<!-- 
+=================
+	  Scout 02
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Scout_02"
+		ParentPrototype 			= "Fighter">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
+			<Part id = "CABIN"			Prototype = "fighterCab01" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "scout_01_weapon" />
+		</Parts>
+	</Prototype>
+
+
+<!-- 
+=================
+	  Rogue Prototypes
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "pickupVehicle"
+		ResourceType					= "VEHICLE"
+		EnemyType						="HARD"
+		DiffRatio							= "9.0"
+		MaxEngineRpm					= "10000"
+		LowGearShiftLimit			= "5000"
+		HighGearShiftLimit		= "7000"
+		SteeringSpeed					= "0.5"
+		DriftCoeff						= "0.0"
+		HornSound							= "ET_S_HORN01"
+		CameraHeight          = "4"
+		CameraMaxDist					= "50"
+		AdditionalWheelsHover	= "0.2"
+		DecisionMatrix				= "vehiclemain.lua"
+		HitForce              = "10"
+		SteeringN							= "1.4"
+		SteeringTime					= "4.0"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound	= "3000"                                        
+		LookRadius						= "250.0"
+		IntersectionRadius		= "4.5"
+		TakingRadius					= "30.0"
+		ForMultiplayer				= "true"
+		MassSize							= "4 3 9"
+		MassTranslation				= "0 -0.9 -0.2"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "400.0f"
+		WheelDownDampingCoeff	= "700.0f"
+		WheelSuspensionRange	= "0.4"
+		WheelCriticalSuspensionDelta	= "0.3"
+		AllowedRoles					= "roleMeat"
+		Abstract 			= "true"	>
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "HUNTER_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "HUNTER_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription	id = "CABIN_BIG_GUN"		partResourceType = "BIG_GUN" 				lpName = "LP_GUN"	 />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 							id = "CHASSIS"					Prototype = "pickupChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "pickupWheel01r" steering = "correct" />
+			<Wheel Prototype = "pickupWheel01l" steering = "correct" />
+			<Wheel Prototype = "pickupWheel02r" />
+			<Wheel Prototype = "pickupWheel02l" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "ChevroleVehicle"
+		ResourceType					= "VEHICLE"
+		EnemyType						="EASY"
+		DiffRatio							= "9.0"
+		MaxEngineRpm					= "10000"
+		LowGearShiftLimit			= "5000"
+		HighGearShiftLimit		= "7000"
+		SteeringSpeed					= "0.5"
+		DriftCoeff						= "0.0"
+		HornSound							= "ET_S_HORN01"
+		CameraHeight          = "4"
+		CameraMaxDist					= "50"
+		AdditionalWheelsHover	= "0.2"
+		DecisionMatrix				= "vehiclemain.lua"
+		HitForce              = "10"
+		SteeringN							= "1.4"
+		SteeringTime					= "4.0"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound	= "3000"                                        
+		LookRadius						= "250.0"
+		IntersectionRadius		= "4.5"
+		TakingRadius					= "30.0"
+		ForMultiplayer				= "true"
+		MassSize							= "4 3 9"
+		MassTranslation				= "0 -0.9 -0.2"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_SMALL"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_SMALL"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_SMALL"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_SMALL"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "400.0f"
+		WheelDownDampingCoeff	= "700.0f"
+		WheelSuspensionRange	= "0.4"
+		WheelCriticalSuspensionDelta	= "0.3"
+		AllowedRoles					= "roleMeat"
+		Abstract 			= "true"	>
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "HUNTER_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "HUNTER_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription	id = "CABIN_BIG_GUN"		partResourceType = "BIG_GUN" 				lpName = "LP_GUN"	 />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 							id = "CHASSIS"					Prototype = "ChevroleChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "ChevroleWheel01r" steering = "correct" />
+			<Wheel Prototype = "ChevroleWheel01l" steering = "correct" />
+			<Wheel Prototype = "ChevroleWheel02r" />
+			<Wheel Prototype = "ChevroleWheel02l" />
+		</Wheels>
+	</Prototype>
+
+<!-- 
+=================
+	  Rogue 00
+=================
+-->
+
+	<Prototype
+		Class				= "Vehicle"
+		Name				= "Rogue_00"
+		VisibleInEncyclopedia   	= "false"
+		ParentPrototype 		= "pickupVehicle">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "pickupCab" />
+			<Part id = "CABIN_BIG_GUN" 			Prototype = "rogue_00_weapon" />
+		</Parts>
+	</Prototype>
+
+
+<!-- 
+=================
+	  Rogue 01
+=================
+-->
+
+	<Prototype
+		Class				= "Vehicle"
+		Name				= "Rogue_01"
+		VisibleInEncyclopedia   	= "false"
+		ParentPrototype 		= "pickupVehicle">
+		<Parts>
+			<Part id = "CHASSIS"						Prototype = "pickupChassis2" />
+			<Part id = "CABIN"							Prototype = "pickupCab2" />
+			<Part id = "CABIN_BIG_GUN" 			Prototype = "rogue_01_weapon" />
+		</Parts>
+	</Prototype>
+<!-- 
+=================
+	  Rogue 02
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Rogue_02"
+		ParentPrototype 			= "ChevroleVehicle">
+		<Parts>
+			<Part id = "CHASSIS"						Prototype = "ChevroleChassis" />
+			<Part id = "CABIN"							Prototype = "ChevroleCab" />
+			<Part id = "CABIN_BIG_GUN" 			Prototype = "rogue_00_weapon" />
+		</Parts>
+	</Prototype>
+
+<!-- 
+=================
+	  Rogue 03
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Rogue_03"
+		ParentPrototype 			= "ChevroleVehicle">
+		<Parts>
+			<Part id = "CHASSIS"					Prototype = "ChevroleChassis2" />
+			<Part id = "CABIN"						Prototype = "ChevroleCab2" />
+			<Part id = "CABIN_BIG_GUN" 	Prototype = "rogue_01_weapon" />
+		</Parts>
+	</Prototype>
+	
+<!-- 
+=================
+	  Hunter Prototypes
+=================
+-->
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "HunterTruck"
+		ResourceType					= "VEHICLE"
+		EnemyType							=	"MINIBOSS"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleRockets"
+		Abstract 		= "true"	>  
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "truckChassis" >
+			<PartDescription 		id = "CABIN" 				partResourceType = "truckCab" 	lpName = "LP_CAB01" >
+				<PartDescription 		id="CABIN_BIG_GUN" 			partResourceType = "BIG_GUN" 	lpName = "LP_BIG01" />
+				<PartDescription 		id="CABIN_BIG_GUN_2" 		partResourceType = "BIG_GUN" 	lpName = "LP_BIG02" />
+				<PartDescription 		id="CABIN_GIANT_GUN" 		partResourceType = "GIANT_GUN" 	lpName = "LP_GIANT01" />
+			</PartDescription>  
+		</MainPartDescription>
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "truckChassis" />
+		</Parts>              
+		<Wheels>
+			<Wheel Prototype = "truckWheel01l" steering = "correct" />
+			<Wheel Prototype = "truckWheel01r" steering = "correct" />
+			<Wheel Prototype = "truckWheel02l" />
+			<Wheel Prototype = "truckWheel02r" />
+			<Wheel Prototype = "truckWheel02l" />
+			<Wheel Prototype = "truckWheel02r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "HunterRED"
+		ResourceType					= "VEHICLE"
+		EnemyType						="MINIBOSS"
+		DiffRatio							= "2.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1000"
+		HighGearShiftLimit		= "2000"
+		SteeringSpeed					= "1.0"
+		AdditionalWheelsHover	="0.1"
+    ForMultiplayer				= "true"		
+		HornSound							= "ET_S_HORN01"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		DecisionMatrix				= "vehiclemain.lua"
+    HitForce              = "10"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "2.5"
+		TakingRadius					= "30.0"
+		DriftCoeff						= "0.3"
+		MassSize							= "2 1 4"
+		MassTranslation				= "0 -0.5 0"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "300.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles1					= "roleManiac"
+		AllowedRoles					= "roleMeat"
+		Abstract 							= "true"	>
+		<MainPartDescription	id = "CHASSIS" 					partResourceType = "SML3_CHASSIS" >
+			<PartDescription		id = "CABIN" 						partResourceType = "SML3_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription	id = "CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 		lpName = "LP_SML01" />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 		id = "CHASSIS"			Prototype = "sml3Chassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "sml3Wheel01l"  steering = "correct" />
+			<Wheel Prototype = "sml3Wheel01r"  steering = "correct" />
+			<Wheel Prototype = "sml3Wheel02l" />
+			<Wheel Prototype = "sml3Wheel02r" />
+		</Wheels>
+	</Prototype>
+
+<!-- 
+=================
+	   Hunter 00
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Hunter_00"
+		ParentPrototype 			= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truck2Cab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "hunter_00_weapon" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "scout_00_weapon" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "rogue_01_weapon" /> 
+		</Parts>
+	</Prototype>
+
+<!-- 
+=================
+	   Hunter 1
+=================
+-->
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Hunter_01"
+		ParentPrototype 			= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truckCab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "hunter_00_weapon" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "rogue_01_weapon" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "rogue_01_weapon" /> 
+		</Parts>
+	</Prototype>
+	
+<!-- 
+=================
+	   Hunter 1
+=================
+-->
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Hunter_02"
+		ParentPrototype 			= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truckCab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "hunter_00_weapon" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "hunter_00_weapon" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "zenithDV1" /> 
+		</Parts>
+	</Prototype>
+
+<!-- 
+=================
+	   Hunter 03 (RED)
+=================
+-->
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Hunter_03"
+		ParentPrototype = "HunterRED"
+		AllowedRoles	= "roleRockets">
+		<Parts>			
+			<Part id = "CHASSIS"						Prototype = "sml3Chassis" />
+			<Part id = "CABIN"							Prototype = "sml3Cab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "hunter_00_weapon" /> 
+		</Parts>
+	</Prototype>
+	
+<!-- 
+=================
+	   Boss 02
+=================
+-->
+
+<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02_base"
+		ResourceType					= "VEHICLE"
+		EnemyType							=	"BOSS"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "4000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleToxicBoss"
+		Abstract 		= "true"	>  
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "HUNTER_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "HUNTER_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 	lpName = "LP_SML01" />
+				<PartDescription id="CABIN_BIG_GUN" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG01" />
+				<PartDescription id="CABIN_BIG_GUN_2" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG02" />
+				<PartDescription id="CABIN_GIANT_GUN" 	partResourceType = "GIANT_GUN" 	lpName = "LP_GIANT01" />
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="FAKE_BIGBASKET" lpName = "LP_CAB01" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "hunterChassis" />
+		</Parts>
+
+		<Wheels>
+			<Wheel Prototype = "MHWheel01l" steering = "correct" />
+			<Wheel Prototype = "MHWheel01r" steering = "correct" />
+			<Wheel Prototype = "MHWheel02l" />
+			<Wheel Prototype = "MHWheel02r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02"
+		ParentPrototype 			= "Boss_02_base"
+		VisibleInEncyclopedia	= "true" >
+		<Parts>
+			<Part id = "CABIN"						Prototype = "hunterCab02" />
+			<Part id = "CABIN_BIG_GUN"		Prototype = "zenithDV2" /> 
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02_base_dummy"
+		ResourceType					= "VEHICLE"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "4000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleMeat"
+		Abstract 		= "true"	>  
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "HUNTER_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "HUNTER_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 	lpName = "LP_SML01" />
+				<PartDescription id="CABIN_BIG_GUN" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG01" />
+				<PartDescription id="CABIN_BIG_GUN_2" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG02" />
+				<PartDescription id="CABIN_GIANT_GUN" 	partResourceType = "GIANT_GUN" 	lpName = "LP_GIANT01" />
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="FAKE_BIGBASKET" lpName = "LP_CAB01" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "hunterChassis" />
+		</Parts>
+
+		<Wheels>
+			<Wheel Prototype = "MHWheel01l" steering = "correct" />
+			<Wheel Prototype = "MHWheel01r" steering = "correct" />
+			<Wheel Prototype = "MHWheel02l" />
+			<Wheel Prototype = "MHWheel02r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02_dummy"
+		ParentPrototype 			= "Boss_02_base_dummy"
+		VisibleInEncyclopedia	= "true" >
+		<Parts>
+			<Part id = "CABIN"						Prototype = "hunterCab02" />
+			<Part id = "CABIN_BIG_GUN"		Prototype = "hunter_00_weapon" /> 
+		</Parts>
+	</Prototype>
+	
+<!--
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02_base"
+		ResourceType					= "VEHICLE"
+		EnemyType							=	"BOSS"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "4000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleToxicBoss"
+		Abstract 		= "true"	>  
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "HUNTER_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "HUNTER_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 	lpName = "LP_SML01" />
+				<PartDescription id="CABIN_BIG_GUN" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG01" />
+				<PartDescription id="CABIN_BIG_GUN_2" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG02" />
+				<PartDescription id="CABIN_GIANT_GUN" 	partResourceType = "GIANT_GUN" 	lpName = "LP_GIANT01" />
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="FAKE_BIGBASKET" lpName = "LP_CAB01" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "hunterChassis" />
+		</Parts>
+
+		<Wheels>
+			<Wheel Prototype = "hunterWheel01l" steering = "correct" />
+			<Wheel Prototype = "hunterWheel01r" steering = "correct" />
+			<Wheel Prototype = "hunterWheel01l" />
+			<Wheel Prototype = "hunterWheel01r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02"
+		ParentPrototype 			= "Boss_02_base"
+		VisibleInEncyclopedia	= "true" >
+		<Parts>
+			<Part id = "CABIN"						Prototype = "hunterCab02" />
+			<Part id = "CABIN_BIG_GUN"		Prototype = "zenithDV2" /> 
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02_base_dummy"
+		ResourceType					= "VEHICLE"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "4000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleMeat"
+		Abstract 		= "true"	>  
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "HUNTER_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "HUNTER_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" 	partResourceType = "SMALL_GUN" 	lpName = "LP_SML01" />
+				<PartDescription id="CABIN_BIG_GUN" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG01" />
+				<PartDescription id="CABIN_BIG_GUN_2" 	partResourceType = "BIG_GUN" 		lpName = "LP_BIG02" />
+				<PartDescription id="CABIN_GIANT_GUN" 	partResourceType = "GIANT_GUN" 	lpName = "LP_GIANT01" />
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="FAKE_BIGBASKET" lpName = "LP_CAB01" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "hunterChassis" />
+		</Parts>
+
+		<Wheels>
+			<Wheel Prototype = "hunterWheel01l" steering = "correct" />
+			<Wheel Prototype = "hunterWheel01r" steering = "correct" />
+			<Wheel Prototype = "hunterWheel01l" />
+			<Wheel Prototype = "hunterWheel01r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_02_dummy"
+		ParentPrototype 			= "Boss_02_base_dummy"
+		VisibleInEncyclopedia	= "true" >
+		<Parts>
+			<Part id = "CABIN"						Prototype = "hunterCab02" />
+			<Part id = "CABIN_BIG_GUN"		Prototype = "hunter_00_weapon" /> 
+		</Parts>
+	</Prototype>
+-->
+
+<!-- 
+=================
+	   Boss 03
+=================
+-->
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_03_base"
+		EnemyType							=	"BOSS"
+		ResourceType					= "VEHICLE"
+		DiffRatio							= "20.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1500"
+		HighGearShiftLimit		= "2000"
+		AdditionalWheelsHover	= "0.1"
+		SteeringSpeed					= "0.5"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		SteeringN							= "3.0"
+		SteeringTime					= "3.0"
+		HornSound							= "ET_S_HORN01"
+ 		DriftCoeff						= "0.01"	
+		DecisionMatrix				= "vehiclemain.lua"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "5.0"
+		TakingRadius					= "30.0"
+		CameraHeight					= "4"
+		CameraMaxDist					= "16"
+		HitForce							= "10"
+		MassSize							= "4 3 7.5"
+		MassTranslation				= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		ForMultiplayer				= "true"
+		WheelSpringCoeffSmall	= "4000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "600.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles					= "roleBull"
+		Abstract 		= "true"	>  
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "BOSS02_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "BOSS02_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription 	id = "CABIN_BIG_GUN" 		partResourceType = "BIG_GUN" 				lpName = "LP_BIG01" />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "boss02Chassis" />
+		</Parts>              
+		<Wheels>
+			<Wheel Prototype = "boss02Wheel02l" steering = "correct" />
+			<Wheel Prototype = "boss02Wheel01r" steering = "correct" />
+			<Wheel Prototype = "boss02Wheel02l" />
+			<Wheel Prototype = "boss02Wheel02r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Boss_03"
+		ParentPrototype 			= "Boss_03_base"
+		VisibleInEncyclopedia	= "true" >
+		<Parts>
+			<Part id = "CABIN"							Prototype = "boss02Cab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "Boss02ToxicThrower" />  
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Throwable"
+		ResourceType					= "VEHICLE"
+		EnemyType						="EASY"
+		DiffRatio							= "2.0"
+		MaxEngineRpm					= "7000"
+		LowGearShiftLimit			= "1000"
+		HighGearShiftLimit		= "2000"
+		SteeringSpeed					= "1.0"
+		AdditionalWheelsHover	="0.1"
+		ForMultiplayer				= "true"		
+		HornSound							= "ET_S_HORN01"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		DecisionMatrix				= "vehiclemain.lua"
+		HitForce              = "10"
+		LookRadius						= "250.0"
+		IntersectionRadius		= "2.5"
+		TakingRadius					= "30.0"
+		DriftCoeff						= "0.3"
+		MassSize							= "2 1 4"
+		MassTranslation				= "0 -0.5 0"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_SMALL"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_SMALL"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_SMALL"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_SMALL"
+		WheelSpringCoeffSmall	= "9000.0"
+		WheelSpringCoeffBig		= "12000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff	= "300.0f"
+		WheelSuspensionRange	= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+		AllowedRoles1					= "roleManiac"
+		AllowedRoles					= "roleMeat"
+		Abstract 							= "true"	>
+		<MainPartDescription	id = "CHASSIS" 					partResourceType = "SML1_CHASSIS" >
+			<PartDescription		id = "CABIN" 						partResourceType = "SML1_CABIN" 	lpName = "LP_CAB01" />
+			<PartDescription		id = "BASKET" 						partResourceType = "FAKE_BASKET" 	lpName = "LP_CAB01" />
+		</MainPartDescription>
+		<Parts>
+			<Part 		id = "CHASSIS"			Prototype = "throwableChassis" />
+		</Parts>
+		<Wheels />
+	</Prototype>
+	
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Throwable01"
+		ParentPrototype 			= "Throwable"
+		Skin = "24">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "throwableCab01" />
+			<Part id = "BASKET"							Prototype = "throwableCargo01" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Throwable02"
+		ParentPrototype 			= "Throwable"
+		Skin = "24">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "throwableCab02" />
+			<Part id = "BASKET"							Prototype = "throwableCargo01" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Throwable03"
+		ParentPrototype 			= "Throwable"
+		Skin = "24">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "throwableCab03" />
+			<Part id = "BASKET"							Prototype = "throwableCargo01" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "Throwable04"
+		ParentPrototype 			= "Throwable"
+		Skin = "24">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "throwableCab04" />
+			<Part id = "BASKET"							Prototype = "throwableCargo01" />
+		</Parts>
+	</Prototype>
+
+<!-- 
+=================
+	  TRUCK
+=================
+-->
+<!--
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "truckVehicle"
+		ResourceType					= "VEHICLE"
+		EnemyType							=	"MINIBOSS"
+		DiffRatio							= "9.0"
+		MaxEngineRpm					= "10000"
+		LowGearShiftLimit			= "5000"
+		HighGearShiftLimit		= "7000"
+		SteeringSpeed					= "0.5"
+		DriftCoeff						= "0.0"
+		HornSound							= "ET_S_HORN01"
+		CameraHeight          = "4"
+		CameraMaxDist					= "50"
+		AdditionalWheelsHover	= "0.2"
+		DecisionMatrix				= "vehiclemain.lua"
+		HitForce              = "10"
+		SteeringN							= "1.4"
+		SteeringTime					= "4.0"
+		MinNotIdleRpm					= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound	= "3000"                                        
+		LookRadius						= "250.0"
+		IntersectionRadius		= "4.5"
+		TakingRadius					= "30.0"
+		ForMultiplayer				= "true"
+		MassSize							= "4 3 9"
+		MassTranslation				= "0 -0.9 -0.2"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
+		WheelSpringCoeffSmall	= "5000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "400.0f"
+		WheelDownDampingCoeff	= "700.0f"
+		WheelSuspensionRange	= "0.4"
+		WheelCriticalSuspensionDelta	= "0.3"
+		AllowedRoles					= "roleMeat"
+		Abstract 			= "true"	>
+		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "HUNTER_CHASSIS" >
+			<PartDescription 		id = "CABIN" 						partResourceType = "HUNTER_CABIN" 	lpName = "LP_CAB01" >
+				<PartDescription	id = "CABIN_BIG_GUN_1"	partResourceType = "BIG_GUN" 				lpName = "LP_BIG01"	 />
+				<PartDescription	id = "CABIN_BIG_GUN_2"	partResourceType = "BIG_GUN" 				lpName = "LP_BIG02"	 />
+			</PartDescription>
+		</MainPartDescription>
+		<Parts>
+			<Part 							id = "CHASSIS"					Prototype = "truckChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "truckWheel01r" steering = "correct" />
+			<Wheel Prototype = "truckWheel01l" steering = "correct" />
+			<Wheel Prototype = "truckWheel02r" />
+			<Wheel Prototype = "truckWheel02l" />
+			<Wheel Prototype = "truckWheel02r" />
+			<Wheel Prototype = "truckWheel02l" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class				= "Vehicle"
+		Name				= "truckCar"
+		VisibleInEncyclopedia   	= "false"
+		ParentPrototype 		= "truckVehicle">
+		<Parts>
+			<Part id = "CABIN"							Prototype = "truckCab" />
+		</Parts>
+	</Prototype>
+-->
+<!-- 
+=================
+	 Caravan for dv1 and dv2
+=================
+-->
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Van"
+		ResourceType			= "VEHICLE"
+		EnemyType				="HARD"
+		DiffRatio		= "9.0"
+		MaxEngineRpm		= "10000"
+		LowGearShiftLimit	= "2000"
+		HighGearShiftLimit	= "8000"
+		SelfBrakingCoeff	= "0.006"
+		SteeringSpeed		= "0.8"
+		HornSound		= "ET_S_HORN01"
+		MinNotIdleRpm		= "2000"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "6000"
+		CameraHeight            = "4"
+		CameraMaxDist		= "16"
+		SteeringN		= "9.0"
+		SteeringTime		= "7.0"
+		DecisionMatrix		= "vehiclemain.lua"
+		LookRadius			= "250.0"
+		IntersectionRadius	= "4.5"
+		TakingRadius		= "30.0"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast	= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy	= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater	= "ET_PS_VEH_EXP2_MED"
+		MassSize		= "4 3 6"
+		MassTranslation		= "0 -0.5 0"
+		DriftCoeff		= "0.01"
+		WheelSpringCoeffSmall		= "8000.0"
+		WheelSpringCoeffBig		= "10000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff		= "600.0f"
+		WheelSuspensionRange		= "0.35"
+		WheelCriticalSuspensionDelta= "0.1"
+		AllowedRoles		= "roleMeat roleBarrier"
+		Abstract 		= "true">
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "BUG_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "BUG_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" partResourceType = "SMALL_GUN" lpName = "LP_SML01" />
+			</PartDescription>
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"	Prototype = "vanChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "vanWheel01" steering = "correct" />
+			<Wheel Prototype = "vanWheel01" steering = "correct" />
+			<Wheel Prototype = "vanWheel01" />
+			<Wheel Prototype = "vanWheel01" />
+		</Wheels>
+
+	</Prototype>
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Van_00"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 	= "Van">
+		<Parts>
+			<Part id = "CABIN"			Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"	Prototype = "vulcanDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Van_01"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 	= "Van">
+		<Parts>
+			<Part id = "CABIN"			Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"	Prototype = "vulcanDV2" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Van_02"
+		EnemyType				="MINIBOSS"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 	= "Van">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "swatvanChassis" />
+			<Part id = "CABIN"			Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"	Prototype = "zenithDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Van_03"
+		EnemyType				="MINIBOSS"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 	= "Van">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "swatvanChassis" />
+			<Part id = "CABIN"			Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"	Prototype = "rogue_02_weapon" />
+		</Parts>
+	</Prototype>
+<!-- 
+=================
+	 New Police
+=================
+-->
+	<Prototype
+		Class						= "Vehicle"
+		Name						= "Police_00"
+		AllowedRoles				= "roleMeat roleCheater roleBarrier"
+		ParentPrototype 			= "Fighter">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
+			<Part id = "CABIN"				Prototype = "fighterCab01" />
+			<Part id = "CABIN_SMALL_GUN" 	Prototype = "scout_00_weapon" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class						= "Vehicle"
+		Name						= "Police_01"
+		AllowedRoles				= "roleMeat roleCheater roleBarrier"
+		ParentPrototype 			= "Fighter">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
+			<Part id = "CABIN"				Prototype = "fighterCab02" />
+			<Part id = "CABIN_SMALL_GUN" 	Prototype = "scout_01_weapon" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class						= "Vehicle"
+		Name						= "Police_02"
+		AllowedRoles				= "roleMeat roleBarrier"
+		ParentPrototype 			= "Fighter">
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
+			<Part id = "CABIN"				Prototype = "fighterCab02" />
+			<Part id = "CABIN_SMALL_GUN" 	Prototype = "rogue_01_weapon" />
+		</Parts>
+	</Prototype>
+	
+<!--
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Bug"
+		ResourceType			= "VEHICLE"
+		DiffRatio		= "9.0"
+		MaxEngineRpm		= "10000"
+		LowGearShiftLimit	= "2000"
+		HighGearShiftLimit	= "8000"
+		SelfBrakingCoeff	= "0.006"
+		SteeringSpeed		= "0.8"
+		HornSound		= "ET_S_HORN01"
+		MinNotIdleRpm		= "2000"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "6000"
+		CameraHeight            = "4"
+		CameraMaxDist		= "16"
+		SteeringN		= "9.0"
+		SteeringTime		= "7.0"
+		DecisionMatrix		= "vehiclemain.lua"
+		LookRadius			= "250.0"
+		IntersectionRadius	= "4.5"
+		TakingRadius		= "30.0"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast	= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy	= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater	= "ET_PS_VEH_EXP2_MED"
+		MassSize		= "4 3 6"
+		MassTranslation		= "0 -0.5 0"
+		DriftCoeff		= "0.01"
+		WheelSpringCoeffSmall		= "8000.0"
+		WheelSpringCoeffBig		= "10000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff		= "600.0f"
+		WheelSuspensionRange		= "0.35"
+		WheelCriticalSuspensionDelta= "0.1"
+		AllowedRoles		= "roleMeat roleBarrier"
+		Abstract 		= "true">
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "BUG_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "BUG_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" partResourceType = "SMALL_GUN" lpName = "LP_SML01" />
+				<PartDescription id="BASKET_SPECIAL_WEAPON" partResourceType = "SPECIAL_WEAPON"/>
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="BUG_BASKET" lpName = "LP_BSK01" >
+			</PartDescription>
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"	Prototype = "bugChassis" />
+		</Parts>
+		<Wheels>
+			<Wheel Prototype = "bugWheel01" steering = "correct" />
+			<Wheel Prototype = "bugWheel01" steering = "correct" />
+			<Wheel Prototype = "bugWheel02" />
+			<Wheel Prototype = "bugWheel02" />
+		</Wheels>
+
+	</Prototype>
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "r1m1_CaravanBug01"
+		VisibleInEncyclopedia   = "false"
+		ParentPrototype 	= "Bug">
+		<Parts>
+			<Part id = "CABIN"			Prototype = "bugCab01" />
+			<Part id = "BASKET"			Prototype = "bugCargo03" />
+			<Part id = "CABIN_SMALL_GUN"	Prototype = "vulcanDV1" />
+		</Parts>
+	</Prototype>
+-->
+
+<!-- Cutscene Prototypes -->
+	<Prototype
+		Class									= "Vehicle"
+		Name									= "IntroCar"
+		ParentPrototype 			= "ChevroleVehicle">
+		<Parts>
+			<Part id = "CHASSIS"					Prototype = "ChevroleChassis2" />
+			<Part id = "CABIN"						Prototype = "ChevroleCab2" />
+		</Parts>
+	</Prototype>
+
+<!-- New Game + Prototypes -->
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Light_00"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "EASY"
+		ParentPrototype 		= "Scout"
+		Skin = "24">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "sml1Cab01" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "vulcanDV1" />
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Light_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "EASY"
+		ParentPrototype 		= "Scout">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "sml2Chassis" />
+			<Part id = "CABIN"					Prototype = "sml2Cab01" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "vulcanDV2" />
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Light_02"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "EASY"
+		ParentPrototype 		= "Fighter">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "fighterChassis"/>
+			<Part id = "CABIN"					Prototype = "fighterCab02" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "vulcanDV3" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Light_03"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "EASY"
+		ParentPrototype 		= "HunterRED">
+		<Parts>			
+			<Part id = "CHASSIS"				Prototype = "sml3Chassis" />
+			<Part id = "CABIN"					Prototype = "sml3Cab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "vulcanDV3" /> 
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Light_04"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "EASY"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "vulcanDV2" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Light_05"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "EASY"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
+			<Part id = "CABIN"					Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "vulcanDV3" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Shotgun_00"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "ChevroleVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "ChevroleChassis2" />
+			<Part id = "CABIN"					Prototype = "ChevroleCab2" />
+			<Part id = "CABIN_BIG_GUN" 			Prototype = "rogue_02_weapon" />
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Shotgun_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "pickupVehicle">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "pickupCab" />
+			<Part id = "CABIN_BIG_GUN" 			Prototype = "shotgunDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Shotgun_02"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "pickupVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "pickupChassis2" />
+			<Part id = "CABIN"					Prototype = "pickupCab2" />
+			<Part id = "CABIN_BIG_GUN" 			Prototype = "shotgunDV1" />
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Shotgun_03"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "HunterRED">
+		<Parts>			
+			<Part id = "CHASSIS"				Prototype = "sml3Chassis" />
+			<Part id = "CABIN"					Prototype = "sml3Cab01" />
+			<Part id = "CABIN_SMALL_GUN" 		Prototype = "shotgunDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Shotgun_04"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "shotgunDV1" /> 
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Shotgun_05"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
+			<Part id = "CABIN"					Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "shotgunDV2" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Medium_00"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Medium_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV2" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Medium_02"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
+			<Part id = "CABIN"					Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV2" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Medium_03"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
+			<Part id = "CABIN"					Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV3" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Medium_04"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "vanCab01" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "rocketDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Medium_05"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "HARD"
+		ParentPrototype 		= "Van">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
+			<Part id = "CABIN"					Prototype = "vanCab02" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "rocketDV1" />
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Heavy_00"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truck2Cab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "vulcanDV2" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "vulcanDV2" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "hunter_00_weapon" /> 
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Heavy_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truck2Cab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "vulcanDV3" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "vulcanDV3" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "rocketDV1" /> 
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Heavy_02"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truckCab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "zenithDV1" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "zenithDV1" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "rocketDV1" /> 
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Heavy_03"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truckCab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "hunter_00_weapon" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "hunter_00_weapon" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "shotgunDV2" /> 
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Heavy_04"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truckCab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "rocketDV1" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "rocketDV1" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "shotgunDV2" /> 
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Heavy_05"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HunterTruck">
+		<Parts>
+			<Part id = "CABIN"					Prototype = "truckCab" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "rocketDV2" /> 
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Humvee_00"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "HumveeCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV2" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV2" />  
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Humvee_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "DeltaCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "rocketDV1" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV3" />  
+		</Parts>
+	</Prototype>
+	
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Boss_02"
+		ParentPrototype 		= "Boss_02_base"
+		VisibleInEncyclopedia	= "true" >
+		<Parts>
+			<Part id = "CABIN"					Prototype = "hunterCab02" />
+			<Part id = "CABIN_BIG_GUN"			Prototype = "zenithDV3" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "hunter_00_weapon" /> 
+		</Parts>
+	</Prototype>
+</Prototypes>

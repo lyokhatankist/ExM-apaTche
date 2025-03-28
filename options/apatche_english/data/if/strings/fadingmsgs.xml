@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="fm_relation_changed"
+		value="You have become enemy to one of groups." />
+
+	<string
+		id="fm_hunt_completed_no_enemies"
+		value="Hunting complete. All enemies killed." />
+
+	<string
+		id="fm_hunt_completed_time_out"
+		value="Hunting complete. All destroyed trucks were paid for." />
+
+	<string
+		id="fm_dynamic_quest_completed"
+		value="You have completed mission '%1s'" />
+
+	<string
+		id="fm_dynamic_quest_timelimit"
+		value="Time for mission '%1s' has finished. Mission failed." />
+
+	<string
+		id="fm_dynamic_quest_failed_because_hirer_becames_enemy"
+		value="You failed mission '%1s', because you have spoilt the relations with employer group." />
+
+	<string
+		id="fm_convoy_failed"
+		value="You failed to protect the truck. There is no point count on reward." />
+
+	<string
+		id="fm_perk_given"
+		value="You received the rank of '%1s'" />
+
+	<string
+		id="fm_perk_lost"
+		value="You've lost the rank of '%1s'" />
+
+	<string
+		id="fm_quest_item_given"
+		value="You received an item: %1s" />
+
+	<string
+		id="fm_quest_item_lost"
+		value="You've given away an item: %1s" />
+
+	<string
+		id="fm_history_got"
+		value="New story appeared in the Log." />
+
+	<string
+		id="fm_book_got"
+		value="New book appeared in the Log." />
+
+	<string
+		id="fm_fail_quest"
+		value="You have failed the mission." />
+
+	<string
+		id="fm_complete_quest"
+		value="Journal updated." />
+
+	<string
+		id="fm_take_quest"
+		value="Journal updated." />
+
+	<string
+		id="fm_cant_move"
+		value="I do not know where the road leads to. That is why I am staying here." />
+
+	<string
+		id="fm_not_suzet"
+		value="The place looks weird. We’d better get away from here." />
+
+	<string
+		id="fm_race_start_1"
+		value="Countdownт:  ...%1d…" />
+
+	<string
+		id="fm_race_start_0"
+		value=" S T A R T" />
+
+	<string
+		id="fm_race_start_false"
+		value="False start." />
+
+	<string
+		id="fm_race_chekpoint"
+		value="Checkpoint!" />
+
+	<string
+		id="fm_race_chekpoint_notright"
+		value="False checkpoint!" />
+
+	<string
+		id="fm_race_firslap"
+		value="First lap complete" />
+
+	<string
+		id="fm_race_finish"
+		value="F I N I S H" />
+
+	<string
+		id="fm_race_finish_1"
+		value="FIRST" />
+
+	<string
+		id="fm_race_finish_2"
+		value="SECOND" />
+
+	<string
+		id="fm_race_finish_3"
+		value="THIRD" />
+
+	<string
+		id="fm_race_finish_less"
+		value="You are at the %1d place from %2d" />
+
+	<string
+		id="fm_race_finish_lose"
+		value="You have lost the race" />
+
+	<string
+		id="fm_race_somedie"
+		value="One of the participants has withdrawn" />
+
+	<string
+		id="fm_town_enter"
+		value="Push signal (%1m) to enter the city" />
+
+	<string
+		id="fm_town_cant_enter_enemy"
+		value="You can not enter the city because it is hostile camp" />
+
+	<string
+		id="fm_town_cant_enter_locked"
+		value="You can not enter the city because it is closed" />
+
+	<string
+		id="fm_take_chest_hint"
+		value="Push (%1m), to pick up the cargo" />
+
+	<string
+		id="fm_all_chests_taken"
+		value="Cargo has picked up" />
+
+	<string
+		id="fm_item_pickup"
+		value="You have picked up item: %1s" />
+
+	<string
+		id="fm_sunrise"
+		value="Morning comes." />
+
+	<string
+		id="fm_day"
+		value="Hard day begins" />
+
+	<string
+		id="fm_sunset"
+		value="Evening comes" />
+
+	<string
+		id="fm_night"
+		value="Night closed in" />
+
+	<string
+		id="fm_save_is_not_allowed"
+		value="You can't save game right now" />
+
+	<string
+		id="fm_player_add_money"
+		value="You received %1d dollars!" />
+
+	<string
+		id="fm_player_give_money"
+		value="You've given away %1d dollars." />
+
+	<string
+		id="fm_player_add_thing"
+		value="You have get item %1p!" />
+
+	<string
+		id="fm_cheat_is_not_allowed"
+		value="@FF22FF22using of cheats @FF2222FFЗАПРЕЩЕНО@FFFFFFFF" />
+
+	<string
+		id="fm_cheat_is_allowed"
+		value="@FF22FF22on game test, @FF2222FFusing of cheats can cause errors!@FFFFFFFF" />
+
+	<string
+		id="fm_items_remained_on_ground"
+		value="There is not enough space in the body. To see the equipment window push %1m" />
+
+	<string
+		id="fm_mp_player_killed_player"
+		value="%1s%2s killed %3s" />
+
+	<string
+		id="fm_mp_player_was_killed"
+		value="%1s%2s died" />
+
+	<string
+		id="fm_conguration"
+		value="CONGRATULATIONS !!!" />
+
+	<string
+		id="fm_complete_mission"
+		value="You've completed the demo version!" />
+
+	<string
+		id="fm_failed_mission"
+		value="You've failed to pass the demo version!" />
+
+	<string
+		id="fm_start_demo_mission1"
+		value="Don't forget the time for the mission is limited. The fate of people is in your hands!" />
+
+	<string
+		id="fm_start_demo_mission2"
+		value="Check your objectives @FF2222FF(q)@FFFFFFFF" />
+
+	<string
+		id="fm_time"
+		value="Remaining: @FFFF4444  %1d : %2d : %3d @FFFFFFFF" />
+
+	<string
+		id="fm_n"
+		value="You've completed the demo version!" />
+
+	<string
+		id="fm_test"
+		value="p1: %1s; p2: %2d; p3: %3p" />
+
+	<string
+		id="fm_player_add_bonus"
+		value="You received %1d bonus points" />
+		
+	<!-- ApaTchE -->
+	
+	<string
+		id="fm_player_notification_received"
+		value="Notification received." />
+		
+	<string
+		id="fm_player_shroom_bonus_notification"
+		value="@ffccccccThe government will @ffef8d00reward @ffccccccyou for destroying as many @ffff2626mutant mushrooms @ffccccccas you can at the @ffef8d00end of the mission@ffcccccc." />
+		
+	<string
+		id="fm_player_shroom_bonus_complete"
+		value="@ffccccccThe government @ffef8d00reward @ffccccccfor destroying @ffff2626mutant mushrooms @ffccccccwill amount to @ffef8d00%1d @ffccccccbonus points." />
+		
+	<string
+		id="fm_player_toxicity"
+		value="@ffff2626You are in a contaminated area!" />
+		
+	<string
+		id="fm_player_toxicity_detail"
+		value="@ffccccccFollow the @ffef8d00GPS-navigator@ffcccccc, to escape @ffef8d00to safety@ffcccccc!" />
+</resource>

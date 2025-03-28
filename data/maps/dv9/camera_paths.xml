@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<Paths>
+	<Path Name = "Start_cam_00">
+<Point  coord="2470.937 333.581 2476.958" rotation="-0.091 -0.134 0.012 0.987"/>
+<Point  coord="2531.101 325.606 2540.445" rotation="-0.067 0.156 -0.011 0.985"/>
+<Point  coord="2516.980 319.303 2596.925" rotation="-0.145 0.349 -0.055 0.924"/>
+
+
+	</Path>
+	
+	<Path Name = "Credits_Cam01">
+		<Point  coord="4037.377 400.169 1935.187" rotation="0.081 0.876 0.449 0.159" speed="1" />
+		<Point  coord="3974.202 399.530 1965.337" rotation="0.133 0.833 0.487 0.227" speed="1.75" />
+		<Point  coord="3869.773 366.543 1950.682" rotation="-0.069 0.903 0.159 -0.394" speed="2.25" />
+		<Point  coord="3694.867 307.911 2002.345" rotation="-0.019 0.956 0.063 -0.284" speed="3" />
+		<Point  coord="3612.962 308.132 1896.155" rotation="0.003 -0.693 -0.003 0.721" speed="1.75" />
+		<Point  coord="3616.478 305.111 1884.798" rotation="0.039 -0.604 -0.030 0.796"speed="1"  />
+	</Path>
+	
+	<Path Name = "Credits_Cam02">
+		 <Point  coord="8.000 2.500 0.000" zoom="12.5"/>
+		 <Point  coord="-31.000 1.000 120.000" zoom="3"/>
+		 <Point  coord="-54.000 -4.500 251.000" zoom="11.5"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam03">
+		<Point  coord="3616.510 414.246 2896.292" rotation="0.011 0.880 0.021 0.475"/>
+		<Point  coord="3635.502 397.620 3244.876" rotation="0.038 0.922 0.093 0.374"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam04">
+		 <Point  coord="11.000 2.300 13.000" zoom="1.25"/>
+		 <Point  coord="9.000 1.900 16.000" zoom="1.25"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam05">
+		<Point  coord="888.596 291.589 1277.239" rotation="-0.002 0.683 -0.002 0.731"/>
+		<Point  coord="891.593 292.861 1240.954" rotation="-0.009 0.658 -0.008 0.753"/>
+		<Point  coord="870.317 289.976 1162.264" rotation="0.008 0.618 0.006 0.786"/>
+		<Point  coord="887.018 292.931 1125.713" rotation="0.005 0.995 0.052 0.086"/>
+		<Point  coord="1047.802 290.164 1080.719" rotation="-0.011 0.902 0.023 -0.432"/>
+		<Point  coord="1163.481 300.883 1018.822" rotation="-0.037 0.938 0.106 -0.328"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam06">
+		 <Point  coord="-10.000 -3.000 -14.000" zoom="3"/>
+		 <Point  coord="-7.000 -0.500 -10.000" zoom="2"/>
+		 <Point  coord="-5.000 4.000 -6.000" zoom="5.5"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam07">
+		<Point  coord="955.646 296.318 2486.522" rotation="-0.003 0.983 0.016 -0.181"/>
+		<Point  coord="934.412 300.929 2288.530" rotation="0.001 -0.781 -0.001 0.624"/>
+		<Point  coord="996.281 337.836 2111.629" rotation="-0.159 -0.324 0.056 0.931"/>
+		<Point  coord="1282.215 304.202 2175.168" rotation="0.012 0.605 0.009 0.796"/>
+		<Point  coord="1380.818 305.226 2305.628" rotation="-0.004 0.795 -0.005 0.607"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam08">
+		 <Point  coord="-8.000 1.000 -14.000" zoom="3.75"/>
+		 <Point  coord="-7.000 0.500 -13.000" zoom="3.85"/>
+	</Path>
+	
+	<Path Name = "Credits_Cam09">
+		<Point  coord="3299.922 334.501 600.117" rotation="-0.001 -0.736 0.001 0.677" speed="1" />
+		<Point  coord="3288.222 293.954 603.146" rotation="-0.002 -0.739 0.002 0.673" speed="1"/>
+		<Point  coord="3055.916 299.220 629.362" rotation="-0.339 -0.638 0.369 0.585" speed="2"/>
+		<Point  coord="2746.157 299.951 683.494" rotation="-0.339 -0.638 0.369 0.585" speed="2.5"/>
+		<Point  coord="2709.424 302.267 695.397" rotation="-0.009 -0.752 0.010 0.659" speed="2.5"/>
+		<Point  coord="2707.758 308.058 704.511" rotation="0.003 -0.738 -0.003 0.675" speed="1"/>
+		<Point  coord="2706.522 308.492 709.791" rotation="-0.015 -0.818 0.021 0.575" speed="1"/>
+	</Path>
+</Paths>

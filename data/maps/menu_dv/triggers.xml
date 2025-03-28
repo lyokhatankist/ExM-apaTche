@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<triggers>
+<!-- -->
+	<trigger Name="trStartMusic" active="1">
+		<event timeout="0.1" eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+
+			PlayCustomMusic("mainmenu")
+			RuleConsole("g_fixedCameraAngle 9")
+			RuleConsole("g_fixedCameraRotationCoeff 12")
+		</script>
+	</trigger>
+
+	<trigger	Name="GlobalVar"	active="1">
+		<event	timeout="0"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+
+			SetVar("Fade", 1)
+		</script>
+	</trigger>
+
+	<trigger Name="trStartMap" active="1">
+		<event timeout="0.1" eventid="GE_TIME_PERIOD" />
+		<script>
+			SetGameTime( 12, 0, 0, 0, 0, 0)
+		
+			trigger:Deactivate()
+
+--			UpdateCinematic( 1 )
+	
+			SetCameraPosFrom ( CVector( 1209.245, 506.466, 612.878 ), CVector( 245.983, 348.475, 1120.949 ) )
+			
+			
+		</script>
+	</trigger>
+	
+	
+	<trigger Name="trStartMap1" active="0">
+		<event timeout="0.1" eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+
+			local lFade = GetVar("Fade").AsInt
+
+			Fly("Start_menu", CINEMATIC_NO_AIM, 0, 30, 0, 0, 0, 0, 1)
+			StartCinematic()
+
+			if lFade == 1 then
+				UpdateCinematic( 1 )
+			end
+			TActivate("trStartMap_End")
+		</script>
+	</trigger>
+
+	<trigger Name="trStartMap_End" active="0">
+		<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
+		<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
+		<script>
+			trigger:Deactivate()
+
+			SetVar("Fade", 0)
+
+			TActivate("trStartMap")
+		</script>
+	</trigger>
+
+	<trigger	Name="trSelectRnd"	active="1">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+		<script>
+		    trigger:Deactivate()
+			local rnd = random(3)
+			println("Select process = "..rnd)
+			TActivate("trProcess"..rnd)
+		</script>
+	</trigger>
+
+
+</triggers>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Paths>
+	<Path
+		Name="Boss_run">
+		<Point
+			coord="2731.833 347.086" />
+
+		<Point
+			coord="2815.110 319.210" />
+
+		<Point
+			coord="2890.574 324.615" />
+
+		<Point
+			coord="2888.544 402.820" />
+
+		<Point
+			coord="2783.987 494.325" />
+
+		<Point
+			coord="2642.804 443.006" />
+
+		<Point
+			coord="2581.253 382.012" />
+
+		<Point
+			coord="2541.130 339.681" />
+
+		<Point
+			coord="2504.065 367.204" />
+
+		<Point
+			coord="2497.396 416.506" />
+
+		<Point
+			coord="2525.925 458.256" />
+
+		<Point
+			coord="2576.929 467.247" />
+
+		<Point
+			coord="2649.909 414.113" />
+
+		<Point
+			coord="2708.680 368.561" />
+
+		<Point
+			coord="2792.417 366.224" />
+
+		<Point
+			coord="2835.682 429.663" />
+
+		<Point
+			coord="2732.601 490.995" />
+
+		<Point
+			coord="2663.096 491.218" />
+
+		<Point
+			coord="2627.950 458.318" />
+
+		<Point
+			coord="2634.015 418.853" />
+
+		<Point
+			coord="2679.872 377.226" />
+	</Path>
+
+	<Path
+		Name="Boss_spawn">
+		<Point
+			coord="2717.605 338.198" />
+
+		<Point
+			coord="2632.456 490.434" />
+
+		<Point
+			coord="2675.170 506.150" />
+
+		<Point
+			coord="2833.466 449.154" />
+
+		<Point
+			coord="2902.969 363.205" />
+
+		<Point
+			coord="2868.751 296.586" />
+
+		<Point
+			coord="2809.501 290.819" />
+	</Path>
+
+	<Path
+		Name="rol1_boss">
+		<Point
+			coord="928.673 1426.984" />
+
+		<Point
+			coord="930.788 1398.913" />
+
+		<Point
+			coord="942.785 1367.872" />
+	</Path>
+
+<!--
+	<Path
+		Name="rol1_pl">
+		<Point
+			coord="1001.745 1246.116" />
+
+		<Point
+			coord="985.840 1266.814" />
+
+		<Point
+			coord="982.618 1292.875" />
+	</Path>
+
+	<Path
+		Name="rol1_pl2">
+		<Point
+			coord="1023.426 1274.260" />
+
+		<Point
+			coord="1038.078 1250.454" />
+	</Path>
+-->
+	<Path
+		Name="rol1_pl">
+		<Point
+			coord="989 1302" />
+
+		<Point
+			coord="999 1286" />
+	</Path>
+
+	<Path
+		Name="rol1_pl2">
+		<Point
+			coord="1023.426 1274.260" />
+
+		<Point
+			coord="1038.078 1250.454" />
+	</Path>
+</Paths>

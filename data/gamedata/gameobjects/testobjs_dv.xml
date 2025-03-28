@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+  $Id: Vehicles.xml,v 1.8 2006/01/26 09:17:42 vano Exp $
+-->
+
+<Prototypes>
+
+
+	<Prototype
+		Class 									= "VehicleRoleRockets"
+		Name										= "VehicleRoleRockets"
+
+		MaxRadiusToStop 				= "100"
+		MinRadiusToStop 				= "75"
+		MaxRadiusToStartMoving 	= "120"
+		MinRadiusToStartMoving 	= "50"
+		TimeForLockUp  					= "4"
+		TimeToKeepFire 					= "5"
+	/>
+
+
+	<Prototype
+		Class 									= "VehicleRoleSideAttack"
+		Name										= "VehicleRoleSideAttack"
+
+		ChaseDistance 					=	"25"
+		SpotRadius							= "40"
+	/>
+
+
+	<Prototype
+		Class							= "Vehicle"
+		Name							= "SideCarP"
+		ResourceType			= "VEHICLE"
+
+		DiffRatio					= "2.0"
+		MaxEngineRpm			= "7000"
+		LowGearShiftLimit	= "1000"
+		HighGearShiftLimit= "2000"
+		HitForce          = "10"
+		SteeringSpeed			= "1.0"
+		
+		AdditionalWheelsHover = "0.1"
+		MinNotIdleRpm			= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+		
+		DecisionMatrix		= "vehiclemain.lua"
+		LookRadius				= "250.0"
+		IntersectionRadius	= "2.5"
+		TakingRadius			= "30.0"
+		DriftCoeff				= "0.3"
+		MassSize					= "2 1 4"
+		MassTranslation		= "0 -0.5 0.5"
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_SMALL"
+		DestroyEffectBlast	= "ET_PS_VEH_EXP2_SMALL"
+		DestroyEffectEnergy	= "ET_PS_VEH_EXP3_SMALL"
+		DestroyEffectWater	= "ET_PS_VEH_EXP2_SMALL"
+		WheelSpringCoeffSmall		= "3000.0"
+		WheelSpringCoeffBig		= "5000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff		= "300.0f"
+		WheelSuspensionRange		= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+
+		AllowedRoles		= "VehicleRoleSideAttack"		
+
+		ForMultiplayer	= "true"
+		Abstract 			= "true"	>
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "SML3_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "SML3_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" partResourceType = "SMALL_GUN" lpName = "LP_SML01" />
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="FAKE_BASKET" lpName = "LP_CAB01" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "sml3Chassis" />
+		</Parts>
+
+		<Wheels>
+			<Wheel Prototype = "sml3Wheel01l"  steering = "correct" />
+			<Wheel Prototype = "sml3Wheel01r"  steering = "correct" />
+			<Wheel Prototype = "sml3Wheel01l" />
+			<Wheel Prototype = "sml3Wheel01r" />
+		</Wheels>
+	</Prototype>
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "FighterP_r"
+		ResourceType			= "VEHICLE"
+
+		DiffRatio		= "20.0"
+		MaxEngineRpm		= "7000"
+		LowGearShiftLimit	= "1500"
+		HighGearShiftLimit	= "2000"
+                AdditionalWheelsHover	= "0.1"
+		SteeringSpeed		= "0.5"
+		MinNotIdleRpm		= "500"
+		IdleEngineSoundSpeed	= "0.5"
+		EngineRpmForNormalSound = "3000"
+
+		SteeringN		= "3.0"
+		SteeringTime		= "3.0"
+
+		HornSound		= "ET_S_HORN01"
+ 		DriftCoeff		= "0.01"
+		DecisionMatrix		= "vehiclemain.lua"
+		LookRadius		= "250.0"
+		IntersectionRadius	= "5.0"
+		TakingRadius		= "30.0"
+                CameraHeight            = "4"
+		CameraMaxDist		= "16"
+                HitForce               = "10"
+		MassSize		= "4 3 7.5"
+		MassTranslation		= "0 -1.2 -0.2" 
+		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
+		DestroyEffectBlast	= "ET_PS_VEH_EXP2_MED"
+		DestroyEffectEnergy	= "ET_PS_VEH_EXP3_MED"
+		DestroyEffectWater	= "ET_PS_VEH_EXP2_MED"
+		WheelSpringCoeffSmall		= "4000.0"
+		WheelSpringCoeffBig		= "7000.0"
+		WheelUpDampingCoeff		= "100.0f"
+		WheelDownDampingCoeff		= "600.0f"
+		WheelSuspensionRange		= "0.5"
+		WheelCriticalSuspensionDelta    = "0.25"
+
+		AllowedRoles		= "VehicleRoleRockets"
+
+		ForMultiplayer	= "true"
+		Abstract 		= "true"	>
+
+		<MainPartDescription id = "CHASSIS" partResourceType = "FIGHTER_CHASSIS">
+			<PartDescription id = "CABIN" partResourceType = "FIGHTER_CABIN" lpName = "LP_CAB01" >
+				<PartDescription id="CABIN_SMALL_GUN" partResourceType = "SMALL_GUN" lpName = "LP_SML01" />
+				<PartDescription id="CABIN_BIG_GUN" partResourceType = "BIG_GUN" lpName = "LP_BIG01" />
+			</PartDescription>
+			<PartDescription id = "BASKET" partResourceType="FAKE_BIGBASKET" lpName = "LP_CAB01" >
+				<PartDescription id="BASKET_SPECIAL_WEAPON" partResourceType = "SPECIAL_WEAPON"/>
+			</PartDescription>
+
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "CHASSIS"			Prototype = "fighterChassis" />
+		</Parts>
+
+		<Wheels>
+			<Wheel Prototype = "fighterWheel01l" steering = "correct" />
+			<Wheel Prototype = "fighterWheel01r" steering = "correct" />
+			<Wheel Prototype = "fighterWheel02l" />
+			<Wheel Prototype = "fighterWheel02r" />
+		</Wheels>
+	</Prototype>
+
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "SideCar"
+		ParentPrototype 	= "SideCarP">
+		<Parts>
+			<Part id = "CABIN"						Prototype = "sml3Cab01" />
+			<Part id = "CABIN_SMALL_GUN" 	Prototype = "scout_00_weapon" />
+			<Part id = "BASKET"						Prototype = "fakeCargo" />
+		</Parts>
+	</Prototype>
+
+
+	<Prototype
+		Class			= "Vehicle"
+		Name			= "Fighter_r"
+		ParentPrototype 	= "FighterP_r">
+		<Parts>
+			<Part id = "CABIN"			Prototype = "fighterCab02" />
+			<Part id = "CABIN_BIG_GUN"		Prototype = "hunter_00_weapon" /> 
+<!--			<Part id = "BASKET"			Prototype = "fighterCargo01" />-->
+		</Parts>
+	</Prototype>
+
+
+</Prototypes>

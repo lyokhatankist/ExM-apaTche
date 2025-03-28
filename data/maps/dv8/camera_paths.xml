@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<Paths>
+	<Path Name = "Start_cam">
+		<Point  coord="402.847 306.322 330.378" rotation="-0.021 0.499 -0.012 0.866"/>
+		<Point  coord="306.885 304.077 411.151" rotation="-0.053 0.675 -0.049 0.734"/>
+		<Point  coord="199.069 285.649 412.738" rotation="-0.046 0.910 -0.104 0.399"/>
+		<Point  coord="147.910 293.130 403.754" rotation="0.110 0.889 -0.296 -0.332"/>
+		<Point  coord="153.149 293.130 362.989" rotation="-0.149 -0.489 0.085 0.855"/>
+	</Path>
+
+	<Path Name = "Start_cam_00">
+<Point  coord="447.830 262.303 373.518" rotation="0.050 0.526 0.031 0.848"/>
+<Point  coord="402.559 270.191 400.385" rotation="-0.004 0.556 -0.003 0.831"/>
+<Point  coord="314.291 275.097 421.540" rotation="-0.031 0.785 -0.039 0.617"/>
+<Point  coord="293.473 265.966 419.128" rotation="-0.023 0.769 -0.028 0.638"/>
+	</Path>
+
+	<Path Name = "Start_cam_000">
+<Point  coord="293.473 265.966 419.128" rotation="-0.023 0.769 -0.028 0.638"/>
+<Point  coord="293.473 265.966 419.128" rotation="0.026 0.819 0.037 0.572"/>
+	</Path>
+	<Path Name = "Start_cam_0000">
+<Point  coord="293.473 265.966 419.128" rotation="0.026 0.819 0.037 0.572"/>
+	</Path>
+
+	<Path Name = "Start_cam_01">
+<Point  coord="114.784 277.786 341.364" rotation="-0.053 -0.508 0.031 0.859"/>
+<Point  coord="215.419 263.578 396.865" rotation="-0.053 -0.508 0.031 0.859"/>
+	</Path>
+	
+	<Path Name = "RedFirstRun_cam01">                         
+		<Point  coord="13.000 1.500 -2.000" rotation="0.000 1.000 0.000 0.000" />
+		<Point  coord="15.000 0.700 1.000" rotation="0.000 1.000 0.000 0.000" />
+	</Path>
+</Paths>

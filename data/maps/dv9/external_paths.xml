@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Paths>
+	<Path
+		Name="Credits">
+		<Point
+			coord="3469 1980" />
+		
+		<Point
+			coord="3305 2013" />
+			
+		<Point
+			coord="3182 1989" />
+			
+		<Point
+			coord="3172 1881" />
+			
+		<Point
+			coord="3172 1663" />
+			
+		<Point
+			coord="3188 1442" />
+			
+		<Point
+			coord="3206 1267" />
+			
+		<Point
+			coord="3232 1105" />
+			
+		<Point
+			coord="3272 892" />
+			
+		<Point
+			coord="3295 770" />
+			
+		<Point
+			coord="3331 672" />
+			
+		<Point
+			coord="3371 614" />
+			
+		<Point
+			coord="3416 597" />
+			
+		<Point
+			coord="3607 586" />
+			
+		<Point
+			coord="3786 574" />
+			
+		<Point
+			coord="3909 560" />
+		
+		<Point
+			coord="4001 541" />
+		
+		<Point
+			coord="4086 527" />
+			
+		<Point
+			coord="1302 2766" />
+		
+		<Point
+			coord="1302 2763" />
+	</Path>
+	
+	<Path
+		Name="CreditsCam03_Veh01">
+		<Point
+			coord="3616 3028" />
+
+		<Point
+			coord="3618 3087" />
+
+		<Point
+			coord="3624 3147" />
+
+		<Point
+			coord="3625 3210" />
+	</Path>
+	
+	<Path
+		Name="Start">
+		<Point
+			coord="400.542 2501.503" />
+
+		<Point
+			coord="481.221 2339.525" />
+
+		<Point
+			coord="556.048 2089.249" />
+
+		<Point
+			coord="628.103 1742.468" />
+
+		<Point
+			coord="696.901 1535.961" />
+
+		<Point
+			coord="860.677 1248.495" />
+
+		<Point
+			coord="1158.465 1020.381" />
+
+		<Point
+			coord="1313.890 861.770" />
+
+		<Point
+			coord="1445.773 656.930" />
+
+		<Point
+			coord="1585.290 355.404" />
+
+		<Point
+			coord="1708.182 168.138" />
+	</Path>
+
+	<Path
+		Name="Start_0">
+		<Point
+			coord="324.838 3920.556" />
+
+		<Point
+			coord="433.601 3484.684" />
+
+		<Point
+			coord="443.018 3241.959" />
+
+		<Point
+			coord="453.526 2947.354" />
+
+		<Point
+			coord="461.690 2696.187" />
+
+		<Point
+			coord="411.830 2604.029" />
+	</Path>
+
+	<Path
+		Name="Start_01">
+		<Point
+			coord="390.525 2552.380" />
+
+		<Point
+			coord="381.977 2540.072" />
+	</Path>
+
+	<Path
+		Name="Start_02">
+		<Point
+			coord="397.388 2539.919" />
+
+		<Point
+			coord="386.834 2529.416" />
+
+		<Point
+			coord="379.689 2528.400" />
+	</Path>
+
+	<Path
+		Name="away1">
+		<Point
+			coord="446.616 2734.637" />
+
+		<Point
+			coord="419.866 2620.499" />
+
+		<Point
+			coord="417.072 2480.611" />
+	</Path>
+
+	<Path
+		Name="boss_00">
+		<Point
+			coord="3684.321 1990.728" />
+
+		<Point
+			coord="3560.327 1920.670" />
+
+		<Point
+			coord="3670.922 1788.834" />
+
+		<Point
+			coord="3761.871 1845.015" />
+
+		<Point
+			coord="3701.398 1910.626" />
+	</Path>
+
+	<Path
+		Name="boss_02">
+		<Point
+			coord="3512.587 1992.120" />
+
+		<Point
+			coord="3717.510 1722.852" />
+
+		<Point
+			coord="3803.239 1748.602" />
+
+		<Point
+			coord="3618.857 2056.161" />
+	</Path>
+
+	<Path
+		Name="boss_03">
+		<Point
+			coord="3762.829 1995.937" />
+
+		<Point
+			coord="3684.677 1996.388" />
+
+		<Point
+			coord="3584.983 1912.347" />
+
+		<Point
+			coord="3608.166 1858.014" />
+
+		<Point
+			coord="3651.256 1825.515" />
+
+		<Point
+			coord="3686.036 1738.423" />
+
+		<Point
+			coord="3770.938 1716.091" />
+
+		<Point
+			coord="3861.955 1803.069" />
+
+		<Point
+			coord="3851.165 1874.626" />
+
+		<Point
+			coord="3734.520 1867.089" />
+
+		<Point
+			coord="3627.305 2029.306" />
+
+		<Point
+			coord="3560.999 2036.244" />
+
+		<Point
+			coord="3516.610 1970.136" />
+
+		<Point
+			coord="3553.605 1914.268" />
+
+		<Point
+			coord="3680.866 1823.892" />
+
+		<Point
+			coord="3813.517 1892.907" />
+
+		<Point
+			coord="3823.192 1947.450" />
+	</Path>
+
+	<Path
+		Name="karavan" />
+</Paths>

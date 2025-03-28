@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons-->
+	<string
+		id="fm_relation_changed"
+		value="Вы стали врагами с одной из банд." />
+
+	<string
+		id="fm_hunt_completed_no_enemies"
+		value="Охота завершена. Все враги уничтожены." />
+
+	<string
+		id="fm_hunt_completed_time_out"
+		value="Охота завершена. Каждый уничтоженный грузовик был оплачен." />
+
+	<string
+		id="fm_dynamic_quest_completed"
+		value="Вы выполнили задание &quot;%1s&quot;" />
+		
+	<string
+		id="fm_dynamic_quest_timelimit"
+		value="Время, отведенное на задание &quot;%1s&quot; истекло. Задание провалено." />
+
+	<string
+		id="fm_dynamic_quest_failed_because_hirer_becames_enemy"
+		value="Вы провалили задание &quot;%1s&quot;, так как испортили отношения с бандой заказчика." />
+
+	<string
+		id="fm_convoy_failed"
+		value="Вам не удалось защитить подопечный грузовик. Теперь не стоит рассчитывать на награду." />
+
+	<string
+		id="fm_perk_given"
+		value="За вами закрепилось звание &quot;%1s&quot;" />
+
+	<string
+		id="fm_perk_lost"
+		value="Звание &quot;%1s&quot; потеряно" />
+
+	<string
+		id="fm_quest_item_given"
+		value="Вы получили предмет: %1s" />
+
+	<string
+		id="fm_quest_item_lost"
+		value="У вас забрали предмет: %1s" />
+
+	<string
+		id="fm_history_got"
+		value="Появилась новая история в Журнале." />
+
+	<string
+		id="fm_book_got"
+		value="Появилась новая книга в Журнале." />
+
+	<string
+		id="fm_fail_quest"
+		value="Вы провалили задание." />
+
+	<string
+		id="fm_complete_quest"
+		value="Список задач обновлен" />
+
+	<string
+		id="fm_take_quest"
+		value="Список задач обновлен" />
+
+	<string
+		id="fm_cant_move"
+		value="Я не знаю, куда ведет эта дорога, поэтому останусь здесь." />
+
+	<string
+		id="fm_not_suzet"
+		value="Какое-то странное место. Лучше держаться отсюда подальше. " />
+
+	<string
+		id="fm_race_start_1"
+		value="Обратный отсчет:  ...%1d..." />
+
+	<string
+		id="fm_race_start_0"
+		value=" С Т А Р Т" />
+
+	<string
+		id="fm_race_start_false"
+		value="Фальстарт." />
+
+	<string
+		id="fm_race_chekpoint"
+		value="Контрольная точка!" />
+
+	<string
+		id="fm_race_chekpoint_notright"
+		value="Неверная контрольная точка!" />
+
+	<string
+		id="fm_race_firslap"
+		value="Первый круг завершен" />
+
+	<string
+		id="fm_race_finish"
+		value="Ф И Н И Ш" />
+
+	<string
+		id="fm_race_finish_1"
+		value="ПЕРВЫЙ" />
+
+	<string
+		id="fm_race_finish_2"
+		value="ВТОРОЙ" />
+
+	<string
+		id="fm_race_finish_3"
+		value="ТРЕТИЙ" />
+
+	<string
+		id="fm_race_finish_less"
+		value="Вы на %1d месте из %2d" />
+
+	<string
+		id="fm_race_finish_lose"
+		value="Вы проиграли гонку" />
+
+	<string
+		id="fm_race_somedie"
+		value="Один из участников выбыл" />
+
+	<string
+		id="fm_town_enter"
+		value="Нажмите гудок (%1m) для въезда в город" />
+
+	<string
+		id="fm_town_cant_enter_enemy"
+		value="Вы не можете въехать в этот город, так как он вражеский" />
+
+	<string
+		id="fm_town_cant_enter_locked"
+		value="Вы не можете въехать в этот город, так как он закрыт" />
+
+	<string
+		id="fm_take_chest_hint"
+		value="Нажмите (%1m), чтобы поднять груз" />
+
+	<string
+		id="fm_all_chests_taken"
+		value="Груз взят на борт" />
+
+	<string
+		id="fm_item_pickup"
+		value="Вы подняли предмет: %1s" />
+
+	<string
+		id="fm_sunrise"
+		value="Наступило утро." />
+
+	<string
+		id="fm_day"
+		value="Начался тяжелый трудовой день." />
+
+	<string
+		id="fm_sunset"
+		value="Наступил вечер." />
+
+	<string
+		id="fm_night"
+		value="Наступила ночь." />
+
+	<string
+		id="fm_save_is_not_allowed"
+		value="Сохранение сейчас не разрешено" />
+
+	<string
+		id="fm_player_add_money"
+		value="Вы получили %1d долларов!" />
+
+	<string
+		id="fm_player_give_money"
+		value="Вы отдали %1d долларов." />
+
+	<string
+		id="fm_player_add_thing"
+		value="Вы получили предмет %1p!" />
+
+	<string
+		id="fm_cheat_is_not_allowed"
+		value="@FF22FF22Использование читов @FF2222FFЗАПРЕЩЕНО@FFFFFFFF" />
+
+	<string
+		id="fm_cheat_is_allowed"
+		value="@FF22FF22При тестировании игры @FF2222FFиспользование читов может привести к ошибкам!@FFFFFFFF" />
+
+	<string
+		id="fm_items_remained_on_ground"
+		value="Не хватает места в кузове. Для вызова окна снаряжения нажмите %1m" />
+
+	<string
+		id="fm_mp_player_killed_player"
+		value="%1s%2s убил %3s" />
+
+	<string
+		id="fm_mp_player_was_killed"
+		value="%1s%2s умер" />
+
+	<string
+		id="fm_conguration"
+		value="ПОЗДРАВЛЕНИЯ !!!" />
+
+	<string
+		id="fm_complete_mission"
+		value="Вы прошли демо-версию!" />
+
+	<string
+		id="fm_failed_mission"
+		value="Вы проиграли демо-версию!" />
+
+	<string
+		id="fm_start_demo_mission1"
+		value="Не забывайте, что на выполнение мисии время ограничено. Судьба людей в Ваших руках!" />
+
+	<string
+		id="fm_start_demo_mission2"
+		value="Посмотрите свои задачи @FF2222FF(q)@FFFFFFFF" />
+
+	<string
+		id="fm_time"
+		value="Осталось: @FFFF4444  %1d : %2d : %3d @FFFFFFFF" />
+
+	<string
+		id="fm_n"
+		value="Вы прошли демо-версию!" />
+
+	<string
+		id="fm_test"
+		value="p1: %1s; p2: %2d; p3: %3p" />
+		
+	<string
+		id="fm_player_add_bonus"
+		value="Получено %1d очков вознаграждения" />
+
+	<!-- ApaTchE -->
+	
+	<string
+		id="fm_player_notification_received"
+		value="Получено сообщение." />
+		
+	<string
+		id="fm_player_shroom_bonus_notification"
+		value="@ffef8d00Награда @ffccccccот Правительства за уничтожение как можно большего количества @ffff2626грибов-мутантов @ffccccccбудет начислена в @ffef8d00конце миссии@ffcccccc." />
+		
+	<string
+		id="fm_player_shroom_bonus_complete"
+		value="@ffef8d00Награда @ffcccccc от Правительства за уничтожение @ffff2626грибов-мутантов @ffccccccсоставит @ffef8d00%1d @ffccccccочков вознаграждения." />
+		
+	<string
+		id="fm_player_toxicity"
+		value="@ffff2626Вы находитесь в зоне заражения!" />
+		
+	<string
+		id="fm_player_toxicity_detail"
+		value="@ffccccccСледуйте указанию @ffef8d00GPS-навигатора@ffcccccc, чтобы покинуть @ffff2626опасную зону@ffcccccc!" />
+</resource>

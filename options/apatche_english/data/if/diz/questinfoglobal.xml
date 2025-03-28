@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<QuestInfoResource>
+	<QuestInfo
+		questName="dv1_q1"
+		briefDiz="Desert rally"
+		fullDiz="All you have to do is get used to the vehicle. By the way, keep in mind that the area is not completely safe. A number of armed bastards, stubbornly ignoring the governmental emergency order, continue to roam the area. They will not miss the opportunity to empty their clips at you. I recommend not giving them a chance and shooting first.">
+		<Map
+			name="dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv1_q1_2"
+		briefDiz="Desert simoom"
+		fullDiz="As soon as any catastrophe, even the tiniest one, happens, all the worst in people awakens. The evacuation work had barely begun when hordes of marauders crawled out of every crack. They are taking away the loot in whole truckloads. One of such convoys will soon be passing by your location. This is a great opportunity to test your new vehicle's weapons on them. Don't let the robbers get away.">
+		<Map
+			name="dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv1_q2"
+		briefDiz="Secure lands"
+		fullDiz="As I told you earlier, there are a number of antisocial individuals in this area who engage in robbery and looting. A decision was made to stop such activity, by any, and I repeat, absolutely any means necessary. Just now, with the help of a reconnaissance helicopter, we have detected one of the marauder camps. You are tasked with eliminating these bandits.">
+		<Map
+			name="dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv1_q2_2"
+		briefDiz="Light in the dark"
+		fullDiz="Frankly, I don't understand where so many armed trespassers come from in a tightly cordoned off area? How do they get here? This needs to be found out, and the sooner the better.">
+		<Map
+			name="dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_q1"
+		briefDiz="Desert shield"
+		fullDiz="Deserthole is a small mining town. After the mine closed, the residents lost their jobs, and since then their main occupation became the production, sale, and consumption of cactus moonshine. But, be that as it may, our country does not abandon its citizens in trouble, and therefore it is your duty to ensure the evacuation of the residents of Deserthole!">
+		<Map
+			name="dv2"
+			targetObjName="AutoRepair_01" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_q2"
+		briefDiz="Wind in the mist"
+		fullDiz="Outrageous disregard for safety measures! The abandoned chemical reactor at a secret laboratory is uncontrollably releasing toxic substances. Physically destroying the lab would lead to even more environmental contamination, but destroying the local power plant would be an ideal solution to the problem.">
+		<Map
+			name="dv2"
+			targetObjName="AutoRepair_00" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_q2_2"
+		briefDiz="Dusk and mist"
+		fullDiz="The reports of instant mutations caused by the Z-120 substance turned out to be true. Whatever these creatures were in the past, they are not people anymore! Destroy them immediately in the name of the ideals of democracy and safety of the people of our country.">
+		<Map
+			name="dv2"
+			targetObjName="AutoRepair_00" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_q3"
+		briefDiz="Base No. 31"
+		fullDiz="It's time to proceed to the main mission. You must find doctor Pappers and evacuate him from the base at any cost. The mission to rescue the scientist is of the highest priority. Remember this!">
+		<Map
+			name="dv2"
+			targetObjName="genericLocation4124" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_q3_2"
+		briefDiz="Search in ruins"
+		fullDiz="This does not look like a random accident. It appears like a well-planned sabotage. The Base is completely destroyed and the Z-120 leak seems to have come from here. It is necessary to clarify the number of survivors and find out the fate of Pappers. Search the ruins.">
+		<Map
+			name="dv2"
+			targetObjName="genericLocation4124" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_q1"
+		briefDiz="Operation Falcon's Eye"
+		fullDiz="The guys from Delta Team don't just disappear without a trace. Whoever they fought, that someone must have suffered considerable losses, and the surrounding terrain must have suffered a fair amount as well. So my guys should have left a significant trace. You just need to search the area.">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_q1_2"
+		briefDiz="Clean land"
+		fullDiz="These damn mutants are everywhere! You already have some good experience fighting these abominations, show what you are capable of. And catch up with Delta at once!">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_q2"
+		briefDiz="The fox hunt"
+		fullDiz="We have intercepted an encrypted radio message. Since the radio operator is not using any of the standard military codes, it is clear that it is not Delta sending it. You need to find out who is broadcasting this radio transmission to whom and for what purpose it is being sent. Perhaps this will lead us to the squad's trail.">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_q2_2"
+		briefDiz="Fight and search"
+		fullDiz="Military radio interception system has revealed where the encounter between Delta and the bandits took place. Investigating the battlefield may lead us to our men.">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv5_q1"
+		briefDiz="Blind search"
+		fullDiz="We know where doctor Pappers is, so it's just about getting him out alive and well.">
+		<Map
+			name="dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv5_q1_2"
+		briefDiz="Darkness in the canyon"
+		fullDiz="You've got to be careful to avoid getting caught in Delta's line of fire while rescuing the scientist from the hands of the smugglers.">
+		<Map
+			name="dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv5_q2"
+		briefDiz="Look from above"
+		fullDiz="We were able to make use of a surveillance satellite passing over the area. It looks like the bandits' camp is not far away from you. It consists of several large domed tents, there's a chance the scientist is being held in one of them. There are no visual signs of combat nearby. In any case, you need to examine the place. ">
+		<Map
+			name="dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+<!--
+	<QuestInfo
+		questName="dv5_q2_2"
+		briefDiz="Explore the world for strange mutations"
+		fullDiz="Collect ground samples, destroy a number of mushrooms.">
+		<Map
+			name="dv5"
+			targetObjName="" />
+	</QuestInfo>
+-->
+
+	<QuestInfo
+		questName="dv6_q1"
+		briefDiz="Dirt under the wheels"
+		fullDiz="The case with the documentation should be somewhere in plain sight, yeah. If they didn't sink it, of course. Oh yes, they could do that. I'm talking about bandits. And the military.">
+		<Map
+			name="dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv6_q1_2"
+		briefDiz="Dirt under the wheels II"
+		fullDiz="Attention, agent, respond if you can hear me! Copy? Do you copy?! Team Delta commander contacted us. His guys tried to destroy the trucks with that damn Z-120 using thermite charges, but the attempt failed. Hundreds of monsters literally crushed them. The team managed to burn down only one of the trucks and it cost the lives of all soldiers.">
+		<Map
+			name="dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv6_q2"
+		briefDiz="Fire at the swamp"
+		fullDiz="We have updated the existing data. You will have to burn only two trucks with Z-120 containers. Also, try to find doctor Pappers' alien specimens and materials if possible.">
+		<Map
+			name="dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv6_q2_2"
+		briefDiz="Cleansing and humiliation"
+		fullDiz="Besides the trucks with Z-120, you must eliminate all monsters in the area.">
+		<Map
+			name="dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv7_q1"
+		briefDiz="Rescue and neutralize"
+		fullDiz="As far as I understand, you were unable to find the works of Pappers? To hell with that. A living scientist is more important to us than his papers. Take the egghead and bring him to the base. By force if necessary.">
+		<Map
+			name="dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv7_q1_2"
+		briefDiz="Victory or death"
+		fullDiz="It's no use running away, agent. Believe me, you wouldn't have been able to handle me before, and even less so now… I succumbed to this mutation and it changed me, giving me great strength and power. But the price is too high. And I'm not letting you spread the Z-120 infection into the unsuspecting world. Prepare to die. I hope you see my point, as a patriot to a patriot, because it's our blood what waters the tree of freedom.">
+		<Map
+			name="dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv8_q1"
+		briefDiz="Border watch"
+		fullDiz="Several military vehicles are moving at high speed towards the border of the area and are not responding to our radio requests. There is evidence that they have been infected. Another five minutes and they will be outside the cordoned off area that they were supposed to guard. You must intercept them before they spread the infection into the world.">
+		<Map
+			name="dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv8_q2"
+		briefDiz="Crystal air"
+		fullDiz="A band of well-armed looters attacked the town of Fly-Hill. We know that the local municipality has a helicopter at its disposal. The aircraft is too small and made almost entirely out of plastic, so it will be extremely difficult for radars to detect. If the infected escape on a chopper, it's highly unlikely that we will be able to bring them down and thus, the world will be brought to the brink of disaster. According to our experts, you have approximately 10 minutes to stop them.">
+		<Map
+			name="dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv8_q3"
+		briefDiz="Pure streams"
+		fullDiz="A group of infected people took refuge in a thicket of poisonous mushrooms near the Road-River, the exact coordinates are being sent to you now. These mutants collect fungal spores, the mutagenic nature of which comes from the same source as everything else in the area. If a large number of spores ends up in a river, the entire downstream area will be contaminated. You have no more than 15 minutes to destroy these mutants.">
+		<Map
+			name="dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv9_q1"
+		briefDiz="Speed and wind"
+		fullDiz="You have to chase down doctor Pappers. Do not waste a second.">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+<!--
+	<QuestInfo
+		questName="dv9_q1_2"
+		briefDiz="а"
+		fullDiz="а">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+-->
+
+	<QuestInfo
+		questName="dv9_q2"
+		briefDiz="Retribution"
+		fullDiz="You must eliminate the scientist, or rather, not him, but what he has become, before he turns into something that can no longer be destroyed.">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv9_q2_2"
+		briefDiz="Ragnarok"
+		fullDiz="Kill this monster while there is still time.">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv1_t1"
+		briefDiz="Amanda's diary"
+		fullDiz="This is a diary of Amanda Discain, a small girl. Its last entry says:| |'This morning Mom said we must pack and go to Uncle Roland to Humbry. We packed our things and went. The ride is dull and I had no breakfast. I wonder what happened and why we have to leave so fast. Some cars appeared to meet us, so I will finish writing this later, I want to see them - they look strange.'">
+		<Map
+			name="dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv1_t0"
+		briefDiz="Marauder's note"
+		fullDiz="You found this note amongst the remnants of a looter's vehicle:| |'Johnny, as you said, the whole thing was a piece of cake. They all go north like mice to a trap. I bet a canyon full of burnt cars can give the state something to think about, but it will be too late by then. The only ones who were lucky to escape are the Discains, they were driving towards the old Walters Tower, but I intercepted them. A good catch!'">
+		<Map
+			name="dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_t0"
+		briefDiz="Scientific expedition journal"
+		fullDiz="This text looks like a journal of some scientific expedition:| | 11-00 AM. Moved out from the base on three vehicles, started analyzing ground and vegetation.| 12-00 AM. The guide claims Smithy was eaten by a mushroom. I told the guide to cut on hallucinogens.| 12-30 AM. It's clearly not hallucinogens - a mushroom tried to eat the rear Landrover. Or am I delirious?| 1-00 PM. Found Smithy. No head. Anyway, he had no use for it except feeding and wearing that stupid haircut. I'm in charge of the lab since now.| 3-00 PM. My lab is history. Giant bats have driven us to some cave.| 3-30 PM. I've got an impression these gerbils in the cave have bad intentions towards my person. I'll try to get out.">
+		<Map
+			name="dv2"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv2_t1"
+		briefDiz="Internal instruction"
+		fullDiz="You have found this text amongst the ruins of power station. It looks like remnants of an internal instruction:| | 'In case of emergency, the operator of RMBK-1000 reactor must:| * Inform the person in charge.| * Take actions needed to stop the accident using standard measures.| * If the standard equipment cannot improve the situation, use non-standard measures (i.e. a crowbar or a prayer).| * If the non-standard measures cannot improve the situation, slowly, without causing panic, turn into radioactive ash.| | Signed - Victor Belly, the power station chief'">
+		<Map
+			name="dv2"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_t1"
+		briefDiz="Weather forecast"
+		fullDiz="This text looks like a weather forecast:| | 'Weather forecast: for the entire Valley, the expected temperature is 85-95 degrees, 20-30% humidity, moderate wind from the east. In some regions, from time to time the temperature can reach 6000 degree mark, with moderate radioactive fallout and biological infestation. We would like to remind local citizens, that upon entering the infected zone, you should take out your ID and hold it with your teeth, in order to simplify the process of corpse identification for the authorities.'">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_t0"
+		briefDiz="Crumpled letter"
+		fullDiz="This letter you found in the ruins had probably reached its recipient - there were no corpses nearby. It reads as follows: | | 'To: Benjamin Drow, Freehaven 2.| Benny, you young bum, finally your fondness of cars will be of some use. Some kind of dirty rumble is about to start in here, so grab your hat and hit west as fast as you can. Get whatever it takes out of your roadster, Throttle-boy, we here at the base are dead ducks, but you possibly have a chance. Your uncle Gilmour.'">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_t2"
+		briefDiz="Radio message #1"
+		fullDiz="Text:| | 'Delta-zero to everyone, regroup and keep up the pursuit of the enemy convoy. Kick the soul out of them, boys, chase them to Foxtrot Charlie Bravo Twelve'.">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_t3"
+		briefDiz="Radio message #2"
+		fullDiz="Text:| | 'Fat Dick to everyone: pull together, you bastards, stop scattering if you don't want this @%# SWAT to shoot us one by one! To cargo escort - keep the radio silence and move towards the rendezvous point, around Hoover's Ruin.'">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv4_t4"
+		briefDiz="Radio message #3"
+		fullDiz="Text:| | 'Delta-nine here, need backup at Richard Two Tango, need backup… Damn it, here they go again, attack, boys! Kill them, or did you expect to live forever?'">
+		<Map
+			name="dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv5_t0"
+		briefDiz="TV programme"
+		fullDiz="This text resembles a TV programme very much, but you can't think of a station that would broadcast such shows:| | 08:00 AM 'M for Mutants', the motion picture;| 09:30 AM 'The Ugly Mutant Bar', the motion picture;| 10:20 AM V Frank Stein's talk show: 'Mutation: a virtue or a bun?';| 11:00 AM Sports show 'Mutate faster, mutate harder, mutate stronger';| 12:00 AM 'Where mutants dare', the TV drama;| 3:00 PM Explosion at the station. From now on, our channel will broadcast this face of an Indian.">
+		<Map
+			name="dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv5_t1"
+		briefDiz="Writing on the wall"
+		fullDiz="There is a scorched in writing of strange-looking letters on a wall. Empty strangely shaped shells are scattered all around under the writing, you can't identify what type of weapon such cartridges might have been intended for. The writing says:| | 'The second battalion of the third regiment of the first mobile infantry division was here. Hail the infantry, hail the name of Roger Young!'">
+		<Map
+			name="dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv6_t0"
+		briefDiz="Professor's case"
+		fullDiz="This is a greasy diary with missing pages. The pages that remain show nervous scattering handwriting:| | While shooting with neurons at barium| I was close to a genuine discovery | It was so radioactive | That I use laxatives| And I'm nowhere near recovery.| | There was a lady from Rio Negro| Who once fell in love with a Negro| And the story then went| That five children they had:| A black, a white, and three like a zebra.| | They say in the ole town of Tugger| There every girl is a mugger| And there on Hawaii | They are all FBI | Not a single fair lady to (the writing stops here).">
+		<Map
+			name="dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv6_t1"
+		briefDiz="Radio message clip"
+		fullDiz="'You received a repeating radio message that goes:| |Delta Four Foxtrot here, for those who'll come after us - the infection comes from the trucks, the containers were hit during the shootout. If we fail to destroy all three vehicles with termite, then finish our job. If we succeed, we'll leave to quadrant Tango Eight. God bless America and God help us. Tell this egghead bastard that (the rest is unclear)'">
+		<Map
+			name="dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv7_t0"
+		briefDiz="Sergeant's notes"
+		fullDiz="You found a note soaked in green substance. The writing says:| |It's stronger than me. It's stronger than anything. It changes every cell of the body, every fiber of the soul. I wonder what are the soul fibers, can you touch them somehow? I feel I'm changing and I feel what I'm becoming. | It gives me strength and confidence. The confidence in the fact that it mustn't happen again, and the strength to prevent it from happening. I will defend it while I can, because the world isn't ready to meet the force of It yet, the price of this power is too high...'">
+		<Map
+			name="dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv8_t0"
+		briefDiz="Strange recipe"
+		fullDiz="'Seemingly an ordinary cookbook, if not for one very peculiar recipe:| |Put blue mushrooms in a pan, add water and boil. Clean the boiled mushrooms from spores and grate them. Add 1/4 of a spoon of mold and 1 big spoon of shiny slime. Mix, rub through a sieve and put in a large round dish. In the middle, pour the remaining slime mixed with mold. If the resulting matter attacks you, throw it out and go to Macondas, ask for the exact passive biomass dish recipe there.'">
+		<Map
+			name="dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv8_t1"
+		briefDiz="Robbery plan"
+		fullDiz="A charred piece of paper appears to have been thrown here by an explosion. After putting great effort, you reach it and discover the following text:| | 1) Prepare two C4 bricks.| 2) Punch Jason for the detonators he forgot.| 3) Go get the detonators and find them in your own trunk.| 4) Punch Jason for his giggling.| 5) Place the C4s around the safe.| 6) Finish the guard.| 7) Bandage Jason, this idiot seems to be a real human magnet, that attracts bullets.| 10) Set the detonator.| 11) RRun out of the building, cover your ears tightly.| 12) Return to the building, scrape the remnants of Jason off the wall and bury him, he's your brother, after all.| 13) Spit in a destroyed safe with burnt money inside, proceed to the next bank.">
+		<Map
+			name="dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv9_t0"
+		briefDiz="Secret instruction"
+		fullDiz="It seems that this text was left by bandits, that were leaving the Territory in a great hurry. After reading it you understand what made them flee in panic:| | 'Before dominating the world, be sure that it is in place.| Before making a plan on dominating the world, be sure that after its completion the remnants of the world are worth dominating.| While carrying out the world domination plan, be sure that you are not going to be amongst its victims.| After completing the plan, get your working place in order, clean the instrument and switch off the Doomsday Device.| Have a nice day and good luck with your world domination efforts. | Sincerely yours, P.'">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="dv9_t1"
+		briefDiz="Mysterious message"
+		fullDiz="This message resembles an array of strange sounds. Peculiarly, you manage to make out what it is about:| |'Pappers, of course, is a real bastard, but he is one of the most clever bastards on this side of Rio Grande. We need to stick with him, Chubbie, then we might get rich. Frankly, I sense something bad about this whole toxin thing, but all we need is to get to our bird - and everything will be great. So stay cool and don't grumble. Hen.'">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="boss_1"
+		briefDiz="Analysis note"
+		fullDiz="The analysis of the Z-120 virus effect on organic tissue, and also speech modulations and behavioral reactions of Captain Bruce 'Toxo' Scheffer makes one assume that he managed to get so-called 'supernatural abilities'. In particular, our experts tend to think he is able to mimic other organic objects affected by the mutagen. You must destroy all surrounding objects that allow him to use his abilities before you can fight him.">
+		<Map
+			name="dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="boss_2"
+		briefDiz="Message from the headquarters"
+		fullDiz="Agent, we have an urgent information for you. We managed to question the surviving Pappers' convoy guards. During his escape, he displayed some kind of telekinetic abilities, throwing heavily armored vehicles from side to side like feathers. You must destroy all surrounding objects that allow him to use his abilities before you can fight him.">
+		<Map
+			name="dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+
+
+
+
+
+
+
+
+<!-- New Game + -->
+
+	<QuestInfo
+		questName="ng1_dv1_q1"
+		briefDiz="Desert rally"
+		fullDiz="All you have to do is get used to the vehicle. By the way, keep in mind that the area is not completely safe. A number of armed bastards, stubbornly ignoring the governmental emergency order, continue to roam the area. They will not miss the opportunity to empty their clips at you. I recommend not giving them a chance and shooting first.">
+		<Map
+			name="ng1_dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv1_q1_2"
+		briefDiz="Desert simoom"
+		fullDiz="As soon as any catastrophe, even the tiniest one, happens, all the worst in people awakens. The evacuation work had barely begun when hordes of marauders crawled out of every crack. They are taking away the loot in whole truckloads. One of such convoys will soon be passing by your location. This is a great opportunity to test your new vehicle's weapons on them. Don't let the robbers get away.">
+		<Map
+			name="ng1_dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv1_q2"
+		briefDiz="Secure lands"
+		fullDiz="As I told you earlier, there are a number of antisocial individuals in this area who engage in robbery and looting. A decision was made to stop such activity, by any, and I repeat, absolutely any means necessary. Just now, with the help of a reconnaissance helicopter, we have detected one of the marauder camps. You are tasked with eliminating these bandits.">
+		<Map
+			name="ng1_dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv1_q2_2"
+		briefDiz="Light in the dark"
+		fullDiz="Frankly, I don't understand where so many armed trespassers come from in a tightly cordoned off area? How do they get here? This needs to be found out, and the sooner the better.">
+		<Map
+			name="ng1_dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_q1"
+		briefDiz="Desert shield"
+		fullDiz="Deserthole is a small mining town. After the mine closed, the residents lost their jobs, and since then their main occupation became the production, sale, and consumption of cactus moonshine. But, be that as it may, our country does not abandon its citizens in trouble, and therefore it is your duty to ensure the evacuation of the residents of Deserthole!">
+		<Map
+			name="ng1_dv2"
+			targetObjName="AutoRepair_01" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_q2"
+		briefDiz="Wind in the mist"
+		fullDiz="Outrageous disregard for safety measures! The abandoned chemical reactor at a secret laboratory is uncontrollably releasing toxic substances. Physically destroying the lab would lead to even more environmental contamination, but destroying the local power plant would be an ideal solution to the problem.">
+		<Map
+			name="ng1_dv2"
+			targetObjName="AutoRepair_00" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_q2_2"
+		briefDiz="Dusk and mist"
+		fullDiz="The reports of instant mutations caused by the Z-120 substance turned out to be true. Whatever these creatures were in the past, they are not people anymore! Destroy them immediately in the name of the ideals of democracy and safety of the people of our country.">
+		<Map
+			name="ng1_dv2"
+			targetObjName="AutoRepair_00" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_q3"
+		briefDiz="Base No. 31"
+		fullDiz="It's time to proceed to the main mission. You must find doctor Pappers and evacuate him from the base at any cost. The mission to rescue the scientist is of the highest priority. Remember this!">
+		<Map
+			name="ng1_dv2"
+			targetObjName="genericLocation4124" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_q3_2"
+		briefDiz="Search in ruins"
+		fullDiz="This does not look like a random accident. It appears like a well-planned sabotage. The Base is completely destroyed and the Z-120 leak seems to have come from here. It is necessary to clarify the number of survivors and find out the fate of Pappers. Search the ruins.">
+		<Map
+			name="ng1_dv2"
+			targetObjName="genericLocation4124" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_q1"
+		briefDiz="Operation Falcon's Eye"
+		fullDiz="The guys from Delta Team don't just disappear without a trace. Whoever they fought, that someone must have suffered considerable losses, and the surrounding terrain must have suffered a fair amount as well. So my guys should have left a significant trace. You just need to search the area.">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_q1_2"
+		briefDiz="Clean land"
+		fullDiz="These damn mutants are everywhere! You already have some good experience fighting these abominations, show what you are capable of. And catch up with Delta at once!">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_q2"
+		briefDiz="The fox hunt"
+		fullDiz="We have intercepted an encrypted radio message. Since the radio operator is not using any of the standard military codes, it is clear that it is not Delta sending it. You need to find out who is broadcasting this radio transmission to whom and for what purpose it is being sent. Perhaps this will lead us to the squad's trail.">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_q2_2"
+		briefDiz="Fight and search"
+		fullDiz="Military radio interception system has revealed where the encounter between Delta and the bandits took place. Investigating the battlefield may lead us to our men.">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv5_q1"
+		briefDiz="Blind search"
+		fullDiz="We know where doctor Pappers is, so it's just about getting him out alive and well.">
+		<Map
+			name="ng1_dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv5_q1_2"
+		briefDiz="Darkness in the canyon"
+		fullDiz="You've got to be careful to avoid getting caught in Delta's line of fire while rescuing the scientist from the hands of the smugglers.">
+		<Map
+			name="ng1_dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv5_q2"
+		briefDiz="Look from above"
+		fullDiz="We were able to make use of a surveillance satellite passing over the area. It looks like the bandits' camp is not far away from you. It consists of several large domed tents, there's a chance the scientist is being held in one of them. There are no visual signs of combat nearby. In any case, you need to examine the place. ">
+		<Map
+			name="ng1_dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv6_q1"
+		briefDiz="Dirt under the wheels"
+		fullDiz="The case with the documentation should be somewhere in plain sight, yeah. If they didn't sink it, of course. Oh yes, they could do that. I'm talking about bandits. And the military.">
+		<Map
+			name="ng1_dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv6_q1_2"
+		briefDiz="Dirt under the wheels II"
+		fullDiz="Attention, agent, respond if you can hear me! Copy? Do you copy?! Team Delta commander contacted us. His guys tried to destroy the trucks with that damn Z-120 using thermite charges, but the attempt failed. Hundreds of monsters literally crushed them. The team managed to burn down only one of the trucks and it cost the lives of all soldiers.">
+		<Map
+			name="ng1_dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv6_q2"
+		briefDiz="Fire at the swamp"
+		fullDiz="We have updated the existing data. You will have to burn only two trucks with Z-120 containers. Also, try to find doctor Pappers' alien specimens and materials if possible.">
+		<Map
+			name="ng1_dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv6_q2_2"
+		briefDiz="Cleansing and humiliation"
+		fullDiz="Besides the trucks with Z-120, you must eliminate all monsters in the area.">
+		<Map
+			name="ng1_dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv7_q1"
+		briefDiz="Rescue and neutralize"
+		fullDiz="As far as I understand, you were unable to find the works of Pappers? To hell with that. A living scientist is more important to us than his papers. Take the egghead and bring him to the base. By force if necessary.">
+		<Map
+			name="ng1_dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv7_q1_2"
+		briefDiz="Victory or death"
+		fullDiz="It's no use running away, agent. Believe me, you wouldn't have been able to handle me before, and even less so now… I succumbed to this mutation and it changed me, giving me great strength and power. But the price is too high. And I'm not letting you spread the Z-120 infection into the unsuspecting world. Prepare to die. I hope you see my point, as a patriot to a patriot, because it's our blood what waters the tree of freedom.">
+		<Map
+			name="ng1_dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv8_q1"
+		briefDiz="Border watch"
+		fullDiz="Several military vehicles are moving at high speed towards the border of the area and are not responding to our radio requests. There is evidence that they have been infected. Another five minutes and they will be outside the cordoned off area that they were supposed to guard. You must intercept them before they spread the infection into the world.">
+		<Map
+			name="ng1_dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv8_q2"
+		briefDiz="Crystal air"
+		fullDiz="A band of well-armed looters attacked the town of Fly-Hill. We know that the local municipality has a helicopter at its disposal. The aircraft is too small and made almost entirely out of plastic, so it will be extremely difficult for radars to detect. If the infected escape on a chopper, it's highly unlikely that we will be able to bring them down and thus, the world will be brought to the brink of disaster. According to our experts, you have approximately 10 minutes to stop them.">
+		<Map
+			name="ng1_dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv8_q3"
+		briefDiz="Pure streams"
+		fullDiz="A group of infected people took refuge in a thicket of poisonous mushrooms near the Road-River, the exact coordinates are being sent to you now. These mutants collect fungal spores, the mutagenic nature of which comes from the same source as everything else in the area. If a large number of spores ends up in a river, the entire downstream area will be contaminated. You have no more than 15 minutes to destroy these mutants.">
+		<Map
+			name="ng1_dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv9_q1"
+		briefDiz="Speed and wind"
+		fullDiz="You have to chase down doctor Pappers. Do not waste a second.">
+		<Map
+			name="ng1_dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv9_q2"
+		briefDiz="Retribution"
+		fullDiz="You must eliminate the scientist, or rather, not him, but what he has become, before he turns into something that can no longer be destroyed.">
+		<Map
+			name="ng1_dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv9_q2_2"
+		briefDiz="Ragnarok"
+		fullDiz="Kill this monster while there is still time.">
+		<Map
+			name="ng1_dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv1_t1"
+		briefDiz="Amanda's diary"
+		fullDiz="This is a diary of Amanda Discain, a small girl. Its last entry says:| |'This morning Mom said we must pack and go to Uncle Roland to Humbry. We packed our things and went. The ride is dull and I had no breakfast. I wonder what happened and why we have to leave so fast. Some cars appeared to meet us, so I will finish writing this later, I want to see them - they look strange.'">
+		<Map
+			name="ng1_dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv1_t0"
+		briefDiz="Marauder's note"
+		fullDiz="You found this note amongst the remnants of a looter's vehicle:| |'Johnny, as you said, the whole thing was a piece of cake. They all go north like mice to a trap. I bet a canyon full of burnt cars can give the state something to think about, but it will be too late by then. The only ones who were lucky to escape are the Discains, they were driving towards the old Walters Tower, but I intercepted them. A good catch!'">
+		<Map
+			name="ng1_dv1"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_t0"
+		briefDiz="Scientific expedition journal"
+		fullDiz="This text looks like a journal of some scientific expedition:| | 11-00 AM. Moved out from the base on three vehicles, started analyzing ground and vegetation.| 12-00 AM. The guide claims Smithy was eaten by a mushroom. I told the guide to cut on hallucinogens.| 12-30 AM. It's clearly not hallucinogens - a mushroom tried to eat the rear Landrover. Or am I delirious?| 1-00 PM. Found Smithy. No head. Anyway, he had no use for it except feeding and wearing that stupid haircut. I'm in charge of the lab since now.| 3-00 PM. My lab is history. Giant bats have driven us to some cave.| 3-30 PM. I've got an impression these gerbils in the cave have bad intentions towards my person. I'll try to get out.">
+		<Map
+			name="ng1_dv2"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv2_t1"
+		briefDiz="Internal instruction"
+		fullDiz="You have found this text amongst the ruins of power station. It looks like remnants of an internal instruction:| | 'In case of emergency, the operator of RMBK-1000 reactor must:| * Inform the person in charge.| * Take actions needed to stop the accident using standard measures.| * If the standard equipment cannot improve the situation, use non-standard measures (i.e. a crowbar or a prayer).| * If the non-standard measures cannot improve the situation, slowly, without causing panic, turn into radioactive ash.| | Signed - Victor Belly, the power station chief'">
+		<Map
+			name="ng1_dv2"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_t1"
+		briefDiz="Weather forecast"
+		fullDiz="This text looks like a weather forecast:| | 'Weather forecast: for the entire Valley, the expected temperature is 85-95 degrees, 20-30% humidity, moderate wind from the east. In some regions, from time to time the temperature can reach 6000 degree mark, with moderate radioactive fallout and biological infestation. We would like to remind local citizens, that upon entering the infected zone, you should take out your ID and hold it with your teeth, in order to simplify the process of corpse identification for the authorities.'">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_t0"
+		briefDiz="Crumpled letter"
+		fullDiz="This letter you found in the ruins had probably reached its recipient - there were no corpses nearby. It reads as follows: | | 'To: Benjamin Drow, Freehaven 2.| Benny, you young bum, finally your fondness of cars will be of some use. Some kind of dirty rumble is about to start in here, so grab your hat and hit west as fast as you can. Get whatever it takes out of your roadster, Throttle-boy, we here at the base are dead ducks, but you possibly have a chance. Your uncle Gilmour.'">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_t2"
+		briefDiz="Radio message #1"
+		fullDiz="Text:| | 'Delta-zero to everyone, regroup and keep up the pursuit of the enemy convoy. Kick the soul out of them, boys, chase them to Foxtrot Charlie Bravo Twelve'.">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_t3"
+		briefDiz="Radio message #2"
+		fullDiz="Text:| | 'Fat Dick to everyone: pull together, you bastards, stop scattering if you don't want this @%# SWAT to shoot us one by one! To cargo escort - keep the radio silence and move towards the rendezvous point, around Hoover's Ruin.'">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv4_t4"
+		briefDiz="Radio message #3"
+		fullDiz="Text:| | 'Delta-nine here, need backup at Richard Two Tango, need backup… Damn it, here they go again, attack, boys! Kill them, or did you expect to live forever?'">
+		<Map
+			name="ng1_dv4"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv5_t0"
+		briefDiz="TV programme"
+		fullDiz="This text resembles a TV programme very much, but you can't think of a station that would broadcast such shows:| | 08:00 AM 'M for Mutants', the motion picture;| 09:30 AM 'The Ugly Mutant Bar', the motion picture;| 10:20 AM V Frank Stein's talk show: 'Mutation: a virtue or a bun?';| 11:00 AM Sports show 'Mutate faster, mutate harder, mutate stronger';| 12:00 AM 'Where mutants dare', the TV drama;| 3:00 PM Explosion at the station. From now on, our channel will broadcast this face of an Indian.">
+		<Map
+			name="ng1_dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv5_t1"
+		briefDiz="Writing on the wall"
+		fullDiz="There is a scorched in writing of strange-looking letters on a wall. Empty strangely shaped shells are scattered all around under the writing, you can't identify what type of weapon such cartridges might have been intended for. The writing says:| | 'The second battalion of the third regiment of the first mobile infantry division was here. Hail the infantry, hail the name of Roger Young!'">
+		<Map
+			name="ng1_dv5"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv6_t0"
+		briefDiz="Professor's case"
+		fullDiz="This is a greasy diary with missing pages. The pages that remain show nervous scattering handwriting:| | While shooting with neurons at barium| I was close to a genuine discovery | It was so radioactive | That I use laxatives| And I'm nowhere near recovery.| | There was a lady from Rio Negro| Who once fell in love with a Negro| And the story then went| That five children they had:| A black, a white, and three like a zebra.| | They say in the ole town of Tugger| There every girl is a mugger| And there on Hawaii | They are all FBI | Not a single fair lady to (the writing stops here).">
+		<Map
+			name="ng1_dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv6_t1"
+		briefDiz="Radio message clip"
+		fullDiz="'You received a repeating radio message that goes:| |Delta Four Foxtrot here, for those who'll come after us - the infection comes from the trucks, the containers were hit during the shootout. If we fail to destroy all three vehicles with termite, then finish our job. If we succeed, we'll leave to quadrant Tango Eight. God bless America and God help us. Tell this egghead bastard that (the rest is unclear)'">
+		<Map
+			name="ng1_dv6"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv7_t0"
+		briefDiz="Sergeant's notes"
+		fullDiz="You found a note soaked in green substance. The writing says:| |It's stronger than me. It's stronger than anything. It changes every cell of the body, every fiber of the soul. I wonder what are the soul fibers, can you touch them somehow? I feel I'm changing and I feel what I'm becoming. | It gives me strength and confidence. The confidence in the fact that it mustn't happen again, and the strength to prevent it from happening. I will defend it while I can, because the world isn't ready to meet the force of It yet, the price of this power is too high...'">
+		<Map
+			name="ng1_dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv8_t0"
+		briefDiz="Strange recipe"
+		fullDiz="'Seemingly an ordinary cookbook, if not for one very peculiar recipe:| |Put blue mushrooms in a pan, add water and boil. Clean the boiled mushrooms from spores and grate them. Add 1/4 of a spoon of mold and 1 big spoon of shiny slime. Mix, rub through a sieve and put in a large round dish. In the middle, pour the remaining slime mixed with mold. If the resulting matter attacks you, throw it out and go to Macondas, ask for the exact passive biomass dish recipe there.'">
+		<Map
+			name="ng1_dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv8_t1"
+		briefDiz="Robbery plan"
+		fullDiz="A charred piece of paper appears to have been thrown here by an explosion. After putting great effort, you reach it and discover the following text:| | 1) Prepare two C4 bricks.| 2) Punch Jason for the detonators he forgot.| 3) Go get the detonators and find them in your own trunk.| 4) Punch Jason for his giggling.| 5) Place the C4s around the safe.| 6) Finish the guard.| 7) Bandage Jason, this idiot seems to be a real human magnet, that attracts bullets.| 10) Set the detonator.| 11) RRun out of the building, cover your ears tightly.| 12) Return to the building, scrape the remnants of Jason off the wall and bury him, he's your brother, after all.| 13) Spit in a destroyed safe with burnt money inside, proceed to the next bank.">
+		<Map
+			name="ng1_dv8"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv9_t0"
+		briefDiz="Secret instruction"
+		fullDiz="It seems that this text was left by bandits, that were leaving the Territory in a great hurry. After reading it you understand what made them flee in panic:| | 'Before dominating the world, be sure that it is in place.| Before making a plan on dominating the world, be sure that after its completion the remnants of the world are worth dominating.| While carrying out the world domination plan, be sure that you are not going to be amongst its victims.| After completing the plan, get your working place in order, clean the instrument and switch off the Doomsday Device.| Have a nice day and good luck with your world domination efforts. | Sincerely yours, P.'">
+		<Map
+			name="ng1_dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_dv9_t1"
+		briefDiz="Mysterious message"
+		fullDiz="This message resembles an array of strange sounds. Peculiarly, you manage to make out what it is about:| |'Pappers, of course, is a real bastard, but he is one of the most clever bastards on this side of Rio Grande. We need to stick with him, Chubbie, then we might get rich. Frankly, I sense something bad about this whole toxin thing, but all we need is to get to our bird - and everything will be great. So stay cool and don't grumble. Hen.'">
+		<Map
+			name="ng1_dv9"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_boss_1"
+		briefDiz="Analysis note"
+		fullDiz="The analysis of the Z-120 virus effect on organic tissue, and also speech modulations and behavioral reactions of Captain Bruce 'Toxo' Scheffer makes one assume that he managed to get so-called 'supernatural abilities'. In particular, our experts tend to think he is able to mimic other organic objects affected by the mutagen. You must destroy all surrounding objects that allow him to use his abilities before you can fight him.">
+		<Map
+			name="ng1_dv7"
+			targetObjName="" />
+	</QuestInfo>
+
+	<QuestInfo
+		questName="ng1_boss_2"
+		briefDiz="Message from the headquarters"
+		fullDiz="Agent, we have an urgent information for you. We managed to question the surviving Pappers' convoy guards. During his escape, he displayed some kind of telekinetic abilities, throwing heavily armored vehicles from side to side like feathers. You must destroy all surrounding objects that allow him to use his abilities before you can fight him.">
+		<Map
+			name="ng1_dv9"
+			targetObjName="" />
+	</QuestInfo>
+</QuestInfoResource>

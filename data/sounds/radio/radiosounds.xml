@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<RadioSounds>
+<!--
+	<Group name="bandits" belongs="1101">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="11 12 13 21 22 23 31 32 33 41 42 43 51 52 53 61 62 63" probability="40"/>
+			<Sound id="enemy_broken" samples="12 13 14 22 23 24 32 33 34 42 43 44 52 53 54 62 63 64" probability="50"/> 
+			<Sound id="self_broken" samples="12 13 14 22 23 24 32 33 34 42 43 44 52 53 54 62 63 64" probability="50"/>
+			<Sound id="self_died" samples="15 25 35 45 55 65" probability="50"/>
+		</Enemy>
+	</Group>
+-->	
+	<Group name="bandits" belongs="1101">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="11 12 16 17 111 112 21 22 26 27 211 212 31 32 36 37 311 312 41 42 46 47 411 412 51 52 56 57 511 512 61 62 66 67 611 612" probability="40"/>
+			<Sound id="enemy_broken" samples="13 18 113 23 28 213 33 38 313 43 48 413 53 58 513 63 68 613" probability="50"/> 
+			<Sound id="self_broken" samples="14 19 114 24 29 214 34 39 314 44 49 414 54 59 514 64 69 614" probability="50"/>
+			<Sound id="self_died" samples="15 110 115 25 210 215 35 310 315 45 410 415 55 510 515 65 610 615" probability="50"/>
+		</Enemy>
+	</Group>
+	
+	<Group name="redneck" belongs="1111">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="11 12 16 17 111 112" probability="70"/>
+			<Sound id="enemy_broken" samples="13 18 113" probability="100"/> 
+			<Sound id="self_broken" samples="14 19 114" probability="50"/>
+			<Sound id="self_died" samples="15 110 115" probability="50"/>
+		</Enemy>
+	</Group>
+	
+	<Group name="cartel" belongs="1112">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="61 62 66 67 611 612" probability="70"/>
+			<Sound id="enemy_broken" samples="63 68 613" probability="100"/> 
+			<Sound id="self_broken" samples="64 69 614" probability="50"/>
+			<Sound id="self_died" samples="65 610 615" probability="50"/>
+		</Enemy>
+	</Group>
+	
+	<Group name="mafia" belongs="1113">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="21 22 26 27 211 212" probability="70"/>
+			<Sound id="enemy_broken" samples="23 28 213" probability="100"/> 
+			<Sound id="self_broken" samples="24 29 214" probability="50"/>
+			<Sound id="self_died" samples="25 210 215" probability="50"/>
+		</Enemy>
+	</Group>
+	
+	<Group name="cultist" belongs="1114">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="41 42 46 47 411 412" probability="70"/>
+			<Sound id="enemy_broken" samples="43 48 413" probability="100"/> 
+			<Sound id="self_broken" samples="44 49 414" probability="50"/>
+			<Sound id="self_died" samples="45 410 415" probability="50"/>
+		</Enemy>
+	</Group>
+	
+	<Group name="military" belongs="1115">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="51 52 56 57 511 512" probability="70"/>
+			<Sound id="enemy_broken" samples="53 58 513" probability="100"/> 
+			<Sound id="self_broken" samples="54 59 514" probability="50"/>
+			<Sound id="self_died" samples="55 510 515" probability="50"/>
+		</Enemy>
+	</Group>
+
+	<Group name="police" belongs="1116">
+		<Neutral>
+		</Neutral>
+		<Enemy>
+			<Sound id="first_see_other" samples="31 32 36 37 311 312" probability="70"/>
+			<Sound id="enemy_broken" samples="33 38 313" probability="100"/> 
+			<Sound id="self_broken" samples="34 39 314" probability="50"/>
+			<Sound id="self_died" samples="35 310 315" probability="50"/>
+		</Enemy>
+	</Group>
+</RadioSounds>

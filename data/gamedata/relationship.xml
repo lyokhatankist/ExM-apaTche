@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<!--
+$Id: Relationship.xml,v 1.5 2006/01/24 07:41:33 anton Exp $
+-->
+<relationship
+	MinPlayerID="1000"
+	MaxPlayerID="1200"
+	DefaultTolerance="enemy">
+		<set
+			forwhom="1101"
+			who="1111 1112 1113 1114 1115 1116"
+			tolerance="ally" />
+			
+		<set
+			forwhom="1111"
+			who="1112 1113 1114 1115 1116"
+			tolerance="ally" />
+			
+		<set
+			forwhom="1112"
+			who="1113 1114 1115 1116"
+			tolerance="ally" />
+			
+		<set
+			forwhom="1113"
+			who="1114 1115 1116"
+			tolerance="ally" />
+			
+		<set
+			forwhom="1114"
+			who="1115 1116"
+			tolerance="ally" />
+			
+		<set
+			forwhom="1115"
+			who="1116"
+			tolerance="ally" />
+</relationship>

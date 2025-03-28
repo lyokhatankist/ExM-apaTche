@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+$Id: GameObjects.xml,v 1.5 2006/01/23 12:46:58 anton Exp $
+-->
+
+
+<Prototypes>
+
+	<Prototype
+		Class		= "VehicleRecollection"
+		Name		= "vehicleRecollection"
+	/>
+	
+	<Prototype
+		Class		= "DummyObject"
+		Name		= "someDummyObject"
+		DisablePhysics	= "true"
+	/>
+
+
+	<Prototype
+		Class		= "DummyObject"
+		Name		= "physicDummyObject"
+		DisablePhysics	= "false"
+	/>
+
+	<Prototype
+		Class		= "DummyObject"
+		Name		= "mpDummyObject"
+		DisablePhysics	= "true"
+		DisableGeometry	= "true"
+	/>
+	
+	<Folder Name = "Tactics" File="Tactics.xml" />
+
+        <Folder Name = "Formation">
+                <Prototype
+                        Class="Formation"
+                        Name="caravanFormation">
+                        <Polyline>
+                                <Point Coord="0 0"/>
+                                <Point Coord="0 -4"/>
+                        </Polyline>
+                </Prototype>
+
+                <Prototype
+                        Class="Formation"
+                        Name="wedgeFormation">
+                        <Polyline>
+                                <Point Coord="-1.4143 -1.4143"/>
+                                <Point Coord="0 0"/>
+                                <Point Coord="1.4143 -1.4143"/>
+                        </Polyline>
+                </Prototype>
+        </Folder>
+
+	<Folder Name = "Miscellaneous" File="Miscellaneous.xml" />
+	
+	<Folder Name = "Bosses" File="Bosses.xml" />
+
+	<Folder Name = "Buildings">
+		<Prototype
+			Class		= "Bar"
+			Name		= "bar"
+			BuildingType	= "Bar"
+			WithBarman	= "true" />
+
+		<Prototype
+			Class		= "Bar"
+			Name		= "barWithoutBarman"
+			BuildingType	= "Bar"
+			WithBarman	= "false" />
+
+		<Prototype
+			Class		= "Building"
+			Name		= "administration"
+			BuildingType	= "Administration" />
+
+		<Prototype
+			Class		= "Workshop"
+			Name		= "workshop"
+			BuildingType	= "Workshop" />
+
+		<Prototype
+			Class		= "Workshop"
+			Name		= "shop"
+			BuildingType	= "Shop" />
+
+		<Prototype
+			Class		= "Building"
+			Name		= "garage"
+			BuildingType	= "Garage" />
+
+
+	</Folder>
+	
+	<Folder Name="BreakableObjects" File="BreakableObjects.xml" />
+
+	<Folder Name = "Guns">
+		<Folder Name = "DVGuns"	File = "DVGuns.xml" />
+	</Folder>
+
+	<Folder Name = "Vehicles" File="Vehicles.xml" />
+
+  <Folder Name = "VehicleParts" File="VehicleParts.xml" />
+  
+  <Folder Name = "NPCs">
+		<Prototype
+			Class		= "Npc"
+			Name		= "NPC" />
+	</Folder>
+
+	<Folder Name = "DV_exp" File="testobjs_dv.xml" />
+
+
+	<Folder Name = "Bullets">
+		<Prototype
+			Class		= "Bullet"
+                        Name            = "raybullet" />
+	</Folder>
+	
+	<Folder Name = "Dots">
+		<Prototype 
+			Class		= "VehiclePart"
+			Name		= "sack_dot2"
+			ModelFile	= "sack_dot2" 
+			ResourceType	= "STATIC_AUTO_GUN_DOT" />
+
+		<Prototype 
+			Class		= "VehiclePart"
+			Name		= "metal_dot"
+			ModelFile	= "metal_dot" 
+			ResourceType	= "STATIC_AUTO_GUN_DOT" />
+
+		<Prototype 
+			Class		= "VehiclePart"
+			Name		= "heavy_dot2"
+			ModelFile	= "heavy_dot2" 
+			ResourceType	= "STATIC_AUTO_GUN_DOT" />
+		</Folder>
+</Prototypes>

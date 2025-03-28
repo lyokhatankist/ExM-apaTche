@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name		= "Briefing"
+		class		= "Briefing"
+		org			= "0 123 1024 512"
+		style		= "16896"
+		backimage	= "data\if_dv\ico\Briefing\im_briefing.dds">
+
+		<LevelIcoInfo
+			flashTime		= "0.5"
+			flashPauseTime	= "0.5"
+			completedTex	= "BriefingIco_completed"
+			currentTex		= "BriefingIco_current"
+			flashTex		= "BriefingIco_flash"
+		/>
+		
+		<Node
+			name		= "levelName"
+			class		= "Wnd"
+			org			= "642 4 378 50"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			textColor	= "ffaa9966"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+			name		= "levelDiz"
+			class		= "TextBoxWnd"
+			org			= "658 72 346 420"
+			style		= "512"
+			paneName	= "MainMenu_C"
+			paneFlags	= "7"
+			format		= "1"
+			fontName	= "SM_Tahoma"
+			fontSize	= "12"
+			textColor	= "ffffffff"
+			drawFlags	= "13"
+			clientEdges	= "11 11 0 11" 
+		/>
+
+		<Node
+			name		= "icoDv1"
+			class		= "BriefingIco"
+			org			= "152 118 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv1"
+		/>
+
+		<Node
+			name		= "icoDv2"
+			class		= "BriefingIco"
+			org			= "267 92 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv2"
+		/>
+
+		<Node
+			name		= "icoDv4"
+			class		= "BriefingIco"
+			org			= "547 124 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv4"
+		/>
+
+		<Node
+			name		= "icoDv5"
+			class		= "BriefingIco"
+			org			= "399 328 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv5"
+		/>
+
+		<Node
+			name		= "icoDv6"
+			class		= "BriefingIco"
+			org			= "318 427 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv6"
+		/>
+
+		<Node
+			name		= "icoDv7"
+			class		= "BriefingIco"
+			org			= "121 423 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv7"
+		/>
+
+		<Node
+			name		= "icoDv8"
+			class		= "BriefingIco"
+			org			= "309 160 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv8"
+		/>
+
+		<Node
+			name		= "icoDv9"
+			class		= "BriefingIco"
+			org			= "76 197 32 32"
+			style		= "768"
+			paneFlags	= "0"
+			levelName	= "dv9"
+		/>
+
+	</Node>
+</Prefabs>
