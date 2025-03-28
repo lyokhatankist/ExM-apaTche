@@ -210,7 +210,7 @@ Instead, the player will now be met by several police cars there.
 
 ■ Swapped the previews and loading screen images for Mission 4 "Strange jungle" and Mission 6 "Last man standing".
 
-■ Исправлены визуалы оружейных пикапов в миссии 6 "Последний воин" и миссии 8 "Большая Охота".
+■ Fixed weapon pickup visuals in Mission 6 "Last man standing" and Mission 8 "The Big Hunt".
 
 ■ Changed the weather in Mission 7 "Desert heat" (previously this mission reused the same weather from Mission 2 "Base No. 31").
 
@@ -241,7 +241,7 @@ Instead, the player will now be met by several police cars there.
 
 ■ Fixed the analytical report being issued during the final cutscene in Mission 8 "The Big Hunt".
 
-■ Added credits after the battle with the final boss.
+■ Added credits after the final boss battle.
 
 ## | Audio |
 ■ Fixed missing ambient sounds. All sounds have had their volume adjusted.
