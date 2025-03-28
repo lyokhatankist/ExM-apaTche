@@ -1,0 +1,5014 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<DynamicScene
+	LastId="423">
+	<TargetNamesForDestroy
+		Names="" />
+
+	<AllowedWaresForDrop
+		Prototypes="" />
+
+	<Object
+		Name="Player1"
+		Belong="1100"
+		Prototype="player">
+		<Object
+			Name="MyCar"
+			Belong="1100"
+			Prototype="MHCar"
+			Pos="3236.317 299.946 3331.021"
+			Rot="0.000 0.861 0.000 -0.508">
+			<Parts />
+
+			<Repository />
+		</Object>
+
+		<Object
+			Belong="1100"
+			Prototype="radioManager" />
+
+		<Object
+			Name="upgradeManager"
+			Belong="1100"
+			Prototype="upgradeManager"
+			UpgradeLevels="1,1,0,0,0,0,1,0,0,0"
+			IntermissionLevels="1103186188,0,0,0,0,1179500098,0,0,0,0"
+			UP="0"
+			UsedUP="0"
+			Weapon="0"
+			IntermissionWeapon="0" />
+	</Object>
+
+	<Object
+		Name="rotateManager"
+		Belong="-1"
+		Prototype="rotateManager" />
+
+	<Object
+		Belong="1100"
+		Prototype="spawnManager" />
+
+	<Object
+		Name="locStart"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3236.542 298.708 3330.687"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive10"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3147.958 291.421 2513.204"
+		Rot="-0.069 -0.475 -0.037 0.876"
+		Mass="161.648"
+		NodeScale="1.172" />
+
+	<Object
+		Name="Mushroom_03_small_dyn8"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3065.706 280.477 2876.298"
+		Rot="-0.182 -0.476 -0.043 0.859"
+		Mass="4.548"
+		NodeScale="0.769" />
+
+	<Object
+		Name="Mushroom_03_small_dyn9"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3063.466 280.522 2877.285"
+		Rot="0.021 -0.783 0.083 0.616"
+		Mass="7.386"
+		NodeScale="0.904" />
+
+	<Object
+		Name="Mushroom_03_small_dyn11"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3065.082 280.339 2873.837"
+		Rot="-0.012 0.334 -0.033 0.942"
+		Mass="21.647"
+		NodeScale="1.294" />
+
+	<Object
+		Name="Mushroom_03_dyn15"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3170.066 281.880 3118.231"
+		Rot="0.165 0.000 0.000 0.986"
+		Mass="256.703"
+		NodeScale="0.801" />
+
+	<Object
+		Name="Mushroom_03_dyn16"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3164.792 282.357 3103.167" />
+
+	<Object
+		Name="Mushroom_03_dyn17"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3171.555 282.110 3105.341"
+		Rot="0.000 0.000 -0.126 0.992" />
+
+	<Object
+		Name="Mushroom_01_dyn25"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3189.311 280.876 3002.255"
+		Rot="-0.157 -0.146 -0.023 0.976"
+		Mass="76.421"
+		NodeScale="0.503" />
+
+	<Object
+		Name="Mushroom_01_dyn26"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3187.635 280.625 3006.194"
+		Rot="-0.169 0.972 -0.028 0.163"
+		Mass="36.928"
+		NodeScale="0.395" />
+
+	<Object
+		Name="Mushroom_01_dyn27"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3342.125 284.723 3018.323"
+		Rot="-0.040 -0.470 0.075 0.879" />
+
+	<Object
+		Name="Mushroom_01_small_dyn28"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3339.357 283.239 3017.143"
+		Rot="-0.018 0.962 -0.065 -0.266" />
+
+	<Object
+		Name="Mushroom_01_small_dyn29"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3339.247 283.137 3021.284"
+		Rot="-0.058 0.875 0.177 -0.446" />
+
+	<Object
+		Name="Mushroom_01_small_dyn30"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3343.408 285.410 3019.465"
+		Rot="0.028 -0.430 -0.059 0.900"
+		Mass="25.871"
+		NodeScale="1.373" />
+
+	<Object
+		Name="Mushroom_01_dyn33"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3046.952 281.483 3020.507"
+		Rot="-0.012 -0.126 0.099 0.987" />
+
+	<Object
+		Name="Mushroom_03_dyn34"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3308.572 281.904 2958.866"
+		Rot="0.016 -0.739 0.091 0.667"
+		Mass="1218.926"
+		NodeScale="1.346" />
+
+	<Object
+		Name="Mushroom_03_dyn35"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3306.578 281.338 2964.900"
+		Rot="0.070 -0.464 -0.132 0.873"
+		Mass="272.742"
+		NodeScale="0.817" />
+
+	<Object
+		Name="Mushroom_03_dyn36"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3290.639 281.525 2972.702"
+		Rot="0.112 -0.612 -0.141 0.770"
+		Mass="241.607"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_03_dyn37"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3286.018 281.387 2931.619"
+		Rot="0.055 0.891 -0.129 -0.433" />
+
+	<Object
+		Name="Mushroom_03_dyn38"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3283.497 281.038 2949.775"
+		Rot="0.000 0.966 0.000 0.259"
+		Mass="158.073"
+		NodeScale="0.681" />
+
+	<Object
+		Name="Mushroom_03_dyn39"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3293.857 281.093 2940.327"
+		Rot="-0.013 0.095 -0.132 0.987"
+		Mass="386.748"
+		NodeScale="0.918" />
+
+	<Object
+		Name="Mushroom_03_dyn40"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3316.062 283.381 2910.753"
+		Rot="-0.140 0.943 -0.017 0.301" />
+
+	<Object
+		Name="Mushroom_03_small_dyn41"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3317.078 283.730 2916.082"
+		Rot="0.160 0.982 0.015 0.095" />
+
+	<Object
+		Name="Mushroom_03_small_dyn42"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3291.572 281.331 2975.693"
+		Rot="-0.007 0.893 0.169 0.416"
+		Mass="5.796"
+		NodeScale="0.834" />
+
+	<Object
+		Name="Mushroom_03_small_dyn44"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3279.502 281.532 2953.216"
+		Rot="-0.126 0.187 0.024 0.974" />
+
+	<Object
+		Name="Mushroom_03_small_dyn46"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3279.711 281.155 2938.542"
+		Rot="0.000 0.937 0.000 -0.350" />
+
+	<Object
+		Name="Mushroom_03_small_dyn51"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="3286.626 281.774 2975.684"
+		Rot="-0.197 0.969 0.140 0.054"
+		Mass="3.569"
+		NodeScale="0.709" />
+
+	<Object
+		Name="Mushroom_03_dyn52"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3258.670 281.140 2950.334"
+		Rot="0.071 0.485 0.095 0.866" />
+
+	<Object
+		Name="Mushroom_03_dyn53"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3303.844 281.257 2954.596"
+		Rot="-0.181 0.944 -0.052 0.271"
+		Mass="131.792"
+		NodeScale="0.641" />
+
+	<Object
+		Name="Mushroom_01_dyn54"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3131.116 282.446 2830.920"
+		Rot="-0.148 -0.760 -0.186 0.605"
+		Mass="308.043"
+		NodeScale="0.801" />
+
+	<Object
+		Name="Mushroom_01_dyn55"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3119.745 282.582 2808.439"
+		Rot="-0.151 -0.247 -0.039 0.956"
+		Mass="759.121"
+		NodeScale="1.082" />
+
+	<Object
+		Name="Mushroom_01_dyn56"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3169.726 283.215 2808.398"
+		Rot="0.041 0.980 0.176 -0.085"
+		Mass="469.701"
+		NodeScale="0.922" />
+
+	<Object
+		Name="Mushroom_01_dyn57"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3120.062 282.523 2821.015"
+		Rot="0.072 0.751 0.063 0.653" />
+
+	<Object
+		Name="Mushroom_01_small_dyn58"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3172.548 282.573 2808.834"
+		Rot="0.247 0.954 0.113 0.124"
+		Mass="3.359"
+		NodeScale="0.695" />
+
+	<Object
+		Name="Mushroom_01_small_dyn59"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3167.992 284.013 2816.540"
+		Rot="0.124 -0.588 0.092 0.794" />
+
+	<Object
+		Name="Mushroom_01_small_dyn60"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3171.705 282.408 2807.197"
+		Rot="-0.183 0.284 -0.103 0.935" />
+
+	<Object
+		Name="Mushroom_01_small_dyn61"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3122.781 282.428 2809.870"
+		Rot="0.102 0.824 -0.156 0.535" />
+
+	<Object
+		Name="Mushroom_03_dyn65"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3257.190 280.517 3006.102"
+		Rot="0.189 -0.043 0.095 0.976" />
+
+	<Object
+		Name="Mushroom_03_dyn66"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3259.670 280.583 3004.326"
+		Rot="0.142 0.036 -0.133 0.980"
+		Mass="158.073"
+		NodeScale="0.681" />
+
+	<Object
+		Name="Mushroom_03_dyn70"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2985.868 282.445 2764.304"
+		Rot="0.161 0.953 -0.054 0.250"
+		Mass="158.073"
+		NodeScale="0.681" />
+
+	<Object
+		Name="Mushroom_03_dyn71"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2982.427 282.564 2763.899"
+		Rot="0.047 -0.642 0.039 0.764" />
+
+	<Object
+		Name="Mushroom_03_dyn72"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2942.693 283.416 2705.812"
+		Rot="0.151 -0.426 0.067 0.890" />
+
+	<Object
+		Name="Mushroom_03_dyn73"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2980.344 286.219 2732.456"
+		Rot="0.291 -0.754 -0.212 0.550" />
+
+	<Object
+		Name="Mushroom_03_dyn74"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2986.289 286.200 2732.809"
+		Rot="-0.027 -0.606 -0.190 0.772"
+		Mass="1456.729"
+		NodeScale="1.428" />
+
+	<Object
+		Name="Mushroom_03_dyn75"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2985.205 283.518 2739.927"
+		Rot="0.247 0.868 0.238 0.359"
+		Mass="167.949"
+		NodeScale="0.695" />
+
+	<Object
+		Name="Mushroom_03_dyn76"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2992.868 284.241 2733.363"
+		Rot="0.163 0.117 -0.129 0.971"
+		Mass="178.443"
+		NodeScale="0.709" />
+
+	<Object
+		Name="Mushroom_01_dyn78"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2904.945 284.088 2890.678"
+		Rot="-0.139 0.891 -0.067 0.426"
+		Mass="1552.241"
+		NodeScale="1.373" />
+
+	<Object
+		Name="Mushroom_01_dyn81"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2912.570 283.094 2889.292"
+		Rot="0.201 0.958 0.000 -0.205" />
+
+	<Object
+		Name="Mushroom_01_dyn82"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2913.640 283.465 2899.513"
+		Rot="0.169 -0.552 -0.086 0.812" />
+
+	<Object
+		Name="Mushroom_01_dyn83"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2926.472 281.934 2930.600"
+		Rot="0.000 0.959 0.000 -0.284" />
+
+	<Object
+		Name="Mushroom_01_small_dyn84"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="2929.988 281.080 2932.791"
+		Rot="0.120 -0.250 -0.220 0.935"
+		Mass="25.871"
+		NodeScale="1.373" />
+
+	<Object
+		Name="Mushroom_01_small_dyn85"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="2928.301 281.857 2929.908"
+		Rot="0.144 0.982 -0.116 0.033"
+		Mass="19.063"
+		NodeScale="1.240" />
+
+	<Object
+		Name="Mushroom_01_dyn86"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3126.663 282.203 2843.091"
+		Rot="-0.190 0.978 0.082 -0.010"
+		Mass="139.259"
+		NodeScale="0.615" />
+
+	<Object
+		Name="Mushroom_01_small_dyn87"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3129.442 281.876 2844.360"
+		Rot="0.025 0.875 0.046 -0.482" />
+
+	<Object
+		Name="Mushroom_01_small_dyn88"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3113.998 282.048 2834.075"
+		Rot="-0.089 0.871 0.296 0.382"
+		Mass="4.832"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive189"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3130.982 299.105 2309.016"
+		Mass="58.247"
+		NodeScale="0.834" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive190"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3121.811 298.411 2334.375"
+		Mass="111.963"
+		NodeScale="1.037" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive191"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3108.999 297.552 2329.770"
+		Mass="45.707"
+		NodeScale="0.769" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive192"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3130.721 286.330 2563.900"
+		Rot="0.141 -0.001 -0.006 0.990"
+		Mass="47.984"
+		NodeScale="0.782" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive193"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3116.818 296.396 2386.805" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive194"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3092.320 292.300 2109.063" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive195"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3090.501 291.527 2128.418"
+		Mass="17.331"
+		NodeScale="0.557" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive196"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3088.023 293.738 2061.922" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive197"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3100.235 294.476 2058.692"
+		Mass="35.867"
+		NodeScale="0.709" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive198"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="3099.526 291.968 2123.303"
+		Mass="18.414"
+		NodeScale="0.568" />
+
+	<Object
+		Name="Mushroom_01_dyn100"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1693.619 264.966 1844.532"
+		Rot="-0.145 0.148 0.169 0.964"
+		Mass="227.511"
+		NodeScale="0.724" />
+
+	<Object
+		Name="Mushroom_01_dyn101"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1631.092 270.657 1855.018"
+		Rot="0.182 0.945 -0.135 -0.236"
+		Mass="849.778"
+		NodeScale="1.123" />
+
+	<Object
+		Name="Mushroom_01_dyn102"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1635.938 270.461 1871.660"
+		Rot="-0.240 -0.766 -0.178 -0.569"
+		Mass="443.141"
+		NodeScale="0.904" />
+
+	<Object
+		Name="Mushroom_01_dyn103"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1622.815 270.531 1869.243"
+		Rot="0.146 -0.927 -0.176 0.298"
+		Mass="308.043"
+		NodeScale="0.801" />
+
+	<Object
+		Name="Mushroom_01_dyn104"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1627.480 271.357 1862.140"
+		Rot="0.000 0.026 0.000 1.000"
+		Mass="2496.681"
+		NodeScale="1.608" />
+
+	<Object
+		Name="Mushroom_01_dyn105"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1693.962 264.819 1846.987"
+		Rot="0.126 0.617 0.213 0.747"
+		Mass="308.043"
+		NodeScale="0.801" />
+
+	<Object
+		Name="Mushroom_01_dyn106"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1695.822 264.872 1845.165"
+		Rot="0.076 0.810 -0.179 0.553" />
+
+	<Object
+		Name="Mushroom_03_dyn107"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1658.193 268.657 2198.667"
+		Rot="0.000 0.824 0.000 0.566"
+		Mass="1218.926"
+		NodeScale="1.346" />
+
+	<Object
+		Name="Mushroom_03_dyn108"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1663.681 269.073 2192.420"
+		Rot="0.077 0.521 -0.060 0.848"
+		Mass="327.128"
+		NodeScale="0.868" />
+
+	<Object
+		Name="Mushroom_03_dyn109"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1657.296 268.717 2187.429"
+		Rot="-0.155 0.966 -0.033 0.205"
+		Mass="634.121"
+		NodeScale="1.082" />
+
+	<Object
+		Name="Mushroom_03_dyn110"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1677.307 268.940 2148.267"
+		Rot="-0.208 0.244 0.054 0.946"
+		Mass="67.097"
+		NodeScale="0.512" />
+
+	<Object
+		Name="Mushroom_03_dyn111"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1678.743 268.923 2152.574"
+		Rot="0.000 0.515 0.000 0.857"
+		Mass="178.443"
+		NodeScale="0.709" />
+
+	<Object
+		Name="Mushroom_03_dyn113"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1667.643 269.285 2169.847"
+		Rot="-0.099 -0.306 -0.032 0.946"
+		Mass="130.220"
+		NodeScale="0.639" />
+
+	<Object
+		Name="Mushroom_03_dyn114"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1595.661 269.385 2099.415"
+		Rot="0.073 0.883 -0.146 0.440"
+		Mass="369.285"
+		NodeScale="0.904" />
+
+	<Object
+		Name="Mushroom_03_dyn115"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1649.698 270.154 2087.298"
+		Rot="-0.234 0.747 -0.063 -0.619"
+		Mass="587.589"
+		NodeScale="1.055" />
+
+	<Object
+		Name="Mushroom_03_dyn116"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1589.727 269.239 2096.853"
+		Rot="-0.213 0.688 -0.125 0.683"
+		Mass="1019.943"
+		NodeScale="1.268" />
+
+	<Object
+		Name="Mushroom_03_dyn117"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1588.431 267.867 2105.255"
+		Rot="0.125 -0.282 0.037 0.951"
+		Mass="1847.484"
+		NodeScale="1.546" />
+
+	<Object
+		Name="Mushroom_01_dyn118"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1872.426 268.583 2269.400"
+		Rot="-0.152 -0.557 0.214 0.788" />
+
+	<Object
+		Name="Mushroom_01_dyn119"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1834.858 268.250 2218.761"
+		Rot="-0.100 0.995 -0.002 0.015"
+		Mass="558.648"
+		NodeScale="0.976" />
+
+	<Object
+		Name="Mushroom_01_dyn121"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1885.280 270.260 2282.238"
+		Rot="0.000 0.725 0.000 0.688" />
+
+	<Object
+		Name="Mushroom_01_dyn122"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1872.665 268.682 2272.863"
+		Rot="0.146 0.975 0.024 0.163"
+		Mass="1647.250"
+		NodeScale="1.400" />
+
+	<Object
+		Name="Mushroom_01_dyn123"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1866.691 268.318 2274.404"
+		Rot="0.146 -0.096 0.029 0.984"
+		Mass="289.928"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_01_dyn124"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1799.551 266.217 2252.976"
+		Rot="-0.140 -0.716 -0.130 -0.671"
+		Mass="1647.250"
+		NodeScale="1.400" />
+
+	<Object
+		Name="Mushroom_03_dyn125"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2193.437 264.640 2570.520"
+		Rot="-0.053 -0.016 0.006 0.998"
+		Mass="1148.621"
+		NodeScale="1.319" />
+
+	<Object
+		Name="Mushroom_03_dyn126"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2241.018 265.030 2591.338"
+		Rot="-0.082 0.500 -0.024 0.862"
+		Mass="905.680"
+		NodeScale="1.219" />
+
+	<Object
+		Name="Mushroom_03_dyn127"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2239.673 265.088 2597.712"
+		Rot="0.114 -0.584 -0.153 0.789" />
+
+	<Object
+		Name="Mushroom_03_dyn128"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2245.051 265.248 2596.200"
+		Rot="0.101 -0.472 -0.052 0.874" />
+
+	<Object
+		Name="Mushroom_03_dyn129"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2194.286 264.545 2573.312"
+		Rot="0.026 0.974 0.165 -0.154" />
+
+	<Object
+		Name="Mushroom_03_dyn130"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2196.998 265.195 2556.279"
+		Rot="-0.080 0.113 0.009 0.990" />
+
+	<Object
+		Name="Mushroom_03_dyn131"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2185.768 264.796 2568.770"
+		Rot="0.194 -0.973 0.024 -0.122"
+		Mass="289.784"
+		NodeScale="0.834" />
+
+	<Object
+		Name="Mushroom_03_dyn132"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2102.227 268.794 2581.983"
+		Rot="-0.020 0.978 0.111 0.173" />
+
+	<Object
+		Name="Mushroom_03_dyn133"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2179.671 265.198 2599.266"
+		Rot="0.057 -0.384 -0.026 0.921" />
+
+	<Object
+		Name="Mushroom_03_dyn134"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2099.307 269.146 2578.115"
+		Rot="-0.182 0.695 0.013 0.695"
+		Mass="256.703"
+		NodeScale="0.801" />
+
+	<Object
+		Name="Mushroom_03_dyn135"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="2183.376 265.070 2597.645"
+		Rot="-0.048 0.641 -0.057 0.764"
+		Mass="853.443"
+		NodeScale="1.195" />
+
+	<Object
+		Name="Mushroom_01_dyn136"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1395.333 269.508 2637.097"
+		Rot="0.029 -0.792 0.038 0.608"
+		Mass="3166.395"
+		NodeScale="1.741" />
+
+	<Object
+		Name="Mushroom_01_small_dyn137"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="2027.528 270.502 2425.913"
+		Rot="0.068 0.962 -0.185 0.189" />
+
+	<Object
+		Name="Mushroom_01_small_dyn138"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="2025.697 270.569 2430.243"
+		Rot="-0.072 0.793 0.096 0.597"
+		Mass="13.459"
+		NodeScale="1.104" />
+
+	<Object
+		Name="Mushroom_01_small_dyn139"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="2026.184 270.550 2426.815"
+		Rot="0.000 0.301 0.000 0.954"
+		Mass="36.950"
+		NodeScale="1.546" />
+
+	<Object
+		Name="Mushroom_01_dyn140"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2029.018 270.402 2316.699"
+		Rot="0.003 0.992 -0.124 0.026"
+		Mass="909.399"
+		NodeScale="1.149" />
+
+	<Object
+		Name="Mushroom_01_dyn141"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2031.389 270.898 2322.853"
+		Rot="0.163 -0.087 0.008 0.983"
+		Mass="227.511"
+		NodeScale="0.724" />
+
+	<Object
+		Name="Mushroom_01_dyn142"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2053.770 271.390 2345.991"
+		Rot="-0.124 -0.967 0.112 0.193"
+		Mass="1219.533"
+		NodeScale="1.267" />
+
+	<Object
+		Name="Mushroom_01_dyn143"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2046.571 271.206 2346.887"
+		Rot="0.049 -0.566 0.067 0.820"
+		Mass="272.878"
+		NodeScale="0.769" />
+
+	<Object
+		Name="Mushroom_01_dyn144"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2030.434 270.756 2319.686"
+		Rot="0.038 -0.118 0.169 0.978"
+		Mass="2089.111"
+		NodeScale="1.516" />
+
+	<Object
+		Name="Mushroom_01_dyn145"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="2054.462 271.388 2351.582"
+		Rot="0.167 0.021 -0.014 0.986"
+		Mass="443.141"
+		NodeScale="0.904" />
+
+	<Object
+		Name="Mushroom_01_small_dyn153"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3113.849 280.479 3013.807"
+		Rot="0.060 0.556 0.088 0.824"
+		Mass="5.796"
+		NodeScale="0.834" />
+
+	<Object
+		Name="Mushroom_01_small_dyn154"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3113.694 279.235 3005.161"
+		Rot="-0.081 -0.364 -0.161 0.914"
+		Mass="4.281"
+		NodeScale="0.754" />
+
+	<Object
+		Name="Mushroom_01_small_dyn155"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3113.392 280.190 3009.012"
+		Rot="0.049 0.823 0.033 0.565" />
+
+	<Object
+		Name="Mushroom_01_small_dyn156"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3122.639 280.102 3036.704"
+		Rot="0.040 0.267 0.142 0.952"
+		Mass="4.832"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_01_small_dyn157"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3112.636 280.630 3026.280"
+		Rot="-0.067 0.839 0.067 0.536"
+		Mass="8.774"
+		NodeScale="0.957" />
+
+	<Object
+		Name="Mushroom_01_small_dyn158"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="3122.933 280.083 3035.461"
+		Rot="-0.177 -0.961 0.191 0.094" />
+
+	<Object
+		Name="Mushroom_03_dyn161"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3141.298 283.315 2952.248"
+		Rot="-0.177 -0.203 -0.150 0.951"
+		Mass="853.443"
+		NodeScale="1.195" />
+
+	<Object
+		Name="Mushroom_03_dyn162"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3140.671 283.230 2957.051"
+		Rot="0.206 0.002 0.000 0.979"
+		Mass="226.853"
+		NodeScale="0.768" />
+
+	<Object
+		Name="Mushroom_03_dyn163"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3137.408 282.780 2951.400"
+		Rot="0.010 -0.342 0.062 0.938" />
+
+	<Object
+		Name="Mushroom_03_dyn164"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3018.619 281.871 2715.901"
+		Rot="0.004 0.993 -0.037 0.113" />
+
+	<Object
+		Name="Mushroom_03_dyn165"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3021.009 281.871 2721.784"
+		Rot="-0.163 0.937 0.073 -0.301"
+		Mass="961.115"
+		NodeScale="1.243" />
+
+	<Object
+		Name="Mushroom_03_dyn167"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="3023.981 281.857 2716.889"
+		Rot="-0.050 0.412 -0.109 0.903"
+		Mass="241.607"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_01_dyn169"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1924.540 266.117 2027.915"
+		Rot="-0.098 0.000 0.000 0.995"
+		Mass="1855.071"
+		NodeScale="1.457" />
+
+	<Object
+		Name="Mushroom_01_dyn170"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1924.284 266.689 2032.026"
+		Rot="0.090 -0.180 -0.004 0.980"
+		Mass="675.697"
+		NodeScale="1.040" />
+
+	<Object
+		Name="Mushroom_01_small_dyn171"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1917.951 266.813 2025.991"
+		Rot="-0.257 -0.333 -0.095 0.902"
+		Mass="8.337"
+		NodeScale="0.941" />
+
+	<Object
+		Name="Mushroom_01_small_dyn172"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1928.198 265.865 2030.501"
+		Rot="0.076 -0.465 -0.143 0.870"
+		Mass="32.225"
+		NodeScale="1.477" />
+
+	<Object
+		Name="Mushroom_01_small_dyn173"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1928.095 264.015 2010.533"
+		Rot="-0.155 0.101 -0.083 0.979" />
+
+	<Object
+		Name="Mushroom_01_dyn175"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1926.395 264.256 2013.736"
+		Rot="0.044 0.000 0.000 0.999" />
+
+	<Object
+		Name="Mushroom_01_small_dyn176"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1639.196 270.226 1871.017"
+		Rot="-0.319 -0.860 -0.297 0.265"
+		Mass="14.282"
+		NodeScale="1.126" />
+
+	<Object
+		Name="Mushroom_01_small_dyn177"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1628.646 270.047 1851.376"
+		Rot="-0.101 -0.951 0.245 -0.159"
+		Mass="12.293"
+		NodeScale="1.071" />
+
+	<Object
+		Name="Mushroom_01_small_dyn178"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1636.226 270.201 1855.816"
+		Rot="0.404 0.877 -0.108 -0.235"
+		Mass="4.229"
+		NodeScale="0.751" />
+
+	<Object
+		Name="Mushroom_01_small_dyn179"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1635.397 270.707 1859.149"
+		Rot="0.123 0.967 0.028 0.223"
+		Mass="30.366"
+		NodeScale="1.448" />
+
+	<Object
+		Name="Mushroom_01_small_dyn181"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1640.021 270.419 1867.171"
+		Rot="-0.091 0.972 0.051 0.210" />
+
+	<Object
+		Name="Mushroom_01_dyn186"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="3049.573 281.571 3017.443"
+		Rot="-0.145 -0.811 0.103 0.557"
+		Mass="289.928"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_03_small_dyn189"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="1626.786 267.374 2018.833"
+		Rot="0.007 0.106 0.230 0.967" />
+
+	<Object
+		Name="Mushroom_03_small_dyn190"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="1628.505 267.387 2018.902"
+		Rot="0.098 0.282 0.038 0.954"
+		Mass="43.684"
+		NodeScale="1.635" />
+
+	<Object
+		Name="Mushroom_03_small_dyn191"
+		Belong="1001"
+		Prototype="Mushroom_03_small_dyn"
+		Pos="1628.227 266.981 2015.371"
+		Rot="-0.093 -0.780 0.183 0.592"
+		Mass="27.454"
+		NodeScale="1.400" />
+
+	<Object
+		Name="Mushroom_03_dyn192"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1632.966 266.869 2013.188"
+		Rot="0.082 0.264 -0.029 0.961"
+		Mass="1204.383"
+		NodeScale="1.340" />
+
+	<Object
+		Name="Mushroom_03_dyn193"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1651.180 270.134 2086.482"
+		Rot="0.158 0.562 -0.027 -0.812"
+		Mass="1218.926"
+		NodeScale="1.346" />
+
+	<Object
+		Name="Mushroom_01_dyn194"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1796.153 266.488 2252.569"
+		Rot="0.090 0.127 -0.172 -0.973"
+		Mass="322.998"
+		NodeScale="0.813" />
+
+	<Object
+		Name="Mushroom_01_dyn195"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1796.888 266.634 2241.183"
+		Rot="-0.057 -0.908 0.020 0.414" />
+
+	<Object
+		Name="Mushroom_01_small_dyn196"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1829.061 268.067 2215.677"
+		Rot="-0.022 -0.235 0.091 0.968"
+		Mass="4.832"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_01_small_dyn197"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1830.074 268.169 2214.066"
+		Rot="-0.153 0.745 -0.009 0.650" />
+
+	<Object
+		Name="Mushroom_01_small_dyn198"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1835.583 268.093 2222.305"
+		Rot="-0.007 0.990 0.130 0.052" />
+
+	<Object
+		Name="Mushroom_01_small_dyn199"
+		Belong="1001"
+		Prototype="Mushroom_01_small_dyn"
+		Pos="1854.518 272.182 2215.693"
+		Rot="0.000 -0.096 0.000 0.995" />
+
+	<Object
+		Name="Mushroom_01_dyn200"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1810.474 265.889 2252.982"
+		Rot="0.017 0.969 -0.004 -0.246"
+		Mass="256.831"
+		NodeScale="0.754" />
+
+	<Object
+		Name="Mushroom_01_dyn202"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1407.063 267.736 2630.086"
+		Rot="0.034 0.340 -0.157 0.927"
+		Mass="710.203"
+		NodeScale="1.058" />
+
+	<Object
+		Name="Mushroom_01_dyn204"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1397.193 268.051 2628.425"
+		Rot="0.146 0.886 -0.177 -0.402"
+		Mass="965.062"
+		NodeScale="1.172" />
+
+	<Object
+		Name="Mushroom_01_dyn205"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1403.972 269.178 2638.678"
+		Rot="0.079 0.507 -0.047 0.857"
+		Mass="389.737"
+		NodeScale="0.866" />
+
+	<Object
+		Name="Mushroom_03_dyn206"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1773.204 263.469 2469.226"
+		Rot="-0.193 0.981 0.002 -0.009"
+		Mass="1218.926"
+		NodeScale="1.346" />
+
+	<Object
+		Name="Mushroom_03_dyn207"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1777.236 263.385 2464.409"
+		Rot="-0.058 -0.225 -0.157 0.960" />
+
+	<Object
+		Name="Mushroom_03_dyn208"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1748.484 265.895 2478.344"
+		Rot="0.298 0.941 -0.156 0.042"
+		Mass="226.038"
+		NodeScale="0.767" />
+
+	<Object
+		Name="Mushroom_03_dyn209"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1746.685 266.556 2479.939"
+		Rot="-0.077 0.146 -0.003 0.986"
+		Mass="1542.185"
+		NodeScale="1.456" />
+
+	<Object
+		Name="Mushroom_03_dyn210"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1690.372 267.926 2457.265"
+		Rot="-0.289 0.680 0.040 0.673"
+		Mass="289.784"
+		NodeScale="0.834" />
+
+	<Object
+		Name="Mushroom_03_dyn211"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1690.238 268.503 2461.120"
+		Rot="-0.104 0.993 -0.003 -0.050"
+		Mass="256.703"
+		NodeScale="0.801" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1212"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2473.771 254.365 2255.615"
+		Rot="0.077 0.737 -0.007 0.671"
+		Mass="54.821"
+		NodeScale="0.817" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1213"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2460.347 255.083 2250.622"
+		Rot="0.000 0.000 0.020 1.000"
+		Mass="69.861"
+		NodeScale="0.886" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1214"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2463.799 257.091 2240.049"
+		Rot="0.000 0.000 0.085 0.996"
+		Mass="205.008"
+		NodeScale="1.268" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1215"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2454.134 259.400 2230.831"
+		Mass="134.289"
+		NodeScale="1.101" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1216"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2472.476 267.729 2102.084"
+		Rot="0.000 0.000 -0.065 0.998"
+		Mass="292.803"
+		NodeScale="1.428" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1217"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2459.353 268.527 2098.552"
+		Rot="0.000 0.000 0.050 0.999" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1218"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2470.357 266.079 2138.591" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1219"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2467.497 269.821 2085.517" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1220"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2453.061 318.236 833.302"
+		Rot="0.000 0.133 0.000 0.991"
+		Mass="48.563"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1221"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2432.771 319.381 827.946"
+		Rot="-0.076 0.054 0.004 0.996"
+		Mass="152.324"
+		NodeScale="1.149" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1222"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2424.820 318.830 835.882"
+		Rot="0.070 0.000 0.000 0.998"
+		Mass="94.024"
+		NodeScale="0.978" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1223"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2915.216 330.223 617.344" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1224"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2940.660 330.653 619.904"
+		Rot="0.000 0.000 0.031 1.000"
+		Mass="349.926"
+		NodeScale="1.516" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1225"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2938.704 331.644 589.660"
+		Mass="245.004"
+		NodeScale="1.346" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1226"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2954.993 331.150 616.898"
+		Rot="0.000 0.000 -0.109 0.994" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1227"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2857.628 321.844 701.557"
+		Mass="245.004"
+		NodeScale="1.346" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1228"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2850.752 322.878 691.569"
+		Rot="-0.048 0.000 0.000 0.999"
+		Mass="74.226"
+		NodeScale="0.904" />
+
+	<Object
+		Name="Breakable_Mushrooms_Explosive1229"
+		Belong="1001"
+		Prototype="Breakable_Mushrooms_Explosive1"
+		Pos="2865.551 324.458 679.247"
+		Rot="0.078 0.000 0.000 0.997"
+		Mass="78.864"
+		NodeScale="0.922" />
+
+	<Object
+		Name="Mushroom_03_dyn230"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="996.184 233.416 1702.026"
+		Rot="-0.115 0.003 0.056 0.992"
+		Mass="5350.363"
+		NodeScale="2.204" />
+
+	<Object
+		Name="Mushroom_03_dyn232"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1004.925 233.416 1716.298"
+		Rot="0.070 0.408 -0.072 0.907"
+		Mass="1740.926"
+		NodeScale="1.516" />
+
+	<Object
+		Name="Mushroom_03_dyn233"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="993.516 233.419 1715.058"
+		Rot="-0.089 0.916 0.093 0.379"
+		Mass="672.934"
+		NodeScale="1.104" />
+
+	<Object
+		Name="Mushroom_03_dyn234"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1027.394 232.582 1756.552"
+		Rot="-0.182 -0.295 -0.057 0.936" />
+
+	<Object
+		Name="Mushroom_03_dyn235"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="1024.093 232.582 1755.659"
+		Rot="0.003 0.861 0.065 0.505"
+		Mass="1293.534"
+		NodeScale="1.373" />
+
+	<Object
+		Name="Mushroom_03_dyn236"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="990.888 233.439 1764.361"
+		Rot="0.067 0.598 0.089 0.794" />
+
+	<Object
+		Name="Mushroom_03_dyn237"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="986.142 233.510 1760.813"
+		Rot="-0.125 0.834 -0.168 0.511"
+		Mass="1148.621"
+		NodeScale="1.319" />
+
+	<Object
+		Name="Mushroom_03_dyn238"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="993.450 233.403 1759.353"
+		Rot="-0.026 0.206 -0.121 0.971" />
+
+	<Object
+		Name="Mushroom_01_dyn239"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1622.660 256.566 917.658"
+		Rot="0.000 -0.839 0.000 0.545"
+		Mass="2496.681"
+		NodeScale="1.608" />
+
+	<Object
+		Name="Mushroom_01_dyn240"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1617.546 261.068 888.628"
+		Rot="-0.139 -0.479 -0.077 0.863" />
+
+	<Object
+		Name="Mushroom_01_dyn241"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1611.797 255.417 917.639"
+		Rot="0.015 -0.064 0.237 0.969" />
+
+	<Object
+		Name="Mushroom_01_dyn242"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1639.053 249.719 962.434"
+		Rot="-0.060 0.897 0.211 0.383"
+		Mass="417.081"
+		NodeScale="0.886" />
+
+	<Object
+		Name="Mushroom_01_dyn243"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1638.559 250.433 956.823"
+		Rot="-0.055 0.898 -0.118 -0.419" />
+
+	<Object
+		Name="Mushroom_01_dyn244"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1622.192 255.370 922.901"
+		Rot="-0.195 -0.028 0.005 -0.980"
+		Mass="1086.816"
+		NodeScale="1.219" />
+
+	<Object
+		Name="Mushroom_01_dyn245"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1421.904 235.513 1342.538"
+		Rot="-0.098 0.016 -0.047 -0.994"
+		Mass="289.928"
+		NodeScale="0.785" />
+
+	<Object
+		Name="Mushroom_01_dyn246"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1421.529 235.499 1388.487"
+		Rot="0.055 0.537 -0.020 0.842"
+		Mass="909.399"
+		NodeScale="1.149" />
+
+	<Object
+		Name="Mushroom_01_dyn247"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1428.601 235.513 1382.902"
+		Rot="0.028 0.951 -0.116 0.286"
+		Mass="2352.678"
+		NodeScale="1.577" />
+
+	<Object
+		Name="Mushroom_01_dyn248"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1475.071 235.513 1370.406"
+		Rot="-0.081 0.556 -0.063 0.825"
+		Mass="272.878"
+		NodeScale="0.769" />
+
+	<Object
+		Name="Mushroom_01_dyn249"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1487.851 235.513 1383.197"
+		Rot="0.204 0.034 -0.007 0.978"
+		Mass="272.878"
+		NodeScale="0.769" />
+
+	<Object
+		Name="Mushroom_01_dyn250"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1422.183 235.498 1380.877"
+		Rot="-0.116 -0.291 0.088 0.946"
+		Mass="417.081"
+		NodeScale="0.886" />
+
+	<Object
+		Name="Mushroom_01_dyn251"
+		Belong="1001"
+		Prototype="Mushroom_01_dyn"
+		Pos="1425.444 235.513 1340.009"
+		Rot="0.031 0.818 -0.147 0.555" />
+
+	<Object
+		Name="Mushroom_03_dyn252"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="606.031 246.589 1182.008"
+		Rot="-0.116 0.734 -0.149 0.652"
+		Mass="466.099"
+		NodeScale="0.977" />
+
+	<Object
+		Name="Mushroom_03_dyn253"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="658.377 246.667 1157.357"
+		Rot="0.072 0.675 0.024 0.734" />
+
+	<Object
+		Name="Mushroom_03_dyn254"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="656.680 247.384 1136.491"
+		Rot="0.072 0.831 -0.111 0.540" />
+
+	<Object
+		Name="Mushroom_03_dyn255"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="632.330 251.702 1123.332"
+		Rot="0.000 0.910 0.000 0.415" />
+
+	<Object
+		Name="Mushroom_03_dyn256"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="648.942 248.674 1133.830"
+		Rot="-0.106 0.489 0.060 0.864"
+		Mass="804.218"
+		NodeScale="1.172" />
+
+	<Object
+		Name="Mushroom_03_dyn257"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="648.933 248.429 1138.744"
+		Rot="0.021 -0.972 -0.073 0.222"
+		Mass="2207.914"
+		NodeScale="1.641" />
+
+	<Object
+		Name="Mushroom_03_dyn258"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="612.577 246.622 1185.574"
+		Rot="0.289 0.550 -0.091 0.779"
+		Mass="272.742"
+		NodeScale="0.817" />
+
+	<Object
+		Name="Mushroom_03_dyn259"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="605.558 246.495 1186.604"
+		Rot="0.072 0.196 0.031 0.977"
+		Mass="961.115"
+		NodeScale="1.243" />
+
+	<Object
+		Name="Mushroom_03_dyn260"
+		Belong="1001"
+		Prototype="Mushroom_03_dyn"
+		Pos="615.179 252.567 1130.602"
+		Rot="-0.003 0.995 0.094 0.035" />
+
+	<Object
+		Name="Way_01"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2706.160 298.510 1858.688"
+		Radius="96.610"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_02"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2667.934 307.928 1616.103"
+		Radius="107.652"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_03"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2995.357 308.833 812.837"
+		Radius="121.233"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_04"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2244.775 298.642 998.801"
+		Radius="163.164"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_05"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2164.696 330.083 1303.235"
+		Radius="49.729"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_06"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2330.728 296.626 1776.410"
+		Radius="223.989"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_07"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1435.614 266.495 2148.645"
+		Radius="194.996"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_07_a"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1841.401 266.844 2266.063"
+		Radius="121.233"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_08"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2332.594 286.179 2825.693"
+		Radius="142.044"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_09"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1265.549 274.619 3305.662"
+		Radius="169.755"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_10"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="882.985 276.045 2646.324"
+		Radius="147.782"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Way_11"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1112.266 246.416 664.239"
+		Radius="128.653"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush00"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3063.260 280.833 2884.232"
+		Radius="59.920"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush00_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2950.701 282.595 2724.992"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush01"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3150.236 284.519 2606.014"
+		Radius="45.942"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush01_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3094.630 295.109 2281.866"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush02"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2673.827 257.037 2453.962"
+		Radius="88.312"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush02_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2467.544 261.070 2205.298"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush03"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3096.243 294.102 2229.859"
+		Radius="49.729"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush03_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3051.238 296.341 1929.601"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush04"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2803.434 300.853 1861.978"
+		Radius="103.471"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush04_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2750.500 278.508 2025.236"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush05"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2640.977 295.051 1904.809"
+		Radius="97.503"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush05_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2756.543 279.048 2005.348"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush06"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2750.991 286.496 1962.424"
+		Radius="79.987"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush06_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2817.338 277.322 2149.285"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush07"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3106.715 306.520 1130.951"
+		Radius="91.879"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush07_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3006.466 322.966 952.615"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush08"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3128.127 303.707 904.420"
+		Radius="64.330"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush08_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2945.530 307.060 807.164"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush09"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3001.486 328.379 737.315"
+		Radius="39.211"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush09_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2849.640 324.769 657.605"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush10"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2624.014 313.093 827.112"
+		Radius="64.330"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush10_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2371.383 313.579 888.308"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush11"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2222.174 296.973 1023.823"
+		Radius="84.882"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush11_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2213.015 314.947 1203.732"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush12"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2189.199 300.902 1091.935"
+		Radius="69.633"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush12_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2097.039 301.575 1098.674"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush13"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2178.826 306.021 1591.021"
+		Radius="88.312"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush13_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2346.063 303.075 1642.516"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush14"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2232.515 291.174 2922.430"
+		Radius="72.446"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush14_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2307.591 287.125 3004.435"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush15"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1082.504 267.426 3051.667"
+		Radius="103.471"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush15_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="846.979 276.453 2630.648"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush16"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="904.662 275.909 2721.826"
+		Radius="109.804"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush16_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="811.633 275.361 2516.950"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Zombie_01_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="3158.507 282.389 2703.566"
+		Radius="66.929"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_01"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_01_S" />
+
+	<Object
+		Name="Zombie_02_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1959.344 263.915 1894.640"
+		Radius="103.471"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_02"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_02_S" />
+
+	<Object
+		Name="Zombie_03_S_E"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1690.737 269.516 2124.333"
+		Radius="90.078"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_03"
+		Belong="1101"
+		Prototype="LongCemetery_Exp"
+		Location="Zombie_03_S_E" />
+
+	<Object
+		Name="Zombie_04_B"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1426.021 266.303 2127.056"
+		Radius="73.895"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_04"
+		Belong="1101"
+		Prototype="BigLongCemetery"
+		Location="Zombie_04_B" />
+
+	<Object
+		Name="Zombie_05_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1724.619 266.091 2457.855"
+		Radius="68.268"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_05"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_05_S" />
+
+	<Object
+		Name="Zombie_06_S_E"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="2036.996 271.065 2490.226"
+		Radius="79.987"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_06"
+		Belong="1101"
+		Prototype="LongCemetery_Exp"
+		Location="Zombie_06_S_E" />
+
+	<Object
+		Name="Zombie_07_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="2171.002 265.045 2581.201"
+		Radius="69.633"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_07"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_07_S" />
+
+	<Object
+		Name="Zombie_09_B"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1835.720 286.648 3245.112"
+		Radius="93.717"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_09"
+		Belong="1101"
+		Prototype="BigLongCemetery"
+		Location="Zombie_09_B" />
+
+	<Object
+		Name="Zombie_08_S_E"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1728.849 277.478 3199.056"
+		Radius="81.586"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_08"
+		Belong="1101"
+		Prototype="LongCemetery_Exp"
+		Location="Zombie_08_S_E" />
+
+	<Object
+		Name="Zombie_10_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1699.870 282.711 3300.063"
+		Radius="105.541"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_10"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_10_S" />
+
+	<Object
+		Name="Zombie_11_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="747.932 245.332 1946.478"
+		Radius="45.942"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_11"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_11_S" />
+
+	<Object
+		Name="Zombie_12_S_E"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="865.827 243.064 1606.546"
+		Radius="107.651"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_12"
+		Belong="1101"
+		Prototype="LongCemetery_Exp"
+		Location="Zombie_12_S_E" />
+
+	<Object
+		Name="Zombie_13_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1121.555 233.582 1613.391"
+		Radius="93.717"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_13"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_13_S" />
+
+	<Object
+		Name="Zombie_14_S_E"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1208.941 234.040 1456.115"
+		Radius="105.541"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_14"
+		Belong="1101"
+		Prototype="LongCemetery_Exp"
+		Location="Zombie_14_S_E" />
+
+	<Object
+		Name="Zombie_15_S_E"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="728.974 234.924 1115.633"
+		Radius="123.658"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_15"
+		Belong="1101"
+		Prototype="LongCemetery_Exp"
+		Location="Zombie_15_S_E" />
+
+	<Object
+		Name="Zombie_17_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="891.740 235.076 1193.487"
+		Radius="103.471"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_17"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_17_S" />
+
+	<Object
+		Name="Zombie_16_B"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1166.546 237.139 1043.975"
+		Radius="147.782"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_16"
+		Belong="1101"
+		Prototype="BigLongCemetery"
+		Location="Zombie_16_B" />
+
+	<Object
+		Name="Zombie_18_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1513.835 237.634 969.298"
+		Radius="93.717"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_18"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_18_S" />
+
+	<Object
+		Name="Zombie_19_S"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1135.193 246.418 696.409"
+		Radius="144.885"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Cemetery_19"
+		Belong="1101"
+		Prototype="LongCemetery"
+		Location="Zombie_19_S" />
+
+	<Object
+		Name="Explode_01"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1516.183 282.847 3325.909"
+		Radius="53.829"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Explode_02"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1066.302 240.869 633.303"
+		Radius="107.393"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="DotAutoGun_03282"
+		Belong="1101"
+		Prototype="DotAutoGun_03"
+		Pos="858.564 275.946 2675.766"
+		Rot="0.000 0.225 0.000 0.974">
+		<Parts />
+	</Object>
+
+	<Object
+		Name="DotAutoGun_03283"
+		Belong="1101"
+		Prototype="DotAutoGun_03"
+		Pos="915.999 275.970 2669.964">
+		<Parts />
+	</Object>
+
+	<Object
+		Name="DotAutoGun_03284"
+		Belong="1101"
+		Prototype="DotAutoGun_03"
+		Pos="2779.511 278.952 2056.136"
+		Rot="0.000 -0.964 0.000 0.267">
+		<Parts />
+	</Object>
+
+<!-- New Bonus DV6 BIG-->
+	<Object
+		Name="Bonus_Big_01"
+		Prototype="bigBonus1"
+		Pos="2887.573 330.862 610.553"
+		NodeScale="4.500" />
+
+	<Object
+		Name="Bonus_Big_02"
+		Prototype="bigBonus1"
+		Pos="1688.813 265.303 1791.245"
+		NodeScale="4.500" />
+
+	<Object
+		Name="Bonus_Big_03"
+		Prototype="bigBonus1"
+		Pos="1437.724 265.264 2616.959"
+		NodeScale="4.500" />
+
+<!-- New Bonus DV6 Unique-->
+
+	<Object
+		Name="Bonus_Unique_SecretPlace_01"
+		Prototype="uniqueBonus1"
+		Pos="1616.882 255.596 919.225"
+		SpawnEffect="ET_PS_BONUS4_PICKUP"
+		SpawnEffectStatic="ET_PS_SECRET_PLACE"
+		NodeScale="4.000"/>
+
+	<Object
+		Name="Bonus_Unique_SecretPlace_02"
+		Prototype="uniqueBonus1"
+		Pos="2129.253 306.658 1649.275"
+		SpawnEffect="ET_PS_BONUS4_PICKUP"
+		SpawnEffectStatic="ET_PS_SECRET_PLACE"
+		NodeScale="4.000"/>
+
+<!-- New PowerUp DV6 Repair-->
+
+	<Object
+		Name="PowerUp_Repair_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="832.035 235.076 1351.757"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_02_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1030.846 246.229 838.544"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_03_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1575.660 262.239 751.299"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_04_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3155.794 284.103 2648.860"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_05_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2565.913 253.336 2393.361"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_06_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2808.584 277.491 2119.648"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_07_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3105.585 291.664 2156.141"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_08_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2425.568 271.227 2084.370"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_09_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2633.555 299.943 1715.713"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_10_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2764.562 301.457 1705.043"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_11_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2665.014 300.336 1385.929"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_12_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2817.762 310.999 827.441"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_13_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2316.257 304.205 960.190"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_14_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2363.473 299.104 1716.733"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_15_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1669.624 264.943 1900.621"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_16_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2144.704 291.838 3064.187"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_17_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1245.677 273.604 3316.227"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_18_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="910.577 273.493 2927.734"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_19_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="714.663 269.839 2439.474"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_20_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1058.806 285.585 2442.531"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_21_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2303.509 270.433 2653.052"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Repair_22_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3006.197 309.020 816.931"
+		Radius="2.500"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000" />
+
+<!-- New PowerUp DV6 Armor-->
+
+	<Object
+		Name="PowerUp_Armor_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2474.338 298.752 2815.044"
+		Radius="2.500"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Armor_02_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1033.596 283.401 2102.571"
+		Radius="2.500"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Armor_03_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="617.071 246.394 1227.555"
+		Radius="2.500"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Armor_04_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2632.271 315.700 1633.820"
+		Radius="2.500"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Armor_05_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2817.433 311.254 1520.713"
+		Radius="2.500"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Armor_06_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2053.479 304.561 1242.957"
+		Radius="2.500"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000" />
+
+<!-- New PowerUp DV6 Nitro-->
+<!--
+	<Object
+		Name="PowerUp_Nitro_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3046.055 304.515 1243.598"
+		Radius="2.500"
+		SpawnEffect="ET_PS_NITRO_PICKUP"
+		SpawnObjectsPrototypes="Nitro"
+		SpawnTimeouts="30000000.000" />
+
+	<Object
+		Name="PowerUp_Nitro_03_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2470.156 296.864 2833.731"
+		Radius="2.500"
+		SpawnEffect="ET_PS_NITRO_PICKUP"
+		SpawnObjectsPrototypes="Nitro"
+		SpawnTimeouts="30000000.000" />
+-->
+<!-- New PowerUp DV6 Quad-->
+<!--
+	<Object
+		Name="PowerUp_Damage_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3022.174 322.844 1023.810"
+		Radius="2.500"
+		SpawnEffect="ET_PS_BONUS1_PICKUP"
+		SpawnEffectStatic="ET_PS_VPROJECTOR"
+		SpawnObjectsPrototypes="Damage"
+		SpawnEffect="ET_PS_QUAD_PICKUP"
+		SpawnTimeouts="30000000.000" />
+-->
+<!-- New PowerUp DV6 Weapon-->
+
+	<Object
+		Name="Weapon_FireDV1_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1257.398 233.355 1350.439"
+		Radius="2.500"
+		SpawnObjectPrototypes="fireDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="3000000000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000"/>
+
+	<Object
+		Name="Weapon_FireDV1_02_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1673.565 265.538 1932.896"
+		Radius="2.500"
+		SpawnObjectPrototypes="fireDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="3000000000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000"/>
+
+	<Object
+		Name="Weapon_FireDV1_03_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2071.815 286.730 3104.547"
+		Radius="2.500"
+		SpawnObjectPrototypes="fireDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="3000000000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000"/>
+
+	<Object
+		Name="Weapon_RocketDV1_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="928.081 272.223 2950.063"
+		Radius="2.500"
+		SpawnObjectPrototypes="rocketDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="3000000000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000"/>
+
+	<Object
+		Name="Weapon_RocketDV1_02_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2289.131 302.264 969.331"
+		Radius="2.500"
+		SpawnObjectPrototypes="rocketDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="3000000000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000"/>
+
+<!-- Probe Bonus-->
+
+	<Object
+		Name="Bonus_Probe_1_387"
+		Prototype="smallBonus1"
+		Pos="3186.669 296.178 3314.697"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_388"
+		Prototype="smallBonus1"
+		Pos="3236.884 284.412 3261.308"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_389"
+		Prototype="smallBonus1"
+		Pos="3203.842 284.449 3179.842"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_390"
+		Prototype="smallBonus1"
+		Pos="3187.687 281.445 3131.749"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_391"
+		Prototype="smallBonus1"
+		Pos="3323.830 280.323 3019.793"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_392"
+		Prototype="smallBonus1"
+		Pos="3299.540 280.211 3015.654"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_393"
+		Prototype="smallBonus1"
+		Pos="3275.707 280.224 3011.423"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_394"
+		Prototype="smallBonus1"
+		Pos="3273.628 281.195 2991.251"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_395"
+		Prototype="smallBonus1"
+		Pos="3275.039 282.562 2965.349"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_396"
+		Prototype="smallBonus1"
+		Pos="3293.449 281.048 2956.256"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_397"
+		Prototype="smallBonus1"
+		Pos="3321.924 284.689 2966.956"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_398"
+		Prototype="smallBonus1"
+		Pos="3316.437 283.973 2941.361"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_399"
+		Prototype="smallBonus1"
+		Pos="3312.971 282.967 2917.923"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_400"
+		Prototype="smallBonus1"
+		Pos="3237.004 280.418 2901.924"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_401"
+		Prototype="smallBonus1"
+		Pos="3240.600 280.957 2927.334"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_402"
+		Prototype="smallBonus1"
+		Pos="3053.545 281.646 2990.159"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_403"
+		Prototype="smallBonus1"
+		Pos="3055.155 280.981 2969.977"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_404"
+		Prototype="smallBonus1"
+		Pos="3059.095 281.354 2946.270"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_405"
+		Prototype="smallBonus1"
+		Pos="3063.413 281.638 2920.496"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_406"
+		Prototype="smallBonus1"
+		Pos="3145.330 282.192 2800.714"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_407"
+		Prototype="smallBonus1"
+		Pos="3151.313 283.030 2818.486"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_408"
+		Prototype="smallBonus1"
+		Pos="3152.122 281.860 2841.131"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_409"
+		Prototype="smallBonus1"
+		Pos="3157.165 280.658 2865.013"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_410"
+		Prototype="smallBonus1"
+		Pos="3241.655 283.934 2645.045"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_411"
+		Prototype="smallBonus1"
+		Pos="3025.509 281.818 2740.290"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_412"
+		Prototype="smallBonus1"
+		Pos="2950.458 282.586 2724.975"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_413"
+		Prototype="smallBonus1"
+		Pos="2914.361 282.047 2716.190"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_414"
+		Prototype="smallBonus1"
+		Pos="2904.935 281.870 2736.216"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_415"
+		Prototype="smallBonus1"
+		Pos="2844.865 280.159 2612.156"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_416"
+		Prototype="smallBonus1"
+		Pos="2848.068 279.804 2619.049"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_417"
+		Prototype="smallBonus1"
+		Pos="2851.714 279.598 2625.851"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_418"
+		Prototype="smallBonus1"
+		Pos="2856.066 279.407 2634.098"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_419"
+		Prototype="smallBonus1"
+		Pos="2860.690 279.394 2641.750"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_420"
+		Prototype="smallBonus1"
+		Pos="2864.479 279.377 2648.010"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_421"
+		Prototype="smallBonus1"
+		Pos="2868.107 279.552 2653.817"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_422"
+		Prototype="smallBonus1"
+		Pos="2767.264 266.393 2527.004"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_423"
+		Prototype="smallBonus1"
+		Pos="2665.244 255.189 2463.030"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_424"
+		Prototype="smallBonus1"
+		Pos="2712.877 259.200 2488.798"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_425"
+		Prototype="smallBonus1"
+		Pos="2728.594 259.119 2493.824"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_426"
+		Prototype="smallBonus1"
+		Pos="2745.939 261.962 2504.328"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_427"
+		Prototype="smallBonus1"
+		Pos="2752.591 263.279 2508.591"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_428"
+		Prototype="smallBonus1"
+		Pos="3088.795 299.837 2473.344"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_429"
+		Prototype="smallBonus1"
+		Pos="3108.717 296.469 2425.763"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_430"
+		Prototype="smallBonus1"
+		Pos="2996.748 300.637 2440.826"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_431"
+		Prototype="smallBonus1"
+		Pos="2999.034 301.359 2477.306"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_432"
+		Prototype="smallBonus1"
+		Pos="2990.939 301.964 2491.942"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_433"
+		Prototype="smallBonus1"
+		Pos="3090.151 296.575 2319.671"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_434"
+		Prototype="smallBonus1"
+		Pos="3073.573 296.085 2301.948"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_435"
+		Prototype="smallBonus1"
+		Pos="3071.839 294.058 2275.433"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_436"
+		Prototype="smallBonus1"
+		Pos="3089.714 294.192 2248.461"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_437"
+		Prototype="smallBonus1"
+		Pos="3122.661 296.396 2368.964"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_438"
+		Prototype="smallBonus1"
+		Pos="3134.416 299.919 2323.631"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_439"
+		Prototype="smallBonus1"
+		Pos="3204.554 299.129 2232.589"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_440"
+		Prototype="smallBonus1"
+		Pos="3168.326 297.185 2165.617"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_441"
+		Prototype="smallBonus1"
+		Pos="3164.114 293.085 2142.516"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_442"
+		Prototype="smallBonus1"
+		Pos="3174.407 296.777 2079.968"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_443"
+		Prototype="smallBonus1"
+		Pos="3184.331 296.990 2035.689"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_444"
+		Prototype="smallBonus1"
+		Pos="3117.204 294.091 2069.407"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_445"
+		Prototype="smallBonus1"
+		Pos="3117.252 292.146 2105.055"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_446"
+		Prototype="smallBonus1"
+		Pos="3111.176 292.892 2140.458"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_447"
+		Prototype="smallBonus1"
+		Pos="3090.769 296.292 2024.768"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_448"
+		Prototype="smallBonus1"
+		Pos="3078.910 298.885 2015.188"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_449"
+		Prototype="smallBonus1"
+		Pos="3182.083 300.136 1951.853"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_450"
+		Prototype="smallBonus1"
+		Pos="3172.118 296.274 1929.081"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_451"
+		Prototype="smallBonus1"
+		Pos="3166.538 294.083 1907.625"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_452"
+		Prototype="smallBonus1"
+		Pos="3143.902 312.913 1845.956"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_453"
+		Prototype="smallBonus1"
+		Pos="3121.915 314.506 1844.034"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_454"
+		Prototype="smallBonus1"
+		Pos="3108.601 312.477 1838.317"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_455"
+		Prototype="smallBonus1"
+		Pos="3099.297 307.131 1824.747"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_456"
+		Prototype="smallBonus1"
+		Pos="3082.894 300.264 1815.144"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_457"
+		Prototype="smallBonus1"
+		Pos="3055.619 296.233 1803.265"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_458"
+		Prototype="smallBonus1"
+		Pos="3035.885 295.096 1763.103"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_459"
+		Prototype="smallBonus1"
+		Pos="3019.940 297.583 1767.178"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_460"
+		Prototype="smallBonus1"
+		Pos="2993.382 296.810 1772.213"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_461"
+		Prototype="smallBonus1"
+		Pos="2972.876 297.643 1766.258"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_462"
+		Prototype="smallBonus1"
+		Pos="2923.009 305.310 1767.968"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_463"
+		Prototype="smallBonus1"
+		Pos="2904.711 305.533 1766.665"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_464"
+		Prototype="smallBonus1"
+		Pos="2879.185 306.353 1771.271"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_465"
+		Prototype="smallBonus1"
+		Pos="2950.877 297.273 1905.769"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_466"
+		Prototype="smallBonus1"
+		Pos="2936.364 298.655 1887.353"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_467"
+		Prototype="smallBonus1"
+		Pos="2917.720 298.324 1885.802"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_468"
+		Prototype="smallBonus1"
+		Pos="2907.386 298.167 1909.044"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_469"
+		Prototype="smallBonus1"
+		Pos="2885.848 304.377 1897.029"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_470"
+		Prototype="smallBonus1"
+		Pos="2876.193 305.377 1885.599"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_471"
+		Prototype="smallBonus1"
+		Pos="2834.288 308.011 1915.648"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_472"
+		Prototype="smallBonus1"
+		Pos="2812.727 307.205 1921.062"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_473"
+		Prototype="smallBonus1"
+		Pos="2860.950 304.088 1784.036"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_474"
+		Prototype="smallBonus1"
+		Pos="2848.440 302.680 1807.310"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_475"
+		Prototype="smallBonus1"
+		Pos="2830.429 301.791 1838.327"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_476"
+		Prototype="smallBonus1"
+		Pos="2474.654 251.884 2343.157"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_477"
+		Prototype="smallBonus1"
+		Pos="2541.670 262.035 2307.878"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_478"
+		Prototype="smallBonus1"
+		Pos="2447.739 253.046 2263.343"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_479"
+		Prototype="smallBonus1"
+		Pos="2441.397 262.317 2220.966"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_480"
+		Prototype="smallBonus1"
+		Pos="2440.869 263.533 2195.327"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_481"
+		Prototype="smallBonus1"
+		Pos="2435.909 265.826 2168.255"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_482"
+		Prototype="smallBonus1"
+		Pos="2435.834 266.616 2148.069"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_483"
+		Prototype="smallBonus1"
+		Pos="2430.467 267.734 2119.762"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_484"
+		Prototype="smallBonus1"
+		Pos="2521.489 277.052 2110.182"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_485"
+		Prototype="smallBonus1"
+		Pos="2534.579 281.795 2093.573"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_486"
+		Prototype="smallBonus1"
+		Pos="2525.394 284.043 2069.519"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_487"
+		Prototype="smallBonus1"
+		Pos="2513.335 280.918 2055.731"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_488"
+		Prototype="smallBonus1"
+		Pos="2543.987 298.319 1980.378"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_489"
+		Prototype="smallBonus1"
+		Pos="2557.847 293.972 1960.017"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_490"
+		Prototype="smallBonus1"
+		Pos="2581.240 290.101 1945.474"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_491"
+		Prototype="smallBonus1"
+		Pos="2609.109 293.401 1983.891"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_492"
+		Prototype="smallBonus1"
+		Pos="2620.250 294.462 1981.106"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_493"
+		Prototype="smallBonus1"
+		Pos="2637.052 294.712 1972.152"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_494"
+		Prototype="smallBonus1"
+		Pos="2644.925 294.745 1954.749"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_495"
+		Prototype="smallBonus1"
+		Pos="2760.621 300.660 1712.634"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_496"
+		Prototype="smallBonus1"
+		Pos="2755.500 300.607 1697.279"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_497"
+		Prototype="smallBonus1"
+		Pos="2754.375 300.685 1678.425"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_498"
+		Prototype="smallBonus1"
+		Pos="2759.371 300.826 1663.234"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_499"
+		Prototype="smallBonus1"
+		Pos="2763.475 301.654 1650.930"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_500"
+		Prototype="smallBonus1"
+		Pos="2770.053 302.207 1632.290"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_501"
+		Prototype="smallBonus1"
+		Pos="2776.773 302.207 1619.354"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_502"
+		Prototype="smallBonus1"
+		Pos="2664.577 301.227 1739.864"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_503"
+		Prototype="smallBonus1"
+		Pos="2649.765 300.582 1738.989"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_504"
+		Prototype="smallBonus1"
+		Pos="2626.068 300.142 1737.919"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_505"
+		Prototype="smallBonus1"
+		Pos="2667.905 298.873 1714.367"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_506"
+		Prototype="smallBonus1"
+		Pos="2662.292 300.747 1694.785"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_507"
+		Prototype="smallBonus1"
+		Pos="2658.571 304.891 1677.239"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_508"
+		Prototype="smallBonus1"
+		Pos="2654.837 309.412 1657.991"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_509"
+		Prototype="smallBonus1"
+		Pos="2647.694 313.079 1640.347"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_510"
+		Prototype="smallBonus1"
+		Pos="2647.534 317.213 1614.845"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_511"
+		Prototype="smallBonus1"
+		Pos="2704.774 305.373 1573.073"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_512"
+		Prototype="smallBonus1"
+		Pos="2713.375 305.762 1550.550"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_513"
+		Prototype="smallBonus1"
+		Pos="2723.522 303.285 1535.208"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_514"
+		Prototype="smallBonus1"
+		Pos="2864.326 294.999 1442.877"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_515"
+		Prototype="smallBonus1"
+		Pos="2832.214 293.060 1403.464"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_516"
+		Prototype="smallBonus1"
+		Pos="2840.878 292.006 1435.826"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_517"
+		Prototype="smallBonus1"
+		Pos="2833.242 295.523 1459.256"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_518"
+		Prototype="smallBonus1"
+		Pos="2826.417 301.926 1479.978"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_519"
+		Prototype="smallBonus1"
+		Pos="2824.214 306.746 1493.909"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_520"
+		Prototype="smallBonus1"
+		Pos="2823.912 292.263 1433.754"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_521"
+		Prototype="smallBonus1"
+		Pos="2804.304 293.991 1439.398"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_522"
+		Prototype="smallBonus1"
+		Pos="2786.751 297.263 1439.583"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_523"
+		Prototype="smallBonus1"
+		Pos="2772.062 300.320 1439.917"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_524"
+		Prototype="smallBonus1"
+		Pos="2623.972 294.008 1352.761"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_525"
+		Prototype="smallBonus1"
+		Pos="2656.781 298.660 1386.884"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_526"
+		Prototype="smallBonus1"
+		Pos="2692.570 302.430 1423.721"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_527"
+		Prototype="smallBonus1"
+		Pos="2724.918 302.724 1438.063"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_528"
+		Prototype="smallBonus1"
+		Pos="2991.419 301.126 1311.689"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_529"
+		Prototype="smallBonus1"
+		Pos="3010.460 303.135 1301.632"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_530"
+		Prototype="smallBonus1"
+		Pos="3025.199 303.672 1291.841"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_531"
+		Prototype="smallBonus1"
+		Pos="3043.152 304.827 1280.589"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_532"
+		Prototype="smallBonus1"
+		Pos="3061.372 304.218 1272.682"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_533"
+		Prototype="smallBonus1"
+		Pos="3074.823 304.577 1263.144"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_534"
+		Prototype="smallBonus1"
+		Pos="3093.709 304.254 1246.622"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_535"
+		Prototype="smallBonus1"
+		Pos="3011.802 304.053 1235.922"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_536"
+		Prototype="smallBonus1"
+		Pos="3027.966 303.846 1221.370"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_537"
+		Prototype="smallBonus1"
+		Pos="3041.747 304.476 1205.734"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_538"
+		Prototype="smallBonus1"
+		Pos="3111.615 307.118 1215.946"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_539"
+		Prototype="smallBonus1"
+		Pos="3122.099 307.111 1194.584"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_540"
+		Prototype="smallBonus1"
+		Pos="3139.584 306.979 1182.391"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_541"
+		Prototype="smallBonus1"
+		Pos="3161.486 305.708 1184.444"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_542"
+		Prototype="smallBonus1"
+		Pos="3197.965 291.767 1172.636"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_543"
+		Prototype="smallBonus1"
+		Pos="3199.071 291.614 1153.192"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_544"
+		Prototype="smallBonus1"
+		Pos="3199.356 296.303 1124.648"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_545"
+		Prototype="smallBonus1"
+		Pos="3194.575 303.677 1094.014"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_546"
+		Prototype="smallBonus1"
+		Pos="3184.032 307.218 1064.693"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_547"
+		Prototype="smallBonus1"
+		Pos="3145.101 304.659 984.700"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_548"
+		Prototype="smallBonus1"
+		Pos="3140.313 306.084 968.923"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_549"
+		Prototype="smallBonus1"
+		Pos="3139.442 305.881 952.763"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_550"
+		Prototype="smallBonus1"
+		Pos="3143.718 304.496 935.586"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_551"
+		Prototype="smallBonus1"
+		Pos="3149.902 304.042 919.342"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_552"
+		Prototype="smallBonus1"
+		Pos="3160.923 304.192 902.284"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_553"
+		Prototype="smallBonus1"
+		Pos="3066.329 307.591 833.157"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_554"
+		Prototype="smallBonus1"
+		Pos="3007.122 323.322 977.729"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_555"
+		Prototype="smallBonus1"
+		Pos="3002.417 322.665 955.305"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_556"
+		Prototype="smallBonus1"
+		Pos="3001.936 323.079 934.677"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_557"
+		Prototype="smallBonus1"
+		Pos="2978.678 328.383 736.236"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_558"
+		Prototype="smallBonus1"
+		Pos="2971.610 331.261 708.981"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_559"
+		Prototype="smallBonus1"
+		Pos="2962.920 332.363 686.768"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_560"
+		Prototype="smallBonus1"
+		Pos="2933.458 308.543 797.623"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_561"
+		Prototype="smallBonus1"
+		Pos="2903.504 308.812 797.735"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_562"
+		Prototype="smallBonus1"
+		Pos="2888.775 309.107 801.478"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_563"
+		Prototype="smallBonus1"
+		Pos="2683.502 309.963 809.961"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_564"
+		Prototype="smallBonus1"
+		Pos="2654.958 312.388 818.586"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_565"
+		Prototype="smallBonus1"
+		Pos="2621.377 313.116 828.323"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_566"
+		Prototype="smallBonus1"
+		Pos="2451.108 317.900 848.991"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_567"
+		Prototype="smallBonus1"
+		Pos="2291.919 300.554 993.944"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_568"
+		Prototype="smallBonus1"
+		Pos="2293.302 301.361 1013.922"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_569"
+		Prototype="smallBonus1"
+		Pos="2280.654 301.127 1028.475"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_570"
+		Prototype="smallBonus1"
+		Pos="2271.603 301.144 1057.848"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_571"
+		Prototype="smallBonus1"
+		Pos="2092.297 310.133 995.115"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_572"
+		Prototype="smallBonus1"
+		Pos="2065.504 308.286 1015.053"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_573"
+		Prototype="smallBonus1"
+		Pos="2056.502 305.950 1038.264"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_574"
+		Prototype="smallBonus1"
+		Pos="2063.240 304.492 1064.112"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_575"
+		Prototype="smallBonus1"
+		Pos="2241.057 300.677 1116.094"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_576"
+		Prototype="smallBonus1"
+		Pos="2230.539 304.600 1130.355"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_577"
+		Prototype="smallBonus1"
+		Pos="2209.139 306.652 1145.070"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_578"
+		Prototype="smallBonus1"
+		Pos="2066.921 305.606 1223.657"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_579"
+		Prototype="smallBonus1"
+		Pos="2045.555 304.505 1244.052"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_580"
+		Prototype="smallBonus1"
+		Pos="2037.893 301.341 1273.369"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_581"
+		Prototype="smallBonus1"
+		Pos="2096.242 309.540 1631.573"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_582"
+		Prototype="smallBonus1"
+		Pos="2075.549 310.555 1583.689"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_583"
+		Prototype="smallBonus1"
+		Pos="2061.781 308.160 1533.516"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_584"
+		Prototype="smallBonus1"
+		Pos="2277.626 299.925 1674.080"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_585"
+		Prototype="smallBonus1"
+		Pos="1761.009 267.715 2542.277"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_1_586"
+		Prototype="smallBonus1"
+		Pos="1786.321 265.092 2544.787"
+		NodeScale="2.000" />
+
+	<Object
+		Name="Bonus_Probe_2_587"
+		Prototype="smallBonus2"
+		Pos="1806.123 263.525 2534.205"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_588"
+		Prototype="smallBonus2"
+		Pos="1831.134 263.112 2527.470"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_589"
+		Prototype="smallBonus2"
+		Pos="1788.729 263.197 2472.948"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_590"
+		Prototype="smallBonus2"
+		Pos="1821.457 262.582 2472.387"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_591"
+		Prototype="smallBonus2"
+		Pos="1842.207 263.176 2475.307"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_592"
+		Prototype="smallBonus2"
+		Pos="1858.792 262.673 2474.630"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_593"
+		Prototype="smallBonus2"
+		Pos="1866.407 263.706 2401.773"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_594"
+		Prototype="smallBonus2"
+		Pos="1845.071 263.117 2408.924"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_595"
+		Prototype="smallBonus2"
+		Pos="1826.521 263.411 2413.112"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_596"
+		Prototype="smallBonus2"
+		Pos="1806.974 263.124 2420.908"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_597"
+		Prototype="smallBonus2"
+		Pos="1787.777 263.388 2429.731"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_598"
+		Prototype="smallBonus2"
+		Pos="1819.905 263.536 2334.194"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_599"
+		Prototype="smallBonus2"
+		Pos="1817.412 263.825 2355.012"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_600"
+		Prototype="smallBonus2"
+		Pos="1813.449 263.540 2375.457"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_601"
+		Prototype="smallBonus2"
+		Pos="1802.900 263.675 2388.846"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_602"
+		Prototype="smallBonus2"
+		Pos="1784.381 263.658 2395.764"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_603"
+		Prototype="smallBonus2"
+		Pos="1763.369 264.021 2400.739"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_604"
+		Prototype="smallBonus2"
+		Pos="1072.758 238.045 1862.394"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_605"
+		Prototype="smallBonus2"
+		Pos="1061.042 243.613 1886.845"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_606"
+		Prototype="smallBonus2"
+		Pos="1067.201 245.039 1906.604"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_607"
+		Prototype="smallBonus2"
+		Pos="1080.092 247.880 1924.839"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_608"
+		Prototype="smallBonus2"
+		Pos="1095.461 249.300 1931.457"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_609"
+		Prototype="smallBonus2"
+		Pos="1089.761 234.386 1839.032"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_610"
+		Prototype="smallBonus2"
+		Pos="1104.561 234.716 1813.429"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_611"
+		Prototype="smallBonus2"
+		Pos="1116.810 235.248 1790.819"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_612"
+		Prototype="smallBonus2"
+		Pos="1148.488 234.534 1757.074"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_613"
+		Prototype="smallBonus2"
+		Pos="1107.964 235.028 1449.968"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_614"
+		Prototype="smallBonus2"
+		Pos="1089.424 235.076 1465.093"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_615"
+		Prototype="smallBonus2"
+		Pos="1079.222 235.072 1491.827"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_616"
+		Prototype="smallBonus2"
+		Pos="1072.599 235.078 1514.412"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_617"
+		Prototype="smallBonus2"
+		Pos="1071.218 235.213 1542.651"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_618"
+		Prototype="smallBonus2"
+		Pos="933.372 233.200 1268.677"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_619"
+		Prototype="smallBonus2"
+		Pos="904.704 232.894 1274.059"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_620"
+		Prototype="smallBonus2"
+		Pos="882.069 233.141 1289.860"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_621"
+		Prototype="smallBonus2"
+		Pos="873.180 233.385 1309.645"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_622"
+		Prototype="smallBonus2"
+		Pos="874.488 233.124 1331.922"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_623"
+		Prototype="smallBonus2"
+		Pos="884.351 233.144 1352.189"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_624"
+		Prototype="smallBonus2"
+		Pos="1393.929 269.764 2364.861"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_625"
+		Prototype="smallBonus2"
+		Pos="1409.183 270.870 2380.254"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_626"
+		Prototype="smallBonus2"
+		Pos="1423.124 269.752 2399.559"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_627"
+		Prototype="smallBonus2"
+		Pos="1439.776 269.925 2413.800"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_628"
+		Prototype="smallBonus2"
+		Pos="1453.648 270.018 2429.663"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_629"
+		Prototype="smallBonus2"
+		Pos="1465.462 269.775 2444.542"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_630"
+		Prototype="smallBonus2"
+		Pos="1455.677 263.927 2621.951"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_631"
+		Prototype="smallBonus2"
+		Pos="1478.514 263.922 2608.336"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_632"
+		Prototype="smallBonus2"
+		Pos="1497.715 264.049 2594.737"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_633"
+		Prototype="smallBonus2"
+		Pos="1403.961 263.987 2605.769"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_634"
+		Prototype="smallBonus2"
+		Pos="1425.800 264.252 2587.447"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_635"
+		Prototype="smallBonus2"
+		Pos="1442.282 263.593 2569.692"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_636"
+		Prototype="smallBonus2"
+		Pos="2222.574 263.617 2697.866"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_637"
+		Prototype="smallBonus2"
+		Pos="2208.273 263.767 2682.409"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_638"
+		Prototype="smallBonus2"
+		Pos="2189.974 264.180 2667.764"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_639"
+		Prototype="smallBonus2"
+		Pos="2169.490 266.699 2656.801"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_640"
+		Prototype="smallBonus2"
+		Pos="2281.693 264.175 2567.537"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_641"
+		Prototype="smallBonus2"
+		Pos="2257.812 264.798 2570.219"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_642"
+		Prototype="smallBonus2"
+		Pos="2244.583 264.515 2570.585"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_643"
+		Prototype="smallBonus2"
+		Pos="2223.423 264.265 2568.355"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_644"
+		Prototype="smallBonus2"
+		Pos="1985.200 267.537 2382.372"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_645"
+		Prototype="smallBonus2"
+		Pos="2001.421 270.025 2362.272"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_646"
+		Prototype="smallBonus2"
+		Pos="2020.287 270.707 2345.709"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_647"
+		Prototype="smallBonus2"
+		Pos="2093.924 268.468 2381.788"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_648"
+		Prototype="smallBonus2"
+		Pos="2091.755 268.984 2366.235"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_649"
+		Prototype="smallBonus2"
+		Pos="2095.155 269.401 2348.299"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_650"
+		Prototype="smallBonus2"
+		Pos="2220.164 278.445 3205.980"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_651"
+		Prototype="smallBonus2"
+		Pos="2246.287 276.411 3169.351"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_652"
+		Prototype="smallBonus2"
+		Pos="2260.644 278.148 3147.790"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_653"
+		Prototype="smallBonus2"
+		Pos="2292.768 279.828 3108.998"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_654"
+		Prototype="smallBonus2"
+		Pos="1350.401 282.065 3432.035"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_655"
+		Prototype="smallBonus2"
+		Pos="1363.178 281.679 3430.829"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_656"
+		Prototype="smallBonus2"
+		Pos="1204.091 273.961 3369.773"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_657"
+		Prototype="smallBonus2"
+		Pos="1233.269 274.689 3370.943"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_658"
+		Prototype="smallBonus2"
+		Pos="1018.185 266.865 3144.692"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_659"
+		Prototype="smallBonus2"
+		Pos="1002.936 266.648 3126.250"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_660"
+		Prototype="smallBonus2"
+		Pos="994.733 265.763 3113.782"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_661"
+		Prototype="smallBonus2"
+		Pos="981.889 264.829 3088.872"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_662"
+		Prototype="smallBonus2"
+		Pos="971.851 265.173 3069.688"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_663"
+		Prototype="smallBonus2"
+		Pos="958.116 265.287 3057.946"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_664"
+		Prototype="smallBonus2"
+		Pos="1047.427 273.799 2554.010"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_665"
+		Prototype="smallBonus2"
+		Pos="1021.790 272.569 2566.126"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_666"
+		Prototype="smallBonus2"
+		Pos="998.860 274.215 2582.542"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_667"
+		Prototype="smallBonus2"
+		Pos="1456.562 234.146 1423.235"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_668"
+		Prototype="smallBonus2"
+		Pos="1433.341 233.440 1426.064"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_669"
+		Prototype="smallBonus2"
+		Pos="1408.847 234.860 1425.949"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_670"
+		Prototype="smallBonus2"
+		Pos="1436.211 234.191 1293.805"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_671"
+		Prototype="smallBonus2"
+		Pos="1409.932 235.057 1304.534"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_672"
+		Prototype="smallBonus2"
+		Pos="1383.052 233.889 1307.861"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_673"
+		Prototype="smallBonus2"
+		Pos="1021.616 244.379 700.466"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_674"
+		Prototype="smallBonus2"
+		Pos="1019.188 241.489 721.737"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_675"
+		Prototype="smallBonus2"
+		Pos="1027.840 243.140 734.331"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_676"
+		Prototype="smallBonus2"
+		Pos="1027.742 243.360 750.468"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_677"
+		Prototype="smallBonus2"
+		Pos="1242.531 243.689 625.343"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_678"
+		Prototype="smallBonus2"
+		Pos="1259.314 239.069 644.234"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_679"
+		Prototype="smallBonus2"
+		Pos="1267.731 239.570 667.753"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_680"
+		Prototype="smallBonus2"
+		Pos="1277.941 239.776 688.515"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_681"
+		Prototype="smallBonus2"
+		Pos="1292.849 239.970 701.484"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_682"
+		Prototype="smallBonus2"
+		Pos="1507.583 243.865 700.279"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_683"
+		Prototype="smallBonus2"
+		Pos="1461.660 244.614 726.943"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_684"
+		Prototype="smallBonus2"
+		Pos="1441.938 243.664 727.971"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_685"
+		Prototype="smallBonus2"
+		Pos="1493.087 243.319 707.927"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Bonus_Probe_2_686"
+		Prototype="smallBonus2"
+		Pos="1478.853 244.701 720.114"
+		NodeScale="3.000" />
+
+	<Object
+		Name="Breakable_Sosna_a_01387"
+		Belong="1001"
+		Prototype="Breakable_Sosna_a_01"
+		Pos="3223.923 282.710 3158.597" />
+
+	<Object
+		Name="Breakable_Sosna_a_02388"
+		Belong="1001"
+		Prototype="Breakable_Sosna_a_02"
+		Pos="3238.318 281.511 3147.482" />
+
+	<Object
+		Name="Breakable_Sosna_a_03389"
+		Belong="1001"
+		Prototype="Breakable_Sosna_a_03"
+		Pos="3236.390 282.245 3165.331" />
+
+	<Object
+		Name="point_1_1"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1509.701 282.301 3350.201"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="point_1_2"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1477.641 282.653 3340.036"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="point_2_3"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1072.560 239.791 613.206"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="point_2_2"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1077.034 241.268 635.820"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="point_2_1"
+		Belong="1001"
+		Prototype="genericLocation"
+		Pos="1066.171 242.178 669.989"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush17"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3196.370 283.470 3154.353"
+		Radius="58.266"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush18"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3175.755 280.907 3121.617"
+		Radius="68.268"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush17_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3256.237 281.841 2980.045"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush18_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3052.734 281.398 2957.479"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush19"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3145.829 280.906 2857.237"
+		Radius="64.330"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush19_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3213.790 284.338 2649.358"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush20"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2521.806 258.014 2269.272"
+		Radius="123.658"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush20_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2473.465 280.746 1997.226"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush21"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3097.824 296.686 2364.840"
+		Radius="107.651"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush21_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3132.185 294.709 2071.914"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush22"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2745.983 301.601 1597.676"
+		Radius="112.001"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush22_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2831.107 292.037 1433.440"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush23"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2825.848 292.647 1441.914"
+		Radius="69.633"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush23_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2948.286 295.573 1313.326"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush24"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2974.412 299.106 1294.440"
+		Radius="65.617"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush24_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3039.795 322.958 1056.572"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush25"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2935.295 306.565 815.675"
+		Radius="63.069"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush25_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2754.386 313.561 737.127"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush26"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2279.136 300.025 1664.431"
+		Radius="57.123"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush26_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2381.007 299.191 1880.830"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="DotAutoGun_02417"
+		Belong="1101"
+		Prototype="DotAutoGun_02"
+		Pos="2243.207 278.475 2833.198"
+		Rot="0.000 0.943 0.000 0.334">
+		<Parts />
+	</Object>
+
+	<Object
+		Name="DotAutoGun_03418"
+		Belong="1101"
+		Prototype="DotAutoGun_03"
+		Pos="2298.733 280.632 2848.750"
+		Rot="0.004 -0.992 0.000 0.124">
+		<Parts />
+	</Object>
+
+	<Object
+		Name="Ambush28"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1158.681 264.678 3201.104"
+		Radius="71.026"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="Ambush28_s"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1110.691 272.927 2990.051"
+		Radius="10.000"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="DotAutoGun_03422"
+		Belong="1101"
+		Prototype="DotAutoGun_03"
+		Pos="2158.570 300.913 1094.531"
+		Rot="0.000 0.908 0.000 0.419">
+		<Parts />
+	</Object>
+
+	<Object
+		Belong="1100"
+		Prototype="vehicleRecollection" />
+
+	<Object
+		Name="BonusText_00"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1616.882 255.596 919.225"
+		Radius="5.9"
+		LookingTimeOut = "0.1"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+	<Object
+		Name="BonusText_01"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2129.253 306.658 1649.275"
+		Radius="5.9"
+		LookingTimeOut = "0.1"
+		SpawnEffect=""
+		SpawnEffectStatic="" />
+
+
+	<Object
+		Name="Weapon_ShotgunDV1_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3120.400 298.592 2488.900"
+		Radius="2.500"
+		SpawnObjectsPrototypes="shotgunDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="30000000.000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000" />
+</DynamicScene>

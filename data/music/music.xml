@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Music>
+
+<!-- 		game tracks		 -->
+
+	<model
+		id="mainmenu"
+		file="data\music\blocks\dv1\dv_menu.ogg"/>
+		
+	<model
+		id="credits"
+		file="data\music\blocks\dv1\dv_credits.ogg"/>
+
+	<model
+		id="Combat1"
+		file="data\music\blocks\dv1\dv_combat1.ogg" />
+	<model
+		id="Combat2"
+		file="data\music\blocks\dv1\dv_combat2.ogg" />
+	<model
+		id="Combat2_2"
+		file="data\music\blocks\dv1\dv_combat2_2.ogg" />
+	<model
+		id="CombatBoss1"
+		file="data\music\blocks\dv1\dv_combat_boss1.ogg" />
+
+	<model
+		id="Realtime1"
+		file="data\music\blocks\dv1\dv_realtime1.ogg" />
+	<model
+		id="Realtime2"
+		file="data\music\blocks\dv1\dv_realtime2.ogg" />
+	<model
+		id="Realtime3"
+		file="data\music\blocks\dv1\dv_realtime3.ogg" />
+
+
+	<model
+		id="Combat1b"
+		file="data\music\blocks\dv1\dv_combat1b.ogg" />
+	<model
+		id="Combat1c"
+		file="data\music\blocks\dv1\dv_combat1c.ogg" />
+	<model
+		id="Combat1d"
+		file="data\music\blocks\dv1\dv_combat1d.ogg" />
+		
+	<model
+		id="Combat2b"
+		file="data\music\blocks\dv1\dv_combat2b.ogg" />
+	<model
+		id="Combat2_2b"
+		file="data\music\blocks\dv1\dv_combat2_2b.ogg" />
+		
+	<model
+		id="Realtime1b"
+		file="data\music\blocks\dv1\dv_realtime1b.ogg" />
+	<model
+		id="Realtime1c"
+		file="data\music\blocks\dv1\dv_realtime1c.ogg" />
+	<model
+		id="Realtime1d"
+		file="data\music\blocks\dv1\dv_realtime1d.ogg" />
+		
+	<model
+		id="Realtime2b"
+		file="data\music\blocks\dv1\dv_realtime2b.ogg" />
+	<model
+		id="Realtime2c"
+		file="data\music\blocks\dv1\dv_realtime2c.ogg" />
+	<model
+		id="Realtime2d"
+		file="data\music\blocks\dv1\dv_realtime2d.ogg" />
+	
+	<model
+		id="Realtime3b"
+		file="data\music\blocks\dv1\dv_realtime3b.ogg" />
+	<model
+		id="Realtime3c"
+		file="data\music\blocks\dv1\dv_realtime3c.ogg" />
+	<model
+		id="Realtime3d"
+		file="data\music\blocks\dv1\dv_realtime3d.ogg" />
+</Music>

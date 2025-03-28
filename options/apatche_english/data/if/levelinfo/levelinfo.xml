@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<LevelInfoResource>
+	<LevelInfo
+		name	="menu_dv"
+		file	="data\maps\menu_dv.ssl"
+		fullName=""
+		diz0	=""  
+		diz1	=""
+		image0=""
+		image1=""
+		splashes="data\if\ico\Splashes\menu.dds"
+		musicBlocks=""
+		gamelevel = "false"/>
+
+	<LevelInfo
+		name	="dv1"
+		file	="data\maps\dv1.ssl"
+		fullName="Under siege"
+		diz0	="You need to get used to the vehicle, agent. By the way, keep in mind that the surrounding area is not completely safe."
+		diz1	="So, you're a federal agent sent to do the job that our task force apparently failed to accomplish? Well, we'll see. Before I tell you the gist of the mission, I want you to get comfortable with the vehicle you'll be driving for many miles. I know you are an excellent driver, but every vehicle has its own features that are best learned in the relatively calm environment of the base's surroundings. Get comfortable with the controls, feel the grip, try the brakes. Learn how to use the equipment to take environmental samples.| |@ffef8d00Main objectives|- destroy the column of robbers. | |@ffef8d00Secondary objectives|- clear out the bandit checkpoint at the settlement inhabited by the civilian personnel of the base.|- destroy the vehicles of the local police department.|- destroy looters' camp.| |@ffef8d00Terrain description|- several wandering tornadoes.|- 4 virus probes in total.| |@ffef8d00Enemy description|- armed light vehicles.|- 2 looters' vans.|- 3 machine gun pillboxes."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv1.dds"
+		splashes="data\if\ico\Splashes\dv1.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2b dv_2c dv_2d dv_2e dv_2f" />
+
+	<LevelInfo
+		name	="dv2"
+		file	="data\maps\dv2.ssl"
+		fullName="Base No. 31"
+		diz0	="Follow the route, get to Base No. 31 and evacuate the scientist from there."
+		diz1	="Ok, here is your objective. Following the route indicated on the map, you will reach the object designated as Base No. 31. Having entered the territory of the facility, you need to find and evacuate doctor Pappers from there. Doc was analyzing the remains of a downed alien ship, and saving the country's best specialist in the area is a matter of national security. That is your primary goal.| |@ffef8d00Main objectives|- evacuate doctor Pappers from the facility. | |@ffef8d00Secondary objectives|- evacuate the residents of Deserthole.|- prevent the release of chemicals from the laboratory.| |@ffef8d00Terrain description|- a few obstacles that require a turbo booster or a jumping device to overcome.|- a large number of mutant fungi.|- a large number of biotoxic hot-spots.|- a large number of wandering tornadoes.|- 2 virus probes in total.| |@ffef8d00Enemy description|- armed light vehicles.|- 1 armed van.|- 1 heavy truck.|- 3 machine gun pillboxes.|- 2 anti-aircraft gun emplacements.|- a small number of the infected with the Z-120 virus.|- a small number of mutant bats."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv2.dds"
+		splashes="data\if\ico\Splashes\dv2.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2b dv_2c dv_2d dv_2e dv_2f" />
+
+	<LevelInfo
+		name	="dv4"
+		file	="data\maps\dv4.ssl"
+		fullName="Secret files"
+		diz0	="Our primary objective is to find out what happened to team Delta. It might give us some clues on the location of Z-120 container."
+		diz1	="The situation is catastrophic. The first results have come from the experts and analysts working at the site of the destroyed laboratory. In addition, interrogation protocols of the few survivors have been received. As is known, Base No. 31 was studying an alien spacecraft. Doctor Pappers was a leading specialist in this field. It seems that shortly before the disaster, he achieved a decisive breakthrough in his research. There is a suspicion that doctor's discovery and the attack on the Base are connected. It is still unclear how exactly this top secret information was leaked and who managed to take advantage of it so successfully. But that is not the most important thing.  We have no idea what happened to doctor Pappers and his discovery. The scientist must be found and rescued at any cost. I contacted the president directly, and he personally gave the go-ahead for any, even the most extraordinary, measures.| |@ffef8d00Main objectives|- find out what happened to Delta Team.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a large number of biotoxic hot-spots.|- several wandering tornadoes.|- 6 virus probes in total.| |@ffef8d00Enemy description|- armed light vehicles.|- 3 machine gun pillboxes.|- 1 anti-aircraft gun emplacement.|- 2 rocket emplacement.|- a large number of the infected with the Z-120 virus.|- a small number of the detonating infected with the Z-120 virus."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv4.dds"
+		splashes="data\if\ico\Splashes\dv4.dds"
+		musicBlocks="dv_1 dv_1b dv_1c dv_1d dv_1e dv_1f dv_1g dv_1h" />
+
+	<LevelInfo
+		name	="dv5"
+		file	="data\maps\dv5.ssl"
+		fullName="Strange jungle"
+		diz0	="We know where doctor Pappers is, all we need to do is get him out alive and well."
+		diz1	="Here's your next mission, agent. Delta Team is pursuing smugglers to return a Z-120 container to the government. As such, the mission to rescue doctor Pappers remains yours. The Delta guys will likely take advantage of the terrain and ambush the smugglers. If the scientist is in the hands of bandits, then you will have to get him out of the crossfire.| |@ffef8d00Main objectives|- rescue Dr. Pappers from the bandits.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a few obstacles that require a turbo booster or a jumping device to overcome.|- a large number of mutant fungi.|- several wandering tornadoes.|- 9 virus probes in total.| |@ffef8d00Enemy description|- armed light vehicles.|- several heavy trucks.|- 1 machine gun pillbox.|- 3 anti-aircraft gun emplacements.|- a small number of the infected with the Z-120 virus.|- a large number of mutant bats."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv7.dds"
+		splashes="data\if\ico\Splashes\dv7.dds"
+		musicBlocks="dv_3_2 dv_3_3 dv_3b dv_3c dv_3d dv_3e dv_3f dv_3g" />
+
+	<LevelInfo
+		name	="dv6"
+		file	="data\maps\dv6.ssl"
+		fullName="Swamp roads"
+		diz0	="This damn scientist refuses to evacuate without the materials of his research. He claims they were stolen by bandits. We'll have to search the marshes."
+		diz1	="The problem has an extremely simple solution, yes. Nothing complicated. Your soldiers have probably already driven the bandits into the marshes and defeated them all. They have all sorts of guns, grenades and other stuff, yes. But my research! My materials! The soldiers wouldn't even think about getting them out of there, I'm sure of it! You think I don't know what the military are all like? They will shoot everything there, as well as cause a leak of Z-120 and destroy valuable samples! Basically, it's either you or me! I mean, either you get the materials, or I stay here, yeah! So go to the swamp, that's it!| |@ffef8d00Main objectives|- destroy Z-120 containers.| |@ffef8d00Secondary objectives|- find Dr. Pappers' research materials.| |@ffef8d00Terrain description|- a large number of mutant fungi.|- several biotoxic hot-spots.|- 3 virus probes in total.| |@ffef8d00Enemy description|- armed light vehicles.|- several armed vans.|- several heavy trucks.|- 1 anti-aircraft gun emplacement.|- 5 rocket emplacements.|- a large number of the infected with the Z-120 virus.|- a large number of the detonating infected with the Z-120 virus."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv6.dds"
+		splashes="data\if\ico\Splashes\dv6.dds"
+		musicBlocks="dv_3 dv_3_3 dv_3b dv_3e dv_3f dv_3g" />
+
+	<LevelInfo
+		name	="dv7"
+		file	="data\maps\dv7.ssl"
+		fullName="Last man standing"
+		diz0	="Our astronomers detected a huge UFO in the orbit. Pappers is the leading specialist on aliens, so we need to hear his opinion as soon as possible."
+		diz1	="Our astronomers have discovered a huge alien spacecraft in geostationary orbit. Pappers is a leading specialist from Base No. 31, and that's where they worked on the alien technology. We need his opinion. So, here is your new objective: return to doctor Pappers, take him no matter what he tells you, use force if needed, and leave the contaminated area immediately.| |@ffef8d00Main objectives|- evacuate Dr. Pappers.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a rapidly approaching contamination cloud.|- a massive amount of mutant fungi.|- a large number of biotoxic hot-spots.|- 7 virus probes in total.| |@ffef8d00Enemy description|- armed light vehicles.|- several armed vans.|- 1 heavy truck.|- a small number of the detonating infected with the Z-120 virus.|- a large number of mutant bats. "
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv5.dds"
+		splashes="data\if\ico\Splashes\dv5.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2c dv_2d dv_2e" />
+
+	<LevelInfo
+		name	="dv8"
+		file	="data\maps\dv8.ssl"
+		fullName="Desert heat"
+		diz0	="Z-120 virus carriers try to leave the Territory. Agent, you are the only person close enough to the area in question to intercept them."
+		diz1	="A huge number of the Z-120 virus carriers are currently trying to leave the area. These include looters, infected military patrols, and local residents who were hiding from evacuation. You are the only one close enough to react quickly to the situation.| |@ffef8d00Main objectives|- destroy the vehicles of infected military patrols trying to leave the Territory.| |@ffef8d00Secondary objectives|- destroy the mutants on the bank of the Road-River.|- prevent looters from hijacking a helicopter from Fly-Hill airfield.| |@ffef8d00Terrain description|- a few obstacles that require a turbo booster or a jumping device to overcome.|- a massive amount of mutant fungi.|- 8 virus probes in total.| |@ffef8d00Enemy description|- 15 military vehicles.|- armed light vehicles.|- a large number of armed vans.|- several heavy trucks.|- 1 machine gun pillbox.|- 2 anti-aircraft gun emplacements.|- a large number of the detonating infected with the Z-120 virus.|- a small number of mutant bats. "
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv8.dds"
+		splashes="data\if\ico\Splashes\dv8.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2b dv_2c dv_2d dv_2e dv_2f dv_2g" />
+
+	<LevelInfo
+		name	="dv9"
+		file	="data\maps\dv9.ssl"
+		fullName="The Big Hunt"
+		diz0	="We've underestimated the might of the virus, and, as a consequence, we've underestimated the newfound abilities of Dr. Pappers. He dealt with the entire MP escort and escaped. Finish your job and kill the bastard."
+		diz1	="Alas, agent, I have some bad news again. We underestimated the power of the virus and, as a result, we underestimated doctor Pappers' newfound abilities. He escaped, having dealt with the entire police escort. Luckily, he doesn't know that the car he used to escape is being traced by a hidden tracking device. You are currently the closest to the mad scientist. Intercept him at all costs. We must not allow this nightmare happen again.| |@ffef8d00Main objectives|- eliminate doctor Pappers.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a massive amount of mutant fungi.|- 4 virus probes in total.| |@ffef8d00Enemy description|- armed vans.|- a large number of heavy trucks.|- a large number of armed light vehicles, some of which are armed with the rocket launchers.|- 4 anti-aircraft gun emplacements. "
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv9.dds"
+		splashes="data\if\ico\Splashes\dv9.dds"
+		musicBlocks="dv_1 dv_1_2 dv_1b dv_1c dv_1d dv_1e dv_1f dv_1g dv_1h dv_1i dv_1j" />
+		
+		
+		
+<!-- New Game + -->
+	<LevelInfo
+		name	="ng1_dv1"
+		file	="data\maps\ng1_dv1.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Under siege"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccYou need to get used to the vehicle, agent. By the way, keep in mind that the surrounding area is not completely safe."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |So, you're a federal agent sent to do the job that our task force apparently failed to accomplish? Well, we'll see. Before I tell you the gist of the mission, I want you to get comfortable with the vehicle you'll be driving for many miles. I know you are an excellent driver, but every vehicle has its own features that are best learned in the relatively calm environment of the base's surroundings. Get comfortable with the controls, feel the grip, try the brakes. Learn how to use the equipment for taking environmental samples.| |@ffef8d00Main objectives|- destroy the column of robbers. | |@ffef8d00Secondary objectives|- clear out the bandit checkpoint at the settlement inhabited by the civilian personnel of the base.|- destroy the vehicles of the local police department.|- destroy looters' camp.| |@ffef8d00Terrain description|- several wandering tornadoes.|- 4 virus probes in total.|- 2 survivor records in total.| |@ffef8d00Enemy description|- armed light vehicles.|- several armed vans.|- 2 heavy trucks.|- 3 anti-aircraft gun emplacements."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv1.dds"
+		splashes="data\if\ico\Splashes\dv1.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2b dv_2c dv_2d dv_2e dv_2f" />
+
+	<LevelInfo
+		name	="ng1_dv2"
+		file	="data\maps\ng1_dv2.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Base No. 31"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccFollow the route, get to Base No. 31 and evacuate the scientist from there."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |Ok, here is your objective. Following the route indicated on the map, you will reach the object designated as Base No. 31. Having entered the territory of the facility, you need to find and evacuate doctor Pappers from there. Doc was analyzing the remains of a downed alien ship, and saving the country's best specialist in the area is a matter of national security. That is your primary goal.| |@ffef8d00Main objectives|- evacuate doctor Pappers from the facility. | |@ffef8d00Secondary objectives|- evacuate the residents of Deserthole.|- prevent the release of chemicals from the laboratory.| |@ffef8d00Terrain description|- a few obstacles that require a turbo booster or a jumping device to overcome.|- - a large number of mutant fungi.|- a large number of biotoxic hot-spots.|- a large number of wandering tornadoes.|- 2 virus probes in total.|- 2 survivor records in total.| |@ffef8d00Enemy description|- armed light vehicles.|- several armed vans.|- 2 heavy trucks.|- 5 anti-aircraft gun emplacements.|- a small number of the infected with the Z-120 virus.|- a small number of mutant bats."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv2.dds"
+		splashes="data\if\ico\Splashes\dv2.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2b dv_2c dv_2d dv_2e dv_2f" />
+
+	<LevelInfo
+		name	="ng1_dv4"
+		file	="data\maps\ng1_dv4.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Secret files"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccOur primary objective is to find out what happened to team Delta. It might give us some clues on the location of Z-120 container."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |The situation is catastrophic. The first results have come from the experts and analysts working at the site of the destroyed laboratory. In addition, interrogation protocols of the few survivors have been received. As is known, Base No. 31 was studying an alien spacecraft. Doctor Pappers was a leading specialist in this field. It seems that shortly before the disaster, he achieved a decisive breakthrough in his research. There is a suspicion that doctor's discovery and the attack on the Base are connected. It is still unclear how exactly this top secret information was leaked and who managed to take advantage of it so successfully. But that is not the most important thing.  We have no idea what happened to doctor Pappers and his discovery. The scientist must be found and rescued at any cost. I contacted the president directly, and he personally gave the go-ahead for any, even the most extraordinary, measures.| |@ffef8d00Main objectives|- find out what happened to Delta Team.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a large number of biotoxic hot-spots.|- several wandering tornadoes.|- 6 virus probes in total.|- 5 survivor records in total.| |@ffef8d00Enemy description|- armed vans.|- a large number of armed light vehicles.|- several heavy trucks.|- 4 anti-aircraft gun emplacements.|- 2 rocket emplacement.|- a large number of the infected with the Z-120 virus.|- a small number of the detonating infected with the Z-120 virus."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv4.dds"
+		splashes="data\if\ico\Splashes\dv4.dds"
+		musicBlocks="dv_1 dv_1b dv_1c dv_1d dv_1e dv_1f dv_1g dv_1h" />
+
+	<LevelInfo
+		name	="ng1_dv5"
+		file	="data\maps\ng1_dv5.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Strange jungle"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccWe know where doctor Pappers is, all we need to do is get him out alive and well."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |Here's your next mission, agent. Delta Team is pursuing smugglers to return a Z-120 container to the government. As such, the mission to rescue doctor Pappers remains yours. The Delta guys will likely take advantage of the terrain and ambush the smugglers. If the scientist is in the hands of bandits, then you will have to get him out of the crossfire.| |@ffef8d00Main objectives|- rescue Dr. Pappers from the bandits.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a few obstacles that require a turbo booster or a jumping device to overcome.|- a large number of mutant fungi.|- several wandering tornadoes.|- 9 virus probes in total.|- 2 survivor records in total.| |@ffef8d00Enemy description|- armed vans.|- a large number of armed light vehicles.|- several heavy trucks.|- 4 anti-aircraft gun emplacements.|- a small number of the infected with the Z-120 virus.|- a large number of mutant bats."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv7.dds"
+		splashes="data\if\ico\Splashes\dv7.dds"
+		musicBlocks="dv_3_2 dv_3_3 dv_3b dv_3c dv_3d dv_3e dv_3f dv_3g" />
+
+	<LevelInfo
+		name	="ng1_dv6"
+		file	="data\maps\ng1_dv6.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Swamp roads"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccThis damn scientist refuses to evacuate without the materials of his research. He claims they were stolen by bandits. We'll have to search the marshes."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |The problem has an extremely simple solution, yes. Nothing complicated. Your soldiers have probably already driven the bandits into the marshes and defeated them all. They have all sorts of guns, grenades and other stuff, yes. But my research! My materials! The soldiers wouldn't even think about getting them out of there, I'm sure of it! You think I don't know what the military are all like? They will shoot everything there, as well as cause a leak of Z-120 and destroy valuable samples! Basically, it's either you or me! I mean, either you get the materials, or I stay here, yeah! So go to the swamp, that's it!| |@ffef8d00Main objectives|- destroy Z-120 containers.| |@ffef8d00Secondary objectives|- find Dr. Pappers' research materials.| |@ffef8d00Terrain description|- - a large number of mutant fungi.|- several biotoxic hot-spots.|- 3 virus probes in total.|- 2 survivor records in total.| |@ffef8d00Enemy description|- armed vans.|- a large number of armed light vehicles.|- a large number of heavy trucks.|- 1 anti-aircraft gun emplacement.|- 5 rocket emplacements.|- a large number of the infected with the Z-120 virus.|- a large number of the detonating infected with the Z-120 virus."
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv6.dds"
+		splashes="data\if\ico\Splashes\dv6.dds"
+		musicBlocks="dv_3 dv_3_3 dv_3b dv_3e dv_3f dv_3g" />
+
+	<LevelInfo
+		name	="ng1_dv7"
+		file	="data\maps\ng1_dv7.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Last man standing"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccOur astronomers detected a huge UFO in the orbit. Pappers is the leading specialist on aliens, so we need to hear his opinion as soon as possible."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |@ffccccccOur astronomers have discovered a huge alien spacecraft in geostationary orbit. Pappers is a leading specialist from Base No. 31, and that's where they worked on the alien technology. We need his opinion. So, here is your new objective: return to doctor Pappers, take him no matter what he tells you, use force if needed, and leave the contaminated area immediately.| |@ffef8d00Main objectives|- evacuate Dr. Pappers.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a rapidly approaching contamination cloud.|- a massive amount of mutant fungi.|- a large number of biotoxic hot-spots.|- 7 virus probes in total.|- 1 survivor record in total.| |@ffef8d00Enemy description|- armed vans.|- several heavy trucks.|- several military vehicles.|- a small number of the detonating infected with the Z-120 virus.|- a large number of mutant bats. "
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv5.dds"
+		splashes="data\if\ico\Splashes\dv5.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2c dv_2d dv_2e" />
+
+	<LevelInfo
+		name	="ng1_dv8"
+		file	="data\maps\ng1_dv8.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: Desert heat"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccZ-120 virus carriers try to leave the Territory. Agent, you are the only person close enough to the area in question to intercept them."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |A huge number of the Z-120 virus carriers are currently trying to leave the area. These include looters, infected military patrols, and local residents who were hiding from evacuation. You are the only one close enough to react quickly to the situation.| |@ffef8d00Main objectives|- destroy the vehicles of infected military patrols trying to leave the Territory.| |@ffef8d00Secondary objectives|- destroy the mutants on the bank of the Road-River.|- prevent looters from hijacking a helicopter from Fly-Hill airfield.| |@ffef8d00Terrain description|- a few obstacles that require a turbo booster or a jumping device to overcome.|- a massive amount of mutant fungi.|- 8 virus probes in total.|- 2 survivor records in total.| |@ffef8d00Enemy description|- 15 military vehicles of elite units.|- armed vans, some of which are armed with the rocket launchers.|- a large number of heavy trucks.|- several armed light vehicles.|- 3 anti-aircraft gun emplacements.|- a large number of the detonating infected with the Z-120 virus.|- a small number of mutant bats. "
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv8.dds"
+		splashes="data\if\ico\Splashes\dv8.dds"
+		musicBlocks="dv_2 dv_2_2 dv_2b dv_2c dv_2d dv_2e dv_2f dv_2g" />
+
+	<LevelInfo
+		name	="ng1_dv9"
+		file	="data\maps\ng1_dv9.ssl"
+		fullName="@ffab1e1eNG@ffef8d00+@ffcccccc: The Big Hunt"
+		diz0	="@ffab1e1eNew game @ffef8d00+| |@ffccccccWe've underestimated the might of the virus, and, as a consequence, we've underestimated the newfound abilities of Dr. Pappers. He dealt with the entire MP escort and escaped. Finish your job and kill the bastard."
+		diz1	="@ffab1e1eNew game @ffef8d00+| |Alas, agent, I have some bad news again. We underestimated the power of the virus and, as a result, we underestimated doctor Pappers' newfound abilities. He escaped, having dealt with the entire police escort. Luckily, he doesn't know that the car he used to escape is being traced by a hidden tracking device. You are currently the closest to the mad scientist. Intercept him at all costs. We must not allow this nightmare happen again.| |@ffef8d00Main objectives|- eliminate doctor Pappers.| |@ffef8d00Secondary objectives|none.| |@ffef8d00Terrain description|- a massive amount of mutant fungi.|- 4 virus probes in total.|- 2 survivor records in total.| |@ffef8d00Enemy description|- armed vans, some of which are armed with the rocket launchers.|- a large number of heavy trucks.|- a large number of military vehicles.|- several armed light vehicles.|- 4 anti-aircraft gun emplacements. "
+		north="0 0 1"
+		image1="data\if\ico\Splashes\dv9.dds"
+		splashes="data\if\ico\Splashes\dv9.dds"
+		musicBlocks="dv_1 dv_1_2 dv_1b dv_1c dv_1d dv_1e dv_1f dv_1g dv_1h dv_1i dv_1j" />
+</LevelInfoResource>

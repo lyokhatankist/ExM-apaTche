@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There is also an additional objective."
+		sound="data\sounds\dv_sounds\dialogs\dv5_5.wav"
+		time="3" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The headquarters receives data on biogenic contamination of the area, which is why the chemical protection force asks you to collect soil samples from different places in the canyon."
+		sound="data\sounds\dv_sounds\dialogs\dv5_6.wav"
+		time="11" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Naturally, this must not be at the expense of saving the scientist. And beware of giant mushrooms, it seems to me that all the toxin is collected in them."
+		sound="data\sounds\dv_sounds\dialogs\dv5_7.wav"
+		time="9" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="My advice to you: shoot the mushrooms at every opportunity."
+		sound="data\sounds\dv_sounds\dialogs\dv5_8.wav"
+		time="4" />
+		
+	<string
+		id="11"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The problem has an extremely simple solution, yes. Nothing complicated."
+		sound="data\sounds\dv_sounds\dialogs\dv6_1.wav"
+		time="5" />
+	<string
+		id="12"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Your soldiers have probably already driven the bandits into the marshes and defeated them all. They have all sorts of guns, grenades and other stuff, yes."
+		sound="data\sounds\dv_sounds\dialogs\dv6_2.wav"
+		time="9" />
+	<string
+		id="13"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="But my research! My materials! The soldiers wouldn't even think about getting them out of there, I'm sure of it! You think I don't know what the military are all like?"
+		sound="data\sounds\dv_sounds\dialogs\dv6_3.wav"
+		time="10" />
+	<string
+		id="14"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="They will shoot everything there, cause a leak of Z-120 and destroy valuable samples!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_4.wav"
+		time="6" />
+	<string
+		id="15"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Basically, it's either you or me! I mean, either you get the materials, or I stay here, yeah! So go to the swamp, that's it!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_5.wav"
+		time="8" />
+		
+	<string
+		id="5001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I don't understand. I have the photographs of this area from a month ago on the desk in front of me. It was nothing like the jungle it is that we're seeing right now."
+		sound="data\sounds\dv_sounds\dialogs\dv5_9.wav"
+		time="10" />
+
+	<string
+		id="50011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Anyway, we know where Dr. Pappers is, so it's just about getting him out alive and well."
+		sound="data\sounds\dv_sounds\dialogs\dv5_10.wav"
+		time="5" />
+
+
+	<string
+		id="5002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Agent, do you copy? Come in! Switch to alternate frequency! Agent, respond, over!"
+		sound="data\sounds\dv_sounds\dialogs\dv5_11.wav"
+		time="6" />   
+	<string
+		id="5003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Agent, if you can hear me, press the &quot;transmit&quot; button twice. Aha, great! Looks like this place is in the radio shadow…"
+		sound="data\sounds\dv_sounds\dialogs\dv5_12.wav"
+		time="8" />
+	<string
+		id="5004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="As soon as you get the scientist out… At the entrance to the canyon, there will be… waiting for you. Got it?"
+		sound="data\sounds\dv_sounds\dialogs\dv5_13.wav"
+		time="9" />
+
+	<string
+		id="50041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You've got to be careful to avoid getting caught in Delta's line of fire while rescuing the scientist from the hands of the smugglers."
+		sound="data\sounds\dv_sounds\dialogs\dv5_14.wav"
+		time="7" />
+
+
+	<string
+		id="5007"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You came to save me? Oh, great, great! Looks like my government cares enough to rescue me from the bandits after all."
+		sound="data\sounds\dv_sounds\dialogs\dv5_15.wav"
+		time="8" />
+	<string
+		id="5008"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="However, I had already rescued myself from the bandits, yes! I escaped while they were refueling. Apparently they were being chased by the military, and they both didn't have time for me. So I managed without you, yes."
+		sound="data\sounds\dv_sounds\dialogs\dv5_16.wav"
+		time="16" />
+
+	<string
+		id="5009"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We were able to make use of a surveillance satellite passing over the area."
+		sound="data\sounds\dv_sounds\dialogs\dv5_17.wav"
+		time="4" />
+	<string
+		id="50091"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The bandit camp appears to be located not that far away from you. It consists of several large dome-shaped tents, there's a chance that the scientist is being held in one of them."
+		sound="data\sounds\dv_sounds\dialogs\dv5_18.wav"
+		time="11" />
+	<string
+		id="50092"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There are no visual signs of combat near the site. In any case, you'll need to take a look around there."
+		sound="data\sounds\dv_sounds\dialogs\dv5_19.wav"
+		time="5" />
+
+	<string
+		id="5010"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="But don't think that I'll go with you! The smugglers still have all the samples and materials of my research, yes."
+		sound="data\sounds\dv_sounds\dialogs\dv5_20.wav"
+		time="6" />
+	<string
+		id="50101"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I won't go anywhere without them. It's years of work, yeah! Retrieve my papers from the bandits and I'm coming with you, otherwise - no way!"
+		sound="data\sounds\dv_sounds\dialogs\dv5_21.wav"
+		time="8" />
+	<string
+		id="50102"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The bandits are trying to escape from the soldiers to the swamps. You can still catch up with them."
+		sound="data\sounds\dv_sounds\dialogs\dv5_22.wav"
+		time="5" />
+
+
+
+	<string
+		id="50103"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Your car is well protected from radiation, this is very bad."
+		sound="data\sounds\dv_sounds\dialogs\dv5_23.wav"
+		time="4" />
+	<string
+		id="50104"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I mean it's great, but bad in the sense that the armor is heavy, and the terrain here is boggy, yes. That's because of the swamp."
+		sound="data\sounds\dv_sounds\dialogs\dv5_24.wav"
+		time="8" />
+
+
+	<string
+		id="5011"
+		modelName="mask_oracul"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="ON-BOARD COMPUTER|Scanning…"
+		sound=""
+		time="2.5" />
+	<string
+		id="5012"
+		modelName="mask_oracul"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="ON-BOARD COMPUTER|The objects spotted by the satellite's surveillance cameras are not tents. They are giant eggs. Presumably of bird origin."
+		sound=""
+		time="8" />
+	
+	
+	
+	
+	
+	
+	<string
+		id="369"
+		value="@ffab1e1eYOU HAVE|LOST !!!!| |@ffccccccYou haven't passed all the checkpoints. On this note the thread of prophecy is severed."
+		numButtons="1" />	
+</resource>

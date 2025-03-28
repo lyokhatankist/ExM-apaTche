@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?><!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by Morgoth (Targem) -->
+<resource><!--Default buttons--><!-- Общие в т.ч. вне игры -->
+	<string
+		id="ok"
+		value="OK" />
+
+	<string
+		id="cancel"
+		value="Cancel" />
+
+	<string
+		id="Cancel"
+		value="Cancel" />
+
+	<string
+		id="yes"
+		value="Yes" />
+
+	<string
+		id="no"
+		value="No" />
+
+	<string
+		id="error"
+		value="Error" />
+
+	<string
+		id="save"
+		value="Save" />
+
+	<string
+		id="Default"
+		value="On default" />
+
+	<string
+		id="Close"
+		value="Close" />
+
+	<string
+		id="Control"
+		value="Control" />
+
+	<string
+		id="Exit"
+		value="Exit" />
+
+	<string
+		id="Delete"
+		value="Delete" />
+
+	<string
+		id="CloseWindow"
+		value="Close window" />
+
+	<string
+		id="Date"
+		value="Date" />
+
+	<string
+		id="SaveName"
+		value="Name" />
+
+	<string
+		id="SortByName"
+		value="Sort by savegame name" />
+
+	<string
+		id="SortByDate"
+		value="Sort by save time" />
+
+	<string
+		id="ServiceSymbolsUsed"
+		value="Not allowed to use |the following symbols:|@ff904040%s in a player's name " />
+
+	<string
+		id="quitGame"
+		value="Do you want to exit the game?" />
+
+	<string
+		id="ChoseDifficultyLevel"
+		value="Select difficulty level and start the game" />
+
+	<string
+		id="ChoseDifficultyLevelBack"
+		value="Return to main menu" />
+<!-- Главное меню -->
+	<string
+		id="New Game"
+		value="Single game" />
+
+	<string
+		id="StartNetGame"
+		value="Start new game" />
+
+	<string
+		id="Credits"
+		value="Credits" />
+
+	<string
+		id="Load Game"
+		value="Load game" />
+
+	<string
+		id="Options"
+		value="Settings" />
+
+	<string
+		id="Quit to Windows"
+		value="Exit the game" />
+
+	<string
+		id="Profile"
+		value="Profile" />
+
+	<string
+		id="ProfileDontChosen"
+		value="Not selected" />
+
+	<string
+		id="Intro"
+		value="Starting clip" />
+
+	<string
+		id="MultiplayerOptions"
+		value="Network game" />
+
+	<string
+		id="Audioplayer"
+		value="Radio" />
+
+	<string
+		id="AudioplayerInMultiplayer"
+		value="Network radio" />
+
+	<string
+		id="OpenSavesList"
+		value="Open save games list" />
+
+	<string
+		id="ShowIntro"
+		value="Start network game" />
+
+	<string
+		id="HandleGameOptions"
+		value="Adjust game settings" />
+
+	<string
+		id="ShowCredits"
+		value="See Credits" />
+<!-- Окно загрузки -->
+	<string
+		id="load"
+		value="Load" />
+
+	<string
+		id="LoadGame"
+		value="Load save game" />
+
+	<string
+		id="SavedGameLoading"
+		value="Loading save game" />
+<!-- Профиль -->
+	<string
+		id="DeleteProfileWarning"
+		value="All saved games will be deleted.|Continue?" />
+
+	<string
+		id="DefaultProfileName"
+		value="Player" />
+
+	<string
+		id="Create"
+		value="Create" />
+
+	<string
+		id="CreateProfile"
+		value="Create new profile" />
+
+	<string
+		id="NewProfile"
+		value="New profile" />
+
+	<string
+		id="ProfileExists"
+		value="Profile with this name is already existed.|Enter another name" />
+
+	<string
+		id="EmptyProfileName"
+		value="Profile without name can not be created" />
+
+	<string
+		id="ProfileCreateError"
+		value="Profile creation error" />
+
+	<string
+		id="ProfileDeleteError"
+		value="Profile deleting error" />
+
+	<string
+		id="Chose"
+		value="Select" />
+
+	<string
+		id="DeleteProfile"
+		value="Delete profile" />
+
+	<string
+		id="ChoseProfile"
+		value="Select as a current profile" />
+
+	<string
+		id="CancelExit"
+		value="Close window without saving" />
+
+	<string
+		id="ChangePlayerProfile"
+		value="Change player profile" />
+
+	<string
+		id="ChangeProfile"
+		value="Change profile" />
+
+	<string
+		id="CurProfile"
+		value="Current profile" />
+
+	<string
+		id="InvalidProfileName"
+		value="Unacceptable profile name" />
+<!-- Текст сплэшей -->
+	<string
+		id="Loading"
+		value="Load" />
+
+	<string
+		id="LoadingDots"
+		value="LOADING…" />
+
+	<string
+		id="LoadWorld"
+		value="LEVEL LOADING" />
+
+	<string
+		id="InitWorld"
+		value="LEVEL INITIALIZATION" />
+
+	<string
+		id="MainMenuLoading"
+		value="Load" />
+
+	<string
+		id="AnimatedModelsServer"
+		value="animated objects" />
+
+	<string
+		id="StaticModelsServer"
+		value="static objects" />
+
+	<string
+		id="LightsServer"
+		value="light sources" />
+
+	<string
+		id="SpritesServer"
+		value="sprites" />
+
+	<string
+		id="ParticlesServer"
+		value="particle systems" />
+
+	<string
+		id="SoundsServer"
+		value="sounds" />
+
+	<string
+		id="MusicServer"
+		value="music" />
+<!-- замените это на более благозвучное -->
+	<string
+		id="ProjectorsServer"
+		value="spotlights" />
+
+	<string
+		id="DecalsServer"
+		value="decals" />
+
+	<string
+		id="Precaching"
+		value="Caching" />
+<!-- Окно настроек -->
+	<string
+		id="Video"
+		value="Graphics" />
+
+	<string
+		id="Sound"
+		value="Sound" />
+
+	<string
+		id="Game"
+		value="Game" />
+
+	<string
+		id="Video settings"
+		value="Graphic settings" />
+
+	<string
+		id="Far dist"
+		value="Range of vision" />
+
+	<string
+		id="Gamma"
+		value="Gamma" />
+
+	<string
+		id="Resolution"
+		value="Resolution" />
+
+	<string
+		id="GraphicQuality"
+		value="Graphics quality" />
+
+	<string
+		id="Grass"
+		value="Grass" />
+
+	<string
+		id="TextureResolution"
+		value="Texture resolution" />
+
+	<string
+		id="Antialiasing"
+		value="Blur" />
+
+	<string
+		id="Filtration"
+		value="Filtration" />
+
+	<string
+		id="BloomQuality"
+		value="Bloom quality" />
+
+	<string
+		id="WaterQuality"
+		value="Water quality" />
+
+	<string
+		id="Audio settings"
+		value="Sound settings" />
+
+	<string
+		id="Fx vol"
+		value="Effects volume" />
+
+	<string
+		id="Music vol"
+		value="Music volume" />
+
+	<string
+		id="Speak vol"
+		value="Speech volume" />
+
+	<string
+		id="Game settings"
+		value="Game settings" />
+
+	<string
+		id="DialogPause"
+		value="Pause in dialogues" />
+
+	<string
+		id="AutoHelp"
+		value="Automatic hints" />
+
+	<string
+		id="MouseSensitivity"
+		value="Mouse sensibility" />
+
+	<string
+		id="MouseYAxisFlip"
+		value="Y axis inversion" />
+
+	<string
+		id="MouseXAxisFlip"
+		value="X axis inversion" />
+
+	<string
+		id="Keys"
+		value="Key functions" />
+
+	<string
+		id="RestoreDef"
+		value="Restore defaults" />
+
+	<string
+		id="Apply"
+		value="Apply" />
+
+	<string
+		id="Recommended"
+		value="Recommended" />
+
+	<string
+		id="None"
+		value="No" />
+
+	<string
+		id="Near"
+		value="Close" />
+
+	<string
+		id="Far"
+		value="Far" />
+
+	<string
+		id="LowQuality"
+		value="Low" />
+
+	<string
+		id="MediumQuality"
+		value="Middle" />
+
+	<string
+		id="HighQuality"
+		value="High" />
+
+	<string
+		id="CustomQuality"
+		value="Custom" />
+
+	<string
+		id="MaxQuality"
+		value="Maximum" />
+
+	<string
+		id="LowResolution"
+		value="Low" />
+
+	<string
+		id="HighResolution"
+		value="High" />
+
+	<string
+		id="CustomResolution"
+		value="Custom" />
+
+	<string
+		id="BilinearFiltration"
+		value="Bilinear" />
+
+	<string
+		id="TrilinearFiltration"
+		value="Trilinear" />
+
+	<string
+		id="AnisotropFiltration"
+		value="Anisotropic" />
+
+	<string
+		id="CustomFiltration"
+		value="Custom" />
+
+	<string
+		id="Antialiasing_x2"
+		value="x2" />
+
+	<string
+		id="Antialiasing_x4"
+		value="x4" />
+
+	<string
+		id="Antialiasing_x8"
+		value="x8" />
+
+	<string
+		id="Antialiasing_x16"
+		value="x16" />
+
+	<string
+		id="CustomAntialiasing"
+		value="Custom" />
+
+	<string
+		id="OptionsChanged"
+		value="Settings were changed. Save changes?" />
+
+	<string
+		id="ShadowsQuality"
+		value="Shade quality" />
+
+	<string
+		id="NumBattleReplies"
+		value="Number of cues in battle" />
+
+	<string
+		id="Control settings"
+		value="Controls settings" />
+
+	<string
+		id="BindingsChanged"
+		value="Controls were changed. Save changes?" />
+
+	<string
+		id="GameDifficulty"
+		value="Difficulty level" />
+
+	<string
+		id="EasyLevel"
+		value="Rookie" />
+
+	<string
+		id="MediumLevel"
+		value="Experienced" />
+
+	<string
+		id="HardLevel"
+		value="Professional" />
+
+	<string
+		id="ImpossibleLevel"
+		value="Master" />
+<!-- DemoSplashWnd -->
+	<string
+		id="Targem Link Tip"
+		value="Targem" />
+
+	<string
+		id="Buka Link Tip"
+		value="Buka" />
+
+	<string
+		id="ExMachina URL"
+		value="http://www.targem.ru" />
+
+	<string
+		id="Buka URL"
+		value="http://www.buka.ru" />
+
+	<string
+		id="Nival URL"
+		value="http://www.nival.com" />
+
+	<string
+		id="AutoSave"
+		value="Autosave" />
+<!-- MultiplayerOptionsWnd -->
+	<string
+		id="ServerCaption"
+		value="Server" />
+
+	<string
+		id="ServerCaptionTip"
+		value="Configure and launch a network game server" />
+
+	<string
+		id="ClientCaption"
+		value="Client" />
+
+	<string
+		id="ClientCaptionTip"
+		value="Find a network game and join it" />
+
+	<string
+		id="OptionsCaption"
+		value="Settings" />
+
+	<string
+		id="OptionsCaptionTip"
+		value="Configure the player network game settings" />
+<!-- Server settings -->
+	<string
+		id="Server settings"
+		value="Network game creation" />
+
+	<string
+		id="ServerName"
+		value="Server name" />
+
+	<string
+		id="GameDescription"
+		value="Game description" />
+
+	<string
+		id="Port"
+		value="Port" />
+
+	<string
+		id="GameType"
+		value="Game mode" />
+
+	<string
+		id="Map"
+		value="Map" />
+
+	<string
+		id="CarType"
+		value="Vehicle type" />
+
+	<string
+		id="FragLimit"
+		value="Body count" />
+
+	<string
+		id="TimeLimit"
+		value="Time" />
+
+	<string
+		id="PlayersLimit"
+		value="Number of players" />
+
+	<string
+		id="MoreAbbrev"
+		value="..." />
+
+	<string
+		id="MoreAbbrevCarTip"
+		value="Detailed info on vehicles" />
+
+	<string
+		id="MoreAbbrevMapTip"
+		value="Detailed info on maps" />
+
+	<string
+		id="TeamOptions"
+		value="Team settings" />
+
+	<string
+		id="ServerDefault"
+		value="On default" />
+
+	<string
+		id="StartGame"
+		value="Start game" />
+
+	<string
+		id="FriendlyFire"
+		value="Friendly fire" />
+
+	<string
+		id="NumBots"
+		value="Bot numbers" />
+
+	<string
+		id="GameType_Deathmatch"
+		value="Battle" />
+
+	<string
+		id="GameType_Team2"
+		value="Team battle (2 teams)" />
+
+	<string
+		id="GameType_Team3"
+		value="Team battle (3 teams)" />
+
+	<string
+		id="GameType_Team4"
+		value="Team battle (4 teams)" />
+
+	<string
+		id="GameType_Team5"
+		value="Team battle (5 teams)" />
+
+	<string
+		id="GameType_Team6"
+		value="Team battle (6 teams)" />
+
+	<string
+		id="GameType_Team7"
+		value="Team battle (7 teams)" />
+
+	<string
+		id="GameType_Team8"
+		value="Team battle (8 teams)" />
+
+	<string
+		id="GameType_DeathmatchAbbrev"
+		value="Battle" />
+
+	<string
+		id="GameType_TeamAbbrev"
+		value="Team" />
+
+	<string
+		id="Fraglimit0"
+		value="Without limits" />
+
+	<string
+		id="Fraglimit10"
+		value="10" />
+
+	<string
+		id="Fraglimit15"
+		value="15" />
+
+	<string
+		id="Fraglimit20"
+		value="20" />
+
+	<string
+		id="Fraglimit25"
+		value="25" />
+
+	<string
+		id="Fraglimit50"
+		value="50" />
+
+	<string
+		id="Fraglimit75"
+		value="75" />
+
+	<string
+		id="Fraglimit100"
+		value="100" />
+
+	<string
+		id="Timelimit0"
+		value="Without limits" />
+
+	<string
+		id="Timelimit5"
+		value="5 minutes" />
+
+	<string
+		id="Timelimit10"
+		value="10 minutes" />
+
+	<string
+		id="Timelimit15"
+		value="15 minutes" />
+
+	<string
+		id="Timelimit30"
+		value="30 minutes" />
+
+	<string
+		id="Timelimit60"
+		value="60 minutes" />
+
+	<string
+		id="EasyMultiplayerLevel"
+		value="Easy" />
+
+	<string
+		id="MediumMultiplayerLevel"
+		value="Middle" />
+
+	<string
+		id="HeavyMultiplayerLevel"
+		value="Hard" />
+<!-- Client settings -->
+	<string
+		id="Client settings"
+		value="Connection to the server game" />
+
+	<string
+		id="RefreshList"
+		value="Update list" />
+
+	<string
+		id="ClientAdditional"
+		value="Extras" />
+
+	<string
+		id="ClientAdditionalTip"
+		value="Connect to the network game with specified server address and port" />
+
+	<string
+		id="ClientConnect"
+		value="Connect" />
+
+	<string
+		id="CaptionGameName"
+		value="Game name" />
+
+	<string
+		id="CaptionGameMap"
+		value="Map" />
+
+	<string
+		id="CaptionCarType"
+		value="Vehicle" />
+
+	<string
+		id="CaptionPlayers"
+		value="Players" />
+
+	<string
+		id="CaptionGameType"
+		value="Type" />
+
+	<string
+		id="CaptionPing"
+		value="Ping" />
+
+	<string
+		id="ServerNameD"
+		value="Server name: " />
+
+	<string
+		id="GameTypeD"
+		value="Game mode: " />
+<!-- Player settings -->
+	<string
+		id="Player settings"
+		value="Player settings" />
+
+	<string
+		id="PlayerDefault"
+		value="On default" />
+
+	<string
+		id="PlayerApply"
+		value="Apply" />
+
+	<string
+		id="POPlayerName"
+		value="Player name" />
+
+	<string
+		id="POSheme"
+		value="Paint style" />
+
+	<string
+		id="POColors"
+		value="Colors" />
+
+	<string
+		id="POLogo"
+		value="Logo" />
+
+	<string
+		id="POAutochange"
+		value="Weapon autochange" />
+
+	<string
+		id="Sheme_Combat"
+		value="Military (-1)" />
+
+	<string
+		id="Sheme_Peace"
+		value="Peaceful (+1)" />
+
+	<string
+		id="Sheme_Combat_MP"
+		value="Military" />
+
+	<string
+		id="Sheme_Peace_MP"
+		value="Peaceful" />
+<!-- Teams settings -->
+	<string
+		id="Teams settings"
+		value="Network game creation > Team settings" />
+
+	<string
+		id="Team1"
+		value="Team 1" />
+
+	<string
+		id="Team2"
+		value="Team 2" />
+
+	<string
+		id="Team3"
+		value="Team 3" />
+
+	<string
+		id="Team4"
+		value="Team 4" />
+
+	<string
+		id="Team5"
+		value="Team 5" />
+
+	<string
+		id="Team6"
+		value="Team 6" />
+
+	<string
+		id="Team7"
+		value="Team 7" />
+
+	<string
+		id="Team8"
+		value="Team 8" />
+
+	<string
+		id="TeamsDefault"
+		value="On default" />
+
+	<string
+		id="TeamsBack"
+		value="Return" />
+
+	<string
+		id="ColorScheme_0"
+		value="Paint 1" />
+
+	<string
+		id="ColorScheme_1"
+		value="Paint 2" />
+
+	<string
+		id="ColorScheme_2"
+		value="Paint 3" />
+
+	<string
+		id="ColorScheme_3"
+		value="Paint 4" />
+
+	<string
+		id="ColorScheme_4"
+		value="Paint 5" />
+
+	<string
+		id="ColorScheme_5"
+		value="Paint 6" />
+
+	<string
+		id="ColorScheme_6"
+		value="Paint 7" />
+
+	<string
+		id="ColorScheme_7"
+		value="Paint 8" />
+
+	<string
+		id="ColorScheme_8"
+		value="Paint 9" />
+
+	<string
+		id="ColorScheme_9"
+		value="Paint 10" />
+
+	<string
+		id="ColorScheme_10"
+		value="Paint 11" />
+
+	<string
+		id="ColorScheme_11"
+		value="Paint 12" />
+
+	<string
+		id="ColorScheme_12"
+		value="Paint 13" />
+
+	<string
+		id="ColorScheme_13"
+		value="Paint 14" />
+
+	<string
+		id="ColorScheme_14"
+		value="Paint 15" />
+
+	<string
+		id="ColorScheme_15"
+		value="Paint 16" />
+
+	<string
+		id="ColorScheme_16"
+		value="Paint 17" />
+
+	<string
+		id="ColorScheme_17"
+		value="Paint 18" />
+
+	<string
+		id="LogoName_0"
+		value="No logo" />
+
+	<string
+		id="LogoName_1"
+		value="Bandits" />
+
+	<string
+		id="LogoName_2"
+		value="Headhunters" />
+
+	<string
+		id="LogoName_3"
+		value="Adventurers" />
+
+	<string
+		id="LogoName_4"
+		value="Explorers" />
+
+	<string
+		id="LogoName_5"
+		value="Bureaucrats" />
+
+	<string
+		id="LogoName_6"
+		value="Grizzly" />
+
+	<string
+		id="LogoName_7"
+		value="Merchants alliance" />
+
+	<string
+		id="LogoName_8"
+		value="World order" />
+
+	<string
+		id="LogoName_9"
+		value="Farmers" />
+
+	<string
+		id="LogoName_10"
+		value="Children of the Earth" />
+
+	<string
+		id="LogoName_11"
+		value="Fallen" />
+
+	<string
+		id="LogoName_12"
+		value="Lost" />
+
+	<string
+		id="LogoName_13"
+		value="Technicians" />
+
+	<string
+		id="LogoName_14"
+		value="Oracle's followers" />
+
+	<string
+		id="LogoName_15"
+		value="Drunk Devil" />
+
+	<string
+		id="LogoName_16"
+		value="Stars" />
+
+	<string
+		id="LogoName_17"
+		value="Mouse-killer" />
+
+	<string
+		id="LogoName_18"
+		value="Ninja" />
+
+	<string
+		id="LogoName_19"
+		value="Hippie" />
+
+	<string
+		id="LogoName_20"
+		value="Graffiti" />
+
+	<string
+		id="LogoName_21"
+		value="USSSR" />
+
+	<string
+		id="LogoName_22"
+		value="Robots" />
+
+	<string
+		id="LogoName_23"
+		value="Brigade" />
+
+	<string
+		id="LogoName_24"
+		value="Nery" />
+
+	<string
+		id="LogoName_25"
+		value="Catchers" />
+
+	<string
+		id="LogoName_fetish_moouse_01.dds"
+		value="Mouse-killer (-2)" />
+
+	<string
+		id="LogoName_fetish_qqqr_01.dds"
+		value="USSR (-1)" />
+
+	<string
+		id="LogoName_fetish_skull_01.dds"
+		value="Robot (+1)" />
+
+	<string
+		id="LogoName_fetish_peace_01.dds"
+		value="Hippie (+2)" />
+
+	<string
+		id="LogoName_fetish_devil_01.dds"
+		value="Drunk Devil (-2)" />
+
+	<string
+		id="LogoName_fetish_military_01.dds"
+		value="Stars (+1)" />
+
+	<string
+		id="LogoName_fetish_ninja_01.dds"
+		value="Ninja (+2)" />
+
+	<string
+		id="LogoName_fetish_punk_01.dds"
+		value="Graffiti (-1)" />
+<!-- Client Add settings -->
+	<string
+		id="Client Add settings"
+		value="Connection to network game > Extras" />
+
+	<string
+		id="ClientAddDefault"
+		value="On default" />
+
+	<string
+		id="ClientAddServer"
+		value="Server name" />
+
+	<string
+		id="ClientAddPort"
+		value="Port" />
+
+	<string
+		id="ClientAddBack"
+		value="Return" />
+<!-- View Map&amp;Car settings -->
+	<string
+		id="View Map settings"
+		value="Network game creation > Map review" />
+
+	<string
+		id="View Car settings"
+		value="Network game creation > Vehicle review" />
+
+	<string
+		id="ViewMapBack"
+		value="Return" />
+
+	<string
+		id="Return"
+		value="Return" />
+<!-- Multiplayer messages -->
+	<string
+		id="ServerHasNewerProtocolVersion"
+		value="Unable to connect - the server uses a newer protocol version." />
+
+	<string
+		id="ServerHasOlderProtocolVersion"
+		value="Unable to connect - the server uses an older protocol version." />
+
+	<string
+		id="TooManyPlayersOnServer"
+		value="Unable to connect - the server is full." />
+
+	<string
+		id="ServerHasLeftTheGame"
+		value="Host left the game." />
+
+	<string
+		id="ServerDied"
+		value="Connection to server lost." />
+
+	<string
+		id="NetworkErrorOnServer"
+		value="Net error. The server is shutting down." />
+
+	<string
+		id="NetworkErrorOnClientPreUpdateThread"
+		value="Net error. Unable to maintain connection with server." />
+
+	<string
+		id="ServerMapDoesntExistOnClient"
+		value="The map used by the host is missing." />
+
+	<string
+		id="ServerNotReady"
+		value="Server not ready." />
+
+	<string
+		id="PressAnyKey"
+		value="Press any key." />
+
+	<string
+		id="Play"
+		value="Game" />
+
+	<string
+		id="Player"
+		value="Player" />
+
+	<string
+		id="Mission"
+		value="Mission" />
+
+	<string
+		id="Unknown"
+		value="Unknown" />
+
+	<string
+		id="Back"
+		value="Back" />
+
+	<string
+		id="Keyboard"
+		value="Keyboard" />
+
+	<string
+		id="Mouse"
+		value="Mouse" />
+
+	<string
+		id="Audio"
+		value="Sound" />
+
+	<string
+		id="Briefing"
+		value="Briefing" />
+
+	<string
+		id="Garage"
+		value="Garage" />
+
+	<string
+		id="StartMission"
+		value="Begin mission" />
+
+	<string
+		id="MainMenu"
+		value="Main menu" />
+
+	<string
+		id="lev"
+		value="mk" />
+
+	<string
+		id="Structure"
+		value="Vehicle" />
+
+	<string
+		id="Upgrade_Health"
+		value="Armor" />
+
+	<string
+		id="Upgrade_Speed"
+		value="Speed" />
+
+	<string
+		id="Upgrade_Thorns"
+		value="Ram device" />
+
+	<string
+		id="Upgrade_Mines"
+		value="Mine layer" />
+
+	<string
+		id="Upgrade_Jumper"
+		value="Jumping device" />
+
+	<string
+		id="Upgrade_Nitro"
+		value="Accelerator" />
+
+	<string
+		id="Upgrade_BaseGun"
+		value="Machine gun" />
+
+	<string
+		id="Upgrade_RocketGun"
+		value="Rocket launcher" />
+
+	<string
+		id="Upgrade_FireThower"
+		value="Shotgun" />
+
+	<string
+		id="Upgrade_ZenithGun"
+		value="Flak cannon" />
+
+	<string
+		id="UninstallAll"
+		value="Remove all" />
+
+	<string
+		id="TipUninstallAll"
+		value="Remove all vehicle equipment" />
+
+	<string
+		id="RequestUninstallAll"
+		value="Are you sure you want to remove all equipment installed on the vehicle?" />
+
+	<string
+		id="Weapon"
+		value="Weapons" />
+
+	<string
+		id="Gadgets"
+		value="Devices" />
+
+	<string
+		id="Results"
+		value="Total" />
+
+	<string
+		id="max"
+		value="max" />
+</resource>

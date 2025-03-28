@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="LoadTip_00"
+		value="You can vastly improve your firepower by collecting extra weapons." />
+
+	<string
+		id="LoadTip_01"
+		value="Keep away from water - it can destroy your vehicle faster than the mightiest foe." />
+
+	<string
+		id="LoadTip_02"
+		value="You can look around by holding the middle mouse button." />
+
+	<string
+		id="LoadTip_03"
+		value="GPS navigation system is a standard device of your vehicle, it always shows the correct movement direction." />
+
+	<string
+		id="LoadTip_04"
+		value="You can greatly improve your wealth by finding and collecting bonuses." />
+
+	<string
+		id="LoadTip_05"
+		value="Remember that a static target is an easy prey. Maneuver more." />
+
+	<string
+		id="LoadTip_06"
+		value="Use level features to vanquish your enemies." />
+
+	<string
+		id="LoadTip_07"
+		value="Ramming is a good old trick against the enemies that drive light vehicles." />
+
+	<string
+		id="LoadTip_08"
+		value="Government rewards you for every destroyed enemy." />
+
+	<string
+		id="LoadTip_09"
+		value="Mutant mushrooms are dangerous for all life forms. Colliding with one may propel you high up in the air." />
+		
+	<string
+		id="LoadTip_10"
+		value="Government reward for destroying spore-emitting mutant mushrooms is issued at the end of the mission." />
+		
+	<string
+		id="LoadTip_11"
+		value="Machine gun is an all-round choice for armament. The third upgrade gives you a permanent second weapon." />
+		
+	<string
+		id="LoadTip_12"
+		value="Twin machine gun is the ultimate way to deal with severe mutant fungi infestations." />
+		
+	<string
+		id="LoadTip_13"
+		value="Shotgun is great at taking out entire groups of enemies. The third upgrade of the weapon boasts explosive ammunition." />
+		
+	<string
+		id="LoadTip_14"
+		value="Flak cannon is a versatile weapon that is also great at dealing with heavily armored foes." />
+		
+	<string
+		id="LoadTip_15"
+		value="Rocket launcher is a weapon that is ideal for destroying enemies from long distances." />
+		
+	<string
+		id="LoadTip_16"
+		value="Briefings provide vital information about upcoming missions. Choose your weaponry and equipment accordingly." />
+	
+	<string
+		id="LoadTip_17"
+		value="All control keys are listed in the &quot;Help&quot; window, which can be accessed by pressing the F1 key." />
+		
+	<string
+		id="LoadTip_18"
+		value="Jumping device is set to the Space key by default." />
+		
+	<string
+		id="LoadTip_19"
+		value="Accelerator is activated by pressing the Alt key." />
+		
+	<string
+		id="LoadTip_20"
+		value="If your vehicle seems to be stuck, you can try using the &quot;Get out of difficult spot&quot; feature by pressing O." />
+		
+	<string
+		id="LoadTip_21"
+		value="Shooting from auxiliary weapon is done by pressing the right mouse button." />
+		
+	<string
+		id="LoadTip_22"
+		value="If you have a minelayer installed, press E to place a landmine behind your vehicle." />
+</resource>

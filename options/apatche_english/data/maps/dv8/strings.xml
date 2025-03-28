@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Our analysts are working on materials recovered from the ruins of Base No. 31."
+		sound="data\sounds\dv_sounds\dialogs\dv8_1.wav"
+		time="5" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="As you already know, the scientists at this base were researching an alien ship."
+		sound="data\sounds\dv_sounds\dialogs\dv8_2.wav"
+		time="5" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Pappers, after studying the bodies of astronauts, derived Z-120, a virus that causes rapid and horrific changes in the human body."
+		sound="data\sounds\dv_sounds\dialogs\dv8_3.wav"
+		time="10" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There is a hypothesis that this virus ended up on Earth not by accident. Some suspect that it was purposefully sent to us on a reconnaissance ship."
+		sound="data\sounds\dv_sounds\dialogs\dv8_4.wav"
+		time="9" />
+	<string
+		id="5"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There is also a speculation that Pappers can influence the consciousness of people infected with the virus."
+		sound="data\sounds\dv_sounds\dialogs\dv8_5.wav"
+		time="6" />
+	<string
+		id="6"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It all sounds terribly confusing, and not all the details are clear, but these circumstances force us to change a number of our previously agreed on decisions."
+		sound="data\sounds\dv_sounds\dialogs\dv8_6.wav"
+		time="10" />
+	<string
+		id="7"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Specifically, you no longer need to deal with the evacuation of the damned Pappers - this will be handled by a detachment of military police, already sent to the scientist's last location."
+		sound="data\sounds\dv_sounds\dialogs\dv8_7.wav"
+		time="12" />
+	<string
+		id="8"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You, on the other hand, must at all costs prevent the virus from spreading beyond the cordoned off area."
+		sound="data\sounds\dv_sounds\dialogs\dv8_8.wav"
+		time="7" />
+	<string
+		id="9"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Note that uninfected civilian casualties are highly undesirable."
+		sound="data\sounds\dv_sounds\dialogs\dv8_9.wav"
+		time="5" />
+		
+	<string
+		id="8001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A huge number of the Z-120 virus carriers are currently trying to leave the area."
+		sound="data\sounds\dv_sounds\dialogs\dv8_10.wav"
+		time="6" />
+	<string
+		id="80011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="These include looters, infected military patrols, and local residents who were previously hiding from evacuation."
+		sound="data\sounds\dv_sounds\dialogs\dv8_11.wav"
+		time="8" />
+	<string
+		id="80012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You are the only one close enough to react quickly to the situation."
+		sound="data\sounds\dv_sounds\dialogs\dv8_12.wav"
+		time="5" />
+
+	<string
+		id="80013"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Several military vehicles are moving at high speed toward the border of the area and are not responding to our radio requests."
+		sound="data\sounds\dv_sounds\dialogs\dv8_13.wav"
+		time="8" />
+	<string
+		id="80014"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There's evidence that they've been infected. Five more minutes and they will be outside the cordoned off area they're supposed to be guarding."
+		sound="data\sounds\dv_sounds\dialogs\dv8_14.wav"
+		time="7" />
+	<string
+		id="80015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You must intercept them before they spread the infection to the outside world."
+		sound="data\sounds\dv_sounds\dialogs\dv8_15.wav"
+		time="4" />
+
+	<string
+		id="8002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Yes, these are the vehicles in question! Attack them, agent!"
+		sound="data\sounds\dv_sounds\dialogs\dv8_16.wav"
+		time="5" />
+
+
+	<string
+		id="8003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="This issue is now resolved, but stay tuned. The operation to stop the contamination from spreading is in full swing."
+		sound="data\sounds\dv_sounds\dialogs\dv8_17.wav"
+		time="8" />
+	<string
+		id="80031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="By the way, the MP squad has already surrounded the place where Pappers is hiding. I'm expecting the report of his arrest any minute now."
+		sound="data\sounds\dv_sounds\dialogs\dv8_18.wav"
+		time="8" />
+
+	<string
+		id="80035"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A gang of well-armed looters attacked the town of Fly-Hill."
+		sound="data\sounds\dv_sounds\dialogs\dv8_19.wav"
+		time="4" />
+	<string
+		id="80036"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We know that the local municipality has a helicopter at its disposal."
+		sound="data\sounds\dv_sounds\dialogs\dv8_20.wav"
+		time="4" />
+	<string
+		id="80037"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The aircraft is too small and made almost entirely out of plastic, so it will be extremely difficult for radars to detect."
+		sound="data\sounds\dv_sounds\dialogs\dv8_21.wav"
+		time="8" />
+	<string
+		id="80038"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="If the infected escape by helicopter, it's unlikely that we'll be able to bring them down and thus, the world will be brought to the brink of disaster."
+		sound="data\sounds\dv_sounds\dialogs\dv8_22.wav"
+		time="10" />
+	<string
+		id="80039"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="According to our experts, you have approximately 10 minutes to stop them."
+		sound="data\sounds\dv_sounds\dialogs\dv8_23.wav"
+		time="5" />
+
+
+	<string
+		id="8006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You must eliminate all the bandits before any of them break through to the helicopter hangar."
+		sound="data\sounds\dv_sounds\dialogs\dv8_24.wav"
+		time="5" />
+	<string
+		id="8007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Not a single bastard got away, well done!"
+		sound="data\sounds\dv_sounds\dialogs\dv8_25.wav"
+		time="3" />
+	<string
+		id="80071"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The MPs have already arrested Pappers. Keep in mind that the information about him being able to control the infected is at least partially confirmed."
+		sound="data\sounds\dv_sounds\dialogs\dv8_26.wav"
+		time="10" />
+
+
+	<string
+		id="80075"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A group of infected people took refuge in a thicket of poisonous mushrooms near the Road-River, the exact coordinates are being sent to you now."
+		sound="data\sounds\dv_sounds\dialogs\dv8_27.wav"
+		time="9" />
+	<string
+		id="80076"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="These mutants collect fungal spores, the mutagenic nature of which comes from the same source as everything else in the area."
+		sound="data\sounds\dv_sounds\dialogs\dv8_28.wav"
+		time="8" />
+	<string
+		id="80077"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="If a large number of spores ends up in a river, the entire downstream area will be contaminated."
+		sound="data\sounds\dv_sounds\dialogs\dv8_29.wav"
+		time="6" />
+	<string
+		id="80078"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You have no more than 15 minutes to destroy these mutants."
+		sound="data\sounds\dv_sounds\dialogs\dv8_30.wav"
+		time="4" />
+
+	<string
+		id="8005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The location matches the aerial photography data. Proceed with the mission."
+		sound="data\sounds\dv_sounds\dialogs\dv8_31.wav"
+		time="5" />
+
+	<string
+		id="8004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Looks like you made it in time. Of course, we'll have the experts check the river downstream, but I think everything should be fine."
+		sound="data\sounds\dv_sounds\dialogs\dv8_32.wav"
+		time="7" />
+
+	<string
+		id="80041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I am proud to inform you, agent, that at this moment our country has been granted emergency powers by the entire world community to destroy the alien aggressor with surface-to-space class missiles."
+		sound="data\sounds\dv_sounds\dialogs\dv8_33.wav"
+		time="12" />
+	<string
+		id="80042"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It appears that the operation to save the Earth is entering its final stage. Return to base."
+		sound="data\sounds\dv_sounds\dialogs\dv8_34.wav"
+		time="6" />
+
+
+	<string
+		id="8008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The infected are leaving, you couldn't find and eliminate them all… We'll have to secure the area using air support."
+		sound="data\sounds\dv_sounds\dialogs\dv8_35.wav"
+		time="8" />
+
+	<string
+		id="369"
+		value="@ffab1e1eYOU HAVE|LOST !!!!| |@ffccccccYou haven't passed all the checkpoints. On this note the thread of prophecy is severed."
+		numButtons="1" />	
+</resource>

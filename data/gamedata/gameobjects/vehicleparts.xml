@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!-- 
+$Id: VehicleParts.xml,v 1.5 2006/01/26 09:16:31 vano Exp $ 
+-->
+
+<Prototypes>
+	<Folder Name = "Chassis">
+<!--  Player -->
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "MHChassis"
+			ModelFile				= "heroChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "300" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Chassis"
+			Name						= "MHBossChassis"
+			ModelFile				= "heroChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "1000" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Chassis"
+			Name						= "HumveeChassis"
+			ModelFile				= "humveeChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "600" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+<!--  Enemy -->
+<!--  Scout -->
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "sml1Chassis"
+			ModelFile				= "sml1Chassis"
+			ResourceType		= "SML1_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "140.0" 			
+			MaxHealth				= "30" 
+			MaxFuel					= "10"
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	=	"ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "sml2Chassis"
+			ModelFile				= "sml2Chassis"
+			ResourceType		= "SML2_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "140.0" 			
+			MaxHealth				= "30" 
+			MaxFuel					= "10"
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	=	"ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "fighterChassis"
+			ModelFile				= "fighterChassis"
+			ResourceType		= "FIGHTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "110.0"
+			MaxHealth				= "30" 
+			MaxFuel					= "35.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			=	"ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	=	"ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+<!--  Rogue   -->
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "pickupChassis"
+			ModelFile				= "pickupChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "80" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Chassis"
+			Name						= "pickupChassis2"
+			ModelFile				= "pickupChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "80" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Chassis"
+			Name						= "ChevroleChassis"
+			ModelFile				= "ChevroleChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "80" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Chassis"
+			Name						= "ChevroleChassis2"
+			ModelFile				= "ChevroleChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "80" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+<!--  Hunter   -->
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "truckChassis"
+			ModelFile				= "truckChassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "450" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+<!--
+		<Prototype
+			Class						= "Chassis"
+			Name						= "truck2Chassis"
+			ModelFile				= "truck2Chassis"
+			ResourceType		= "HUNTER_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "300" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+-->
+		<Prototype
+			Class						= "Chassis"
+			Name						= "sml3Chassis"
+			ModelFile				= "fighterChassis"
+			ResourceType		= "SML3_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "150.0" 			
+			MaxHealth				= "150" 
+			MaxFuel					= "10"
+			BrakingSound		=	"ET_S_BRAKE01"
+			PneumoSound			=	"ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	=	"ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+		<Prototype
+			Class		= "Chassis"
+			Name		= "hunterChassis"
+			ModelFile	= "heroChassis"
+			ResourceType	= "HUNTER_CHASSIS"
+			NodeScale	= "1 1 1"
+			Mass		= "120.0"
+			MaxHealth	= "1500" 
+			MaxFuel	= "65.0" 
+			BrakingSound="ET_S_BRAKE01"
+			PneumoSound	="ET_S_PNEUMO_BRAKE01"
+			GearShiftSound="ET_S_GEAR_SHIFT01"
+			LoadPoints	= "LP_CAB01" >
+				<GroupsHealth
+					Main   = "10000"	
+				/>
+		</Prototype>
+<!--		
+		<Prototype
+			Class		= "Chassis"
+			Name		= "hunterChassis"
+			ModelFile	= "hunterChassis"
+			ResourceType	= "HUNTER_CHASSIS"
+			NodeScale	= "1 1 1"
+			Mass		= "120.0"
+			MaxHealth	= "1500" 
+			MaxFuel	= "65.0" 
+			BrakingSound="ET_S_BRAKE01"
+			PneumoSound	="ET_S_PNEUMO_BRAKE01"
+			GearShiftSound="ET_S_GEAR_SHIFT01"
+			LoadPoints	= "LP_CAB01" >
+				<GroupsHealth
+					Main   = "10000"	
+				/>
+		</Prototype>
+-->
+
+<!-- boss_02 -->
+
+		<Prototype
+			Class						= "Chassis"
+			Name						= "boss02Chassis"
+			ModelFile				= "boss02Chassis"
+			ResourceType		= "BOSS02_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "130.0"
+			MaxHealth				= "5000" 
+			MaxFuel					= "65.0" 
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	= "ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+
+<!-- 
+=================
+	 Caravan for dv1 and dv2
+=================
+-->
+		<Prototype
+			Class		= "Chassis"
+			Name		= "vanChassis"
+			ModelFile	= "vanChassis"
+			ResourceType	= "BUG_CHASSIS"
+			NodeScale	= "1 1 1"
+
+			Price				= "400"
+			RepairCoef			= "0.2"
+
+			Mass		= "150.0" 
+			MaxHealth	= "200" 
+			MaxFuel	= "22"
+			BrakingSound="ET_S_BRAKE01"
+			PneumoSound	="ET_S_PNEUMO_BRAKE01"
+			GearShiftSound="ET_S_GEAR_SHIFT01"
+			LoadPoints	= "LP_CAB01 LP_BSK01" >
+				<GroupsHealth
+					Main   = "10000"	
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class		= "Chassis"
+			Name		= "swatvanChassis"
+			ModelFile	= "vanChassis"
+			ResourceType	= "BUG_CHASSIS"
+			NodeScale	= "1 1 1"
+
+			Price				= "400"
+			RepairCoef			= "0.2"
+
+			Mass		= "150.0" 
+			MaxHealth	= "350" 
+			MaxFuel	= "22"
+			BrakingSound="ET_S_BRAKE01"
+			PneumoSound	="ET_S_PNEUMO_BRAKE01"
+			GearShiftSound="ET_S_GEAR_SHIFT01"
+			LoadPoints	= "LP_CAB01 LP_BSK01" >
+				<GroupsHealth
+					Main   = "10000"	
+				/>
+		</Prototype>
+
+<!--
+		<Prototype
+			Class		= "Chassis"
+			Name		= "bugChassis"
+			ModelFile	= "bugChassis"
+			ResourceType	= "BUG_CHASSIS"
+			NodeScale	= "1 1 1"
+
+			Price				= "400"
+			RepairCoef			= "0.2"
+
+			Mass		= "150.0" 
+			MaxHealth	= "200" 
+			MaxFuel	= "22"
+			BrakingSound="ET_S_BRAKE01"
+			PneumoSound	="ET_S_PNEUMO_BRAKE01"
+			GearShiftSound="ET_S_GEAR_SHIFT01"
+			LoadPoints	= "LP_CAB01 LP_BSK01" >
+				<GroupsHealth
+					Main   = "10000"	
+				/>
+		</Prototype>
+-->
+	</Folder>
+
+	<Folder Name = "Cabins">
+<!--  Player -->
+		<Prototype
+			Class						= "Cabin"
+			Name						= "MHCab"
+			ModelFile				= "heroCab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "150"
+			DurCoeffsForDamageTypes	= "40 35 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_HERO_ACCELERATION_v2+ ET_S_ENGINE_HERO_ACCELERATION_v22+"
+			EngineIdleSound			= "ET_S_ENGINE_TRUCK01"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_BIG01 LP_BIG02" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "HumveeCab"
+			ModelFile				= "humveeCab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "150"
+			DurCoeffsForDamageTypes	= "60 50 35"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound	= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_BIG01 LP_BIG02" >
+				<GroupsHealth
+					Main   				= "100"	
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "DeltaCab"
+			ModelFile				= "deltaCab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "300"
+			DurCoeffsForDamageTypes	= "60 50 35"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound	= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_BIG01 LP_BIG02" >
+				<GroupsHealth
+					Main   				= "100"	
+				/>
+		</Prototype>
+<!--  Enemy -->
+<!--  Scout -->
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "scoutCab01"
+			ModelFile				= "scoutCab01"
+			ResourceType		= "SCOUT_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "60"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia = "false"
+			Mass						= "30.0"
+			MaxPower				= "30"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "100"
+			Price						= "1500"	
+			MaxSpeed				= "110.0"
+			FuelConsumption	= "0.02"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "0" 
+					Breakable1	= "0.2"	
+					Breakable2	= "0.6"
+					Breakable3	= "0.4"
+					Breakable4	= "0.4"
+					Breakable5	= "0.4"
+				/>
+		</Prototype>      
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "scoutCab02"
+			ModelFile				= "scoutCab02"
+			ResourceType		= "SCOUT_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "70"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia = "false"
+			Mass						= "30.0"
+			MaxPower				= "30"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "1800"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "130.0"
+			FuelConsumption	= "0.02"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "0"
+					Breakable1	= "0.2"	
+					Breakable2	= "0.4"
+					Breakable3	= "0.4"
+					Breakable4	= "0.3"
+					Breakable5	= "0.3"
+					Breakable6	= "0.4"
+					Breakable7	= "0.4"
+				/>
+		</Prototype>
+		
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "sml1Cab01"
+			ModelFile				= "sml1Cab01"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "20"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "50"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "80.0"
+			FuelConsumption	= "0.03"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "sml2Cab01"
+			ModelFile				= "sml2Cab01"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "20"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "100"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "120.0"
+			FuelConsumption	= "0.03"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "fighterCab01"
+			ModelFile				= "fighterCab01"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "45"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "30.0"
+			MaxPower				= "120"
+			EngineHighSound	= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "110.0"
+			FuelConsumption	= "0.03"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "fighterCab02"
+			ModelFile				= "fighterCab01"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "300"
+			DurCoeffsForDamageTypes	= "40 15 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "30.0"
+			EngineHighSound	= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxPower				= "120"
+			MaxTorque				= "140"
+			Price						= "6000"	
+			MaxSpeed				= "120.0"
+			FuelConsumption	= "0.03"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "5"	
+				/>
+		</Prototype>
+
+<!--  Rogue   -->
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "pickupCab"
+			ModelFile				= "pickupCab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "50"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_GUN" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+		<Prototype
+			Class						= "Cabin"
+			Name						= "pickupCab2"
+			ModelFile				= "pickupCab2"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "40"
+			DurCoeffsForDamageTypes	= "40 35 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_GUN" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "ChevroleCab"
+			ModelFile				= "ChevroleCab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "50"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_GUN" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+		<Prototype
+			Class						= "Cabin"
+			Name						= "ChevroleCab2"
+			ModelFile				= "ChevroleCab2"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "40"
+			DurCoeffsForDamageTypes	= "40 35 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_GUN" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+
+<!--  Hunter   -->
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "truckCab"
+			ModelFile				= "truckCab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "50"
+			DurCoeffsForDamageTypes	= "40 35 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_BIG01 LP_BIG02" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "truck2Cab"
+			ModelFile				= "truck2Cab"
+			ResourceType		= "HUNTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "70"
+			DurCoeffsForDamageTypes	= "40 35 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "5.0"
+			MaxPower				= "400"
+			EngineHighSound			= "ET_S_ENGINE_HERO_STAND_v2+"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque				= "200"
+			Price						= "14000"	
+			MaxSpeed				= "180.0"
+			FuelConsumption = "0.02"
+			LoadPoints			= "LP_BIG01 LP_BIG02" >
+				<GroupsHealth
+					Main   				= "100"	
+					Breakable1   	= "100"	
+				 	Breakable2   	= "100"
+					Breakable3   	= "100"
+					Breakable4   	= "100"
+					Breakable5   	= "100"
+				/>
+		</Prototype>
+
+		<Prototype
+			Class						= "Cabin"
+			Name						= "sml3Cab01"
+			ModelFile				= "sml3Cab01"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "60"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "120"
+			EngineHighSound			= "ET_S_ENGINE_HERO_STAND_v2+"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "130.0"
+			FuelConsumption	= "0.03"
+			LoadPoints			= "LP_SML01" >
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+<!-- boss_02 -->
+		<Prototype
+			Class					= "Cabin"
+			Name					= "hunterCab02"
+			ModelFile			= "commanderCab"
+			ResourceType	= "HUNTER_CABIN"
+			NodeScale			= "1 1 1"
+			Durability		= "750"
+			DurCoeffsForDamageTypes	= "0 0 0"
+			VisibleInEncyclopedia = "false"
+			Mass					= "5.0"
+			MaxPower			= "120"
+			EngineHighSound			= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect		= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque			= "70"
+			Price					= "14000"	
+			MaxSpeed			= "100.0"
+			FuelConsumption                 = "0.02"
+			LoadPoints		= "LP_BIG01 LP_BIG02" >
+				<GroupsHealth
+					Main   			= "5"	
+					Breakable1  = "2"	
+		    	Breakable2  = "3"
+					Breakable3  = "4"
+					Breakable4  = "3"
+					Breakable5  = "3"
+				/>
+		</Prototype>
+		
+<!--
+		<Prototype
+			Class					= "Cabin"
+			Name					= "hunterCab02"
+			ModelFile			= "hunterCab02"
+			ResourceType	= "HUNTER_CABIN"
+			NodeScale			= "1 1 1"
+			Durability		= "750"
+			DurCoeffsForDamageTypes	= "0 0 0"
+			VisibleInEncyclopedia = "false"
+			Mass					= "5.0"
+			MaxPower			= "120"
+			EngineHighSound		        = "ET_S_ENGINE_HUNTER_1_HIGH"
+			BlowEffect		= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxTorque			= "70"
+			Price					= "14000"	
+			MaxSpeed			= "100.0"
+			FuelConsumption                 = "0.02"
+			LoadPoints		= "LP_SML01 LP_BIG01" >
+				<GroupsHealth
+					Main   			= "5"	
+					Breakable1  = "2"	
+		    	Breakable2  = "3"
+					Breakable3  = "4"
+					Breakable4  = "3"
+					Breakable5  = "3"
+				/>
+		</Prototype>
+-->
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "boss02Cab"
+			ModelFile				= "boss02Cab"
+			ResourceType		= "BOSS02_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "80"
+			DurCoeffsForDamageTypes	= "40 25 25"
+			VisibleInEncyclopedia	= "false"
+			Mass						= "30.0"
+			EngineHighSound	= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxPower				= "120"
+			MaxTorque				= "140"
+			Price						= "6000"	
+			MaxSpeed				= "120.0"
+			FuelConsumption	= "0.03"
+			LoadPoints			= "LP_BIG01" >
+				<GroupsHealth
+					Main				= "5"	
+					Breakable1	= "3"	
+					Breakable2	= "3"
+					Breakable3	= "3"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Chassis"
+			Name						= "throwableChassis"
+			ModelFile				= "heroChassis"
+			ResourceType		= "SML1_CHASSIS"
+			NodeScale				= "1 1 1"
+			Mass						= "140.0" 			
+			MaxHealth				= "30" 
+			MaxFuel					= "10"
+			BrakingSound		= "ET_S_BRAKE01"
+			PneumoSound			= "ET_S_PNEUMO_BRAKE01"
+			GearShiftSound	=	"ET_S_GEAR_SHIFT01"
+			LoadPoints			= "LP_CAB01" >
+			<GroupsHealth
+				Main   = "10000"	
+			/>
+		</Prototype>
+		
+		<Prototype
+			Class				= "Basket"
+			Name				= "throwableCargo01"
+			VisibleInEncyclopedia   = "false"
+			ModelFile			= "cub"
+			ResourceType		= "FAKE_BASKET"
+			Durability			= "1100"
+			DurCoeffsForDamageTypes	= "100 100 100"
+			NodeScale			= "1 1 1"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			Price				= "0"
+			RepairCoef			= "0"
+			Mass				= "5.0">
+			<RepositoryDescription>
+			</RepositoryDescription>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "throwableCab01"
+			ModelFile				= "brokvehicle2"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "1100"
+			DurCoeffsForDamageTypes	= "100 100 100"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "50"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "80.0"
+			FuelConsumption	= "0.03">
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "throwableCab02"
+			ModelFile				= "rusty_car_2"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "1100"
+			DurCoeffsForDamageTypes	= "100 100 100"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "50"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "80.0"
+			FuelConsumption	= "0.03">
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "throwableCab03"
+			ModelFile				= "rusty_car_3"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "1100"
+			DurCoeffsForDamageTypes	= "100 100 100"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "50"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "80.0"
+			FuelConsumption	= "0.03">
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class						= "Cabin"
+			Name						= "throwableCab04"
+			ModelFile				= "rusty_car_5"
+			ResourceType		= "FIGHTER_CABIN"
+			NodeScale				= "1 1 1"
+			Durability			= "1100"
+			DurCoeffsForDamageTypes	= "100 100 100"
+			VisibleInEncyclopedia 	= "false"
+			Mass						= "20.0"
+			MaxPower				= "50"
+			EngineHighSound			= "ET_S_ENGINE_SCOUT_1_HIGH"
+			MaxTorque				= "110"
+			Price						= "3000"	
+			BlowEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			MaxSpeed				= "80.0"
+			FuelConsumption	= "0.03">
+				<GroupsHealth
+					Main				= "5"
+				/>
+		</Prototype>
+		
+		
+<!-- 
+=================
+	 Caravan for dv1 and dv2
+=================
+-->
+		<Prototype
+			Class				= "Cabin"
+			Name				= "vanCab01"
+			ModelFile			= "vanCab01"
+			ResourceType			= "BUG_CABIN"
+			NodeScale			= "1 1 1"
+			Durability			= "20"
+			RepairCoef			= "0.2"
+			DurCoeffsForDamageTypes		= "30 25 25"
+			Mass				= "1.0"
+			MaxPower			= "200"
+			MaxTorque			= "45"
+			EngineHighSound			= "ET_S_ENGINE_HERO_STAND_v2+"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			FuelConsumption                 = "0.2"
+			Price				= "700"
+
+			MaxSpeed			= "130.0" 
+			LoadPoints			= "LP_SML01" >
+			<GadgetDescription>       
+			</GadgetDescription>
+				<GroupsHealth
+					Main   = "0"
+				/>
+		</Prototype>
+		
+		<Prototype
+			Class				= "Cabin"
+			Name				= "vanCab02"
+			ModelFile			= "vanCab02"
+			ResourceType			= "BUG_CABIN"
+			NodeScale			= "1 1 1"
+			Durability			= "20"
+			RepairCoef			= "0.2"
+			DurCoeffsForDamageTypes		= "60 50 50"
+			Mass				= "1.0"
+			MaxPower			= "275"
+			MaxTorque			= "45"
+			EngineHighSound			= "ET_S_ENGINE_FIGHTER_1_HIGH"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			FuelConsumption                 = "0.2"
+			Price				= "700"
+
+			MaxSpeed			= "150.0" 
+			LoadPoints			= "LP_SML01" >
+			<GadgetDescription>       
+			</GadgetDescription>
+				<GroupsHealth
+					Main   = "0"
+				/>
+		</Prototype>
+
+<!--
+		<Prototype
+			Class				= "Cabin"
+			Name				= "bugCab01"
+			ModelFile			= "bugCab01"
+			ResourceType			= "BUG_CABIN"
+			NodeScale			= "1 1 1"
+			Durability			= "10"
+			RepairCoef			= "0.2"
+			DurCoeffsForDamageTypes		= "25 25 25"
+			Mass				= "1.0"
+			MaxPower			= "200"
+			MaxTorque			= "45"
+			EngineHighSound			= "ET_S_ENGINE_HERO_ACCELERATION_v2"
+			EngineIdleSound			= "ET_S_ENGINE_HERO_STAND_v2"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			FuelConsumption                 = "0.2"
+			Price				= "700"
+
+			MaxSpeed			= "150.0" 
+			LoadPoints			= "LP_SML01" >
+			<GadgetDescription>
+				<Slot
+					ResourceType	= "GADGET_WEAPON"
+					MaxAmount	= "1" />         
+			</GadgetDescription>
+				<GroupsHealth
+					Main   = "0"	
+					Breakable1   = "0.5"	
+				    	Breakable2   = "0.5"
+					Breakable3   = "0.5"
+					Breakable4   = "0.5"
+					Breakable5   = "0.5"
+					Breakable6   = "0.5"
+				/>
+		</Prototype>
+-->	
+	
+	</Folder>
+	
+	<Folder
+		Name = "Baskets">
+<!--		
+		<Prototype
+			Class				= "Basket"
+			Name				= "bugCargo03"
+			ModelFile			= "bugCargo03"
+			ResourceType			= "BUG_BASKET"
+			Durability			= "30"
+			DurCoeffsForDamageTypes		= "30 25 25"
+			NodeScale			= "1 1 1"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+
+			Price				= "1700"
+			RepairCoef			= "0.2"
+
+			Mass				= "1.0" >
+			<RepositoryDescription
+				RepositorySize		= "4 6"/>
+			<GroupsHealth
+				Main   = "0"	
+				Breakable1   = "0.7"	
+			    	Breakable2   = "0.7"
+				Breakable3   = "0.7"
+				Breakable4   = "0.5"
+				Breakable5   = "0.5"
+				Breakable6   = "0.5"
+				Breakable7   = "0.6"
+				Breakable8   = "0.5"
+			/>			
+		</Prototype>
+-->
+		<Prototype
+			Class				= "Basket"
+			Name				= "fakeCargo"
+			VisibleInEncyclopedia   = "false"
+			ModelFile			= "cub"
+			ResourceType		= "FAKE_BASKET"
+			Durability			= "0"
+			DurCoeffsForDamageTypes	= "25 25 25"
+			NodeScale			= "1 1 1"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			Price				= "0"
+			RepairCoef			= "0"
+			Mass				= "5.0" 
+			LoadPoints			= "NO_LP" >
+			<RepositoryDescription
+				RepositorySize		= "2 4">
+				<Slot
+					Name		= "BASKET_SPECIAL_WEAPON"
+					Pos		= "9 9"/>
+			</RepositoryDescription>
+		</Prototype>
+
+		<Prototype
+			Class				= "Basket"
+			Name				= "bigfakeCargo"
+			ModelFile			= "cub"
+			VisibleInEncyclopedia   = "false"
+			ResourceType		= "FAKE_BIGBASKET"
+			Durability			= "0"
+			DurCoeffsForDamageTypes	= "25 25 25"
+			NodeScale			= "1 1 1"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			Price				= "0"
+			RepairCoef			= "0"
+                        LoadPoints			= "NO_LP"
+			Mass				= "5.0" >
+			<RepositoryDescription
+				RepositorySize		= "4 4">
+				<Slot
+					Name		= "BASKET_SPECIAL_WEAPON"
+					Pos		= "10 10"/>
+			</RepositoryDescription>
+		</Prototype>
+		
+	</Folder>
+	<Folder Name = "Wheels">
+<!--  Player -->
+		<Prototype
+			Class			= "Wheel"
+			Name			= "MHWheel01l"
+			ModelFile		= "heroWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp01l"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "MHWheel01r"
+			ModelFile		= "heroWheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp01r"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "MHWheel02l"
+			ModelFile		= "heroWheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp02l"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "MHWheel02r"
+			ModelFile		= "heroWheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp02r"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "HumveeWheel01l"
+			ModelFile		= "heroWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "hunterSusp01"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "HumveeWheel01r"
+			ModelFile		= "heroWheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "hunterSusp01"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+<!--  Enemy -->
+<!-- Scout -->
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml1Wheel01l"
+			ModelFile		= "sml1Wheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml1Wheel01r"
+			ModelFile		= "sml1Wheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml1Wheel02l"
+			ModelFile		= "sml1Wheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml1Wheel02r"
+			ModelFile		= "sml1Wheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml2Wheel01l"
+			ModelFile		= "sml2Wheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml2Wheel01r"
+			ModelFile		= "sml2Wheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml2Wheel02l"
+			ModelFile		= "sml2Wheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml2Wheel02r"
+			ModelFile		= "sml2Wheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "fighterWheel01l"
+			ModelFile		= "fighterWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.002"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "0.25"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "fighterWheel01r"
+			ModelFile		= "fighterWheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.005"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "0.25"
+			mU			= "1.0" 
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "fighterWheel02l"
+			ModelFile		= "fighterWheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.005"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "0.25"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "fighterWheel02r"
+			ModelFile		= "fighterWheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.005"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "0.25"
+			mU			= "1.0" 
+			EffectType		= "SMALLWHEEL" />
+
+<!-- Rogue -->
+
+<!-- PickUp Wheel-->
+		<Prototype
+			Class			= "Wheel"
+			Name			= "pickupWheel01l"
+			ModelFile		= "pickupWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "pickupWheel01r"
+			ModelFile		= "pickupWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "pickupWheel02l"
+			ModelFile		= "pickupWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "pickupWheel02r"
+			ModelFile		= "pickupWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+<!-- Chevrole Wheel -->
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "ChevroleWheel01l"
+			ModelFile		= "ChevroleWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "ChevroleWheel01r"
+			ModelFile		= "ChevroleWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "ChevroleWheel02l"
+			ModelFile		= "ChevroleWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "ChevroleWheel02r"
+			ModelFile		= "ChevroleWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+
+<!-- Hunter -->
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truckWheel01l"
+			ModelFile		= "truckWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truckWheel01r"
+			ModelFile		= "truckWheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truckWheel02l"
+			ModelFile		= "truckWheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truckWheel02r"
+			ModelFile		= "truckWheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= ""
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+<!--
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truck2Wheel01l"
+			ModelFile		= "truck2Wheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp01l"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truck2Wheel01r"
+			ModelFile		= "truck2Wheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp01r"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truck2Wheel02l"
+			ModelFile		= "truck2Wheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp02l"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "truck2Wheel02r"
+			ModelFile		= "truck2Wheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "heroSusp02r"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+-->
+<!-- Red Car-->
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml3Wheel01l"
+			ModelFile		= "sml3Wheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml3Wheel01r"
+			ModelFile		= "sml3Wheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml3Wheel02l"
+			ModelFile		= "sml3Wheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "sml3Wheel02r"
+			ModelFile		= "sml3Wheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile = ""
+			SuspensionCFM	= "0.0035"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "hunterWheel01l"
+			ModelFile		= "hunterWheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "hunterSusp01"
+			SuspensionCFM		= "0.003"
+			SuspensionERP		= "0.25"
+			SuspensionRange		= "1.0"
+			mU			= "1.0"
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "hunterWheel01r"
+			ModelFile		= "hunterWheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "hunterSusp01"
+			SuspensionCFM		= "0.003"
+			SuspensionERP		= "0.25"
+			SuspensionRange		= "1.0"
+			mU			= "1.0"
+			EffectType		= "BIGWHEEL" />
+
+<!-- Boss02 -->
+		<Prototype
+			Class			= "Wheel"
+			Name			= "boss02Wheel01l"
+			ModelFile		= "boss02Wheel01l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "sml1Susp01"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+			
+		<Prototype
+			Class			= "Wheel"
+			Name			= "boss02Wheel01r"
+			ModelFile		= "boss02Wheel01r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "sml1Susp01"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "boss02Wheel02l"
+			ModelFile		= "boss02Wheel02l"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "sml1Susp01"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "boss02Wheel02r"
+			ModelFile		= "boss02Wheel02r"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "sml1Susp01"
+			SuspensionCFM	= "0.0013"
+			SuspensionERP		= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0" 
+			EffectType		= "BIGWHEEL" />
+
+<!-- 
+=================
+	 Caravan for dv1 and dv2
+=================
+-->
+		<Prototype
+			Class			= "Wheel"
+			Name			= "vanWheel01"
+			ModelFile		= "vanWheel01"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "bugSusp01"
+			SuspensionCFM	= "0.0025"
+			SuspensionERP	= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+<!--
+		<Prototype
+			Class			= "Wheel"
+			Name			= "bugWheel01"
+			ModelFile		= "bugWheel01"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "bugSusp01"
+			SuspensionCFM	= "0.0025"
+			SuspensionERP	= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+
+		<Prototype
+			Class			= "Wheel"
+			Name			= "bugWheel02"
+			ModelFile		= "bugWheel02"
+			NodeScale		= "1 1 1"
+			Mass			= "9"
+			SuspensionModelFile	= "bugSusp02"
+			SuspensionCFM	= "0.0025"
+			SuspensionERP	= "0.25"
+			SuspensionRange	= "1.0"
+			mU			= "1.0"
+			EffectType		= "SMALLWHEEL" />
+-->
+</Folder>
+</Prototypes>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Наши аналитики работают над материалами, извлечёнными с развалин Базы 31."
+		sound="data\sounds\dv_sounds\dialogs\dv8_1.wav"
+		time="6" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Как я уже говорил вам, учёные на этой базе занимались исследованиями инопланетного корабля."
+		sound="data\sounds\dv_sounds\dialogs\dv8_2.wav"
+		time="6" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Паперс, изучая тела астронавтов, выделил Z-120 - вирус, вызывающий быстрые и страшные изменения человеческого тела."
+		sound="data\sounds\dv_sounds\dialogs\dv8_3.wav"
+		time="8" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Есть подозрение, что данный вирус не случайно попал на Землю, а был специально заброшен к нам на разведывательном корабле."
+		sound="data\sounds\dv_sounds\dialogs\dv8_4.wav"
+		time="8" />
+	<string
+		id="5"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Также есть мнение, что Паперс может влиять на сознание людей, подвергшихся заражению вирусом."
+		sound="data\sounds\dv_sounds\dialogs\dv8_5.wav"
+		time="6" />
+	<string
+		id="6"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Это всё звучит ужасно запутанно, и далеко не все детали ясны, но ряд решений мы вынуждены изменить уже сейчас."
+		sound="data\sounds\dv_sounds\dialogs\dv8_6.wav"
+		time="8" />
+	<string
+		id="7"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Конкретно, больше вам не нужно заниматься эвакуацией проклятого Паперса - этим займётся отряд военной полиции, уже посланный на место последней дислокации профессора."
+		sound="data\sounds\dv_sounds\dialogs\dv8_7.wav"
+		time="9" />
+	<string
+		id="8"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вам же необходимо во что бы то ни стало предотвратить проникновение вируса за пределы оцеплённой территории."
+		sound="data\sounds\dv_sounds\dialogs\dv8_8.wav"
+		time="7" />
+	<string
+		id="9"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Обратите внимание на то, что гибель незаражённых граждан крайне нежелательна."
+		sound="data\sounds\dv_sounds\dialogs\dv8_9.wav"
+		time="5" />
+		
+	<string
+		id="8001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Огромное количество носителей вируса Z-120 стремится в настоящий момент покинуть эту местность."
+		sound="data\sounds\dv_sounds\dialogs\dv8_10.wav"
+		time="6" />
+	<string
+		id="80011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Это и мародёры, и заразившиеся военные патрули, и местные жители, укрывавшиеся от эвакуации."
+		sound="data\sounds\dv_sounds\dialogs\dv8_11.wav"
+		time="6" />
+	<string
+		id="80012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вы единственный, кто находится достаточно близко, чтобы оперативно реагировать на ситуацию."
+		sound="data\sounds\dv_sounds\dialogs\dv8_12.wav"
+		time="5" />
+
+	<string
+		id="80013"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Несколько армейских автомобилей на большой скорости двигаются к границе района, на радиозапросы не отвечают."
+		sound="data\sounds\dv_sounds\dialogs\dv8_13.wav"
+		time="6" />
+	<string
+		id="80014"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Есть данные о том, что они подверглись заражению. Ещё пять минут и они выйдут за пределы оцеплённой территории, которую они же и должны были охранять."
+		sound="data\sounds\dv_sounds\dialogs\dv8_14.wav"
+		time="9" />
+	<string
+		id="80015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Необходимо перехватить их, прежде чем они вынесут заразу в мир."
+		sound="data\sounds\dv_sounds\dialogs\dv8_15.wav"
+		time="5" />
+
+	<string
+		id="8002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Да, это те самые машины! Атакуйте их, агент!"
+		sound="data\sounds\dv_sounds\dialogs\dv8_16.wav"
+		time="3" />
+
+
+	<string
+		id="8003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="С этой проблемой покончено, но оставайтесь на связи. Операция по пресечению заражения в самом разгаре."
+		sound="data\sounds\dv_sounds\dialogs\dv8_17.wav"
+		time="6" />
+	<string
+		id="80031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Кстати, отряд полиции уже окружил место, где скрывается Паперс. С минуты на минуту ожидаю сообщения о его аресте."
+		sound="data\sounds\dv_sounds\dialogs\dv8_18.wav"
+		time="8" />
+
+	<string
+		id="80035"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Отряд хорошо вооруженных мародёров атаковал городок Флай-Хилл. "
+		sound="data\sounds\dv_sounds\dialogs\dv8_19.wav"
+		time="3" />
+	<string
+		id="80036"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Нам известно, что в распоряжении местного муниципалитета есть вертолёт. "
+		sound="data\sounds\dv_sounds\dialogs\dv8_20.wav"
+		time="4" />
+	<string
+		id="80037"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Машинка слишком маленькая, сплошной пластик, и радарами её будет крайне сложно засечь. "
+		sound="data\sounds\dv_sounds\dialogs\dv8_21.wav"
+		time="5" />
+	<string
+		id="80038"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Если заражённые уйдут на вертолёте, то сбить их вряд ли получится и мир будет поставлен на грань катастрофы. "
+		sound="data\sounds\dv_sounds\dialogs\dv8_22.wav"
+		time="6" />
+	<string
+		id="80039"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="По оценкам наших специалистов у вас есть примерно 10 минут для того, чтобы им помешать."
+		sound="data\sounds\dv_sounds\dialogs\dv8_23.wav"
+		time="5" />
+
+
+	<string
+		id="8006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Поторопитесь. Вам надо перебить всех бандитов, прежде чем хоть один их них прорвётся к вертолётному ангару."
+		sound="data\sounds\dv_sounds\dialogs\dv8_24.wav"
+		time="6" />
+	<string
+		id="8007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ни один мерзавец не ушёл, отлично!"
+		sound="data\sounds\dv_sounds\dialogs\dv8_25.wav"
+		time="2" />
+	<string
+		id="80071"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Полиция уже арестовала Паперса. Имейте в виду, информация о том, что заражённые люди находятся под его контролем, как  минимум, частично подтверждена."
+		sound="data\sounds\dv_sounds\dialogs\dv8_26.wav"
+		time="9" />
+
+
+	<string
+		id="80075"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Группа заражённых укрылась в зарослях ядовитых грибов неподалеку от реки Роад-Ривер, точные координаты вам сейчас пересылаются."
+		sound="data\sounds\dv_sounds\dialogs\dv8_27.wav"
+		time="7" />
+	<string
+		id="80076"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Эти мутанты собирают споры грибов, мутагенная природа которых имеет тот же источник, что у всего остального в этом районе."
+		sound="data\sounds\dv_sounds\dialogs\dv8_28.wav"
+		time="7" />
+	<string
+		id="80077"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Если большое количество спор окажется в реке, то все территории ниже по течению будут заражены."
+		sound="data\sounds\dv_sounds\dialogs\dv8_29.wav"
+		time="6" />
+	<string
+		id="80078"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="На уничтожение этих мутантов у вас не более 15 минут."
+		sound="data\sounds\dv_sounds\dialogs\dv8_30.wav"
+		time="3" />
+
+	<string
+		id="8005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Место соответствует данным аэрофотосъемки. Приступайте к выполнению задания."
+		sound="data\sounds\dv_sounds\dialogs\dv8_31.wav"
+		time="4" />
+
+	<string
+		id="8004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Похоже, вы уложились в отведённое время. Конечно, наши эксперты проверят чистоту реки ниже по течению, но я думаю, что всё будет чисто."
+		sound="data\sounds\dv_sounds\dialogs\dv8_32.wav"
+		time="6" />
+
+	<string
+		id="80041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="С гордостью довожу до вас, агент, что в настоящий момент наша страна получила чрезвычайные полномочия от всего мирового сообщества на уничтожение инопланетного агрессора ракетами класса &quot;земля - космос&quot;. "
+		sound="data\sounds\dv_sounds\dialogs\dv8_33.wav"
+		time="11" />
+	<string
+		id="80042"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Похоже, что операция по спасению Земли входит в завершающую стадию. Возвращайтесь на базу."
+		sound="data\sounds\dv_sounds\dialogs\dv8_34.wav"
+		time="5" />
+
+
+	<string
+		id="8008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Заражённые уходят, вы не смогли их найти и уничтожить... Придётся обезопасить район с применением авиации."
+		sound="data\sounds\dv_sounds\dialogs\dv8_.wav"
+		time="8" />
+
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

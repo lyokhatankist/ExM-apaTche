@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Weather>
+<!--
+	<WeatherItem
+		name="dv9">
+		<ColorType
+			name="sunrise"
+			CloudsTexture="LoadMe.txt" />
+
+		<ColorType
+			name="day"
+			CloudsTexture="SkyCloudy.dds" />
+
+		<ColorType
+			name="sunset"
+			CloudsTexture="LoadMe.txt" />
+
+		<ColorType
+			name="night"
+			CloudsTexture="LoadMe.txt" />
+	</WeatherItem>
+-->	
+	<WeatherItem
+		name="dv9_Storm">
+		<ColorType
+			name="sunrise"
+			CloudsTexture="LoadMe.txt" />
+
+		<ColorType
+			name="day"
+			CloudsTexture="skyovercast.dds" />
+
+		<ColorType
+			name="sunset"
+			CloudsTexture="LoadMe.txt" />
+
+		<ColorType
+			name="night"
+			CloudsTexture="LoadMe.txt" />
+	</WeatherItem>
+</Weather>

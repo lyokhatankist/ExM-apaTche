@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Увы, агент, у меня снова неутешительные новости."
+		sound="data\sounds\dv_sounds\dialogs\dv9_1.wav"
+		time="3" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мы недооценили могущество вируса и, как следствие, недооценили новоприобретённые возможности профессора Паперса."
+		sound="data\sounds\dv_sounds\dialogs\dv9_2.wav"
+		time="7" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Он сбежал, разделавшись со всем полицейским сопровождением."
+		sound="data\sounds\dv_sounds\dialogs\dv9_3.wav"
+		time="4" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="К счастью, он не знает, что машина, на которой он совершил побег, отслеживается по скрытому маячку."
+		sound="data\sounds\dv_sounds\dialogs\dv9_4.wav"
+		time="6" />
+	<string
+		id="5"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В настоящий момент вы ближе всех к сумасшедшему профессору. Перехватите его во что бы то ни стало."
+		sound="data\sounds\dv_sounds\dialogs\dv9_5.wav"
+		time="6" />
+	<string
+		id="6"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мы не должны допустить повторения всего этого кошмара."
+		sound="data\sounds\dv_sounds\dialogs\dv9_6.wav"
+		time="3" />
+		
+	<string
+		id="90000"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Осталось немного. Как только корабль пришельцев на орбите выйдет в точку поражения, будут запущены ракеты, и с инопланетной угрозой будет покончено."
+		sound="data\sounds\dv_sounds\dialogs\dv9_7.wav"
+		time="9" />
+	<string
+		id="90001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ваша задача обезвредить Паперса. Будьте предельно осторожны, нам известно, что в его распоряжении сейчас находится несколько ампул с нейростимулятором."
+		sound="data\sounds\dv_sounds\dialogs\dv9_8.wav"
+		time="10" />
+	<string
+		id="90002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Неизвестно, что это, но данный аппарат профессор разработал вместе с вирусом Z-120, и ради него он вернулся туда, где был арестован военной полицией."
+		sound="data\sounds\dv_sounds\dialogs\dv9_9.wav"
+		time="9" />
+	<string
+		id="90003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мы полагаем, что этот нейростимулятор чрезвычайно важен для него, ведь возвращение было связано с немалым риском."
+		sound="data\sounds\dv_sounds\dialogs\dv9_10.wav"
+		time="7" />
+
+	<string
+		id="90004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Уничтожьте Паперса как можно скорее, он и без своего препарата опаснее, чем танковая дивизия, а что будет, если он успеет воспользоваться нейростимулятором, я даже предсказать не берусь."
+		sound="data\sounds\dv_sounds\dialogs\dv9_11.wav"
+		time="11" />
+
+
+	<string
+		id="9001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Паперс показал владение сверхъестественными способностями. Будьте крайне осторожны и стреляйте первым."
+		sound="data\sounds\dv_sounds\dialogs\dv9_12.wav"
+		time="8" />
+
+	<string
+		id="90015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вам необходимо догнать профессора Паперса. Не медлите ни секунды."
+		sound="data\sounds\dv_sounds\dialogs\dv9_13.wav"
+		time="4" />
+	<string
+		id="9002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Судя по данным маячка, вмонтированного в похищенную Паперсом машину, он где-то здесь."
+		sound="data\sounds\dv_sounds\dialogs\dv9_14.wav"
+		time="5" />
+ 
+
+	<string
+		id="90021"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вы должны уничтожить профессора, точнее, не его, а то, чем он стал, прежде чем он превратится во что-нибудь такое, что уничтожить станет уже невозможно."
+		sound="data\sounds\dv_sounds\dialogs\dv9_15.wav"
+		time="9" />
+
+
+	<string
+		id="9003"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="О, снова вы, агент! А вы совсем не понимаете намёков, да? Я вам уже несколько раз давал чудесную возможность героически умереть, да."
+		sound="data\sounds\dv_sounds\dialogs\dv9_16.wav"
+		time="8" />
+	<string
+		id="9004"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Но вы воображаете, что вам позволено стоять на пути прогресса в моём лице."
+		sound="data\sounds\dv_sounds\dialogs\dv9_17.wav"
+		time="4" />
+	<string
+		id="90041"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Да вы просто мелкохулиганистый элемент, да. Придётся вас уничтожить."
+		sound="data\sounds\dv_sounds\dialogs\dv9_18.wav"
+		time="3" />
+	<string
+		id="90042"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Можете гордиться тем, что Землю от вас очистит лично Великий Паперс."
+		sound="data\sounds\dv_sounds\dialogs\dv9_19.wav"
+		time="3" />
+	<string
+		id="90043"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Впрочем, можете застрелиться сами, ага. У вас есть ещё пара минут, прежде чем закончится сеанс с моим нейростимулятором."
+		sound="data\sounds\dv_sounds\dialogs\dv9_20.wav"
+		time="7" />
+
+	<string
+		id="9005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Убейте этого монстра, пока ещё есть время."
+		sound="data\sounds\dv_sounds\dialogs\dv9_21.wav"
+		time="3" />
+
+	<string
+		id="90050"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Поздравляю, агент! Вашими стараниями Земля спасена."
+		sound="data\sounds\dv_sounds\dialogs\dv9_22.wav"
+		time="4" />
+	<string
+		id="90051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Наши ракеты стартовали пять минут назад и в настоящий момент находятся всего в нескольких километрах от корабля-матки пришельцев. "
+		sound="data\sounds\dv_sounds\dialogs\dv9_23.wav"
+		time="8" />
+
+	<string
+		id="9006"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Безмозглые твари. Ничтожества, недочеловеки! Вы даже не представляете, что творите!!!  Ведь это же был ключ к высшему сост..."
+		sound="data\sounds\dv_sounds\dialogs\dv9_24.wav"
+		time="12" />
+		
+	<string
+		id="627"
+		value="@ffef8d00ExM:apaTche@ffffffff||Поздравляем, игра пройдена!|Начать @ffab1e1eНовую игру @ffef8d00+@ffffffff?| |"
+		numButtons="2" />
+		
+	<string
+		id="1486"
+		msgType="SCROLL"
+		image="data\models\vehicles\empty.dds"
+		upOverlay="data\models\vehicles\empty.dds"
+		downOverlay="data\models\vehicles\empty.dds"
+		value="| | | |@ffccccccExM:@ffef8d00apa@ffab1e1eT@ffef8d00che| | | | |@ffef8d00Компания|@ffcccccc«DOLBOYASCHERS TEAM»| | | | |@ffef8d00Главный дегенерат|@ffccccccАлексей «__nEmPoBu4__» Смирнов| | |@ffef8d003D-моделирование, техподдержка, контроль качества|@ffccccccИван «ICAS-14» Черепанов| | |@ffef8d003D-моделирование|@ffccccccДмитрий «Gnome627» Сащенко| | |@ffef8d00Внешние пути для караванов, контроль качества|@ffccccccАндрей «Linkor» Крылов| | |@ffef8d00Тестирование|@ffccccccICAS-14|MrKarfen|Mr Kirov|Gnome627|Seel| | |@ffef8d00Обратная связь|@ffccccccStive Metal|E Jet|MADVAN1378| | |@ffef8d00Отдельная благодарность|@ffccccccСообщество EM2ch|Сообщество Deus Ex Machina|Павлик RPG|Эмер|стакан| | | | |@ffef8d00Если вы обнаружили баг, или у вас есть предложения по поводу улучшения качества проекта, свяжитесь с нами любым способом в Discord, VK или на YouTube (да хоть в комментариях под трейлером apaTche), готовы обсудить любые идеи.||@ffab1e1eEM2ch Discord:|@ffccccccdiscord.com/invite/AzZQsgDJaD||@ffab1e1eEM2ch VK:|@ffccccccvk.com/em2ch||@ffab1e1eEM2ch YouTube:|@ffccccccyoutube.com/@em2ch| | | | | | | | |@ffef8d00Ваш путь в мире Ex Machina ещё не окончен, ведь это было только его начало. Удачной дороги, махинисты!||@ffccccccСпасибо, что играли в ExM:apaTche!"
+		fontSize="22"
+		scrollSpeed="0.555"
+		time="3" />
+		
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

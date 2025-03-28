@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by scorp (targem) -->
+
+<icons>
+
+<!-- Опции -->
+	<Item id="BindKeysLineBg"			file="data\if\ico\OptionsWnd\list_hl.tga"			file1=""/>
+	<Item id="SelectServerLineBg"		file="data\if\ico\OptionsWnd\list_hl.tga"			file1=""/>
+	<Item id="ColorBoxFrameSquare"		file="data\if\ico\MultiplayerOptionsWnd\frame_square.tga"	file1=""/>
+	<Item id="DarkgreenBg"				file="data\if\ico\MultiplayerOptionsWnd\darkgreen.dds"	file1=""/>
+	<Item id="TruckBg"				file="data\if\ico\MultiplayerOptionsWnd\truck_background.dds"	file=""/>
+
+<!-- Кредитсы -->
+	<Item id="CreditsBg"				file="data\if\ico\CreditsWnd\Plan_svet.dds"			file1="data\if\ico\CreditsWnd\Plan_temn.dds"/>	
+	<Item id="CreditsPointer"			file="data\if\ico\CreditsWnd\strelka.dds"			file1=""/>	
+
+<!-- Окно загрузки/сохранения -->
+	<Item id="SortArrow"				file="data\if\ico\LoadSave\sort_inc.dds"			file1="data\if\ico\LoadSave\sort_dec.dds"/>
+
+	<!-- Loading screen -->
+	<Item id = "LoadingScreen_top"		file = "data/if_dv/ico/LoadingScreen/l_load_top.tga"/>	
+	<Item id = "LoadingScreen_bottom"	file = "data/if_dv/ico/LoadingScreen/l_load_bottom.tga"/>
+	<Item id = "LoadingScreen_bottomBg"	file = "data/if_dv/ico/LoadingScreen/l_load_bottom_back.tga"/>
+
+	<Item id = "MainMenu_decal"	file = "data\fx\decals\decole_sml_machinegun.DDS"/>
+
+	<!-- PlayScreen -->
+	<Item id = "LoadItemBgRegular"		file="data/if_dv/ico/PlayScreen/slot_e.tga"/>
+	<Item id = "LoadItemBgSelected"		file="data/if_dv/ico/PlayScreen/slot_h.tga"/>
+	<Item id = "Lock"					file="data/if_dv/ico/PlayScreen/l_load_lock.tga"/>
+
+	<!-- Garage -->
+	<Item id = "garageTitleBg"			file = "data/if_dv/ico/Garage/im_slot_bkg_title.tga"/>		
+	<Item id = "garageItemBg"			file = "data/if_dv/ico/Garage/im_slot_bkg_item.tga"/>		
+	<Item id = "upgradeLevelIs"			file = "data/if_dv/ico/Garage/im_level_filled.tga"/>		
+	<Item id = "upgradeLevelNo"			file = "data/if_dv/ico/Garage/im_level_empty.tga"/>		
+	<Item id = "upgradeMinus"			file = "data/if_dv/ico/Garage/im_icon_minus_e.tga"		file1 = "data/if_dv/ico/Garage/im_icon_minus_d.tga"/>
+	<Item id = "upgradePlus"			file = "data/if_dv/ico/Garage/im_icon_plus_e.tga"		file1 = "data/if_dv/ico/Garage/im_icon_plus_d.tga"/>
+	<Item id = "upgradeInstall"			file = "data/if_dv/ico/Garage/im_icon_install_e.tga"	file1 = "data/if_dv/ico/Garage/im_icon_install_d.tga"/>
+	<Item id = "upgradeRemove"			file = "data/if_dv/ico/Garage/im_icon_remove.tga"/>		
+	<Item id = "garageIcoApplied"		file = "data/if_dv/ico/Garage/im_weapon_active.tga"/>		
+	<Item id = "garageIcoUnapplied"		file = "data/if_dv/ico/Garage/im_weapon_passive.tga"/>		
+
+	<!-- Briefing -->
+	<Item id = "BriefingIco_completed"	file = "data/if_dv/ico/Briefing/icon_done.tga"/>
+	<Item id = "BriefingIco_current"	file = "data/if_dv/ico/Briefing/icon_undone.tga"/>
+	<Item id = "BriefingIco_flash"		file = "data/if_dv/ico/Briefing/icon_undone_light.tga"/>
+
+	<!-- Weapon and gadgets -->
+	<Item id = "nitroDV1"	file = "data/if_dv/ico/ModelIcons/gadgets/boost_1.tga"/>
+	<Item id = "nitroDV2"	file = "data/if_dv/ico/ModelIcons/gadgets/boost_2.tga"/>
+	<Item id = "nitroDV3"	file = "data/if_dv/ico/ModelIcons/gadgets/boost_3.tga"/>
+	<Item id = "jumperDV1"	file = "data/if_dv/ico/ModelIcons/gadgets/jumper_1.tga"/>
+	<Item id = "jumperDV2"	file = "data/if_dv/ico/ModelIcons/gadgets/jumper_2.tga"/>
+	<Item id = "jumperDV3"	file = "data/if_dv/ico/ModelIcons/gadgets/jumper_3.tga"/>
+	<Item id = "mineDV1"	file = "data/if_dv/ico/ModelIcons/gadgets/mine_1.tga"/>
+	<Item id = "mineDV2"	file = "data/if_dv/ico/ModelIcons/gadgets/mine_2.tga"/>
+	<Item id = "mineDV3"	file = "data/if_dv/ico/ModelIcons/gadgets/mine_3.tga"/>
+	<Item id = "pilaDV1"	file = "data/if_dv/ico/ModelIcons/gadgets/spikes_1.tga"/>
+	<Item id = "pilaDV2"	file = "data/if_dv/ico/ModelIcons/gadgets/spikes_2.tga"/>
+	<Item id = "pilaDV3"	file = "data/if_dv/ico/ModelIcons/gadgets/spikes_3.tga"/>    
+	<Item id = "zenithDV1"	file = "data/if_dv/ico/ModelIcons/weapons/cannon_1.tga"/>
+	<Item id = "zenithDV2"	file = "data/if_dv/ico/ModelIcons/weapons/cannon_2.tga"/>
+	<Item id = "zenithDV3"	file = "data/if_dv/ico/ModelIcons/weapons/cannon_3.tga"/> 
+	<Item id = "fireDV1"	file = "data/if_dv/ico/ModelIcons/weapons/f_thrower_1.tga"/>
+	<Item id = "fireDV2"	file = "data/if_dv/ico/ModelIcons/weapons/f_thrower_2.tga"/>
+	<Item id = "fireDV3"	file = "data/if_dv/ico/ModelIcons/weapons/f_thrower_3.tga"/>
+	<Item id = "rocketDV1"	file = "data/if_dv/ico/ModelIcons/weapons/missile_1.tga"/>
+	<Item id = "rocketDV2"	file = "data/if_dv/ico/ModelIcons/weapons/missile_2.tga"/>
+	<Item id = "rocketDV3"	file = "data/if_dv/ico/ModelIcons/weapons/missile_3.tga"/>
+	<Item id = "vulcanDV1"	file = "data/if_dv/ico/ModelIcons/weapons/vulcan_1.tga"/>
+	<Item id = "vulcanDV2"	file = "data/if_dv/ico/ModelIcons/weapons/vulcan_2.tga"/>
+	<Item id = "vulcanDV3"	file = "data/if_dv/ico/ModelIcons/weapons/vulcan_3.tga"/>
+	<Item id = "shotgunDV1"	file = "data/if_dv/ico/ModelIcons/weapons/shotgun_1.tga"/>
+	<Item id = "shotgunDV2"	file = "data/if_dv/ico/ModelIcons/weapons/shotgun_2.tga"/>
+	<Item id = "shotgunDV3"	file = "data/if_dv/ico/ModelIcons/weapons/shotgun_3.tga"/>
+
+
+</icons>

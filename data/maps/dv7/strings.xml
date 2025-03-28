@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+
+
+	<string
+		id="7000"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Насколько я понял, вы не смогли найти бумаги Паперса? Плюньте на это дело. Живой профессор для нас важнее, чем его бумаги."
+		sound="data\sounds\dv_sounds\dialogs\dv7_1.wav"
+		time="8" />   
+	<string
+		id="70001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Забирайте яйцеголового и везите его на базу. Будет сопротивляться - применяте силу."
+		sound="data\sounds\dv_sounds\dialogs\dv7_2.wav"
+		time="5" />   
+
+
+	<string
+		id="7001"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Остановись, агент."
+		sound="data\sounds\dv_sounds\dialogs\dv7_3.wav"
+		time="1" />
+	<string
+		id="7002"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ты находишься на заражённой территории."
+		sound="data\sounds\dv_sounds\dialogs\dv7_4.wav"
+		time="2" />
+	<string
+		id="70021"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Никто не имеет права выносить токсин за пределы этого места  и отравлять остальной мир."
+		sound="data\sounds\dv_sounds\dialogs\dv7_5.wav"
+		time="5" />
+	<string
+		id="70022"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Твоя машина от протекторов до крыши покрыта заразой."
+		sound="data\sounds\dv_sounds\dialogs\dv7_6.wav"
+		time="3" />                              
+	<string
+		id="70023"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Прости, но я вынужден тебя убить."
+		sound="data\sounds\dv_sounds\dialogs\dv7_7.wav"
+		time="2" />
+
+
+	<string
+		id="70025"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Наши астрономы обнаружили огромную летающую тарелку на геостационарной орбите."
+		sound="data\sounds\dv_sounds\dialogs\dv7_8.wav"
+		time="5" />   
+	<string
+		id="70026"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Паперс - ведущий специалист Базы 31, именно там работали над техникой инопланетян. Нам нужно его мнение."
+		sound="data\sounds\dv_sounds\dialogs\dv7_9.wav"
+		time="6" />   
+	<string
+		id="70027"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Так что, вот ваше новое задание: возвращайтесь к профессору Паперсу, и, что бы он вам не говорил, забирайте его, причём, если понадобится - силой,  и немедленно покидайте территорию заражения."
+		sound="data\sounds\dv_sounds\dialogs\dv7_10.wav"
+		time="9" />   
+
+
+	<string
+		id="7003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Приступайте к эвакуации профессора. По данным аэрофотосъемки и наземных датчиков, облако заражения стремительно приближается к вам. Поторопитесь, агент."
+		sound="data\sounds\dv_sounds\dialogs\dv7_11.wav"
+		time="8" />   
+
+
+	<string
+		id="70031"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Не надо убегать, агент. Поверьте мне, вам и раньше не удалось бы справиться со мной, а теперь и вовсе... "
+		sound="data\sounds\dv_sounds\dialogs\dv7_12.wav"
+		time="7" />
+	<string
+		id="70032"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я поддался этой мутации, и она изменила меня, дав огромную силу и власть."
+		sound="data\sounds\dv_sounds\dialogs\dv7_13.wav"
+		time="4" />
+	<string
+		id="70033"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Но цена слишком высока. И я не позволю вам втащить заразу Z-120 в ничего не подозревающий мир. "
+		sound="data\sounds\dv_sounds\dialogs\dv7_14.wav"
+		time="5" />
+	<string
+		id="70034"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Приготовьтесь к смерти. Надеюсь, вы поймёте меня, как патриот - патриота, ведь это нашей с вами кровью приходится удобрять дерево свободы."
+		sound="data\sounds\dv_sounds\dialogs\dv7_15.wav"
+		time="8" />
+
+
+	<string
+		id="7004"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ты сумел... Но что это? Я начинаю видеть всё по-другому!"
+		sound="data\sounds\dv_sounds\dialogs\dv7_16.wav"
+		time="3" />
+	<string
+		id="7005"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Проклятье, я же чуть не обрёк себя на гибель! Спасибо, агент, твои пули здорово помогли мне."
+		sound="data\sounds\dv_sounds\dialogs\dv7_17.wav"
+		time="4" />
+	<string
+		id="7006"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Сам я и не то, что не решился бы... Я б даже и не догадался."
+		sound="data\sounds\dv_sounds\dialogs\dv7_18.wav"
+		time="2" />
+	<string
+		id="7007"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Но это не главное, останови профессора, он всё неправильно понял. Он погубит всех, все народы, весь мир. Он уже поставил всё на грань катастрофы... "
+		sound="data\sounds\dv_sounds\dialogs\dv7_19.wav"
+		time="7" />
+	<string
+		id="7008"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я бы остановил его, если бы раньше знал, но теперь, когда я знаю, я перед этим бессилен."
+		sound="data\sounds\dv_sounds\dialogs\dv7_20.wav"
+		time="4" />
+	<string
+		id="7009"
+		modelName="mask_commander"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Только люди могут спасти людей. Убей его, пока не поздно."
+		sound="data\sounds\dv_sounds\dialogs\dv7_21.wav"
+		time="3.25" />
+
+	
+	<string
+		id="7010"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я даже и не подозревал, что такое возможно! Капитан один стоил целой роты."
+		sound="data\sounds\dv_sounds\dialogs\dv7_22.wav"
+		time="3" />   
+	<string
+		id="7011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="И всё же я рад, что победа осталась за вами. Капитан был патриотом, каких мало. Жаль, что он неверно оценил обстановку."
+		sound="data\sounds\dv_sounds\dialogs\dv7_23.wav"
+		time="6" />   
+	<string
+		id="7012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Предлагаю почтить его память минутой молчания."
+		sound="data\sounds\dv_sounds\dialogs\dv7_24.wav"
+		time="4.5" />   
+
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

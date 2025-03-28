@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Following the route indicated on the map, you will reach the object designated as Base No. 31."
+		sound="data\sounds\dv_sounds\dialogs\dv2_2.wav"
+		time="6" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Having entered the territory of the facility, you'll need to find and evacuate doctor Pappers from there."
+		sound="data\sounds\dv_sounds\dialogs\dv2_3.wav"
+		time="6" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Doc was analyzing the remains of a downed alien ship, and saving the country's best specialist in the area is a matter of national security. That is your primary objective."
+		sound="data\sounds\dv_sounds\dialogs\dv2_4.wav"
+		time="12" />
+	<string
+		id="5"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Important clarification: the surrounding area is exposed to a powerful biotoxin."
+		sound="data\sounds\dv_sounds\dialogs\dv2_5.wav"
+		time="5" />
+	<string
+		id="6"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The source of this toxin is believed to be giant mushrooms. By destroying at least a hundred of these creatures, you can stop the contamination of the area."
+		sound="data\sounds\dv_sounds\dialogs\dv2_6.wav"
+		time="9" />
+	
+	<string
+		id="2001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Somewhere in this desert, our task force team went for a recon mission and disappeared."
+		sound="data\sounds\dv_sounds\dialogs\dv2_7.wav"
+		time="5" />
+	<string
+		id="2002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I don’t believe that they all died, because they were trained professionals, not some weekend soldiers from the National Guard."
+		sound="data\sounds\dv_sounds\dialogs\dv2_8.wav"
+		time="7" />
+	<string
+		id="2003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="If you manage to find them, report to the headquarters immediately."
+		sound="data\sounds\dv_sounds\dialogs\dv2_9.wav"
+		time="4" />
+
+
+	<string
+		id="20031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Deserthole is a small mining town."
+		sound="data\sounds\dv_sounds\dialogs\dv2_10.wav"
+		time="3" />
+	<string
+		id="20032"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="After the mine closed, the residents lost their jobs, and since then their main occupation has been the production, sale and consumption of cactus moonshine."
+		sound="data\sounds\dv_sounds\dialogs\dv2_11.wav"
+		time="10" />
+	<string
+		id="20033"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="But, be that as it may, our country does not abandon its citizens in trouble, and therefore it is your duty to ensure the evacuation of the residents of Deserthole!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_12.wav"
+		time="11" />
+
+
+	<string
+		id="2004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You must save the glorious inhabitants of Deserthole from marauders."
+		sound="data\sounds\dv_sounds\dialogs\dv2_13.wav"
+		time="4" />
+
+	<string
+		id="2005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Half the job is done, all survivors will be evacuated shortly. Continue with the mission."
+		sound="data\sounds\dv_sounds\dialogs\dv2_14.wav"
+		time="5" />
+
+	<string
+		id="20051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Outrageous disregard for safety measures!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_15.wav"
+		time="3" />
+	<string
+		id="20052"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The abandoned chemical reactor at a secret laboratory is uncontrollably releasing toxic substances. "
+		sound="data\sounds\dv_sounds\dialogs\dv2_16.wav"
+		time="7" />
+	<string
+		id="20053"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Physically destroying the lab would lead to even more environmental contamination, but destroying the local power plant would be an ideal solution to the problem."
+		sound="data\sounds\dv_sounds\dialogs\dv2_17.wav"
+		time="10" />
+
+
+	<string
+		id="2006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Too late! It looks like the discharge manifolds gave way and the lab exploded. A cloud of toxic gas covered the entire area. I don't think there are any survivors."
+		sound="data\sounds\dv_sounds\dialogs\dv2_18.wav"
+		time="10" />
+
+	<string
+		id="20061"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The reports of instant mutations caused by the Z-120 substance turned out to be true."
+		sound="data\sounds\dv_sounds\dialogs\dv2_19.wav"
+		time="6" />
+	<string
+		id="20062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Whatever these creatures were in the past, they are not people anymore! Destroy them immediately in the name of the ideals of democracy and safety of the people of our country."
+		sound="data\sounds\dv_sounds\dialogs\dv2_20.wav"
+		time="11" />
+
+	<string
+		id="2008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Well, looks like your work here is done. It's time to proceed to the main mission."
+		sound="data\sounds\dv_sounds\dialogs\dv2_21.wav"
+		time="6" />
+
+	<string
+		id="20081"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You must find doctor Pappers and evacuate him from the base at any cost."
+		sound="data\sounds\dv_sounds\dialogs\dv2_22.wav"
+		time="4" />
+	<string
+		id="20082"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The mission to rescue the scientist is of the highest priority. Remember that!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_23.wav"
+		time="4" />                
+
+	<string
+		id="2009"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I'm afraid we're late again."
+		sound="data\sounds\dv_sounds\dialogs\dv2_24.wav"
+		time="2" />
+
+	<string
+		id="20091"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="This does not look like an accident. It appears to be a well-planned sabotage. The Base is completely destroyed and the Z-120 leak seems to have come from here."
+		sound="data\sounds\dv_sounds\dialogs\dv2_25.wav"
+		time="10" />
+	<string
+		id="20092"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It is necessary to clarify the number of survivors and find out the fate of Pappers. Search the ruins."
+		sound="data\sounds\dv_sounds\dialogs\dv2_26.wav"
+		time="7" />
+
+
+	<string
+		id="2010"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="These eggheads were supposed to wait for evacuation in a designated place, but instead they violated all instructions and just scattered who knows where!"
+		sound="data\sounds\dv_sounds\dialogs\dv2_27.wav"
+		time="10" />
+
+	<string
+		id="2011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Because of that, it will be nearly impossible to determine the exact number of survivors from the body count. Objective number one is to find out what happened to doctor Pappers."
+		sound="data\sounds\dv_sounds\dialogs\dv2_28.wav"
+		time="11" />
+
+	<string
+		id="2012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Return to base immediately."
+		sound="data\sounds\dv_sounds\dialogs\dv2_29.wav"
+		time="3" />
+
+	<string
+		id="369"
+		value="@ffab1e1eYOU HAVE|LOST !!!!| |@ffccccccYou haven't passed all the checkpoints. On this note the thread of prophecy is severed."
+		numButtons="1" />	
+</resource>

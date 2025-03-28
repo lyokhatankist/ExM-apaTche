@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<MusicBlocks>
+
+<!-- для прерий -->
+	<Block 
+		name	="dv_1"
+		driving	="Realtime1"
+		alarm	="Alarm"
+		battle	="Combat1" />
+
+<!-- для прерий с ярким боем-->
+
+	<Block 
+		name	="dv_1_2"
+		driving	="Realtime1"
+		alarm	="Alarm"
+		battle	="Combat2_2" />
+
+<!-- веселая для пустынь -->
+
+	<Block 
+		name	="dv_2"
+		driving	="Realtime2"
+		alarm	="Alarm"
+		battle	="Combat2" />
+
+<!-- веселая для пустынь второй вариант -->
+
+	<Block 
+		name	="dv_2_2"
+		driving	="Realtime2"
+		alarm	="Alarm"
+		battle	="Combat2_2" />
+
+<!-- джунгли со спокойным боем -->
+
+	<Block 
+		name	="dv_3"
+		driving	="Realtime3"
+		alarm	="Alarm"
+		battle	="Combat1" />
+
+<!-- джунгли с ярким боем -->
+
+	<Block 
+		name	="dv_3_2"
+		driving	="Realtime3"
+		alarm	="Alarm"
+		battle	="Combat2" />
+
+<!-- джунгли с бодрым боем -->
+
+	<Block 
+		name	="dv_3_3"
+		driving	="Realtime3"
+		alarm	="Alarm"
+		battle	="Combat2_2" />
+
+<!-- new -->
+	<Block 
+		name	="dv_1b"
+		driving	="Realtime1b"
+		alarm	="Alarm"
+		battle	="Combat1b" />
+		
+	<Block 
+		name	="dv_1c"
+		driving	="Realtime1c"
+		alarm	="Alarm"
+		battle	="Combat1c" />
+		
+	<Block 
+		name	="dv_1d"
+		driving	="Realtime1d"
+		alarm	="Alarm"
+		battle	="Combat1d" />
+		
+	<Block 
+		name	="dv_1e"
+		driving	="Realtime1b"
+		alarm	="Alarm"
+		battle	="Combat1d" />
+		
+	<Block 
+		name	="dv_1f"
+		driving	="Realtime1c"
+		alarm	="Alarm"
+		battle	="Combat1b" />
+		
+	<Block 
+		name	="dv_1g"
+		driving	="Realtime1d"
+		alarm	="Alarm"
+		battle	="Combat1c" />
+		
+	<Block 
+		name	="dv_1h"
+		driving	="Realtime1b"
+		alarm	="Alarm"
+		battle	="Combat1" />
+		
+	<Block 
+		name	="dv_1i"
+		driving	="Realtime1c"
+		alarm	="Alarm"
+		battle	="Combat2_2" />
+		
+	<Block 
+		name	="dv_1j"
+		driving	="Realtime1d"
+		alarm	="Alarm"
+		battle	="Combat2_2b" />
+		
+		
+		
+		
+	<Block 
+		name	="dv_2b"
+		driving	="Realtime2b"
+		alarm	="Alarm"
+		battle	="Combat2b" />
+		
+	<Block 
+		name	="dv_2c"
+		driving	="Realtime2c"
+		alarm	="Alarm"
+		battle	="Combat2_2b" />
+		
+	<Block 
+		name	="dv_2d"
+		driving	="Realtime2d"
+		alarm	="Alarm"
+		battle	="Combat2_2" />
+	
+	<Block 
+		name	="dv_2e"
+		driving	="Realtime2d"
+		alarm	="Alarm"
+		battle	="Combat2_2b" />
+		
+	<Block 
+		name	="dv_2f"
+		driving	="Realtime2c"
+		alarm	="Alarm"
+		battle	="Combat2" />
+		
+	<Block 
+		name	="dv_2g"
+		driving	="Realtime2b"
+		alarm	="Alarm"
+		battle	="Combat2" />
+
+
+
+	<Block 
+		name	="dv_3b"
+		driving	="Realtime3b"
+		alarm	="Alarm"
+		battle	="Combat1b" />
+		
+	<Block 
+		name	="dv_3c"
+		driving	="Realtime3c"
+		alarm	="Alarm"
+		battle	="Combat1c" />
+	
+	<Block 
+		name	="dv_3d"
+		driving	="Realtime3d"
+		alarm	="Alarm"
+		battle	="Combat1d" />
+		
+	<Block 
+		name	="dv_3e"
+		driving	="Realtime3b"
+		alarm	="Alarm"
+		battle	="Combat2_2" />
+		
+	<Block 
+		name	="dv_3f"
+		driving	="Realtime3c"
+		alarm	="Alarm"
+		battle	="Combat2_2b" />
+	
+	<Block 
+		name	="dv_3g"
+		driving	="Realtime3d"
+		alarm	="Alarm"
+		battle	="Combat1" />
+</MusicBlocks>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, you're a federal agent sent to do the job that our task force apparently failed to accomplish? Well, we'll see."
+		sound="data\sounds\dv_sounds\dialogs\dv1_1.wav"
+		time="9" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Before I tell you the gist of the mission, I want you to get comfortable with the vehicle you'll be driving for many miles."
+		sound="data\sounds\dv_sounds\dialogs\dv1_2.wav"
+		time="6" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I know you are an excellent driver, but every vehicle has its own features that are best learned in the relatively calm environment of the base's surroundings."
+		sound="data\sounds\dv_sounds\dialogs\dv1_3.wav"
+		time="9" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Get comfortable with the controls, feel the grip, try the brakes. Learn how to use the equipment for taking environmental samples."
+		sound="data\sounds\dv_sounds\dialogs\dv1_4.wav"
+		time="9" />
+	<string
+		id="1001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You should like the vehicle. Firstly, because you won't get another one anyway."
+		sound="data\sounds\dv_sounds\dialogs\dv1_5.wav"
+		time="5" />
+	<string
+		id="10012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Secondly, because the vehicle is truly a beast. Even your famous Bureau doesn't have anything like it."
+		sound="data\sounds\dv_sounds\dialogs\dv1_6.wav"
+		time="7" />
+
+	<string
+		id="10015"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You only need to get used to the vehicle. By the way, keep in mind that the surrounding area is not completely safe."
+		sound="data\sounds\dv_sounds\dialogs\dv1_9.wav"
+		time="6" />
+	<string
+		id="10016"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A number of armed bastards, stubbornly ignoring the governmental emergency order, continue to roam the area."
+		sound="data\sounds\dv_sounds\dialogs\dv1_10.wav"
+		time="7" />
+	<string
+		id="10017"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="They will not miss the opportunity to empty their clips at you. I recommend not giving them a chance and shooting first."
+		sound="data\sounds\dv_sounds\dialogs\dv1_11.wav"
+		time="7" />
+
+	<string
+		id="1002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Well, what do you think? Have you ever driven a vehicle like this before? I'm sure you haven't."
+		sound="data\sounds\dv_sounds\dialogs\dv1_12.wav"
+		time="6" />
+
+	<string
+		id="10021"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="As soon as any catastrophe, even the tiniest one, happens, all the worst in people awakens."
+		sound="data\sounds\dv_sounds\dialogs\dv1_13.wav"
+		time="7" />
+	<string
+		id="10022"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The evacuation work had barely begun when hordes of looters crawled out of every crack. They are taking away the stolen possessions in whole truckloads."
+		sound="data\sounds\dv_sounds\dialogs\dv1_14.wav"
+		time="9" />
+	<string
+		id="10023"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="One of such convoys will soon be passing by your location. Do you understand me?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_15.wav"
+		time="5" />
+	<string
+		id="10024"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="That's right, this is a great opportunity to test your new vehicle's weapons on them. Don't let the robbers get away."
+		sound="data\sounds\dv_sounds\dialogs\dv1_16.wav"
+		time="7" />
+
+	<string
+		id="10025"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Agent, the local sheriff's department has refused to comply with our directive to cooperate. It seems the sheriff has gone completely nuts and thinks he's the local kingpin. "
+		sound="data\sounds\dv_sounds\dialogs\dv1_7.wav"
+		time="11" />
+	<string
+		id="10026"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Keep in mind that if local police interfere with your mission, you have the right to deal with them under the orders of the state of emergency - that is, extremely aggressively."
+		sound="data\sounds\dv_sounds\dialogs\dv1_8.wav"
+		time="11" />
+
+	<string
+		id="1003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You have a steady hand and a keen eye, agent."
+		sound="data\sounds\dv_sounds\dialogs\dv1_17.wav"
+		time="3" />
+
+	<string
+		id="10031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, I guess the preparation is complete."
+		sound="data\sounds\dv_sounds\dialogs\dv1_27.wav"
+		time="4" />
+	<string
+		id="10032"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You've familiarized yourself with the vehicle, the weaponry, the terrain, and the general state of affairs. It's time to move on to the main mission."
+		sound="data\sounds\dv_sounds\dialogs\dv1_28.wav"
+		time="9" />
+
+	<string
+		id="10033"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Yes, now I am ready to believe that you really can go where a whole squad of my best guys perished."
+		sound="data\sounds\dv_sounds\dialogs\dv1_29.wav"
+		time="7" />
+
+	<string
+		id="1004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The world has certainly become cleaner."
+		sound="data\sounds\dv_sounds\dialogs\dv1_21.wav"
+		time="2" />
+
+	<string
+		id="10041"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="As I told you earlier, there are a number of antisocial individuals in this area who engage in robbery and looting."
+		sound="data\sounds\dv_sounds\dialogs\dv1_18.wav"
+		time="7" />
+	<string
+		id="10042"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="A decision was made to stop such activity, by any, and I repeat, absolutely any means necessary. Do you understand me, agent?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_19.wav"
+		time="10" />
+	<string
+		id="10043"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Just now, with the help of a reconnaissance helicopter, we have detected one of the marauder camps. You are tasked with eliminating these bandits."
+		sound="data\sounds\dv_sounds\dialogs\dv1_20.wav"
+		time="8" />
+
+
+	<string
+		id="1005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It can't be! These soldiers left their post without permission?! "
+		sound="data\sounds\dv_sounds\dialogs\dv1_24.wav"
+		time="6" />
+	<string
+		id="1006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="What could be more disgusting than desertion! Mutants, zombies and other abominations are no excuse."
+		sound="data\sounds\dv_sounds\dialogs\dv1_25.wav"
+		time="7" />
+	<string
+		id="10062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="If a soldier in the American army has to fear anyone, it should be his sergeant, not some brainless zombie!"
+		sound="data\sounds\dv_sounds\dialogs\dv1_26.wav"
+		time="7" />
+
+
+	<string
+		id="10063"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Frankly, I don't understand where do so many armed trespassers come from in such a tightly cordoned off area? How do they get here?"
+		sound="data\sounds\dv_sounds\dialogs\dv1_22.wav"
+		time="8" />
+	<string
+		id="10064"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="This needs to be found out, and the sooner the better."
+		sound="data\sounds\dv_sounds\dialogs\dv1_23.wav"
+		time="3" />
+
+
+	<string
+		id="1900"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="И так, вы агент федерального бюро, присланный сделать то, с чем, похоже, не справилась армейская разведка? Ну что ж посмотрим. Прежде чем сообщить вам суть задания, я  хочу, чтобы вы освоились с автомобилем, на котором вам придется преодолеть немало миль."
+		time="13"
+		numButtons="1" />
+
+	<string
+		id="1901"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я знаю, что вы отличный водитель, но у каждого автомобиля есть свои особенности, с которыми лучше познакомиться в относительно спокойной обстановке окрестностей базы. Освойтесь с управлением, почувствуйте, сцепление, тормоз. Освойте механизмы взятия проб внешней среды."
+		time="12"
+		numButtons="1" />
+
+
+	<string
+		id="1902"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Don't forget, the car is equipped with an automatic navigator - that fancy device on the left panel. The guys programmed your mission route into this thing, so it will always tell you where to turn the wheel."
+		sound="data\sounds\dv_sounds\dialogs\dv0_2.wav"
+		time="13" />
+
+
+	<string
+		id="1903"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It seems that not only people but also nature have gone crazy here. Wandering tornadoes have been spotted in places in the region - avoid them unless you've always felt like trying out the hellish carousel. "
+		sound="data\sounds\dv_sounds\dialogs\dv0_1.wav"
+		time="14" />
+
+	<string
+		id="1904"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="There is a settlement inhabited by the civilian personnel of the base up ahead. According to intelligence, an unknown gang has set up a checkpoint there. Drive the bastards away!"
+		sound="data\sounds\dv_sounds\dialogs\dv0_3.wav"
+		time="11" />
+
+
+
+
+	<string
+		id="1050"
+		value="Итак, вы агент федерального бюро, присланный сделать то, с чем, похоже, не справилась армейская разведка? Ну что ж посмотрим. Прежде чем сообщить вам суть задания, я  хочу, чтобы вы освоились с автомобилем, на котором вам придется преодолеть немало миль. Я знаю, что вы отличный водитель, но у каждого автомобиля есть свои особенности, с которыми лучше познакомиться в относительно спокойной обстановке окрестностей базы. Освойтесь с управлением, почувствуйте, сцепление, тормоз. Освойте механизмы взятия проб внешней среды.|  Дополнительное условие:|                Взять пробы грунта и воздуха (не менее 100)"
+		numButtons="1" />
+	<string
+		id="1051"
+		value="Итак, полагаю, что подготовка завершена. Вы ознакомились с машиной, оружием, местностью, а так же с общим положением дел. Настало время перейти к основному заданию."
+		numButtons="1" />
+
+		
+	<string
+		id="1486"
+		value="@ffef8d00“Repair” pickup| | |@ffccccccThis bonus restores @ffab1e1e75 points of structural integrity@ffcccccc of the vehicle.| |Currently, the maximum structural intergrity value of your vehicle is @ffab1e1e300@ffcccccc. By upgrading the armor in the garage you can increase this value to @ffab1e1e450@ffcccccc and @ffab1e1e600@ffcccccc at the second and third level of the upgrade respectively."
+		numButtons="1" />
+		
+	<string
+		id="1487"
+		value="@ffef8d00“Armor” pickup| | |@ffccccccThis bonus restores @ffab1e1e75 points of armor@ffcccccc. Armor reduces all received damage, so the more armor you have, the more protected your vehicle is.| |Currently, the maximum armor value of your vehicle is @ffab1e1e150@ffcccccc. By upgrading the armor in the garage you can increase this value to @ffab1e1e225@ffcccccc and @ffab1e1e300@ffcccccc at the second and third level of the upgrade respectively."
+		numButtons="1" />
+		
+	<string
+		id="1489"
+		value="@ffef8d00“Damage” pickup| | |@ffccccccThis bonus increases all damage you deal by @ffab1e1e4 times@ffcccccc.| |Effect duration - @ffab1e1e30 seconds@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1490"
+		value="@ffef8d00“Refill” pickup| | |@ffccccccThis bonus replenishes your @ffab1e1eTurbo@ffcccccc and @ffab1e1eJumper@ffcccccc charges.| |Turbo is activated by pressing the @ffab1e1eAlt@ffcccccc key and has a duration of @ffab1e1e55 seconds@ffcccccc of continuous use at the first level of the upgrade.| |Jumper is activated by the @ffab1e1eSpace@ffcccccc key. First level of the Jumper provides you with just @ffab1e1e11@ffcccccc charges to go around."
+		numButtons="1" />
+		
+	<string
+		id="1491"
+		value="@ffef8d00“Auxiliary weapon” pickup| | |@ffccccccThis bonus temporarily places an auxiliary weapon in additional weapon slot.| |Firing of auxiliary weapons is done by holding the @ffab1e1eRight mouse button@ffcccccc. Effect duration - @ffab1e1e45 seconds@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1492"
+		value="@ffef8d00“Virus probe” item| | |@ffccccccYou receive an additional reward for picking up this item. Information about the amount of probes like thse per level can be found in the briefings before missions.| |The maximum reward can be up to @ffab1e1e2,000 reward points@ffcccccc."
+		numButtons="1" />
+		
+	<string
+		id="1493"
+		value="@ffef8d00“Info” item| | |@ffccccccYou receive an additional reward for picking up this item. There is at least 1 disk hidden on each level.| |The total reward for finding this item is @ffab1e1e4500 reward points@ffcccccc."
+		numButtons="1" />	
+		
+	<string
+		id="627"
+		value="@ffccccccWelcome to the @ffab1e1eNew game@ffef8d00+@ffcccccc mode. The new rules are as follows:| |- More dangerous enemies (more powerful weaponry, more agressive behaviour, faster rocket launchers aiming);|- Speedrunners are not welcome here: to successfuly complete the mission you have to pass through all the checkpoints;|- “Damage” and “Refill” pickups are no longer available."
+		numButtons="1" />
+		
+	<string
+		id="369"
+		value="@ffab1e1eYOU HAVE|LOST !!!!| |@ffccccccYou haven't passed through all the checkpoints. On this note the thread of prophecy is severed."
+		numButtons="1" />	
+</resource>

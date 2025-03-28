@@ -1,0 +1,1543 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+$Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
+-->
+
+<Prototypes>
+
+	
+	<Prototype
+                Class                   = "BlastWave"
+                Name                    = "MushroomsBlastWave"
+                
+                Radius                  = "5.5"
+                Effect                  = ""
+                WaveForceIntensity      = "275.0"
+                WaveDamageIntensity     = "1750.0"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "LightingBlastWave"
+                
+                Radius                  = "25.0"
+                Effect                  = "ET_PS_AIRWAVE2"
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "8.5"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "FireBlastWave"
+                
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "800.5"
+
+
+        />
+
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "BubbleBum"
+                Radius                  = "115.0"
+                Effect                  = ""
+                WaveForceIntensity      = "7000"
+                WaveDamageIntensity     = "35.5"
+        />
+
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "ToxicBoss_0"                
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "10.5"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "ToxicBoss_1"                
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "20.5"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "ToxicBoss_2"                
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "40.5"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "ToxicBoss_3"
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "80.5"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "ToxicBoss_4"
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "140.5"
+        />
+        <Prototype
+                Class                   = "BlastWave"
+                Name                    = "ToxicBoss_5"
+                Radius                  = "12.0"
+                Effect                  = ""
+                WaveForceIntensity      = "1"
+                WaveDamageIntensity     = "800.5"
+        />
+		
+		<Prototype
+                Class                   = "BlastWave"
+                Name                    = "superBlastWave"
+                
+                Radius                  = "10.0"
+                Effect                  = "ET_PS_AIRWAVE1"
+                WaveForceIntensity      = "5.0"
+                WaveDamageIntensity     = "200.0"
+        />
+		
+		<Prototype
+                Class                   = "BlastWave"
+                Name                    = "bigBlastWave"
+                
+                Radius                  = "45.0"
+                Effect                  = "ET_PS_AIRWAVE"
+
+                WaveForceIntensity      = "50.0"
+                WaveDamageIntensity     = "30.0"
+        />
+		
+		<Prototype
+                Class                   = "BlastWave"
+                Name                    = "smallBlastWave"
+                Effect                  = "ET_PS_AIRWAVE2"
+                
+                Radius                  = "30.0"
+
+                WaveForceIntensity      = "30.0"
+                WaveDamageIntensity     = "30.0"
+        />
+		
+	
+<!-- 
+		================================================================================
+			ОРУЖИЕ и ПОВЕРАПЫ для DeathValley (пока все в куче)
+		================================================================================
+-->
+
+<!-- bonuses -->
+
+<Prototype
+		Class		= "Bonus"
+		Name		= "smallBonus1"
+		ModelFile	= "bonus_small1"
+		BonusType	= "COMMON"
+		OnGiveEffectName = "ET_PS_BONUS1_PICKUP"
+		NodeScale	= "2 2 2"
+		IntersectionRadius = "7"
+		/>
+	
+<Prototype
+		Class="Bonus"
+		Name="smallBonus2"
+		ModelFile="bonus_small2"
+		NodeScale	= "3 3 3"
+		BonusType="COMMON"
+		OnGiveEffectName = "ET_PS_BONUS2_PICKUP"
+		IntersectionRadius = "7"
+		/>
+
+<Prototype
+		Class="Bonus"
+		Name="bigBonus1"
+		ModelFile="bonus_big1"
+		BonusType="RARE"
+		OnGiveEffectName = "ET_PS_BONUS3_PICKUP"
+		NodeScale	= "3 3 3"
+		IntersectionRadius = "7"
+		/>
+
+<Prototype
+		Class="Bonus"
+		Name="uniqueBonus1"
+		ModelFile="bonus_unique"
+		BonusType="UNIQUE"
+		OnGiveEffectName = "ET_PS_BONUS4_PICKUP"
+		NodeScale	= "4 4 4"
+		/>
+
+<!-- powerups -->
+
+<Prototype
+		Class			= "Gadget"
+		Name			= "Repair"
+		ResourceType	= "GADGET_COMMON" 
+		Price			= "0"	
+		Modifications	= "VEHICLE Health += 25"
+		ModelFile		= "powerup_repair"
+		SkinNum			= "0"
+		Abstract 		= "true"
+		/>
+
+<Prototype
+		Class			= "Gadget"
+		Name			= "Armor"
+		ResourceType		= "GADGET_COMMON" 
+		Price			= "0"	
+		Modifications	= "VEHICLE Durability += 50"
+		ModelFile		= "powerup_shield"
+		SkinNum			= "0"
+		Abstract 		= "true"
+		/>
+
+<Prototype
+		Class			= "Gadget"
+		Name			= "Damage"
+		ResourceType	= "GADGET_COMMON"
+		Price			= "0"
+		Modifications	= "VEHICLE QuodDamage += 4"
+		ModelFile		= "powerup_damage"
+		SkinNum			= "0"
+		Abstract		= "true"/>
+
+<Prototype
+		Class			= "Gadget"
+		Name			= "Nitro"
+		ResourceType	= "GADGET_COMMON"
+		Price			= "0"
+		Modifications	= "VEHICLE Nitro 2"
+		ModelFile		= "powerup_nitro"
+		SkinNum			= "0"
+		Abstract		= "true"/>
+
+<!-- Оружие игрока -->
+
+<!-- Vulcan DV1 -->
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "vulcanDV1"
+		ModelFile					= "vulcan01"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "5"
+		FiringRate				= "600"
+		GroupingAngle			= "0.9"
+		FiringRange				= "400"
+		RecoilForce				= "50"		
+		ChargeSize     		= "210"
+		RechargingTime 		= "0"
+		Decal							= "DC_SML_MACHINEGUN"
+		Price							= "5630"
+		FiringType				= "MachineGun"
+		DamageType			="PIERCING"
+		Durability				= "3"
+		Damageable				= "false"	/>
+
+<!-- Vulcan DV2 -->
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "vulcanDV2"
+		ModelFile					= "vulcan02"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "7"
+		FiringRate				= "750"
+		GroupingAngle			= "0.9"
+		FiringRange				= "600"
+		RecoilForce				= "50"		
+		ChargeSize     		= "210"
+		RechargingTime 		= "0"
+		Decal							= "DC_SML_MACHINEGUN"
+		Price							= "5630"
+ 		FiringType				= "MachineGun"
+ 		DamageType			="PIERCING"
+		Durability				= "3"
+		Damageable				= "false"	/>
+
+<!-- Vulcan DV3 -->
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "vulcanDV3"
+		ModelFile					= "vulcan02"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "11"
+		FiringRate				= "750"
+		GroupingAngle			= "0.9"
+		FiringRange				= "600"
+		RecoilForce				= "50"		
+		ChargeSize     		= "210"
+		RechargingTime 		= "0"
+		Decal							= "DC_SML_MACHINEGUN"
+		Price							= "5630"
+ 		FiringType				= "MachineGun"
+ 		DamageType			="PIERCING"
+		Durability				= "3"
+		Damageable				= "false"	/>
+
+
+<!-- guns -->
+<!-- РАКЕТНИЦА -->
+
+<!-- 
+время наведения ракетницы теперь м.б. изменено из прототипа.
+Если в прототипе ракетницы указан аттрибут LockTime, время берётся из него,
+иначе - из глобал пропертиз
+-->
+<!-- Rocket -->
+  <Prototype
+		Class							= "BlastWave"
+		Name							= "rocketDV_blast"
+		Radius						= "20.0"
+		Effect						= "ET_PS_AIRWAVE1"
+		WaveForceIntensity= "700"
+		WaveDamageIntensity	= "100.0" />
+
+	<Prototype
+		Class							= "Rocket"
+		Name							= "rocketDV_missile"
+		ModelFile					= "rocket_long01"
+		ExplosionType			= "GRENADE" 
+		Velocity					= "200"
+		Acceleration			= "100"
+		FlyTime						= "5.0"
+		MinTurningRadius	= "20"
+		Size							= "0.5 0.5 2"
+		Mass							= "0.1"
+		Price							= "210" />
+
+	<Prototype
+		Class							= "RocketLauncher"
+		Name							= "rocketDV1"
+		ModelFile					= "rocketl01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		Decal							= "DC_ROKET"
+		BulletPrototype   = "rocketDV_missile"
+		BlastWavePrototype= "rocketDV_blast"
+		ExplosionType     = "GRENADE"
+		FiringEffect      = "none"
+		Damage						= "75"
+		FiringRate        = "20"
+		GroupingAngle     = "1"
+		FiringRange       = "700"
+		RecoilForce       = "300"
+		FiringType        = "Rocket"
+		DamageType				=	"BLAST"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "3"
+		CanBeUsedInAutogenerating  =  "0"
+		ShellsPoolSize    = "5"
+		WithShellsPoolLimit	= "false"
+		Price           	= "9870" 
+		Durability        = "300"
+		Damageable				= "false" />
+
+	<Prototype
+		Class							= "BlastWave"
+		Name							= "rocketDV2_blast"
+		Radius						= "30.0"
+		Effect						= "ET_PS_AIRWAVE1"
+		WaveForceIntensity= "700"
+		WaveDamageIntensity	= "80.0" />
+		
+	<Prototype
+		Class							= "Rocket"
+		Name							= "rocketDV2_missile"
+		ModelFile					= "rocket_sml01"
+		ExplosionType			= "GRENADE" 
+		Velocity					= "200"
+		Acceleration			= "140"
+		FlyTime						= "5.0"
+		MinTurningRadius	= "16"
+		Size							= "0.5 0.5 2"
+		Mass							= "0.1"
+		Price							= "210" />
+		
+	<Prototype
+		Class							= "RocketLauncher"
+		Name							= "rocketDV2"
+		ModelFile					= "rocketl03"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		LockTime = "0.001"
+		Mass							= "1.0"
+		Decal							= "DC_ROKET"
+		BulletPrototype   = "rocketDV2_missile"
+		BlastWavePrototype= "rocketDV2_blast"
+		ExplosionType     = "GRENADE"
+		FiringEffect      = "none"
+		Damage						= "200"
+		FiringRate        = "90"
+		GroupingAngle     = "1"
+		FiringRange       = "700"
+		RecoilForce       = "300"
+		FiringType        = "Rocket"
+		DamageType				=	"BLAST"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "0.75"
+		CanBeUsedInAutogenerating  =  "0"
+		ShellsPoolSize    = "5"
+		WithShellsPoolLimit	= "false"
+		Price           	= "9870" 
+		Durability        = "300"
+		Damageable				= "false" />
+		
+	<Prototype
+		Class							= "BlastWave"
+		Name							= "rocketDV3_blast"
+		Radius						= "45.0"
+		Effect						= "ET_PS_AIRWAVE1"
+		WaveForceIntensity= "700"
+		WaveDamageIntensity	= "627.0" />
+		
+	<Prototype
+		Class							= "Rocket"
+		Name							= "rocketDV3_missile"
+		ModelFile					= "rockets_big01"
+		ExplosionType			= "BLAST" 
+		Velocity					= "200"
+		Acceleration			= "120"
+		FlyTime						= "5.0"
+		MinTurningRadius	= "45"
+		Size							= "0.5 0.5 2"
+		Mass							= "0.1"
+		Price							= "210" />
+		
+	<Prototype
+		Class							= "RocketLauncher"
+		Name							= "rocketDV3"
+		ModelFile					= "rocketl02"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		Decal							= "DC_ROKET"
+		BulletPrototype   = "rocketDV3_missile"
+		BlastWavePrototype= "rocketDV3_blast"
+		ExplosionType     = "BLAST"
+		FiringEffect      = "none"
+		Damage						= "627"
+		FiringRate        = "15"
+		GroupingAngle     = "1"
+		FiringRange       = "600"
+		RecoilForce       = "300"
+		FiringType        = "Rocket"
+		DamageType				=	"ENERGY"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "4.5"
+		CanBeUsedInAutogenerating  =  "0"
+		ShellsPoolSize    = "5"
+		WithShellsPoolLimit	= "false"
+		Price           	= "9870" 
+		Durability        = "300"
+		Damageable				= "false" />
+
+<!-- guns -->
+<!-- ОГНЕМЕТ -->
+
+
+	<Prototype
+		Class							= "PlasmaBunch"
+		Name							= "fireDV1_spark"
+		ModelFile					= "flame_plasma"
+		ExplosionType			= "FLAME" 
+		Velocity					= "80"
+		Acceleration			= "-10"
+		FlyTime						= "1.0"
+		GeomType					= "sphere"
+		Radius						= "1.75"
+		DilationSpeed			= "0.1"	/>
+
+	<Prototype
+		Class							= "PlasmaBunch"
+		Name							= "fireDV2_spark"
+		ModelFile					= "flame_plasma"
+		ExplosionType			= "FLAME" 
+		Velocity					= "90"
+		Acceleration			= "-10"
+		FlyTime						= "1.0"
+		GeomType					= "sphere"
+		Radius						= "1.75"
+		DilationSpeed			= "0.1"	/>
+
+	<Prototype
+		Class							= "PlasmaBunch"
+		Name							= "fireDV3_spark"
+		ModelFile					= "flame_plasma"
+		ExplosionType			= "FLAME" 
+		Velocity					= "100"
+		Acceleration			= "-10"
+		FlyTime						= "1.0"
+		GeomType					= "sphere"
+		Radius						= "1.75"
+		DilationSpeed			= "0.1"	/>
+		
+	<Prototype
+		Class							= "PlasmaBunchLauncher"
+		Name							= "fireDV1"
+		ModelFile					= "flamegun01m"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		PblType						= "1"
+		BulletPrototype		= "fireDV1_spark"
+		ExplosionType			= "FLAME"
+		FiringEffect			= "none"
+		Damage						= "100"
+		FiringRate				= "480"
+		GroupingAngle			= "0.5"
+		FiringRange				= "20"
+		RecoilForce				= "1550"
+		FiringType				= "FlamePlasma"
+		DamageType			="BLAST"
+		Decal				= "DC_GUN"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "0"
+		CanBeUsedInAutogenerating	=	"0"
+		Price							= "4000"
+		Durability				= "400"
+		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "PlasmaBunchLauncher"
+		Name							= "fireDV2"
+		ModelFile					= "flamegun01m"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		PblType						= "1"
+		BulletPrototype		= "fireDV2_spark"
+		ExplosionType			= "FLAME"
+		FiringEffect			= "none"
+		Damage						= "80"
+		FiringRate				= "900"
+		GroupingAngle			= "0.5"
+		FiringRange				= "20"
+		RecoilForce				= "1550"
+		FiringType				= "FlamePlasma"
+		DamageType			="BLAST"
+		Decal				= "DC_GUN"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "0"
+		CanBeUsedInAutogenerating	=	"0"
+		Price							= "4000"
+		Durability				= "400"
+		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "PlasmaBunchLauncher"
+		Name							= "fireDV3"
+		ModelFile					= "flamegun01m"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		PblType						= "1"
+		BulletPrototype		= "fireDV3_spark"
+		ExplosionType			= "FLAME"
+		FiringEffect			= "none"
+		Damage						= "60"
+		FiringRate				= "1400"
+		GroupingAngle			= "0.5"
+		FiringRange				= "20"
+		RecoilForce				= "1550"
+		FiringType				= "FlamePlasma"
+		DamageType			="BLAST"
+		Decal				= "DC_GUN"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "0"
+		CanBeUsedInAutogenerating	=	"0"
+		Price							= "4000"
+		Durability				= "400"
+		Damageable				= "false"	/>
+
+<!-- guns -->
+<!-- ЗЕНИТКА -->
+
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "zenithDV1"
+		ModelFile					= "kpvt01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "AUTOCANNON"
+		FiringEffect			= "none"
+		Damage						= "11"
+		FiringRate				= "700"
+		GroupingAngle			= "1.1"
+		FiringRange				= "1000"
+		RecoilForce				= "1000"
+		CanBeUsedInAutogenerating  =  "0"		
+		Decal							= "DC_BIG_MACHINEGUN"
+		ChargeSize     		= "130"
+		RechargingTime 		= "0"
+		Price							= "6400"
+		FiringType				= "MachineGun"
+		DamageType			="ENERGY"
+		Durability				= "60"
+		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "zenithDV2"
+		ModelFile					= "kpvt01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "AUTOCANNON"
+		FiringEffect			= "none"
+		Damage						= "17"
+		FiringRate				= "850"
+		GroupingAngle			= "2.2"
+		FiringRange				= "1000"
+		RecoilForce				= "1200"
+		CanBeUsedInAutogenerating  =  "0"		
+		Decal							= "DC_BIG_MACHINEGUN"
+		ChargeSize     		= "130"
+		RechargingTime 		= "0"
+		Price							= "6400"
+		FiringType				= "MachineGun"
+		DamageType			="ENERGY"
+		Durability				= "60"
+		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "zenithDV3"
+		ModelFile					= "kpvt01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "AUTOCANNON"
+		FiringEffect			= "none"
+		Damage						= "25"
+		FiringRate				= "1000"
+		GroupingAngle			= "3.3"
+		FiringRange				= "1400"
+		RecoilForce				= "300"
+		CanBeUsedInAutogenerating  =  "0"		
+		Decal							= "DC_BIG_MACHINEGUN"
+		ChargeSize     		= "130"
+		RechargingTime 		= "0"
+		Price							= "6400"
+		FiringType				= "MachineGun"
+		DamageType			="ENERGY"
+		Durability				= "60"
+		Damageable				= "false"	/>
+
+<!-- guns apaTche -->
+<!-- ДРОБОВИК -->
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "shotgunDV1"
+		ModelFile					= "flag01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "500"
+		FiringRate				= "30"
+		GroupingAngle			= "13.77"
+		NumBulletsInShot	= "60"
+		FiringRange				= "300"
+		RecoilForce				= "2000"
+		FiringType				= "ShotGun"
+		DamageType			="PIERCING"
+		Price							= "3450"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "2.65"
+		Durability				= "60"
+		Damageable				= "false" />
+		
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "shotgunDV2"
+		ModelFile					= "storm01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "350"
+		FiringRate				= "150"
+		GroupingAngle			= "14.48"
+		NumBulletsInShot	= "40"
+		FiringRange				= "300"
+		RecoilForce				= "1600"
+		FiringType				= "ShotGun"
+		DamageType			="PIERCING"
+		Price							= "3450"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "5"
+		RechargingTime 		= "2.75"
+		Durability				= "60"
+		Damageable				= "false" />
+	
+	<Prototype
+		Class							= "BlastWave"
+		Name							= "shotgunDV3_blast"
+		Radius						= "15.0"
+		Effect						= "ET_PS_INCENDIARY_SHOT"
+		WaveForceIntensity= "1"
+		WaveDamageIntensity	= "90.0" />
+		
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "shotgunDV3"
+		ModelFile					= "flag02"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		BlastWavePrototype	= "shotgunDV3_blast"
+		ExplosionType			= "AUTOCANNON"
+		FiringEffect			= "none"
+		Damage						= "1200"
+		FiringRate				= "20"
+		GroupingAngle			= "3.5"
+		NumBulletsInShot	= "10"
+		FiringRange				= "1200"
+		RecoilForce				= "3200"
+		FiringType				= "ShotGun"
+		DamageType			="ENERGY"
+		Price							= "3450"		
+		Decal							= "DC_BIG_MACHINEGUN"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "4"
+		Durability				= "60"
+		Damageable				= "false" />
+<!-- gadgets -->
+<!-- ШИПЫ -->
+
+	<Prototype
+		Class					= "Appendix"
+		Name					= "pilaDV1"
+		ModelFile				= "thorn1"
+		ResourceType			= "SPECIAL_WEAPON"
+		NodeScale				= "1 1 1"
+		Mass					= "1.0"
+		ApplyAffixes			= "false"
+		
+		CanBeUsedInAutogenerating =  "1"
+		
+		Price					= "1120"
+		Durability				= "25" 
+		FiringType				= "Thorns"
+		LoadPoint				= "LP_PART01"
+		ThornForce				= "25"
+		AppendixType			= "1"
+		CollisionEffectName		= "ET_PS_BUMBLEBEE_FIRE"
+	/>
+
+	<Prototype
+		Class					= "Appendix"
+		Name					= "pilaDV2"
+		ModelFile				= "thorn1"
+		ResourceType			= "SPECIAL_WEAPON"
+		NodeScale				= "1 1 1"
+		Mass					= "1.0"
+		ApplyAffixes			= "false"
+		
+		CanBeUsedInAutogenerating =  "1"
+		
+		Price					= "1120"
+		Durability				= "25" 
+		FiringType				= "Thorns"
+		LoadPoint				= "LP_PART01"
+		ThornForce				= "25"
+		AppendixType			= "1"
+		CollisionEffectName		= "ET_PS_BUMBLEBEE_FIRE"
+	/>
+
+	<Prototype
+		Class					= "Appendix"
+		Name					= "pilaDV3"
+		ModelFile				= "thorn1"
+		ResourceType			= "SPECIAL_WEAPON"
+		NodeScale				= "1 1 1"
+		Mass					= "1.0"
+		ApplyAffixes			= "false"
+		
+		CanBeUsedInAutogenerating =  "1"
+		
+		Price					= "1120"
+		Durability				= "25" 
+		FiringType				= "Thorns"
+		LoadPoint				= "LP_PART01"
+		ThornForce				= "25"
+		AppendixType			= "1"
+		CollisionEffectName		= "ET_PS_BUMBLEBEE_FIRE"
+	/>
+
+<!-- МИНЫ -->
+
+        <Prototype
+                	Class                   	= "Mine"
+                Name                    = "mine"
+                ModelFile               = "mine02"
+                ExplosionType           = "BLAST" 
+
+                Velocity                = "0"
+                Acceleration            = "100"
+                FlyTime                 = "500000.0"
+                MinTurningRadius        = "50"
+                Size                    = "3 3 0.5"
+                BlastWavePrototype      = "mineBlastWave"
+		Price			= "300"
+
+                TTL                     = "1000"
+				TimeForActivation	= "1"
+                CanBeUsedInAutogenerating  =  "0"
+                />
+				
+				 <Prototype
+                Class                   = "BlastWave"
+                Name                    = "mineBlastWave"
+                Effect                  = "ET_PS_CANNONGROUNDEXPLOSION"
+                
+                Radius                  = "10.0"
+
+                WaveForceIntensity      = "60.0"
+                WaveDamageIntensity     = "135.0"
+        />
+		
+	<Prototype
+		Class			= "MinePusher"
+		Name			= "mineDV1"
+		ModelFile		= "minoYkladchiK"
+		ResourceType		= "SPECIAL_WEAPON"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes	= "false"
+		BulletPrototype		= "mine"
+		ExplosionType	= "CANNON"
+		FiringEffect		= "none"
+		Damage			= "600"
+		FiringRate		= "60"
+		GroupingAngle		= "0.5"
+		FiringRange			= "500"
+		RecoilForce			= "2"		
+		DamageType	= "BLAST"
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "7400"
+		
+		ChargeSize     		= "1"
+		RechargingTime 		= "3"
+
+		WithShellsPoolLimit	= "false"
+		LoadPoint				= "LP_GIANT02"
+		Durability		= "20" 
+		FiringType		= "Mine"
+		IgnoreStopAnglesWhenFire = "true"
+	/>
+
+	<Prototype
+		Class			= "MinePusher"
+		Name			= "mineDV2"
+		ModelFile		= "minoYkladchiK"
+		ResourceType		= ""
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes	= "false"
+		BulletPrototype		= "mine"
+		ExplosionType	= "CANNON"
+		FiringEffect		= "none"
+		Damage			= "1200"
+		FiringRate		= "60"
+		GroupingAngle		= "0.5"
+		FiringRange			= "500"
+		RecoilForce			= "2"		
+		DamageType	= "BLAST"
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "7400"
+		
+		ChargeSize     		= "1"
+		RechargingTime 		= "1"
+
+		WithShellsPoolLimit	= "false"
+		LoadPoint				= "LP_GIANT02"
+		Durability		= "20" 
+		FiringType		= "Mine"
+		IgnoreStopAnglesWhenFire = "true"
+	/>
+
+	<Prototype
+		Class			= "MinePusher"
+		Name			= "mineDV3"
+		ModelFile		= "minoYkladchiK"
+		ResourceType		= "SPECIAL_WEAPON"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes	= "false"
+		BulletPrototype		= "mine"
+		ExplosionType	= "CANNON"
+		FiringEffect		= "none"
+		Damage			= "2400"
+		FiringRate		= "60"
+		GroupingAngle		= "0.5"
+		FiringRange			= "500"
+		RecoilForce			= "2"		
+		DamageType	= "BLAST"
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "7400"
+		
+		ChargeSize     		= "1"
+		RechargingTime 		= "1"
+
+		WithShellsPoolLimit	= "false"
+		LoadPoint				= "LP_GIANT02"
+		Durability		= "20" 
+		FiringType		= "Mine"
+		IgnoreStopAnglesWhenFire = "true"
+	/>
+
+<!-- НИТРО -->
+	<Prototype
+                Class                   = "BlastWave"
+                Name                    = "turbo"
+		Price			= "10"                
+                Radius                  = "30.0"
+                Effect                  = "ET_PS_AIRWAVE1"
+                WaveForceIntensity      = "1.0"
+                WaveDamageIntensity     = "1.0"
+        />
+
+
+	<Prototype
+		Class			= "ConnectedTurboAccelerationPusher"
+		Name			= "nitroDV1"
+		ModelFile		= "Turboakselerator"
+		ResourceType		= "NITRO"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes		= "false"
+		BulletPrototype		= "turbo"
+		ExplosionType		= "MACHINEGUN"
+		FiringEffect		= "none"
+		Damage			= "0"
+		FiringRate		= "600"
+		GroupingAngle		= "1.0"
+		FiringRange		= "0"
+		RecoilForce		= "2"		
+
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "8600"
+		LoadPoint				= "LP_GIANT01"
+		ChargeSize     		= "50"
+		RechargingTime 		= "0"
+
+		Damageable				= "false"	
+		Durability		= "20" 
+		
+		WithShellsPoolLimit	= "true"
+		ShellsPoolSize		= "500"
+		AccelerationValue	= "1.6"
+		AccelerationTime	= "1"
+		FiringType		= "Turbo"
+		IgnoreStopAnglesWhenFire = "true"
+
+		WorkPostEffect = "TurboPostFX"
+
+	/>
+
+	<Prototype
+		Class			= "ConnectedTurboAccelerationPusher"
+		Name			= "nitroDV2"
+		ModelFile		= "Turboakselerator"
+		ResourceType		= "NITRO"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes		= "false"
+		BulletPrototype		= "turbo"
+		ExplosionType		= "MACHINEGUN"
+		FiringEffect		= "none"
+		Damage			= "0"
+		FiringRate		= "600"
+		GroupingAngle		= "1.0"
+		FiringRange		= "0"
+		RecoilForce		= "2"		
+
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "8600"
+		LoadPoint				= "LP_GIANT01"
+		ChargeSize     		= "50"
+		RechargingTime 		= "0"
+
+		Damageable				= "false"	
+		
+		LowStop = "0"
+		HighStop = "0"
+
+		Durability		= "20" 
+		
+		WithShellsPoolLimit	= "true"
+		ShellsPoolSize		= "1250"
+		AccelerationValue	= "1.8"
+		AccelerationTime	= "1"
+		FiringType		= "Turbo"
+		IgnoreStopAnglesWhenFire = "true"
+	
+		WorkPostEffect = "TurboPostFX"
+	/>
+
+	<Prototype
+		Class			= "ConnectedTurboAccelerationPusher"
+		Name			= "nitroDV3"
+		ModelFile		= "Turboakselerator"
+		ResourceType		= "NITRO"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes		= "false"
+		BulletPrototype		= "turbo"
+		ExplosionType		= "MACHINEGUN"
+		FiringEffect		= "none"
+		Damage			= "0"
+		FiringRate		= "600"
+		GroupingAngle		= "1.0"
+		FiringRange		= "0"
+		RecoilForce		= "2"		
+
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "8600"
+		LoadPoint				= "LP_GIANT01"
+		ChargeSize     		= "50"
+		RechargingTime 		= "0"
+
+		Damageable				= "false"	
+
+		LowStop = "0"
+		HighStop = "0"
+
+		Durability		= "20" 
+		
+		WithShellsPoolLimit	= "true"
+		ShellsPoolSize		= "2250"
+		AccelerationValue	= "2.0"
+		AccelerationTime	= "1"
+		FiringType		= "Turbo"
+		IgnoreStopAnglesWhenFire = "true"
+	
+		WorkPostEffect = "TurboPostFX"
+	/>
+
+<!-- ДЖАМПЕР -->
+
+	<Prototype
+		Class			= "ConnectedTurboAccelerationPusher"
+		Name			= "jumperDV1"
+		ModelFile		= "Dimzavesa"
+		ResourceType		= "JUMPER"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes		= "false"
+		BulletPrototype		= "turbo"
+		ExplosionType		= "MACHINEGUN"
+		FiringEffect		= "none"
+		Damage			= "0"
+		FiringRate		= "6"
+		GroupingAngle		= "1.0"
+		FiringRange		= "0"
+		RecoilForce		= "2"		
+
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "8600"
+		
+		ChargeSize     		= "1"
+		RechargingTime 		= "8"
+
+		Damageable				= "false"	
+		Durability		= "20" 
+		
+		WithShellsPoolLimit	= "true"
+		ShellsPoolSize    = "10"
+		LoadPoint				= "LP_PART02"
+		TapType			= "1"
+		FiringType		= "Turbo"
+		AccelerationValue	= "20"
+		UseEffect		= "ET_PS_FLAME_FIRE_GIANT"
+
+		LowStop = "0"
+		HighStop = "0"
+
+		IgnoreStopAnglesWhenFire = "true"
+	/>
+
+	<Prototype
+		Class			= "ConnectedTurboAccelerationPusher"
+		Name			= "jumperDV2"
+		ModelFile		= "Dimzavesa"
+		ResourceType		= "JUMPER"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes		= "false"
+		BulletPrototype		= "turbo"
+		ExplosionType		= "MACHINEGUN"
+		FiringEffect		= "none"
+		Damage			= "0"
+		FiringRate		= "10"
+		GroupingAngle		= "1.0"
+		FiringRange		= "0"
+		RecoilForce		= "2"		
+
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "8600"
+		
+		ChargeSize     		= "1"
+		RechargingTime 		= "6"
+
+		Damageable				= "false"	
+		Durability		= "20" 
+		
+		WithShellsPoolLimit	= "true"
+		ShellsPoolSize    = "20"
+		LoadPoint				= "LP_PART02"
+		TapType			= "1"
+		FiringType		= "Turbo"
+		AccelerationValue	= "30"
+		UseEffect		= "ET_PS_FLAME_FIRE_GIANT"
+
+		LowStop = "0"
+		HighStop = "0"
+
+		IgnoreStopAnglesWhenFire = "true"
+	/>
+
+	<Prototype
+		Class			= "ConnectedTurboAccelerationPusher"
+		Name			= "jumperDV3"
+		ModelFile		= "Dimzavesa"
+		ResourceType		= "JUMPER"
+		NodeScale		= "1 1 1"
+		Mass			= "1.0"
+		ApplyAffixes		= "false"
+		BulletPrototype		= "turbo"
+		ExplosionType		= "MACHINEGUN"
+		FiringEffect		= "none"
+		Damage			= "0"
+		FiringRate		= "15"
+		GroupingAngle		= "1.0"
+		FiringRange		= "0"
+		RecoilForce		= "2"		
+
+		CanBeUsedInAutogenerating  =  "0"
+		Price			= "8600"
+		
+		ChargeSize     		= "1"
+		RechargingTime 		= "4"
+
+		Damageable				= "false"	
+		Durability		= "20" 
+		
+		WithShellsPoolLimit	= "true"
+		ShellsPoolSize    = "40"
+		LoadPoint				= "LP_PART02"
+		TapType			= "1"
+		FiringType		= "Turbo"
+		AccelerationValue	= "40"
+		UseEffect		= "ET_PS_FLAME_FIRE_GIANT"
+
+		LowStop = "0"
+		HighStop = "0"
+
+		IgnoreStopAnglesWhenFire = "true"
+	/>
+
+
+<!-- 
+		================================================================================
+ОРУЖИЕ ВРАЖИН
+		================================================================================
+-->
+<!-- scout -->
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "scout_00_weapon"
+		ModelFile					=	"kst01"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"				
+		TracerEffect 			= "ET_PS_TRACER1"
+		TracerRange 			= "1" 			
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "3"
+		FiringRate				= "570"
+		GroupingAngle			= "0.8"
+		FiringRange				= "500"
+		RecoilForce				= "2"
+		FiringType				= "MachineGun"
+		DamageType				= "PIERCING"
+		Price							= "590"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "70"
+		RechargingTime	 	= "2.5"
+		Durability				= "20" 
+		Damageable				= "false" />
+
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "scout_01_weapon"
+		ModelFile					= "kst01"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"				
+		TracerEffect 			= "ET_PS_TRACER1"
+		TracerRange 			= "5" 			
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "2"
+		FiringRate				= "330"
+		GroupingAngle			= "0.8"
+		FiringRange				= "500"
+		RecoilForce				= "2"
+		FiringType				= "MachineGun"
+		DamageType			="PIERCING"
+		Price							= "590"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "70"
+		RechargingTime	 	= "2.5"
+		Durability				= "20" 
+		Damageable				= "false" />
+
+<!-- rogue -->  	
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "rogue_00_weapon"
+		ModelFile					= "storm01"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "50"
+		FiringRate				= "20"
+		GroupingAngle			= "9"
+		NumBulletsInShot	= "20"
+		FiringRange				= "200"
+		RecoilForce				= "3"
+		FiringType				= "ShotGun"
+		DamageType			="PIERCING"
+		Price							= "3450"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "1"
+		RechargingTime 		= "3"
+		Durability				= "60"
+		Damageable				= "false" />
+
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "rogue_01_weapon"
+		ModelFile					= "flag01"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "100"
+		FiringRate				= "10"
+		GroupingAngle			= "9"
+		NumBulletsInShot	= "20"
+		FiringRange				= "200"
+		RecoilForce				= "3"
+		FiringType				= "ShotGun"
+		DamageType			="PIERCING"
+		Price							= "3450"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "1"
+		RechargingTime 		= "3"
+		Durability				= "60"
+		Damageable				= "false" />
+		
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "rogue_02_weapon"
+		ModelFile					= "flag01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "250"
+		FiringRate				= "100"
+		GroupingAngle			= "13.77"
+		NumBulletsInShot	= "60"
+		FiringRange				= "200"
+		RecoilForce				= "3"
+		FiringType				= "ShotGun"
+		DamageType			="PIERCING"
+		Price							= "3450"		
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "1"
+		RechargingTime 		= "1.75"
+		Durability				= "60"
+		Damageable				= "false" />
+
+<!-- hunter -->
+  <Prototype
+		Class							= "BlastWave"
+		Name							= "Rocket_prot_00_b"
+		Radius						= "25.0"
+		Effect						= "ET_PS_AIRWAVE1"
+		WaveForceIntensity	= "150.0"
+		WaveDamageIntensity	= "20.0" />
+
+	<Prototype
+		Class							= "Rocket"
+		Name							= "Rocket_prot_00_r"
+		ModelFile					= "rocket_sml01"
+		ExplosionType			= "BLAST" 
+		Velocity					= "100"
+		Acceleration			= "100"
+		FlyTime						= "5.0"
+		MinTurningRadius	= "20"
+		Size							= "0.5 0.5 2"
+		Mass							= "0.1"
+		BlastWavePrototype	= "Rocket_prot_00_b"
+		Price							= "210" />
+
+	<Prototype
+		Class							= "RocketLauncher"
+		Name							= "hunter_00_weapon"
+		Name1							= "Rocket_prot_00"
+		ModelFile					= "rocketl01"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		Decal							= "DC_ROKET"
+		BulletPrototype   = "Rocket_prot_00_r"
+		ExplosionType     = "BLAST"
+		FiringEffect      = "none"
+		Damage			  		= "25"
+		FiringRate        = "15"
+		GroupingAngle     = "1"
+		FiringRange       = "400"
+		RecoilForce       = "300"
+		FiringType        = "Rocket"
+		DamageType				=	"BLAST"
+		ChargeSize     		= "10"
+		RechargingTime 		= "45"
+		CanBeUsedInAutogenerating  =  "0"
+		ShellsPoolSize    = "3"
+		WithShellsPoolLimit	= "false"		
+		Price           	= "9870" 
+		Durability        = "300"
+		Damageable				= "false" />
+
+<!-- Boss 01 -->
+
+<!-- Boss 02 -->
+	<Prototype
+		Class							= "PlasmaBunch"
+		Name							= "ToxicPartMed"
+		ModelFile					= "flame_plasma"
+		ExplosionType			= "FLAME" 
+		Velocity					= "250"
+		Acceleration			= "-0.5"
+		FlyTime						= "250.0"
+		GeomType					= "sphere"
+		Radius						= "0.15"
+		DilationSpeed			= "10.7"	/>
+	<Prototype
+		Class							= "PlasmaBunchLauncher"
+		Name							= "Boss02ToxicThrower"
+		ModelFile					= "Boss02ToxicThrowerm"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		PblType						= "1"
+		BulletPrototype		= "ToxicPartMed"
+		ExplosionType			= "FLAME"
+		FiringEffect			= "none"
+		Damage						= "60"
+		FiringRate				= "600"
+		GroupingAngle			= "0.5"
+		FiringRange				= "70"
+		RecoilForce				= "1550"
+		FiringType				= "FlamePlasma"
+		DamageType				=	"ENERGY"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "0"
+		CanBeUsedInAutogenerating	=	"0"
+		Price							= "4000"
+		Durability				= "400"
+		Damageable				= "false"	/>
+
+
+<!-- Автоматически стационарные пушки -->
+<!-- Auto Cannon 1 -->
+
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "AutoGun_01"
+		ModelFile					= "vulcan02"
+		ResourceType			= "SMALL_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "MACHINEGUN"
+		FiringEffect			= "none"
+		Damage						= "5"
+		FiringRate				= "1200"
+		GroupingAngle			= "0.9"
+		FiringRange				= "400"
+		RecoilForce				= "50"		
+		ChargeSize     		= "210"
+		RechargingTime 		= "7"
+		Decal							= "DC_SML_MACHINEGUN"
+		Price							= "5630"
+ 		FiringType				= "MachineGun"
+ 		DamageType				=	"PIERCING"
+		Durability				= "30" />
+
+	<Prototype
+		Class							= "StaticAutoGun"
+		Name							= "DotAutoGun_01"
+		LookRadius				= "180"
+		MaxHealth					= "100"
+		EnemyType					=	"HARD"
+		DestroyedModel		= "sack_dot_brocken2"
+		IntersectionRadius= "3.5"	>
+		<MainPartDescription 	id 	= "DOT" 		partResourceType = "STATIC_AUTO_GUN_DOT">
+			<PartDescription 		id	= "CANNON" 	partResourceType 	= "SMALL_GUN" 			lpName 		= "LP_CANNON01" />
+		</MainPartDescription>
+		<Parts>
+			<Part id = "DOT"				Prototype = "sack_dot2" />
+			<Part id = "CANNON"			Prototype = "AutoGun_01" />
+		</Parts>
+	</Prototype>
+
+
+<!-- Auto Cannon 2 -->
+
+	<Prototype
+		Class							= "PlasmaBunch"
+		Name							= "AutoGun_02_Bunch"		
+		ModelFile					= "plasma01"
+		ExplosionType			= "PLASMA" 
+		Velocity					= "300"
+		Acceleration			= "0"
+		FlyTime						= "30.0"
+		Size							= "0.5 0.5 1"
+		PbType						= "0"
+		WaveForceIntensity	= "0.0"
+		WaveDamageIntensity	= "0.0" 
+	/>
+                
+	<Prototype            
+		Class							= "PlasmaBunchLauncher"
+		Name							= "AutoGun_02"
+		ModelFile					= "cub"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"
+		BulletPrototype		= "AutoGun_02_Bunch"
+		ExplosionType			= "PLASMA"
+		FiringEffect			= "none"
+		Damage						= "5"
+		FiringRate				= "600"
+		GroupingAngle			= "0.1"
+		FiringRange				= "500"
+		RecoilForce				= "550"
+		FiringType				= "Plasma"
+ 		DamageType			="PIERCING"
+		ChargeSize     		= "1000"
+		RechargingTime 		= "1"
+		CanBeUsedInAutogenerating = "0"
+		Price							= "170"
+		Durability				= "200"
+		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "StaticAutoGun"
+		Name							= "DotAutoGun_02"
+		LookRadius				= "180"
+		MaxHealth					= "150"
+		DestroyedModel		= "metal_dot_brocken"
+		EnemyType					=	"HARD"
+		IntersectionRadius= "3.5"	>
+		<MainPartDescription 	id 	= "DOT" 		partResourceType = "STATIC_AUTO_GUN_DOT">
+			<PartDescription 		id	= "CANNON" 	partResourceType 	= "BIG_GUN" 			lpName 		= "LP_CANNON01" />
+		</MainPartDescription>
+		<Parts>
+			<Part id = "DOT"				Prototype = "metal_dot"  />
+			<Part id = "CANNON"			Prototype = "zenithDV1" />
+		</Parts>
+	</Prototype>
+
+<!-- Auto Cannon 3 -->
+	<Prototype
+		Class							= "BulletLauncher"
+		Name							= "AutoGun_03"
+		ModelFile					= "cub"
+		ResourceType			= "BIG_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "1.0"		
+		BulletPrototype		= "raybullet"
+		ExplosionType			= "CANNON"
+		FiringEffect			= "none"
+		Damage						= "180"
+		FiringRate				= "30"
+		GroupingAngle			= "0.6"
+		FiringRange				= "800"
+		RecoilForce				= "50"
+		DamageType				= "BLAST"
+		Decal							= "DC_SML_MACHINEGUN"
+		ChargeSize     		= "1"
+		RechargingTime 		= "2.5"
+		Durability				= "70"		
+		BlastWavePrototype= "smallBlastWave"
+		Price							= "20400"
+		FiringType				= "Cannon"
+		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "StaticAutoGun"
+		Name							= "DotAutoGun_03"
+		LookRadius				= "180"
+		MaxHealth					= "220"
+		DestroyedModel		= "heavy_dot_brocken2"
+		EnemyType					=	"HARD"
+		IntersectionRadius= "3.5"	>
+		<MainPartDescription 	id 	= "DOT" 		partResourceType = "STATIC_AUTO_GUN_DOT">
+			<PartDescription 		id	= "CANNON" 	partResourceType 	= "BIG_GUN" 			lpName 		= "LP_CANNON01" />
+		</MainPartDescription>
+		<Parts>
+			<Part id = "DOT"				Prototype = "heavy_dot2" />
+			<Part id = "CANNON"			Prototype = "shotgunDV1" />
+		</Parts>
+	</Prototype>
+</Prototypes>

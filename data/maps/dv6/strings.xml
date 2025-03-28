@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+
+	<string
+		id="60000"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Кстати, ваша машина полностью герметична? Нет? Отличн.., э-э-э... жаль."
+		sound="data\sounds\dv_sounds\dialogs\dv6_6.wav"
+		time="4" />
+	<string
+		id="60001"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Дело в том, что если вояки и вправду разбили резервуар с Z-120, то у вас есть самое большее полчаса, прежде чем токсин индуцирует репликацию ДНК-редуктазы и... впрочем не важно."
+		sound="data\sounds\dv_sounds\dialogs\dv6_7.wav"
+		time="10" />
+	<string
+		id="60002"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Короче говоря, через полчаса токсин вас или убьёт, или превратит в уродливого монстра, да!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_8.wav"
+		time="7" />
+	
+	<string
+		id="6001"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Значит так. Тут болото. Почти везде. Кое-где оно более топкое, а кое-где менее. Например, где тропинки, там менее."
+		sound="data\sounds\dv_sounds\dialogs\dv6_9.wav"
+		time="8" />
+	<string
+		id="60011"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Это для болот обычное дело, да. Я массу статей про это читал."
+		sound="data\sounds\dv_sounds\dialogs\dv6_10.wav"
+		time="3" />
+
+	<string
+		id="60012"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Кофр с документацией должен быть где-то на виду, ага. Если его, конечно не утопили. С них станется. Я про бандитов. И военных."
+		sound="data\sounds\dv_sounds\dialogs\dv6_11.wav"
+		time="7" />
+	<string
+		id="60013"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В общем, спросите и тех и других. Кто-то наверняка должен быть в курсе."
+		sound="data\sounds\dv_sounds\dialogs\dv6_12.wav"
+		time="5" />
+
+
+	<string
+		id="6002"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ну что, нашли место? Что говорят военные? Как это все погибли?! Отлично!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_13.wav"
+		time="4" />
+	<string
+		id="6003"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ну, это я в саркастическом смысле, да, в саркастическом. Какая, так сказать, досада, да! "
+		sound="data\sounds\dv_sounds\dialogs\dv6_14.wav"
+		time="5" />
+	<string
+		id="60031"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ну, всё равно, найдите мои материалы! Вы сможете, ага. Главное - тщательно искать."
+		sound="data\sounds\dv_sounds\dialogs\dv6_15.wav"
+		time="4" />
+
+	<string
+		id="60035"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Внимание, агент, ответьте, если слышите меня! Приём, приём! С нами вышел на связь командир &quot;Дельты&quot;."
+		sound="data\sounds\dv_sounds\dialogs\dv6_16.wav"
+		time="5" />
+	<string
+		id="60036"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Его ребята попыталась уничтожить грузовики с этим чёртовым Z-120, используя термитные заряды, но попытка провалилась."
+		sound="data\sounds\dv_sounds\dialogs\dv6_17.wav"
+		time="6" />
+	<string
+		id="60037"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Сотни монстров буквально задавили их массой.  Группе удалось сжечь только один грузовик и это стоило жизни всем бойцам."
+		sound="data\sounds\dv_sounds\dialogs\dv6_18.wav"
+		time="6" />
+
+	<string
+		id="60038"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Найдите неиспользованные заряды и сожгите грузовики с этими проклятыми контейнерами."
+		sound="data\sounds\dv_sounds\dialogs\dv6_19.wav"
+		time="5" />
+
+
+	<string
+		id="6004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Термитные заряды у вас. Температура, создаваемая  ими, оставит любой химической, биологической и прочей заразе столько же шансов уцелеть, сколько их у снеговика в аду."
+		sound="data\sounds\dv_sounds\dialogs\dv6_20.wav"
+		time="9" />
+	<string
+		id="6005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ради всего святого, ради памяти погибших ребят, сделайте то, что они не успели. Сожгите эти проклятые контейнеры!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_21.wav"
+		time="7" />
+
+	<string
+		id="60051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Мы уточнили имеющиеся данные. Вам предстоит сжечь всего два грузовика с контейнерами Z-120."
+		sound="data\sounds\dv_sounds\dialogs\dv6_22.wav"
+		time="6" />
+	<string
+		id="60052"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Постарайтесь по возможности найти инопланетные образцы и материалы профессора Паперса."
+		sound="data\sounds\dv_sounds\dialogs\dv6_23.wav"
+		time="5" />
+
+
+	<string
+		id="6006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Похоже, что сжечь грузовики - это только полдела. Настоящей проблемой станут орды монстров, заполонившие всё вокруг."
+		sound="data\sounds\dv_sounds\dialogs\dv6_24.wav"
+		time="6" />
+	<string
+		id="60061"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Видимо, тут был лагерь людей, укрывавшихся на болотах от эвакуации."
+		sound="data\sounds\dv_sounds\dialogs\dv6_25.wav"
+		time="4" />
+	<string
+		id="60062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Попав под воздействие заразы из контейнеров, они превратились в чудовищ, убивающих всех, кто не похож на них."
+		sound="data\sounds\dv_sounds\dialogs\dv6_26.wav"
+		time="6" />
+
+	<string
+		id="60065"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Необходимо уничтожить не только грузовик с Z-120, но всех монстров, обосновавшихся вокруг."
+		sound="data\sounds\dv_sounds\dialogs\dv6_27.wav"
+		time="5" />
+
+
+	<string
+		id="6007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Итак, вы отлично справились, впрочем, как и всегда. Надеюсь, что теперь мир спасён от массовых мутаций."
+		sound="data\sounds\dv_sounds\dialogs\dv6_28.wav"
+		time="6" />
+
+	<string
+		id="6008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ваша работа практически закончена, но упорное нежелание профессора Паперса возвращаться без своих бумаг несколько всё осложняет."
+		sound="data\sounds\dv_sounds\dialogs\dv6_29.wav"
+		time="7" />
+	<string
+		id="60081"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Ума не приложу, куда могли пропасть его труды! Правда, есть одна зацепка."
+		sound="data\sounds\dv_sounds\dialogs\dv6_30.wav"
+		time="4" />
+	<string
+		id="60082"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Командир &quot;Дельты&quot; сообщил, о гибели группы, но при этом непонятно, что случилось с ним самим."
+		sound="data\sounds\dv_sounds\dialogs\dv6_31.wav"
+		time="5" />
+	<string
+		id="60083"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Возможно, найдя его, вы найдёте и бумаги Паперса."
+		sound="data\sounds\dv_sounds\dialogs\dv6_32.wav"
+		time="3" />
+
+
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

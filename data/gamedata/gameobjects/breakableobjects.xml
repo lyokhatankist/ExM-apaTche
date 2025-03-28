@@ -1,0 +1,1984 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+$Id: BreakableObjects.xml,v 1.1 2005/12/08 08:58:03 anton Exp $
+-->
+
+<Prototypes>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_bridge02"	
+		EffectType			= "WOOD"
+		DestroyEffectType	      = "CRASHWOOD"
+		ModelFile			= "Bridge04_breakble"
+		BrokenModel			= "Bridge04_breakble_dyn"
+		DestroyedModel		= "Bridge04_breakble_dyn"
+		Size				= "30 2 19"
+		CriticalHitEnergy		= "1"
+		Destroyable 		= "1"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_WOODVFANCEBREAKE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_bridge_military_move"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHMETAL"	
+		ModelFile			= "bridge_military_move"
+		BrokenModel			= "bridge_military_move"
+		DestroyedModel			= "bridge_military_move"
+		Size				= "2 1 2"
+		CriticalHitEnergy		= "0"
+		Destroyable 			= "1"
+		Mass				= "500"
+		/>
+
+
+
+
+
+
+
+
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_america_wonderful_fence"	
+		EffectType			= "WOOD"
+		DestroyEffectType	      = "CRASHWOOD"
+		ModelFile			= "wonderful_fence"
+		BrokenModel			= "wonderful_fence_dyn"
+		DestroyedModel		= "wonderful_fence_dyn"
+		Size				= "10 3 .8"
+		CriticalHitEnergy		= "2000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_WOODVFANCEBREAKE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_america_wonderful_fence2"	
+		EffectType			= "WOOD"
+		DestroyEffectType	      = "CRASHWOOD"
+		ModelFile			= "wonderful_fence2"
+		BrokenModel			= "wonderful_fence2_dyn"
+		DestroyedModel		= "wonderful_fence2_dyn"
+		Size				= "10 4 .8"
+		CriticalHitEnergy		= "2000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_WOODVFANCEBREAKE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_america_watch_tower"	
+		EffectType			= "WOOD"
+		DestroyEffectType	      = "CRASHWOOD"
+		ModelFile			= "watch_tower"
+		BrokenModel			= "watch_tower_dyn"
+		DestroyedModel		= "watch_tower_dyn"
+		Size				= "6 25 6"
+		CriticalHitEnergy		= "2000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_WOODVFANCEBREAKE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_america_billboard"	
+		EffectType			= "BRICK"	
+		ModelFile			= "billboard"
+		BrokenModel			= "billboard_dyn"
+		DestroyedModel		= "billboard_dyn"
+		Size				= "6 28 6"
+		CriticalHitEnergy		= "1500"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_america_stolb1"	
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		CriticalHitEnergy		= "2000"
+		ModelFile			= "america_stolb1"
+		Size				= "2 16 .8"
+		Destroyable			= "0"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_BREAKSTOLB"
+        	IntersectionRadius	= "0.5"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_america_stolb2"	
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		CriticalHitEnergy		= "2000"
+		ModelFile			= "america_stolb2"
+		Size				= "2 14 1"
+		Destroyable			= "0"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_BREAKSTOLB"
+        	IntersectionRadius	= "0.5"
+		/>
+
+
+
+
+
+
+
+
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "traffic_lights001_broken"	
+		EffectType			= "BRICK"	
+		ModelFile			= "traffic_lights1"
+		BrokenModel			= "traffic_lights001_broken"
+		DestroyedModel			= "traffic_lights001_broken"
+		Size				= ".5 8.7 .5"
+		CriticalHitEnergy		= "1000"
+		Destroyable 			= "1"
+		Mass				= "150"
+		IntersectionRadius		= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "traffic_lights002_broken"	
+		EffectType			= "BRICK"	
+		ModelFile			= "traffic_lights2"
+		BrokenModel			= "traffic_lights002_broken"
+		DestroyedModel		= "traffic_lights002_broken"
+		Size				= ".5 4.3 .5"
+		CriticalHitEnergy		= "1000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "traffic_lights003_broken"	
+		EffectType			= "BRICK"	
+		ModelFile			= "traffic_lights3"
+		BrokenModel			= "traffic_lights003_broken"
+		DestroyedModel		= "traffic_lights003_broken"
+		Size				= ".5 3.5 .5"
+		CriticalHitEnergy		= "1000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"	
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Poster1"	
+		EffectType			= "BRICK"	
+		ModelFile			= "billboard1"
+		BrokenModel			= "billboard1_broken"
+		DestroyedModel		= "billboard1_broken"
+		Size				= "1 6.8 1"
+		CriticalHitEnergy		= "1500"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Poster2"	
+		EffectType			= "BRICK"	
+		ModelFile			= "billboard2"
+		BrokenModel			= "billboard2_broken"
+		DestroyedModel		= "billboard2_broken"
+		Size				= "1 6.5 1"
+		CriticalHitEnergy		= "1500"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Poster3"	
+		EffectType			= "BRICK"	
+		ModelFile			= "billboard3"
+		BrokenModel			= "billboard3_broken"
+		DestroyedModel		= "billboard3_broken"
+		Size				= "1 6.8 2.8"
+		CriticalHitEnergy		= "1500"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Barrel_Explosive2"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL1"	
+		ModelFile			= "barrel1"
+		BrokenModel			= "barrel_1_brocken"
+		DestroyedModel		= "barrel_1_destroy"
+		Size				= ".5 1 .5"
+		CriticalHitEnergy		= "0"
+		Destroyable 			= "1"
+		Mass				= "20.5"
+		IntersectionRadius	= "0.7"
+		BlastWave			= "bigBlastWave"
+		BreakEffect			= "ET_PS_VEH_EXP1_SMALL_11"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Barrel_Explosive3"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL1"	
+		ModelFile			= "barrel1"
+		BrokenModel			= "barrel_1_brocken"
+		DestroyedModel		= "barrel_1_destroy"
+		Size				= ".5 1 .5"
+		CriticalHitEnergy		= "0"
+		Destroyable 			= "1"
+		Mass				= "20.5"
+		IntersectionRadius		= "0.7"
+		BlastWave			= "superBlastWave"
+		BreakEffect			= "ET_PS_VEH_EXP1_SMALL_11"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Barrel1"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL1"	
+		ModelFile			= "barrel1"
+		BrokenModel			= "barrel_1_brocken"
+		DestroyedModel			= "barrel_1_destroy"
+		Size				= ".5 1 .5"
+		CriticalHitEnergy		= "0"
+		Destroyable 			= "1"
+		Mass				= "20.5"
+		IntersectionRadius		= "0.7"
+		BlastWave			= "smallBlastWave"
+		BreakEffect			= "ET_PS_VEH_EXP1_SMALL_11"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Barrel2"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "barrel2"
+		BrokenModel			= "barrel_2_brocken"
+		DestroyedModel		= "barrel_2_destroy"
+		Size				= ".5 1 .5"
+		CriticalHitEnergy		= "50"
+		Destroyable 			= "1"
+		Mass				= "10"
+		IntersectionRadius		= "0.7"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Barrel3"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL3"	
+		ModelFile			= "barrel3"
+		BrokenModel			= "barrel_3_brocken"
+		DestroyedModel		= "barrel_3_destroy"
+		Size				= ".5 1 .5"
+		CriticalHitEnergy		= "50"
+		Destroyable 		= "1"
+		Mass				= "10"
+		IntersectionRadius	= "0.7"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_TankEg"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHMETAL"	
+		ModelFile			= "tankeg"
+		Size				= "2 1 2"
+		CriticalHitEnergy		= "10000"
+		Destroyable 			= "0"
+		Mass				= "300"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Stolb1"	
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		CriticalHitEnergy		= "2000"
+		ModelFile			= "stolb1"
+		Size				= ".5 6 .5"
+		Destroyable			= "0"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_BREAKSTOLB"
+        IntersectionRadius	= "0.5"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Stolb2"	
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		CriticalHitEnergy		= "2000"
+		ModelFile			= "stolb2"
+		Size				= ".5 6 .5"
+		Destroyable			= "0"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_BREAKSTOLB"
+        IntersectionRadius	= "1.5"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_WoodFence1"	
+		EffectType			= "WOOD"
+		DestroyEffectType	      = "CRASHWOOD"
+		ModelFile			= "wood_fence1"
+		BrokenModel			= "wood_fence_broken1"
+		DestroyedModel		= "wood_fence_broken1"
+		Size				= "8 2 .3"
+		CriticalHitEnergy		= "2000"
+		Destroyable 			= "1"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_WOODVFANCEBREAKE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_WoodFence2"	
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHWOOD"
+		ModelFile			= "wood_fence2"
+		BrokenModel			= "wood_fence2_brocken"
+		DestroyedModel			= "wood_fence2_brocken"
+		Size				= "8 2 .3"
+		CriticalHitEnergy		= "2000"
+		Destroyable			= "1"
+		Mass				= "150"
+		BreakEffect			= "ET_PS_WOODVFANCEBREAKE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_BrickWall1"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBRICK"
+		ModelFile			= "brick_wall1"
+		BrokenModel			= "brick_wall1_brocken"
+		DestroyedModel		= "brick_wall1_brocken"
+		Size				= "6 2 .3"
+		CriticalHitEnergy 		= "10000"
+   		Destroyable 			= "1"
+		BreakEffect			= "ET_PS_CRASHBRICKWALL"
+		Mass				= "300"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_BrickWall2"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBRICK"
+		ModelFile			= "brick_wall2"
+		BrokenModel			= "brick_wall2_brocken"
+		DestroyedModel		= "brick_wall2_brocken"
+		Size				= "6 2 .3"
+		CriticalHitEnergy 	= "10000"
+   		Destroyable 		= "1"
+		BreakEffect			= "ET_PS_CRASHBRICKWALL"
+		Mass				= "300"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_BrickWall2_static"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBRICK"
+		ModelFile			= "brick_wall2"
+		BrokenModel			= "brick_wall2_brocken"
+		DestroyedModel		= "brick_wall2_brocken"
+		Size				= "6 2 .3"
+		CriticalHitEnergy 	= "1000000"
+ 		Destroyable 		= "0"
+		BreakEffect			= "ET_PS_CRASHBRICKWALL"
+		Mass				= "300"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_SackWall1"	
+		EffectType			= "SACK"
+		DestroyEffectType		= "CRASHSACK"
+		ModelFile			= "sack_wall1"
+		BrokenModel			= "sack_wall1_brocken"
+		DestroyedModel			= "sack_wall1_brocken"
+		Size				= "6 1.5 .5"
+		CriticalHitEnergy 		= "3000"
+   		Destroyable 			= "1"
+		BreakEffect			= "ET_PS_CRASHSACKWALL"
+		Mass				= "300"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_SackWall2"
+		EffectType			= "SACK"
+		DestroyEffectType		= "CRASHSACK"
+		ModelFile			= "sack_wall2"
+		BrokenModel			= "sack_wall2_brocken"
+		DestroyedModel			= "sack_wall2_brocken"
+		Size				= "6 1.5 0.5"
+		CriticalHitEnergy 		= "3000"
+   		Destroyable 			= "1"
+		BreakEffect			= "ET_PS_CRASHSACKWALL"
+		Mass				= "300"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_DeadTree1"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "deadtree1"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 20 1" 
+		Destroyable			= "0"
+		Mass				= "300"
+    BreakEffect			= "ET_PS_BREAKTREE"
+    IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_DeadTree2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "deadtree2"
+		CriticalHitEnergy 		= "5000"
+		Destroyable			= "0"
+		Mass				= "300"
+		BreakEffect			= "ET_PS_BREAKTREE"
+    Size				= "1 27.5 1" 
+		IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_DeadTree3"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "deadtree3"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 19 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_DeadTree4"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "deadtree4"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 31.8 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_DeadTree5"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "deadtree5"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 15.6 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Dub1"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "dub1"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 24.5 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.4"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Dub2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "dub2"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 34.3 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.4"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Dub3"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "dub3"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 28.7 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.4"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Elka1"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "elka1"
+		CriticalHitEnergy 		= "5000"
+		Size				= ".5 27.4 .5"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "0.7"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Elka2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "elka2"
+		CriticalHitEnergy 		= "5000"
+		Size				= "1 35.8 2.5"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "2.1"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Elka3"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "elka3"
+		CriticalHitEnergy 		= "5000"
+		Size				= "2 24.5 2"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "3.3"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Listvenoe1"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "listvenoe1"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1 17.9 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Listvenoe2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "listvenoe2"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1 22.1 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "2.4"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Listvenoe3"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "listvenoe3"
+		CriticalHitEnergy 		= "8000"
+		Size				= "2 18 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "3.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna1"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna1"
+		CriticalHitEnergy		= "8000"
+		Size				= "1 44.5 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna2"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1 33 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna3"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna3"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1 44.7 1"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna_a_01"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna_america"
+		CriticalHitEnergy 		= "5000"
+		Size				= ".5 33.7 .5"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna_a_02"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna_america_2"
+		CriticalHitEnergy 		= "5000"
+		Size				= ".5 40.5 .5"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna_a_03"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna_america_3"
+		CriticalHitEnergy 		= "5000"
+		Size				= ".5 25.7 .5"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_Sosna_a_04"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "sosna_america_4"
+		CriticalHitEnergy 		= "5000"
+		Size				= ".5 25.7 .5"
+		Destroyable			= "0"
+		Mass				= "300"
+           BreakEffect			= "ET_PS_BREAKTREE"
+        IntersectionRadius	= "1.0"
+		/>
+
+		
+
+	<Prototype
+		Class				= "ParticleSplinter"
+		Name				= "particleSplinter"
+		ModelFile			= ""
+		Mass				= "2.0"
+		/>
+
+	<Prototype
+		Class				= "VehicleSplinter"
+		Name				= "vehicleSplinter"
+		ModelFile			= ""
+		Mass				= "2.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "Human"
+		ModelFile			= "dweller"
+		Mass				= "30.0"
+
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+	
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "Human2"
+		ModelFile			= "dweller2"
+		Mass				= "30.0"
+
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "Human3"
+		ModelFile			= "dweller3"
+		Mass				= "30.0"
+
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "Human7"
+		ModelFile			= "dweller07"
+		Mass				= "30.0"
+
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "human_new_hero"
+		ModelFile			= "dweller_new_hero"
+		Mass				= "30.0"
+
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "50.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "DeathHuman"
+		ModelFile			= "dweller_death"
+		Mass				= "20.0"
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "DeathHumanFire"
+		ModelFile			= "dweller_death_fire"
+		Mass				= "20.0"
+		WalkSpeed			= "2.5"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+	
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "Human_player"
+		ModelFile			= "dweller_player"
+		Mass				= "30.0"
+		WalkSpeed			= "2.0"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+
+	<Prototype
+		Class				= "PhysicUnit"
+		Name				= "Human_player_slow"
+		ModelFile			= "dweller_player"
+		Mass				= "30.0"
+		WalkSpeed			= "1.0"
+		TurnSpeed			= "500"
+		MaxStandTime		= "5.0"
+		/>
+
+
+	
+	<Prototype
+		Class				= "RagDollObj"
+		Name				= "RagDoll"
+		/>
+
+	<Prototype
+		Class				= "JointedObj"
+		Name				= "brokenRope"
+		/>
+
+
+	<Prototype
+		Class				= "CompositeObj"
+		Name				= "BrokenModel"
+		/>
+
+	<Prototype
+		Class				= "GeomObj"
+		Name				= "Member"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "traffic_lights3"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "traffic_lights3"
+		Size				= ".5 3.5 .5"
+		CriticalHitEnergy		= "10000"
+		Destroyable 		= "0"
+		Mass				= "300"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "traffic_lights2"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "traffic_lights2"
+		Size				= ".5 4.3 .5"
+		CriticalHitEnergy		= "10000"
+		Destroyable 		= "0"
+		Mass				= "300"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "traffic_lights1"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "traffic_lights1"
+		Size				= ".5 8.7 .5"
+		CriticalHitEnergy		= "10000"
+		Destroyable 		= "0"
+		Mass				= "300"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "road_sign5"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "road_sign5"
+		BrokenModel			= "road_sign005_broken"
+		DestroyedModel		= "road_sign005_broken"
+		Size				= ".1 2.6 .1"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKROADSIGN"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "road_sign4"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "road_sign4"
+		BrokenModel			= "road_sign004_broken"
+		DestroyedModel		= "road_sign004_broken"
+		Size				= ".1 3 .1"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKROADSIGN"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "road_sign3"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "road_sign3"
+		BrokenModel			= "road_sign003_broken"
+		DestroyedModel		= "road_sign003_broken"
+		Size				= "2.2 3.2 .1"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKROADSIGN"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "road_sign2"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "road_sign2"
+		BrokenModel			= "road_sign002_broken"
+		DestroyedModel		= "road_sign002_broken"
+		Size				= ".1 2.8 .1"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKROADSIGN"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "road_sign1"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "road_sign1"
+		BrokenModel			= "road_sign001_broken"
+		DestroyedModel		= "road_sign001_broken"
+		Size				= "2.0 2.3 .09"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "150"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKROADSIGN"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "lamppost2"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "lamppost2"
+		BrokenModel			= "lamppost2_broken"
+		DestroyedModel		= "lamppost2_broken"
+		Size				= ".5 9 .5"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "200"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "lamppost3"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "lamppost3"
+		BrokenModel			= "lamppost3"
+		Size				= ".5 9 .5"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "0"
+		Mass				= "200"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "lamppost1"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHBARREL2"	
+		ModelFile			= "lamppost1"
+		BrokenModel			= "lamppost1_broken"
+		DestroyedModel		= "lamppost1_broken"
+		Size				= ".5 9 .5"
+		CriticalHitEnergy		= "5000"
+		Destroyable 		= "1"
+		Mass				= "200"
+		IntersectionRadius	= "0.7"
+		BreakEffect			= "ET_PS_BREAKSTOLBSTONE"
+		/>
+
+	<Prototype
+		Class				= "RopeObj"
+		Name				= "Cable"	
+		ModelFile			= "IntactCable"
+		Size				= "0.5 0.5 10"
+		Mass				= "2"
+		BrokenModel			= "BrokenCable"
+		/>
+
+	<Prototype
+		Class				= "RopeObj"
+		Name				= "Cable_1"	
+		ModelFile			= "IntactCable_1"
+		Size				= "0.5 0.5 10"
+		Mass				= "2"
+		BrokenModel			= "BrokenCable_1"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "r4_desert_palma_1_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "r4_desert_palma_1"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1 29.5 1"
+		Destroyable			= "0"
+		Mass				= "300"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "r4_desert_palma_2_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "r4_desert_palma_2"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1.5 24.5 1.5"
+		Destroyable			= "0"
+		Mass				= "300"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "r4_desert_palma_3_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "r4_desert_palma_3"
+		CriticalHitEnergy 		= "8000"
+		Size				= "1 17.1 1"
+		Destroyable			= "0"
+		Mass				= "300"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "desert_dtree_1_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "desert_dtree_1"
+		CriticalHitEnergy 		= "10000"
+		Size				= "1 12 1"
+		Destroyable			= "0"
+		Mass				= "130"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "desert_dtree_2_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "desert_dtree_2"
+		CriticalHitEnergy 		= "10000"
+		Size				= "1 18 1"
+		Destroyable			= "0"
+		Mass				= "130"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+
+
+	<Prototype        
+		Class				= "BreakableObject"
+		Name				= "Car_Explosive1"	
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHMETAL"	
+		ModelFile			= "car_cemetery05"
+		Size				= "8 13 8"
+		CriticalHitEnergy		= "40000"
+		AccumulatesHitEnergy = "true"
+		TriggersOnVehicle = "true"
+		Destroyable 			= "1"
+		Mass				= "100.5"
+		IntersectionRadius		= "8"
+		BlastWave			= "MushroomsBlastWave"
+		BreakEffect			= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+		/>
+
+
+
+
+
+	<Prototype        
+		Class				= "BreakableObject"
+		Name				= "Breakable_Mushrooms_Explosive1"	
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHBARREL1"	
+		ModelFile			= "Mushroom_02_model"
+		BrokenModel			= "Mushroom_02_crash"
+		DestroyedModel		= "Mushroom_02_crash"
+		Size				= "8 13 8"
+		CriticalHitEnergy		= "8000"
+		AccumulatesHitEnergy = "true"
+		TriggersOnVehicle = "true"
+		Destroyable 			= "1"
+		Mass				= "100.5"
+		IntersectionRadius		= "8"
+		BlastWave			= "MushroomsBlastWave"
+		BreakEffect			= "ET_PS_MUSHROOMS_EXPLOSION"
+		GiveBonus = "true"
+		/>
+
+
+
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Mushroom_01_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "Mushroom_01_model"
+		Size				= "2 11 2"
+
+		BrokenModel			= "Mushroom_01_crash"
+		DestroyedModel		= "Mushroom_01_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "10000"
+		Mass				= "600"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Mushroom_01_small_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "Mushroom_01_small"
+		CriticalHitEnergy 		= "300"
+		Size				= "1 5 1"
+
+		BrokenModel			= "Mushroom_01_small"
+		DestroyedModel		= "Mushroom_01_small"
+		Destroyable			= "0"
+
+		Mass				= "10"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Mushroom_03_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "Mushroom_03_model"
+		Size				= "2 9 2"
+
+		BrokenModel			= "Mushroom_03_crash"
+		DestroyedModel		= "Mushroom_03_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "10000"
+		Mass				= "500"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Mushroom_03_small_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "Mushroom_03_small"
+		CriticalHitEnergy 		= "300"
+		Size				= "1 5 1"
+
+		BrokenModel			= "Mushroom_03_small"
+		DestroyedModel		= "Mushroom_03_small"
+		Destroyable			= "0"
+
+		Mass				= "10"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Cactus_01_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "cactus_01_model"
+		Size				= "1 7 1"
+
+		BrokenModel			= "cactus_01_crash"
+		DestroyedModel		= "cactus_01_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "1000"
+		Mass				= "100"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Cactus_02_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "cactus_02_model"
+		Size				= "1 7 1"
+
+		BrokenModel			= "cactus_02_crash"
+		DestroyedModel		= "cactus_02_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "1000"
+		Mass				= "100"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Cactus_03_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "cactus_03_model"
+		Size				= "1 7 1"
+
+		BrokenModel			= "cactus_03_crash"
+		DestroyedModel		= "cactus_03_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "1000"
+		Mass				= "100"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Cactus_04_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "cactus_04_model"
+		Size				= "1 7 1"
+
+		BrokenModel			= "cactus_04_crash"
+		DestroyedModel		= "cactus_04_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "1000"
+		Mass				= "100"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "joshua_tree_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "joshua_tree_model"
+		CriticalHitEnergy 		= "200"
+
+		BrokenModel			= "joshua_tree_model"
+		DestroyedModel		= "joshua_tree_model"
+		Destroyable			= "0"
+		Size				= "1.5 11 1.5"
+		Mass				= "10"
+    IntersectionRadius	= "2.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "joshua_tree_dyn_02"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "joshua_tree_model_02"
+		CriticalHitEnergy 		= "200"
+
+		BrokenModel			= "joshua_tree_model_02"
+		DestroyedModel		= "joshua_tree_model_02"
+		Destroyable			= "0"
+		Size				= "1.5 8 1.5"
+		Mass				= "10"
+    IntersectionRadius	= "2.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "joshua_tree_dyn_03"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "joshua_tree_model_03"
+		CriticalHitEnergy 		= "200"
+
+		BrokenModel			= "joshua_tree_model_03"
+		DestroyedModel		= "joshua_tree_model_03"
+		Destroyable			= "0"
+		Size				= "1.5 6.6 1.5"
+		Mass				= "10"
+    IntersectionRadius	= "2.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "conus_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "arena_barricade13"
+
+		BrokenModel			= "arena_barricade13"
+		DestroyedModel		= "arena_barricade13"
+		Destroyable 		= "0"
+
+		CriticalHitEnergy		= "0"
+		Size				= "1.5 3.1 1.5"
+		Mass				= "0.001"
+    IntersectionRadius	= "1.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_01_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_01_07"
+
+		BrokenModel			= "sign_01_07"
+		DestroyedModel		= "sign_01_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_02_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_02_07"
+
+		BrokenModel			= "sign_02_07"
+		DestroyedModel		= "sign_02_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_03_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_03_07"
+
+		BrokenModel			= "sign_03_07"
+		DestroyedModel		= "sign_03_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_04_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_04_07"
+
+		BrokenModel			= "sign_04_07"
+		DestroyedModel		= "sign_04_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_05_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_05_07"
+
+		BrokenModel			= "sign_05_07"
+		DestroyedModel		= "sign_05_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_06_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_06_07"
+
+		BrokenModel			= "sign_06_07"
+		DestroyedModel		= "sign_06_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_07_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_07_07"
+
+		BrokenModel			= "sign_07_07"
+		DestroyedModel		= "sign_07_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_08_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_08_07"
+
+		BrokenModel			= "sign_08_07"
+		DestroyedModel		= "sign_08_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_09_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_09_07"
+
+		BrokenModel			= "sign_09_07"
+		DestroyedModel		= "sign_09_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "sign_10_07_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "sign_10_07"
+
+		BrokenModel			= "sign_10_07"
+		DestroyedModel		= "sign_10_07"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "300"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "kiosk_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "kiosk_model"
+
+		BrokenModel			= "kiosk_model"
+		DestroyedModel		= "kiosk_model"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "1000"
+		Mass				= "50"
+    IntersectionRadius	= "3.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "postal_box_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "postal_box_model"
+
+		BrokenModel			= "postal_box_crash"
+		DestroyedModel		= "postal_box_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "500"
+		Mass				= "5"
+    IntersectionRadius	= "1.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "vodonaporka_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "vodonaporka_model"
+
+		BrokenModel			= "vodonaporka_crash"
+		DestroyedModel		= "vodonaporka_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "2200"
+		Mass				= "750"
+    IntersectionRadius	= "6.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "vorota_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "vorota_model"
+
+		BrokenModel			= "vorota_crash"
+		DestroyedModel		= "vorota_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "200"
+		Mass				= "150"
+    IntersectionRadius	= "3.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "zabor_01_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "zabor_01_model"
+
+		BrokenModel			= "zabor_01_crash"
+		DestroyedModel		= "zabor_01_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "500"
+		Mass				= "120"
+    IntersectionRadius	= "3.0"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "zabor_White_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "zabor_White_model"
+		BrokenModel			= "zabor_White_crash"
+		DestroyedModel		= "zabor_White_crash"
+		Destroyable 		= "1"
+
+		CriticalHitEnergy		= "500"
+		Mass				= "100"
+    IntersectionRadius	= "3.0"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Box_papper_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= ""
+		ModelFile			= "Box_papper_model"
+		CriticalHitEnergy 		= "300"
+
+		BrokenModel			= "Box_papper_model"
+		DestroyedModel		= "Box_papper_model"
+		Destroyable			= "0"
+
+		Mass				= "1"
+    IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Musor_dyn"
+		EffectType			= "SACK"
+		DestroyEffectType		= ""
+		ModelFile			= "Musor_model"
+		CriticalHitEnergy 		= "1"
+
+		BrokenModel			= "Musor_model"
+		DestroyedModel		= "Musor_model"
+		Destroyable			= "0"
+
+		Mass				= "5"
+    IntersectionRadius	= "0.7"
+		/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "r3_tropicpalma1_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "r3_tropicpalma1"
+		CriticalHitEnergy 		= "10000"
+		Size				= "1 17.2 1"
+		Destroyable			= "0"
+		Mass				= "300"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "r3_tropicpalma2_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "r3_tropicpalma2"
+		CriticalHitEnergy 		= "10000"
+		Size				= "1.5 19.8 1.5"
+		Destroyable			= "0"
+		Mass				= "300"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "r3_tropicpalma3_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "r3_tropicpalma3"
+		CriticalHitEnergy 		= "10000"
+		Size				= "1 29.5 1"
+		Destroyable			= "0"
+		Mass				= "300"
+        IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "factory_box"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "factory_box"
+		CriticalHitEnergy 	= "0"
+		Size				= "2 2 2"
+		Destroyable			= "0"
+		Mass				= "50"
+	      IntersectionRadius	= "1.0"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "poddon"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "poddon"
+		CriticalHitEnergy 	= "0"
+		Size				= "4.42 0.66 4.91"
+		Destroyable			= "0"
+		Mass				= "20"
+	      IntersectionRadius	= "1.0"/>
+
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "arena_barricade13"
+		EffectType			= "BRICK"
+		DestroyEffectType		= "CRASHSACK"
+		ModelFile			= "arena_barricade13"
+		CriticalHitEnergy 		= "0"
+		Size				= "3.38 3.35 3.38"
+		Destroyable			= "0"
+		Mass				= "20"
+	        IntersectionRadius	        = "1.0"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_dub1_r2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "dub1_r2"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 21 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_dub2_r2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "dub2_r2"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 28 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_dub3_r2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "dub3_r2"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 29 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_r2_deadtree1"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "r2_deadtree1"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 21 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_r2_deadtree2"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "r2_deadtree2"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 29 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_r2_deadtree3"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "r2_deadtree3"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 19 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_r2_deadtree4"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "r2_deadtree4"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 32 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "Breakable_r2_deadtree5"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"	
+		ModelFile			= "r2_deadtree5"
+		CriticalHitEnergy 	= "10000"
+		Size				= "1 17 1"
+		Destroyable			= "0"
+		Mass				= "300"
+		IntersectionRadius	= "1.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "pack_breakable"
+		EffectType			= "BRICK"
+		DestroyEffectType	= "CRASHSACK"
+		ModelFile			= "pack"
+		CriticalHitEnergy 	= "0"
+		Size				= "3.27 1.95 3.07"
+		Destroyable			= "0"
+		Mass				= "40"
+        IntersectionRadius	= "2.7"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "agro_tech1_breakable"
+		EffectType			= "BRICK"
+		DestroyEffectType	= "CRASHSACK"
+		ModelFile			= "agro_tech1"
+		CriticalHitEnergy 	= "0"
+		Size				= "6.35 2.47 2.74"
+		Destroyable			= "0"
+		Mass				= "40"
+        IntersectionRadius	= "3.7"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "agro_tech2_breakable"
+		EffectType			= "BRICK"
+		DestroyEffectType	= "CRASHSACK"
+		ModelFile			= "agro_tech2"
+		CriticalHitEnergy 	= "0"
+		Size				= "4.48 1.88 4.35"
+		Destroyable			= "0"
+		Mass				= "40"
+        IntersectionRadius	= "3.0"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "brokvehicle1_breakable"
+		EffectType			= "BRICK"
+		DestroyEffectType	= "CRASHSACK"
+		ModelFile			= "brokvehicle1"
+		CriticalHitEnergy 	= "0"
+		Size				= "3.61 3.78 9.11"
+		Destroyable			= "0"
+		Mass				= "40"
+        IntersectionRadius	= "5.4"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "brokvehicle2_breakable"
+		EffectType			= "BRICK"
+		DestroyEffectType	= "CRASHSACK"
+		ModelFile			= "brokvehicle2"
+		CriticalHitEnergy 	= "0"
+		Size				= "2.58 2.85 4.44"
+		Destroyable			= "0"
+		Mass				= "40"
+        IntersectionRadius	= "3.0"/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "desert_tree_1_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "desert_tree_1"
+		CriticalHitEnergy 		= "80000"
+		Size				= "3 15.5 3"
+		Destroyable			= "0"
+		Mass				= "3000"
+        IntersectionRadius	= "2.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "desert_tree_2_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "desert_tree_2"
+		CriticalHitEnergy 		= "80000"
+		Size				= "3 26.8 6"
+		Destroyable			= "0"
+		Mass				= "3000"
+        IntersectionRadius	= "2.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+	<Prototype
+		Class				= "BreakableObject"
+		Name				= "desert_tree_3_dyn"
+		EffectType			= "WOOD"
+		DestroyEffectType		= "CRASHSTOLB"
+		ModelFile			= "desert_tree_3"
+		CriticalHitEnergy 		= "80000"
+		Size				= "3 12.1 3"
+		Destroyable			= "0"
+		Mass				= "3000"
+        IntersectionRadius	= "2.0"
+		BreakEffect			= "ET_PS_BREAKTREE"
+		/>
+
+</Prototypes>

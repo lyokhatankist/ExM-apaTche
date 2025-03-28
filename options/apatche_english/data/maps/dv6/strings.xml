@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+
+	<string
+		id="60000"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="By the way, is your vehicle fully airtight? No? Great… I mean, too bad."
+		sound="data\sounds\dv_sounds\dialogs\dv6_6.wav"
+		time="6" />
+	<string
+		id="60001"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The thing is, if the military really did break the Z-120 container, you have a half hour at most before the toxin triggers DNA reductase replication and… well, it doesn't matter."
+		sound="data\sounds\dv_sounds\dialogs\dv6_7.wav"
+		time="11" />
+	<string
+		id="60002"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Long story short, in half an hour the toxin will either kill you or turn you into an ugly monster, yes!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_8.wav"
+		time="6" />
+	
+	<string
+		id="6001"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, here it is. It's swamp all around here. In some places it's more boggy and in other places it's less so. On the pathways, for example, there is less chance you'll get bogged down."
+		sound="data\sounds\dv_sounds\dialogs\dv6_9.wav"
+		time="13" />
+	<string
+		id="60011"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="This is how it usually goes in the swamps, yes. I read tons on that."
+		sound="data\sounds\dv_sounds\dialogs\dv6_10.wav"
+		time="5" />
+
+	<string
+		id="60012"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The case with the documentation should be somewhere in plain sight, yeah. If they didn't sink it, of course. Oh yes, they could do that. I'm talking about bandits. And the military."
+		sound="data\sounds\dv_sounds\dialogs\dv6_11.wav"
+		time="12" />
+	<string
+		id="60013"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Anyway, ask both parties. Someone must know for sure."
+		sound="data\sounds\dv_sounds\dialogs\dv6_12.wav"
+		time="4" />
+
+
+	<string
+		id="6002"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, did you find the place? What do the military say? What do you mean, all dead?! Well, excellent!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_13.wav"
+		time="9" />
+	<string
+		id="6003"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Well, I mean that in a sarcastic way, yes, surely. What a shame, so to speak, yes!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_14.wav"
+		time="5" />
+	<string
+		id="60031"
+		modelName="mask_prof"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="No matter, find my materials! I'm sure you can, yeah. All you have to do is search very thoroughly."
+		sound="data\sounds\dv_sounds\dialogs\dv6_15.wav"
+		time="6" />
+
+	<string
+		id="60035"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Attention, agent, respond if you can hear me! Come in! Do you copy?! Team Delta commander contacted us."
+		sound="data\sounds\dv_sounds\dialogs\dv6_16.wav"
+		time="7" />
+	<string
+		id="60036"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="His guys tried to destroy the trucks with that damn Z-120 using thermite charges, but the attempt failed."
+		sound="data\sounds\dv_sounds\dialogs\dv6_17.wav"
+		time="7" />
+	<string
+		id="60037"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Hundreds of monsters literally crushed them. The team managed to burn down only one of the trucks and it cost the lives of all soldiers."
+		sound="data\sounds\dv_sounds\dialogs\dv6_18.wav"
+		time="9" />
+
+	<string
+		id="60038"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Find the unused charges and burn the trucks with these damn containers down!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_19.wav"
+		time="5" />
+
+
+	<string
+		id="6004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="You got the thermite charges. The temperatures they create will give any chemical, biological or other pestilence as much chance of survival as that of a snowman in hell."
+		sound="data\sounds\dv_sounds\dialogs\dv6_20.wav"
+		time="10" />
+	<string
+		id="6005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="For God's sake, in the name of our fallen comrades, finish the job they started. Burn these damn containers!"
+		sound="data\sounds\dv_sounds\dialogs\dv6_21.wav"
+		time="7" />
+
+	<string
+		id="60051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="We have updated the existing data. You will only have to burn two trucks with Z-120 containers."
+		sound="data\sounds\dv_sounds\dialogs\dv6_22.wav"
+		time="6" />
+	<string
+		id="60052"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Also, try to find Dr. Pappers' alien specimens and materials if possible."
+		sound="data\sounds\dv_sounds\dialogs\dv6_23.wav"
+		time="5" />
+
+
+	<string
+		id="6006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="It looks like burning the trucks is only half the effort. The real problem will be the hordes of monsters occupying the area."
+		sound="data\sounds\dv_sounds\dialogs\dv6_24.wav"
+		time="8" />
+	<string
+		id="60061"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Apparently, there was an encampment of people hiding from evacuation in the swamps."
+		sound="data\sounds\dv_sounds\dialogs\dv6_25.wav"
+		time="5" />
+	<string
+		id="60062"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="When the infection from the containers hit them, they turned into monsters that kill anyone who doesn't look like them."
+		sound="data\sounds\dv_sounds\dialogs\dv6_26.wav"
+		time="6" />
+
+	<string
+		id="60065"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Besides the trucks with Z-120, you must eliminate all the monsters in the area."
+		sound="data\sounds\dv_sounds\dialogs\dv6_27.wav"
+		time="6" />
+
+
+	<string
+		id="6007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="So, you handled it perfectly, as always. I hope that now the world is saved from mass mutations."
+		sound="data\sounds\dv_sounds\dialogs\dv6_28.wav"
+		time="8" />
+
+	<string
+		id="6008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Your job is nearly done, but doctor Pappers' stubborn reluctance to return without his papers somewhat complicates things."
+		sound="data\sounds\dv_sounds\dialogs\dv6_29.wav"
+		time="8" />
+	<string
+		id="60081"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="I can't imagine where his works could have dissapeared to! Well, I do have a hunch, though."
+		sound="data\sounds\dv_sounds\dialogs\dv6_30.wav"
+		time="5" />
+	<string
+		id="60082"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="The Delta commander reported that the team had been wiped out, but it's still unclear what happened to him."
+		sound="data\sounds\dv_sounds\dialogs\dv6_31.wav"
+		time="6" />
+	<string
+		id="60083"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Perhaps, if you find him, you'll also be able to recover Pappers' materials."
+		sound="data\sounds\dv_sounds\dialogs\dv6_32.wav"
+		time="5" />
+
+
+	<string
+		id="369"
+		value="@ffab1e1eYOU HAVE|LOST !!!!| |@ffccccccYou haven't passed all the checkpoints. On this note the thread of prophecy is severed."
+		numButtons="1" />	
+</resource>

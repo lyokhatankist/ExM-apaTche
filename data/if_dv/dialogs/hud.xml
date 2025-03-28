@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+
+	<Node
+		name						= "HUD"
+		class						= "HUD"
+		org							= "0.5 0.5 1024 768"
+		paneFlags					= "0"
+		style						= "768"
+		enemyHPExtraTime			= "1.5"
+		enemyHPFadeTime				= "0.5"
+		enemyHPHeight				= "3" 		
+		quadDamageTwinkleTime		= "4"
+		wheelPenetrationTwinkleTime	= "3"
+		twinkleTime					= "0.5"
+		twinklePauseTime			= "0.2">
+
+		<!-- Gun/gadgets slots -->
+		<Node
+			name			= "GGPanel"
+			class			= "GGPanel"
+			org				= "687 696 329 80"
+			paneFlags		= "0"
+			style			= "768"
+			gunBgRect		= "184 6 139 52"
+			gunOverlayRect	= "73 0 256 64"
+			gunBgTex		= "GG_gunBg"
+			gunOverlayTex	= "GG_gunOverlay">
+
+    		<Node
+    			name		= "Main"
+    			class		= "GGSlot"
+    			org			= "186 0 64 64"
+				paneFlags	= "0"
+    			style		= "768"
+				ggType		= "MAIN"
+				emptyTex	= "GG_emptyGun"
+				icoRect		= "0 0 64 64"
+			/>
+
+    		<Node
+    			name		= "Aux"
+    			class		= "GGSlotAux"
+    			org			= "250 0 71 64"
+				paneFlags	= "0"
+    			style		= "768"
+				ggType		= "AUX"
+				emptyTex	= "GG_emptyGun"
+				icoRect		= "0 0 64 64">
+
+				<Node
+        			name			= "timeBar"
+        			class			= "ProgressBarWnd"
+        			org				= "57 9 14 46"
+					paneFlags		= "0"
+        			style			= "768"
+        			wndColor		= "ff00ff00"
+        			orientation		= "1"
+        			barTexture		= "data/if_dv/ico/HUD/gadgets/weapon_p_bar.tga"
+        			textureStyle	= "1"
+				/>
+			</Node>
+
+    		<Node
+    			name				= "Mines"
+    			class				= "GGSlotMines"
+    			org					= "129 16 64 64"
+				paneFlags			= "0"
+    			style				= "768"
+				ggType				= "MINES"
+				barColorReady		= "ff00ff00"
+				barColorCharging	= "ffab1e1e"
+				icoColorCharging	= "ffab1e1e"
+				hideOnInvalidObj	= "true"
+				icoRect				= "16 8 32 32"
+				bgRect				= "7 7 44 34"
+				overlayRect			= "0 0 64 64"
+				bgTex				= "GG_gadgetBg"
+				overlayTex			= "GG_gadgetOverlay">
+
+				<Node
+        			name			= "reloadBar"
+        			class			= "ProgressBarWnd"
+        			org				= "8 8 16 32"
+					paneFlags		= "0"
+        			style			= "768"
+        			orientation		= "1"
+        			barTexture		= "data/if_dv/ico/HUD/gadgets/gadget_p_bar.tga"
+        			textureStyle	= "1"
+				/>
+			</Node>
+
+    		<Node
+    			name				= "Thorns"
+    			class				= "GGSlot"
+    			org					= "86 16 64 64"
+				paneFlags			= "0"
+    			style				= "768"
+				ggType				= "THORNS"
+				hideOnInvalidObj	= "true"
+				icoRect				= "13 8 32 32"
+				bgRect				= "7 7 44 34"
+				overlayRect			= "0 0 64 64"
+				bgTex				= "GG_gadgetBg"
+				overlayTex			= "GG_gadgetOverlay"
+			/>
+
+    		<Node
+    			name				= "Jumper"
+    			class				= "GGSlotJumpNitro"
+    			org					= "43 16 64 64"
+				paneFlags			= "0"
+    			style				= "768"
+				ggType				= "JUMPER"
+				barColorReady		= "ffff7700"
+				barColorCharging	= "ffab1e1e"
+				icoColorCharging	= "ffab1e1e"
+				hideOnInvalidObj	= "true"
+				icoRect				= "16 8 32 32"
+				bgRect				= "7 7 44 34"
+				overlayRect			= "0 0 64 64"
+				bgTex				= "GG_gadgetBg"
+				overlayTex			= "GG_gadgetOverlay">
+
+				<Node
+        			name			= "chargeBar"
+        			class			= "ProgressBarWnd"
+        			org				= "8 8 16 32"
+					paneFlags		= "0"
+        			style			= "768"
+        			wndColor		= "ff00ff00"
+        			orientation		= "1"
+        			barTexture		= "data/if_dv/ico/HUD/gadgets/gadget_p_bar.tga"
+        			textureStyle	= "1"
+				/>
+			</Node>
+
+    		<Node
+    			name				= "Nitro"
+    			class				= "GGSlotJumpNitro"
+    			org					= "0 16 64 64"
+				paneFlags			= "0"
+    			style				= "768"
+				ggType				= "NITRO"
+				barColorReady		= "ffff7700"
+				barColorCharging	= "ffab1e1e"
+				icoColorCharging	= "ffab1e1e"
+				hideOnInvalidObj	= "true"
+				icoRect				= "16 8 32 32"
+				bgRect				= "7 7 44 34"
+				overlayRect			= "0 0 64 64"
+				bgTex				= "GG_gadgetBg"
+				overlayTex			= "GG_gadgetOverlay">
+
+				<Node
+        			name			= "chargeBar"
+        			class			= "ProgressBarWnd"
+        			org				= "8 8 16 32"
+					paneFlags		= "0"
+        			style			= "768"
+        			wndColor		= "ff00ff00"
+        			orientation		= "1"
+        			barTexture		= "data/if_dv/ico/HUD/gadgets/gadget_p_bar.tga"
+        			textureStyle	= "1"
+				/>
+			</Node>
+		</Node>
+
+		<!-- Radar + hp + armour -->
+		<Node
+			name						= "GPS"
+			class						= "GPS"
+			org							= "8 696 1024 64"
+			paneFlags					= "0"
+			style						= "768"
+			gpsBgTex					= "GPS_bg"
+			gpsBgRect					= "0 0 64 64"
+			arrowTex					= "GPS_arrow"			
+			arrowSz						= "64 64"
+			arrowCenter					= "32 32"
+			bonusRect					= "0 0 64 64"
+			bonusMaxTime				= "1.5"
+			bonusFadeTime				= "0.5"
+			gpsOverlayTex				= "GPS_overlay"
+			gpsOverlayRect				= "0 0 64 64"
+			hpNormalTex					= "HUD_hpNormal"
+			hpArmouredTex				= "HUD_hpArmoured"
+			hpHeight					= "32"
+			hpBaseWidth					= "66"
+			hpOrigin					= "63 16"
+			hpAnimationSpeed			= "2"
+			armourTex					= "HUD_armour"
+			armourAnimationSpeed		= "1"
+			hpBgTex						= "HUD_hpBg"
+			hpBgHeight					= "32"
+			hpBgOrigin					= "62 16"
+			hpBgRightSpace				= "1"
+			hpOverlayCenterTex			= "HUD_hpOverlayCenter"
+			hpOverlayCenterHeight		= "64"
+			hpOverlayCenterOrigin		= "64 0"
+			hpOverlayCenterRightSpace	= "-1"
+			hpOverlayRightTex			= "HUD_hpOverlayRight"
+			hpOverlayRightSz			= "16 64"
+			hpOverlayRightY0			= "0"
+			onQuestPlaceIco				= "GPS_OnQuestPlace"
+		/>
+
+		<!-- Timer -->
+		<Node
+			name				= "Timer"
+			class				= "TimerWnd"
+			org					= "20 20 128 64"
+			paneFlags			= "0"
+			style				= "2816"
+			wrap				= "0"
+			format				= "0"
+			font				= "0"
+			backimage			= "data\if_dv\ico\HUD\counters\timer.tga"
+			startColor			= "ff66dd00"
+			finishColor			= "ffff8866"
+			twinkleColor		= "77ff8866"
+			twinkleThreshold	= "0.2"
+			twinkleFrequency	= "0.5"
+			textRect			= "26 8 76 26"
+		/>
+
+		<!-- Quest counter -->
+		<Node
+			name				= "QuestCounter"
+			class				= "QuestCounter"
+			org					= "404 731 216 32"
+			paneFlags			= "0"
+			style				= "768"
+			font				= "0"
+			barBgRect			= "51 9 114 14"
+			barRect				= "52 8 112 16"
+			barOverlayRect		= "44 0 128 32"
+			curValRect			= "0 7 40 18"
+			remainValRect		= "176 7 40 18"
+			animationSpeed		= "2"
+			curValColor			= "ffffffff"
+			remainValColor		= "ffffffff"
+			barBgTex			= "HUD_qcBarBg"
+			barTex				= "HUD_qcBar"
+			barOverlayTex		= "HUD_qcBarOverlay"
+		/>
+
+		<!-- Score counter -->
+		<Node
+			name				= "Score"
+			class				= "ScoreWnd"
+			org					= "854 20 150 110"
+			paneFlags			= "0"
+			style				= "768"
+			wrap				= "1"
+			format				= "2"
+			valColor			= "ffdddddd"
+			tipColor			= "ffff9900"
+			valFont				= "SM_Impact"
+			valFontSize			= "24"
+			tipFont				= "SM_Impact"
+			tipFontSize			= "15"
+		/>
+
+		<!-- Boss health indicator -->
+		<Node
+			name				= "BossHp"
+			class				= "BossHp"
+			org					= "256 18 512 32"
+			paneFlags			= "0"			
+			style				= "768"
+			barBgRect			= "9 8 494 16"
+			barRect				= "10 8 492 16"
+			barOverlayRect		= "0 0 512 32"
+			barBgTex			= "HUD_bossBarBg"
+			barTex				= "HUD_bossBar"
+			barOverlayTex		= "HUD_bossBarOverlay"
+		/>	
+
+		<!-- Enemy life bar -->
+		<Node
+			name				= "pbEnemyHP"
+			class				= "ProgressBarWnd"
+			org					= "0 0 100 10"
+			paneFlags			= "0"
+			style				= "768"
+			backimage			= "data\if_dv\ico\HUD\EnemyHP\el_darkener.tga"
+			barTexture			= "data\if_dv\ico\HUD\EnemyHP\hp.tga"
+			orientation			= "2"
+			textureStyle		= "0"
+			clientEdges			= "2 2 2 2"
+		/>
+
+		<!-- Quad damage state ico -->
+		<Node
+			name				= "quadDamageIco"
+			class				= "ImageWnd"
+			org					= "16 16 64 64"
+			paneFlags			= "0"
+			style				= "768"
+			image				= "data\if_dv\ico\hud\states\quad_damage.tga"
+		/>
+
+		<!-- Wheel penetration state ico -->
+		<Node
+			name				= "wheelPenetrationIco"
+			class				= "ImageWnd"
+			org					= "16 96 64 64"
+			paneFlags			= "0"
+			style				= "768"
+			image				= "data\if_dv\ico\hud\states\damaged_wheel.tga"
+		/>
+
+	</Node>
+
+</Prefabs>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<resource>
+	<string
+		id="1"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Положение катастрофическое."
+		sound="data\sounds\dv_sounds\dialogs\dv4_1.wav"
+		time="2" />
+	<string
+		id="2"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Пришли первые результаты от экспертов и аналитиков, работающих на месте разрушенной лаборатории. Кроме того, получены протоколы допросов немногих выживших."
+		sound="data\sounds\dv_sounds\dialogs\dv4_2.wav"
+		time="9" />
+	<string
+		id="3"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Как  известно, База №31 занималась изучением инопланетного корабля. Профессор Паперс был ведущим специалистом в этой области."
+		sound="data\sounds\dv_sounds\dialogs\dv4_3.wav"
+		time="9" />
+	<string
+		id="4"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Складывается впечатление, что незадолго до катастрофы в его исследованиях произошёл решающий прорыв. Есть подозрение, что открытие профессора и нападение на Базу взаимосвязаны."
+		sound="data\sounds\dv_sounds\dialogs\dv4_4.wav"
+		time="11" />
+	<string
+		id="5"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Пока неясно, как именно произошла утечка этой сверхсекретной информации и кто сумел ей так грамотно воспользоваться. Но самое главное не это."
+		sound="data\sounds\dv_sounds\dialogs\dv4_5.wav"
+		time="10" />
+	<string
+		id="6"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="У нас нет ни малейшего представления, что случилось с профессором Паперсом и его открытием. Профессора необходимо отыскать любой ценой."
+		sound="data\sounds\dv_sounds\dialogs\dv4_6.wav"
+		time="8" />
+	<string
+		id="7"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Я связался непосредственно с Президентом, и он лично дал «добро» на любые, даже самые экстраординарные меры."
+		sound="data\sounds\dv_sounds\dialogs\dv4_7.wav"
+		time="7" />
+		
+	<string
+		id="11"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вот ваше следующее задание, агент. Команда «Дельта» ведёт  преследование контрабандистов, чтобы вернуть правительству контейнер с Z-120."
+		sound="data\sounds\dv_sounds\dialogs\dv5_1.wav"
+		time="8" />
+	<string
+		id="12"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В связи с этим миссия по спасению профессора Паперса по-прежнему находится на вас."
+		sound="data\sounds\dv_sounds\dialogs\dv5_2.wav"
+		time="5" />
+	<string
+		id="13"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Парни из «Дельты», вероятнее всего, воспользуются рельефом местности и загонят контрабандистов в ловушку."
+		sound="data\sounds\dv_sounds\dialogs\dv5_3.wav"
+		time="6" />
+	<string
+		id="14"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Если профессор в руках бандитов, то вам придётся выводить его из-под перекрестного огня."
+		sound="data\sounds\dv_sounds\dialogs\dv5_4.wav"
+		time="7" />
+		
+	<string
+		id="40001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Армейский отряд специального назначения - команда &quot;Дельта&quot;, посланный к Базе №31, пропал именно в этом районе."
+		sound="data\sounds\dv_sounds\dialogs\dv4_8.wav"
+		time="7" />
+	<string
+		id="40002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="В последнем полученном от них сообщении из-за сильных радиопомех нам удалось разобрать только: &quot;Колонна автомашин без опознавательных знаков&quot;, &quot;Открыть огонь!&quot;, &quot;Дельта-4, прикрой Дельту-7!&quot;, &quot;Пятый, держись,  я иду к тебе!&quot;. "
+		sound="data\sounds\dv_sounds\dialogs\dv4_9.wav"
+		time="15" />
+	<string
+		id="40003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Все дальнейшие попытки восстановить  связь успехом не увенчались. Вероятнее всего, мои парни наткнулись на колонну контрабандистов, похитивших контейнер с Z-120, и те открыли огонь."
+		sound="data\sounds\dv_sounds\dialogs\dv4_10.wav"
+		time="11" />
+
+	<string
+		id="40004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Постарайтесь выяснить судьбу команды &quot;Дельта&quot;."
+		sound="data\sounds\dv_sounds\dialogs\dv4_11.wav"
+		time="3" />
+	<string
+		id="40005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Кроме того, правительство желает иметь полную определённость по вопросу о местонахождении контейнера с инопланетными образцами Z-120."
+		sound="data\sounds\dv_sounds\dialogs\dv4_12.wav"
+		time="8" />
+
+	<string
+		id="4001"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Даже если все бойцы команды &quot;Дельта&quot; погибли, едва ли кто-то из боевиков контрабандистов ушёл живым. Уж можете мне поверить, агент."
+		sound="data\sounds\dv_sounds\dialogs\dv4_13.wav"
+		time="8" />
+
+	<string
+		id="40011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Парни из Команды &quot;Дельта&quot; не исчезают бесследно."
+		sound="data\sounds\dv_sounds\dialogs\dv4_14.wav"
+		time="3" />
+	<string
+		id="40012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="С кем бы они не схватились, этот кто-то должен был понести немалые потери, а окружающая местность, наверняка, изрядно пострадала. Так что следов мои парни наверняка оставили предостаточно. Надо только поискать."
+		sound="data\sounds\dv_sounds\dialogs\dv4_15.wav"
+		time="13" />
+
+
+	<string
+		id="4002"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Внимание, агент. Наши радисты перехватили кодированное сообщение на армейской частоте."
+		sound="data\sounds\dv_sounds\dialogs\dv4_16.wav"
+		time="3" />   
+	<string
+		id="4003"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Сигнал слаб и  очень много помех, но, похоже, что команда &quot;Дельта&quot; из последних сил удерживает оборону на плато Стопа Дьявола. Поторопитесь, агент!"
+		sound="data\sounds\dv_sounds\dialogs\dv4_17.wav"
+		time="6" />    
+
+	<string
+		id="40031"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Эти проклятые мутанты повсюду! У вас уже есть неплохой опыт борьбы с этими тварями, покажите, на что вы способны."
+		sound="data\sounds\dv_sounds\dialogs\dv4_18.wav"
+		time="6" />    
+
+	<string
+		id="4004"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Две новости, агент. Хорошая и плохая. Хорошая: вы успели как нельзя вовремя."
+		sound="data\sounds\dv_sounds\dialogs\dv4_19.wav"
+		time="3" />
+	<string
+		id="4005"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="А теперь плохая новость: как таковой команды &quot;Дельта&quot; на этой точке, к сожалению, нет."
+		sound="data\sounds\dv_sounds\dialogs\dv4_20.wav"
+		time="3" />
+	<string
+		id="40051"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Здесь находится только тяжелораненый радист, сержант МакКой, взявший на себя командование местными силами самообороны в момент нападения монстров на город."
+		sound="data\sounds\dv_sounds\dialogs\dv4_21.wav"
+		time="6" />
+
+
+	<string
+		id="40052"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Нами перехвачено зашифрованное радиосообщение. Поскольку радист не использует ни один из стандартных армейских шифров, понятно, что посылает его не &quot;Дельта&quot;."
+		sound="data\sounds\dv_sounds\dialogs\dv4_22.wav"
+		time="7" />
+	<string
+		id="40053"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Вам необходимо выяснить, кто и кому и для кого ведёт эту радиопередачу. Возможно, это наведёт нас на след отряда."
+		sound="data\sounds\dv_sounds\dialogs\dv4_23.wav"
+		time="6" />
+
+	
+	<string
+		id="4006"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Нам наконец-то удалось расшифровать текст сообщения."
+		sound="data\sounds\dv_sounds\dialogs\dv4_24.wav"
+		time="2" />
+	<string
+		id="4007"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Оно послано контрабандистами,  которые напоролись на команду &quot;Дельта&quot; и потерпели сокрушительное поражение. "
+		sound="data\sounds\dv_sounds\dialogs\dv4_25.wav"
+		time="6" />
+	<string
+		id="40071"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Из их переговоров мы  сумели получить привязку к местности и сейчас вышлем вам примерные координаты места стычки."
+		sound="data\sounds\dv_sounds\dialogs\dv4_26.wav"
+		time="6" />
+
+	<string
+		id="40072"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Армейская система радиоперехвата позволила выяснить, где произошла стычка между &quot;Дельтой&quot; и бандитами. Исследование поля боя может вывести нас на  след наших бойцов."
+		sound="data\sounds\dv_sounds\dialogs\dv4_27.wav"
+		time="9" />
+
+
+	<string
+		id="4008"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Отсутствие каких бы то ни было следов боя, конечно, настораживает, но в данный момент это не имеет существенного значения. "
+		sound="data\sounds\dv_sounds\dialogs\dv4_28.wav"
+		time="6" />
+	<string
+		id="4009"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Наши радисты перехватили кодированное сообщение на армейской частоте. Сигнал слаб и  очень много помех, но, похоже, что команды &quot;Дельта&quot; из последних сил удерживает оборону на плато Стопа Дьявола. Поторопитесь, агент!"
+		sound="data\sounds\dv_sounds\dialogs\dv4_29.wav"
+		time="10" />
+
+	<string
+		id="4010"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Согласно рапорту сержанта МакКоя, команда &quot;Дельта&quot;, направляясь к Базе №31, вынужденно вступила в бой с хорошо вооружёнными людьми на тяжёлых грузовиках. "
+		sound="data\sounds\dv_sounds\dialogs\dv4_30.wav"
+		time="7" />
+	<string
+		id="4011"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="На одном из грузовиков сержант заметил контейнер с маркировкой &quot;Z-120&quot;. В ходе боя сержант был ранен, а его радиостанция уничтожена."
+		sound="data\sounds\dv_sounds\dialogs\dv4_31.wav"
+		time="7" />
+	<string
+		id="4012"
+		modelName="mask_axel"
+		modelSkin="0"
+		modelCfg="58"
+		modelSlot="1"
+		value="Остальная группа начала преследование отступающего противника. Вам необходимо присоединиться к команде &quot;Дельта&quot; и предупредить их об опасности, таящейся в контейнере &quot;Z-120&quot;."
+		sound="data\sounds\dv_sounds\dialogs\dv4_32.wav"
+		time="9" />
+
+
+			<string
+				id="4061"
+				modelName="mask_axel"
+				modelSkin="0"
+				modelCfg="58"
+				modelSlot="1"
+				value="Кажется этим парням нужна помощь"
+				sound=""
+				time="2" />
+
+	<string
+		id="369"
+		value="@ffab1e1eВ Ы П Р О И Г|Р А Л И ! ! !| |@ffccccccВы не прошли все чекпоинты. На этом нить вашей судьбы обрывается."
+		numButtons="1" />	
+</resource>

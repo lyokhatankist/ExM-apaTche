@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+	$Id: Miscellaneous.xml 15 2006-10-11 10:39:02Z kaineer $
+-->
+
+<Prototypes>
+	<Prototype
+		Class			= "Player"
+		Name			= "player"
+		ModelFile		= "NewHero_mask"
+		SkinNum			= "0"
+		CfgNum			= "0"
+	/>
+
+	<Prototype
+		Class			= "BotPlayer"
+		Name			= "botPlayer"
+		ModelFile		= "NewHero_mask"
+		SkinNum			= "0"
+		CfgNum			= "0"
+
+		TimeoutToChangeEnemy	= "3.0"
+		NumPointsInPath			= "20"
+	/>
+
+	<Prototype
+		Class			= "RadioManager"
+		Name			= "radioManager" />
+
+	<Prototype
+		Class			= "Location"
+		Name			= "genericLocation"	
+		LookRadius		= "10.0" />
+
+	<Prototype
+		Class			= "Location"
+		Name			= "location"
+		LookRadius		= "10.0" />
+
+	<Prototype
+		Class			= "Team"
+		Name			= "team"
+		DecisionMatrix	= "teammain.lua" 
+		RemoveWhenChildrenDead = "true" />
+
+	<Prototype
+		Class			= "Team"
+		Name			= "botTeam"
+		DecisionMatrix	= "teammain.lua" 
+		RemoveWhenChildrenDead = "false" />
+
+	<Prototype
+		Class			= "Team"
+		Name			= "settlementTeam"
+		DecisionMatrix	= "teammain.lua" 
+		RemoveWhenChildrenDead = "false" />
+
+	<Prototype
+		Class			="Team"
+		Name			="guardTeam"
+		DecisionMatrix	="teammain.lua" 
+		RemoveWhenChildrenDead = "false" >
+		<Formation Prototype="wedgeFormation" />
+	</Prototype>
+		
+	<Prototype
+		Class					=	"CaravanTeam"
+		Name					=	"caravanTeam"
+		DecisionMatrix			=	"teammain.lua" >
+		<Formation Prototype		=	"wedgeFormation"/>
+	</Prototype>
+		
+		
+	<Prototype
+		Class			= "Trigger"
+		Name			= "trigger" />
+
+	<Prototype
+		Class			= "CinematicMover"
+		Name			= "cinematicMover" />
+		
+	<Prototype
+		Class			= "DynamicQuestDestroy"
+		Name			= "dynamicQuestDestroy" 
+		MinReward		= "350"
+		TargetSchwarzPart = "0.35"
+		PartForCompleteByOther ="0.25"
+		SoundOnCompleteId = "2"
+		TimeLimit		= "30"
+	/>
+
+	<Prototype
+		Class			= "DynamicQuestReach"
+		Name			= "dynamicQuestReach" 
+		MinReward		= "250"
+		PlayerSchwarzPart = "0.03"
+		TimeLimit		= "120"
+		TimeRewardCoeff = "1.5"
+	/>
+	
+	<Prototype
+		Class			= "DynamicQuestReachComplete"
+		Name			= "dynamicQuestReachComplete"
+	/>
+
+	<Prototype
+		Class			= "DynamicQuestConvoy"
+		Name			= "dynamicQuestConvoy" 
+		MinReward		= "370"
+		PlayerSchwarzPart = "0.05"
+		TimeLimit		= "60"
+		StopDistFromPlayer	= "50"
+		CriticalDistFromPlayer	= "200"
+		CriticalTime			= "30"
+		SoundOnPlayerTooFarId ="3"
+		SoundOnQuestFailed	= "4"
+	/>
+
+	<Prototype
+		Class			= "DynamicQuestPeace"
+		Name			= "dynamicQuestPeace"
+		MinReward		= "0"
+		PlayerMoneyPart = "0.15"
+	/>
+
+	<Prototype
+		Class			= "DynamicQuestHunt"
+		Name			= "dynamicQuestHunt"
+		MinReward		= "110"
+		PlayerSchwarzPart = "0.017"
+		TimeLimit		= "180"
+		MinNumOfEnemies = "2"
+		MaxNumOfEnemies = "5"
+	/>
+	
+	<Prototype
+		Class			= "DynamicQuestDrugs"
+		Name			= "dynamicQuestDrugs"
+		MinReward		= "500"
+		PlayerSchwarzPart = "0.05"
+		TimeRewardCoeff = "2"
+	/>
+	
+	<Prototype
+		Class			= "DynamicQuestSellDrugs"
+		Name			= "dynamicQuestSellDrugs"
+	/>
+	
+	<Prototype
+		Class			= "DynamicQuestTreasure"
+		Name			= "dynamicQuestTreasure"
+		MinReward		= "200"
+		PlayerSchwarzPart = "0.015"
+		TimeRewardCoeff = "1.5"
+		MaximumDifference = "200.0"
+		TreasureRadius	= "5.0"
+	/>
+
+	<Prototype
+		Class			= "SgNodeObj"
+		Name			= "SgNodeObject" />
+
+
+	<Prototype
+		Class			= "LightObj"
+		Name			= "LightObject" 
+		ModelFile		= "LS_LIGHT_TEST"/>
+
+	<Prototype
+		Class			= "LightObj"
+		Name			= "LightObject2" 
+		ModelFile		= "LS_LIGHT_TEST2"/>
+
+	<Prototype
+		Class			= "LightObj"
+		Name			= "Light_Yellow" 
+		ModelFile		= "LS_LIGHT_YELLOW"/>
+
+	<Prototype
+		Class			= "LightObj"
+		Name			= "Light_Yellow_Lens" 
+		ModelFile		= "ET_LS_LIGHT_YELLOW_LENS"/>
+
+
+	<Prototype
+		Class			= "LightObj"
+		Name			= "Light_Red" 
+		ModelFile		= "LS_LIGHT_RED"/>
+
+	<Prototype
+		Class			= "LightObj"
+		Name			= "Projector_80" 
+		ModelFile		= "LS_LIGHT_TEST"/>
+
+	<Prototype
+		Class="AffixGenerator"
+		Name="affixGeneratorForEnemiesGuns">
+		<!-- all affixes from each group, except the best affixes -->
+
+		<Affix AffixName = "useless_gun" />
+		<Affix AffixName = "rusty_gun" />
+		<Affix AffixName = "excellent_gun" />
+
+		<Affix AffixName = "slow_gun" />      
+		<Affix AffixName = "assault_gun" />
+
+		<Affix AffixName = "weak_gun" />
+		<Affix AffixName = "deadly_gun" />
+		
+		<Affix AffixName = "with_truncated_barrel_gun" />
+		<Affix AffixName = "with_enlarged_barrel_gun" />
+
+		<Affix AffixName = "without_sight_gun" />
+		<Affix AffixName = "with_laser_sight_gun" />
+
+		<Affix AffixName = "without_cooling_gun" />
+		<Affix AffixName = "with_water_cooling_gun" />
+		
+	</Prototype>
+		
+	<Prototype
+		Class			= "SpawnManager"
+		Name			= "spawnManager"/>
+
+	<Prototype
+		Class			= "RotateManager"
+		Name			= "rotateManager"
+		RotateSpeed		= "0 1.5 0"/>
+
+	<Prototype
+		Class			= "TeleportManager"
+		Name			= "teleportManager"/>
+
+	<Prototype
+		Class							= "SgNodeObj"
+		Name							= "batCloudEffect"
+		ModelFile					= "ET_PS_BAT_CLOUD"
+		/>
+<!--                                           BOSS                           -->
+<Prototype
+	Name	= "lastBoss"
+	Class = "Boss06"
+	
+	ThrowingVelocity = "140"
+	AccuracyDelta	= "3"
+	ThrowingInterval  = "12"
+	TimeBeforeThrow	= "5"
+
+	HeightToAppear	= "20"
+	HeightToThrow	= "30"
+
+	TimeToPoison	= "10"
+
+	ThrowingPrototypes = "Throwable01 Throwable02 Throwable03 Throwable04"
+
+	LocationNames	= "c1 c2 c3 c4 c5"
+/>
+
+
+<!--                   													BATS   + BATSGUN              -->
+
+	<Prototype
+		Class							= "BatCloud"
+		Name							= "BatCloud"
+		EffectPrototype 	= "batCloudEffect"
+		BatPrototype			= "bat01"		
+		AttackDistance  	= "275.0"
+		MaxBatsNum				= "3"		
+		HeightToAppear		= "15.0"
+		HeightOverPlayer 	= "4.0"
+		DistanceToHideBat = "70.0"		
+		MaxTimeToSpawnBat = "25.0"
+		MinTimeToSpawnBat = "4.0"
+	/>
+	
+	<Prototype
+		Class							= "BatCloud"
+		Name							= "BatCloud2"
+		EffectPrototype 	= "batCloudEffect"
+		BatPrototype			= "bat02"		
+		AttackDistance  	= "275.0"
+		MaxBatsNum				= "3"		
+		HeightToAppear		= "15.0"
+		HeightOverPlayer 	= "4.0"
+		DistanceToHideBat = "70.0"		
+		MaxTimeToSpawnBat = "25.0"
+		MinTimeToSpawnBat = "4.0"
+	/>
+	
+	<Prototype
+		Class							= "BatCloud"
+		Name							= "BatCloud3"
+		EffectPrototype 	= "batCloudEffect"
+		BatPrototype			= "bat03"		
+		AttackDistance  	= "275.0"
+		MaxBatsNum				= "3"		
+		HeightToAppear		= "15.0"
+		HeightOverPlayer 	= "4.0"
+		DistanceToHideBat = "70.0"		
+		MaxTimeToSpawnBat = "25.0"
+		MinTimeToSpawnBat = "4.0"
+	/>
+	
+	<Prototype
+		Class							= "BatCloud"
+		Name							= "BatCloud4"
+		EffectPrototype 	= "batCloudEffect"
+		BatPrototype			= "bat04"		
+		AttackDistance  	= "275.0"
+		MaxBatsNum				= "3"		
+		HeightToAppear		= "15.0"
+		HeightOverPlayer 	= "4.0"
+		DistanceToHideBat = "70.0"		
+		MaxTimeToSpawnBat = "25.0"
+		MinTimeToSpawnBat = "4.0"
+	/>
+	
+	<Prototype
+		Class							= "Bat"
+		Name							= "bat01"
+		ResourceType			= "BOSS04_DRONE"
+		
+		LinearAcceleration= "45.0"
+		MaxLinearVelocity	= "35.0"
+		
+		DistanceToOpenFire= "20.0"
+		DeadModelName = "BatDead"
+		>
+
+		<MainPartDescription 	id = "MAIN" 		partResourceType = "BAT_CHASSIS">
+			<PartDescription 			id = "GUN" 			partResourceType = "FLYING_GUN" 		lpName = "LP_HEAD" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "MAIN"		Prototype = "batChassis01" />
+			<Part id = "GUN"		Prototype = "flyingGun01"  />
+		</Parts>
+
+	</Prototype>
+	
+	<Prototype
+		Class							= "Bat"
+		Name							= "bat02"
+		ResourceType			= "BOSS04_DRONE"
+		
+		LinearAcceleration= "47.0"
+		MaxLinearVelocity	= "45.0"
+		
+		DistanceToOpenFire= "20.0"
+		DeadModelName = "BatDead"
+		>
+
+		<MainPartDescription 	id = "MAIN" 		partResourceType = "BAT_CHASSIS">
+			<PartDescription 			id = "GUN" 			partResourceType = "FLYING_GUN" 		lpName = "LP_HEAD" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "MAIN"		Prototype = "batChassis01" />
+			<Part id = "GUN"		Prototype = "flyingGun01"  />
+		</Parts>
+
+	</Prototype>
+	
+	<Prototype
+		Class							= "Bat"
+		Name							= "bat03"
+		ResourceType			= "BOSS04_DRONE"
+		
+		LinearAcceleration= "49.0"
+		MaxLinearVelocity	= "55.0"
+		
+		DistanceToOpenFire= "20.0"
+		DeadModelName = "BatDead"
+		>
+
+		<MainPartDescription 	id = "MAIN" 		partResourceType = "BAT_CHASSIS">
+			<PartDescription 			id = "GUN" 			partResourceType = "FLYING_GUN" 		lpName = "LP_HEAD" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "MAIN"		Prototype = "batChassis01" />
+			<Part id = "GUN"		Prototype = "flyingGun01"  />
+		</Parts>
+
+	</Prototype>
+	
+	<Prototype
+		Class							= "Bat"
+		Name							= "bat04"
+		ResourceType			= "BOSS04_DRONE"
+		
+		LinearAcceleration= "43.0"
+		MaxLinearVelocity	= "27.0"
+		
+		DistanceToOpenFire= "20.0"
+		DeadModelName = "BatDead"
+		>
+
+		<MainPartDescription 	id = "MAIN" 		partResourceType = "BAT_CHASSIS">
+			<PartDescription 			id = "GUN" 			partResourceType = "FLYING_GUN" 		lpName = "LP_HEAD" />
+		</MainPartDescription>
+
+		<Parts>
+			<Part id = "MAIN"		Prototype = "batChassis01" />
+			<Part id = "GUN"		Prototype = "flyingGun01"  />
+		</Parts>
+
+	</Prototype>
+	
+	<Prototype
+		Class							= "Chassis"
+		Name							= "batChassis01"
+		Mass							= "100.0"
+		ResourceType			= "BAT_CHASSIS"
+		ModelFile					= "BatBody"
+		Durability				= "20" 
+	/>
+
+	<Prototype
+		Class							= "PlasmaBunch"
+		Name							= "someBatMortarShell"
+		ModelFile					= "BatSpit01"
+		Price							= "3000"		
+		FlyTime						= "100"
+		Velocity					= "80"
+		Acceleration			= "0"
+		PbType						= "0"
+		Size							= "0.5 0.5 1"
+	/>
+
+	<Prototype
+		Class							= "PlasmaBunchLauncher"
+		Name							= "flyingGun01"
+		ModelFile1				= "big_hammer01"
+		ModelFile 				= "BatHead"
+		ResourceType			= "FLYING_GUN"
+		NodeScale					= "1 1 1"
+		Mass							= "10.0"
+		TracerEffect 			= "ET_PS_DRONE_TRACER"
+		TracerRange 			= "1" 		                
+		BulletPrototype		= "someBatMortarShell"
+		ExplosionType			= "SPIT"
+		FiringEffect			= "none"
+		Damage						= "125"
+		FiringRate				= "800"
+		GroupingAngle			= "4.5"
+		FiringRange				= "200"
+		RecoilForce				= "2"
+		FiringType				= "Plasma"
+		VisibleInEncyclopedia   = "false"		
+		Decal							= "DC_GUN"
+		ChargeSize				= "1"
+		ShellsPoolSize		= "1"
+		RechargingTime		= "1.0"
+		TurningSpeed			= "1000"
+		Durability				= "100" 
+	/>
+	
+
+
+<!--                   														TORNADO              -->
+
+	<Prototype
+		Class							= "SgNodeObj"
+		Name							= "TornadoEffect"
+		ModelFile					= "ET_PS_TORNADO"
+	/>
+
+	<Prototype
+		Class							= "Tornado"
+		Name							= "someTornado"
+		EffectPrototype 	= "TornadoEffect"
+		AttackDistance		= "65"
+		InternalRadius		= "3"
+		CatchForce				= "5000"
+		RotationForce			= "2000"
+		DropVelocity			= "50"
+		RotationTime			= "2"
+		DropedTime				= "6"
+		WalkingRadius			= "50"
+		WalkingSpeed			= "5"
+	/>
+
+
+
+
+<!--     																							Zombie         -->
+
+	<Prototype
+  	Name							= "Cemetery"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "SomeZombie"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "45"
+		ZombieCount				= "7"
+	/>
+	<Prototype
+  	Name							= "BigCemetery"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "SomeZombie"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "45"
+		ZombieCount				= "15"
+	/>
+	<Prototype
+  	Name							= "BigCemetery_Exp"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "DetonationZombie"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "45"
+		ZombieCount				= "10"
+	/>
+	<Prototype
+  	Name							= "Cemetery_Exp"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "DetonationZombie"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "30"
+		ZombieCount				= "5"
+	/>
+	
+	
+	
+	<Prototype
+  	Name							= "LongCemetery"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "SomeZombieLongRunner"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "45"
+		ZombieCount				= "7"
+	/>
+	<Prototype
+  	Name							= "BigLongCemetery"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "SomeZombieLongRunner"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "45"
+		ZombieCount				= "15"
+	/>
+	<Prototype
+  	Name							= "BigLongCemetery_Exp"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "DetonationZombieLongRunner"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "45"
+		ZombieCount				= "10"
+	/>
+	<Prototype
+  	Name							= "LongCemetery_Exp"
+		Class							= "ZombieSpawn"
+		ZombiePrototype		= "DetonationZombieLongRunner"
+		UpdateDistance		= "300"
+		WakeUpDelay				= "30"
+		ZombieCount				= "5"
+	/>
+	
+	
+
+ 	<Prototype
+   	Name							= "SomeZombie"
+		Class							= "Zombie"
+    ModelFile					= "zombieModel"		
+		Mass							= "30.0"
+		MaxStandTime			= "5"
+		WalkRadius				= "25"
+		WalkSpeed					= "2"
+		RunSpeed					= "7"
+		Health						= "10"
+		LifeCount 				= "2"
+		DownTime					= "4"
+		Damage						= "10"
+		AttackSpeed				= "1"
+		VisionDistance		= "200"
+		BurnEffectName		= "ET_PS_BOSS1_FIRE"
+		BurnTime					= "5"
+		BurnDamage				= "7"
+		HideEffectName		= "ET_PS_MACHINEGUNGRASSEXPLOSION"
+		IntersectionRadius = "1"
+		LookRadius = "1"
+	/>
+ 	<Prototype
+   	Name							= "SomeZombieLongRunner"
+		Class							= "Zombie"
+    ModelFile					= "zombieModel"		
+		Mass							= "30.0"
+		MaxStandTime			= "5"
+		WalkRadius				= "25"
+		WalkSpeed					= "4"
+		RunSpeed					= "14"
+		Health						= "20"
+		LifeCount 				= "2"
+		DownTime					= "4"
+		Damage						= "20"
+		AttackSpeed				= "1"
+		VisionDistance		= "200"
+		BurnEffectName		= "ET_PS_BOSS1_FIRE"
+		BurnTime					= "5"
+		BurnDamage				= "7"
+		HideEffectName		= "ET_PS_MACHINEGUNGRASSEXPLOSION"
+		IntersectionRadius = "1"
+		LookRadius = "1"
+	/>
+
+	<Prototype
+		Class             = "BlastWave"
+		Name              = "ZombieBlastWave"
+		Effect            = "ET_PS_ZOMBIE_EXPLOSION"                
+		Radius            = "8.0"
+		WaveForceIntensity= "60.0"
+		WaveDamageIntensity  = "100.0"
+	/>
+
+ 	<Prototype
+   	Name							= "DetonationZombie"
+		Class							= "DetonationZombie"
+    ModelFile					= "zombieBoom"		
+		Mass							= "30.0"
+		MaxStandTime			= "5"
+		WalkRadius				= "25"
+		WalkSpeed					= "2"
+		RunSpeed					= "7"
+		Health						= "30"
+		LifeCount 				= "1"
+		DownTime					= "4"
+		Damage						= "10"
+		AttackSpeed				= "1"
+		VisionDistance		= "200"
+		BurnEffectName		= "ET_PS_BOSS1_FIRE"
+		BurnTime					= "5"
+		BurnDamage				= "7"
+		HideEffectName		= "ET_PS_MACHINEGUNGRASSEXPLOSION"
+
+		BlastWavePrototype= "ZombieBlastWave"
+	/>
+ 	<Prototype
+   	Name							= "DetonationZombieLongRunner"
+		Class							= "DetonationZombie"
+    ModelFile					= "zombieBoom"		
+		Mass							= "30.0"
+		MaxStandTime			= "5"
+		WalkRadius				= "25"
+		WalkSpeed					= "4"
+		RunSpeed					= "18"
+		Health						= "30"
+		LifeCount 				= "1"
+		DownTime					= "4"
+		Damage						= "10"
+		AttackSpeed				= "1"
+		VisionDistance		= "200"
+		BurnEffectName		= "ET_PS_BOSS1_FIRE"
+		BurnTime					= "5"
+		BurnDamage				= "7"
+		HideEffectName		= "ET_PS_MACHINEGUNGRASSEXPLOSION"
+
+		BlastWavePrototype= "ZombieBlastWave"
+	/>
+
+<Prototype
+	Name="upgradeManager"
+	Class="UpgradeManager"
+	MainGunSlot="MAIN_GUN_SLOT"
+	AuxGunSlot="AUX_GUN_SLOT" >
+	
+	<!-- Структура -->
+	<Upgrade
+		Type="HEALTH"
+		UP="50000,90000"
+		Values="1.5,2.0"/>
+
+	<Upgrade
+		Type="SPEED"
+		UP="10000, 15000"
+		Values="1.5,2.0"/>
+
+	<!-- Гаджеты -->
+	<Upgrade
+		Type="THORNS"
+		UP="3000, 7000, 15000"
+		Slot="THORN_SLOT"
+		Base="pilaDV1"
+		Extra="pilaDV2"
+		Superior="5000"/>
+
+	<Upgrade
+		Type="MINE_PUSHER"
+		UP="5000, 7000, 9000"
+		Slot="MINE_PUSHER_SLOT"
+		Base="mineDV1"
+		Extra="mineDV2"
+		Superior="mineDV3"/>
+
+	<Upgrade
+		Type="JUMPER"
+		UP="20000, 25000"
+		Slot="JUMPER_SLOT"
+		Base="jumperDV1"
+		Extra="jumperDV2"
+		Superior="jumperDV3"/>
+
+	<Upgrade
+		Type="NITRO"
+		UP="10000, 15000"
+		Slot="NITRO_SLOT"
+		Base="nitroDV1"
+		Extra="nitroDV2"
+		Superior="nitroDV3"/>
+
+<!-- Оружие -->
+	
+	<Upgrade
+		Type="BASE_GUN"
+		UP="12500, 35000"
+		Base="vulcanDV1"
+		Extra="vulcanDV2"
+		Superior="vulcanDV3"/>
+
+	<Upgrade
+		Type="ROCKET_GUN"
+		UP="20000, 60000, 80000"
+		Base="rocketDV1"
+		Extra="rocketDV2"
+		Superior="rocketDV3"/>
+<!-- the vanilla flamethrower
+	<Upgrade
+		Type="FIRE_THROWER"
+		UP="30000, 30000, 30000"
+		Base="fireDV1"
+		Extra="fireDV2"
+		Superior="fireDV3"/>
+-->		
+	<Upgrade
+		Type="FIRE_THROWER"
+		UP="20000, 40000, 80000"
+		Base="shotgunDV1"
+		Extra="shotgunDV2"
+		Superior="shotgunDV3"/>
+		
+	<Upgrade
+		Type="ZENITH"
+		UP="80000, 50000, 50000"
+		Base="zenithDV1"
+		Extra="zenithDV2"
+		Superior="zenithDV3"/>
+
+</Prototype>
+
+	<Prototype
+		Class							= "SgNodeObj"
+		Name							= "QuestSound"
+		ModelFile					= "ET_S_SYSTEM_QUEST_DONE"
+	/>
+
+
+</Prototypes>	

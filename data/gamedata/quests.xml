@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<quests><!--Root--><!--Root/r5m1--><!--Root/r5m2--><!--Root/r6m1--><!--Root/r6m2--><!--Root/sin--><!--Root/dv3--><!--Root/dv3/...1-->
+
+	<quest
+		Name="dv1_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv1_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv1_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		OnTake='' />
+	<quest
+		Name="dv1_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		OnTake='' />
+
+	<quest
+		Name="dv2_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv2_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv2_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv2_q3"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv2_q3_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+	<quest
+		Name="dv4_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv4_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv4_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv4_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv5_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv5_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv5_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+<!--
+	<quest
+		Name="dv5_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+-->
+
+	<quest
+		Name="dv6_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv6_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv6_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv6_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+
+	<quest
+		Name="dv7_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="dv7_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+
+	<quest
+		Name="dv8_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="dv8_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv8_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="dv8_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="dv8_q3"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />  
+	<quest
+		Name="dv8_q3_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+
+	<quest
+		Name="dv9_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+<!--		
+	<quest
+		Name="dv9_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+-->
+	<quest
+		Name="dv9_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="dv9_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+
+
+
+	<quest
+		Name="dv1_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv1_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv2_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv2_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv4_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv4_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv4_t2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv4_t3"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv4_t4"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv5_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv5_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv6_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv6_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv7_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv8_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv8_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="dv9_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="dv9_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+
+	<quest
+		Name="boss_1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="boss_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<!-- New Game + -->
+	<quest
+		Name="ng1_dv1_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv1_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv1_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		OnTake='' />
+	<quest
+		Name="ng1_dv1_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv2_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv2_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv2_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv2_q3"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv2_q3_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv4_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv5_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv5_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv5_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv6_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv6_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv6_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv6_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+
+	<quest
+		Name="ng1_dv7_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="ng1_dv7_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+
+	<quest
+		Name="ng1_dv8_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="ng1_dv8_q1_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv8_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="ng1_dv8_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+	<quest
+		Name="ng1_dv8_q3"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />  
+	<quest
+		Name="ng1_dv8_q3_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+
+	<quest
+		Name="ng1_dv9_q1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="ng1_dv9_q2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />  
+	<quest
+		Name="ng1_dv9_q2_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="1"
+		OnTake='' />
+
+
+
+
+	<quest
+		Name="ng1_dv1_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv1_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv2_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv2_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv4_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_t2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_t3"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv4_t4"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv5_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv5_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv6_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv6_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv7_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv8_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv8_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_dv9_t0"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+	<quest
+		Name="ng1_dv9_t1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+
+	<quest
+		Name="ng1_boss_1"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+
+	<quest
+		Name="ng1_boss_2"
+		Automatic="0"
+		SubQuestsCondition="and"
+		CheckAll="0"
+		ConditionToGive="all complete"
+		IsMain="0"
+		OnTake='' />
+</quests>

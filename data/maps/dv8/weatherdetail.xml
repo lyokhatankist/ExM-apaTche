@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Weather>
+	<WeatherItem
+		name="dv8">
+		<ColorType
+			name="sunrise"
+			CloudsTexture="SkyClear1.dds" />
+
+		<ColorType
+			name="day"
+			CloudsTexture="SkyClear1.dds" />
+
+		<ColorType
+			name="sunset"
+			CloudsTexture="SkyClear1.dds" />
+
+		<ColorType
+			name="night"
+			CloudsTexture="SkyBlight2.dds" />
+	</WeatherItem>
+</Weather>
