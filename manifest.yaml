@@ -1,0 +1,84 @@
+# unique service name
+name: apatche
+installment: arcade
+
+version: "1.0"
+build: "250401"
+
+language: ru
+
+# required human readable info
+display_name: apaTche
+
+authors: DOLBOYASCHERS TEAM
+
+description: |
+  apaTche — первый в истории мод для Аркады, делающий хоть что-то полезное. Исправляет баги и прочие косяки, которые мешали игровому процессу, а также привносит некоторые геймплейные и визуальные изменения.
+  
+# optional human readable info
+release_date: "04.01.2025"
+
+link: https://github.com/lyokhatankist/ExM-apaTche
+
+# branding images
+logo: assets/apatche_logo.png
+install_banner: assets/apatche_banner.png
+
+tags: [gameplay, bugfix, story, visual]
+
+# additional text info
+change_log: assets/change_list_ru.md
+
+screenshots:
+  - img: assets/screen_1.jpg
+    text: | 
+      Дробовик первого уровня и Ракетная установка первого уровня.
+  - img: assets/screen_2.jpg
+    text: |
+      Ракетная установка второго и третьего уровня.
+  - img: assets/screen_3.jpg
+    text: |
+      Изменённая модель Фургона.
+  - img: assets/screen_4.jpg
+    text: |
+      Изменённая модель машины командира «Дельты».
+  - img: assets/screen_5.jpg
+    text: |
+      Изменённая модель машин военных патрулей.
+  - img: assets/screen_6.jpg
+    text: |
+      Возвращённые реплики персонажей.
+  - img: assets/screen_7.jpg
+    text: |
+      Изменённая погода на миссии 7 «Жара в пустыне».
+  - img: assets/screen_8.jpg
+    text: |
+      Изменённая погода на миссии 8 «Большая Охота».
+  - img: assets/screen_9.jpg
+    text: |
+      Новая игра+.
+
+translations: [eng]
+
+patcher_version_requirement: "2.1"
+
+patcher_options:
+#  blast_damage_friendly_fire: false
+
+config_options:
+    camFovMaxDelta: 0
+    camFovSpeedFactor: 0
+    g_fixedCameraAngle: 9
+    g_fixedCameraRotationCoeff: 12
+
+no_base_content: false
+
+# Options files setup
+options_base_dir: "options"
+
+optional_content:
+  - name: completion_sound
+    display_name: Другой звук выполнения квеста
+    default_option: skip
+    description: |
+      Изменение звука выполнения квеста на более тихий и короткий.
