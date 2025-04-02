@@ -494,7 +494,8 @@ p("BombCounter")
 <trigger	Name="trBurnZombie"	active="0">
 		<event	timeout="149"		eventid="GE_TIME_PERIOD" />
 <script>
---		CompleteQuest( "dv6_q2_2" )			
+--		CompleteQuest( "dv6_q2_2" )	
+		trigger:Deactivate()
 		TActivate("trWin")	
 		FlyShort ( { time = 5 , msg = { 6007, 6008, 60081, 60082, 60083 }, CompQuest1 ="dv6_q2_2"} )	
 		

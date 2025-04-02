@@ -505,6 +505,7 @@ p("BombCounter")
 				playa:AddModifier("hp", "- 1337")
 			end
 		else
+			trigger:Deactivate()
 			TActivate("trWin")	
 			FlyShort ( { time = 5 , msg = { 6007, 6008, 60081, 60082, 60083 }, CompQuest1 ="ng1_dv6_q2_2"} )	
 			
