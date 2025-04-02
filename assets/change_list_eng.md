@@ -119,7 +119,7 @@
 
 ■ Fixed an issue with incorrect weapon placement on some variations of the Sedan.
 
-■ Two pillboxes located near the place of the skirmish with the police have been added to the list of targets that need to be destroyed to activate the quest "Ray in the Darkness" in Mission 1 "Under Siege".
+■ Two pillboxes located near the place of the skirmish with the police have been added to the list of targets that need to be destroyed to activate the quest "Ray in the Darkness" in Mission 1 "Under siege".
 
 ■ Fixed the second checkpoint in Mission 2 "Base No. 31". In the original, it was unusable due to too low fps/crash when loading it. Unfortunately, this required sacrificing the zombie spawner at the destroyed power plant.
 Instead, the player will now be met by several police cars there.
@@ -132,11 +132,11 @@ Instead, the player will now be met by several police cars there.
 
 ■ The toxic wave in Mission 6 "Last man standing" now starts after the second cutscene, in which the General informs the player about its approach.
 
-■ Fixed mutant mushrooms that were difficult to see due to the wrong angle of placement in missions 4 "Strange Jungle" and 6 "The Last Warrior"; a collision with them could lead to the instant death.
+■ Fixed mutant mushrooms that were difficult to see due to the wrong angle of placement in missions 4 "Strange jungle" and 6 "Last man standing"; a collision with them could lead to the instant death.
 
 ■ Fixed early spawning of the boss in Mission 6 "Last man standing" at the end of the toxic wave, which led to the instant death of the player if they did not reach the boss fight arena (which frankly looked like a bug). Instead of instant death, the player's health will slowly deteriorate. Duplication of the boss was also fixed.
 
-■ Fixed thermite charges in Mission 5 "Swamp Trails" having a collision. Previously, hitting them could launch the player high into the sky.
+■ Fixed thermite charges in Mission 5 "Swamp roads" having a collision. Previously, hitting them could launch the player high into the sky.
 
 ■ Fixed enemy spawns in Mission 8 "The Big Hunt":
 
@@ -150,7 +150,7 @@ Instead, the player will now be met by several police cars there.
 
 ■ Replaced the visuals of the cars thrown by the boss in Mission 8 "The Big Hunt". They are also now immune to damage (thus fixing the crash that occurs when a thrown car is destroyed with a Rocket launcher).
 
-■ Fixed the weapon placement on the boss's car in Mission 8 "The Big Hunt".
+■ Fixed the weapon placement on the boss car in Mission 8 "The Big Hunt".
 
 ■ Added "New game+":
 
@@ -164,7 +164,7 @@ Instead, the player will now be met by several police cars there.
 
 ■ Replaced the model of enemy-specific type of the Machinegun (3D-model by ICAS-14). The new Machinegun's sound uses a previously unused set of sounds from the game files.
 
-■ Replaced the OG Hunter model with a Thunder Turtle (player's vehicle) with a previously unused unique paint job that was in the game files.
+■ Replaced the OG Hunter model with a Thunder Turtle (player's vehicle) with a previously unused unique paint job from the game files.
 
 ■ Replaced the military patrol vehicle model in Mission 7 "Desert heat":
 
@@ -174,7 +174,7 @@ Instead, the player will now be met by several police cars there.
 
 — Hunter suspension added to the servers.
 
-■ Improved vehicle destruction effects. Now vehicles explode with corresponding visual and sound effects, in particular when a vehicle is destroyed by the Flak cannon.
+■ Improved vehicle destruction effects. Now vehicles explode with corresponding visual and sound effects, in particular when a vehicle is destroyed with the Flak cannon.
 
 ■ Fixed an issue with the posteffect when exiting to the main menu from any mission.
 
@@ -219,11 +219,11 @@ Instead, the player will now be met by several police cars there.
 ■ Changed the weather on Mission 8 "The Big Hunt". The weather on this level is no longer randomized.
 
 ## | Cutscenes |
-■ Changed General's model to a previously unused model from the game files, made specifically for this character.
+■ Changed General's model to a previously unused model from the game files, made specifically for this character by the original devs.
 
-■ Fixed the timing of all voicelines, no more "theatrical pauses" in the cutscenes.
+■ Fixed the timing of all voicelines, thus no more "theatrical pauses" in the cutscenes.
 
-■ Restored the cut voicelines. In particular, the General's monologue in Mission 7 "Desert heat" that reveals some important elements of the plot.
+■ Restored the cut dialogue. In particular, the General's monologue in Mission 7 "Desert heat" that reveals some important elements of the plot.
 
 ■ Fixed the camera in the opening cutscene of Mission 1 "Under siege".
 

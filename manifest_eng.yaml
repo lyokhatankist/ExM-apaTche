@@ -58,7 +58,7 @@ screenshots:
     text: |
       New game+.
 
-patcher_version_requirement: "2.1"
+patcher_version_requirement: "3.0"
 
 patcher_options:
 #  blast_damage_friendly_fire: false
