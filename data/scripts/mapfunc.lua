@@ -43,6 +43,11 @@ end
 
 -- ***************                   Camera                   **********************
 
+-- apatche
+-- i have no idea what original comments say but i've added three new args to the function:
+-- setPos - set player position to the specified CVector value after the cutscene (and before the save happens)
+-- setRot - set player rotation to the specified Quaternion value after the cutscene (and before the save happens)
+-- removeVelocity - set player linear velocity to 0 after the cutscene (and before the save happens)
 function FlyShort ( arg )
 -- Микро пролет камеры для микро диалога Машинки  
 -- требует триггер "RestoreTolerance"
@@ -71,6 +76,16 @@ function FlyShort ( arg )
 	end
 	SaveAllToleranceStatus( RS_NEUTRAL )
 	TActivate( "RestoreTolerance" )
+	if arg.setPos then
+		SetVar( "SetPos", CVectorToString(arg.setPos) )
+	end
+	if arg.setRot then
+		SetVar( "SetRot", QuaternionToString(arg.setRot) )
+	end
+	if arg.removeVelocity then
+		local xD = arg.removeVelocity
+		SetVar( "RemoveVelocity", ""..xD.."" )
+	end
 	if arg.saveMap then
 		SetVar( "SaveAfterCin", arg.saveMap )
 	end
@@ -424,7 +439,7 @@ end
 -- useful for storing tables in SetVar variables
 -- modo is used for storing tables of strings inside the table
 -- modo 1 turns double quotations (") into singular ones (')
--- modo 2 turns double quotations (") into paragraph signs ()
+-- modo 2 turns double quotations (") into paragraph signs (╢)
 -- modo 2 is useful for actually storing tables of strings inside the table in SetVar variables
 -- because paragraph signs are automatically converted into single quotation marks by StringToTable
 -- and if you use single quotations for that, your dynamicscene will get fucked if you save the game
@@ -439,7 +454,7 @@ function TableToString(table, modo)
 				if modo==1 then
 					endString = endString.."'"..table[i].."'"
 				elseif modo==2 then
-					endString = endString..""..table[i]..""
+					endString = endString.."╢"..table[i].."╢"
 				else
 					endString = endString..'"'..table[i]..'"'
 				end
@@ -465,11 +480,59 @@ end
 -- useful for getting the tables out of SetVar variables
 function StringToTable(strVal)
 	local endTable = strVal
-	endTable = string.gsub(endTable, "", "'")
+	endTable = string.gsub(endTable, "╢", "'")
 	local funcTableCode = loadstring("local t = "..endTable.."; return t")
 	endTable = funcTableCode()
 
 	return endTable
+end
+
+-- function that converts a CVector into a string
+-- useful for storing CVectors in SetVar variables
+function CVectorToString(cvector)
+	local endString = "("
+	if type(cvector)=="userdata" then
+		endString = endString..cvector.x..", "..cvector.y..", "..cvector.z..")"
+	else
+		endString = "idi nahui eto ne userdata)))0)"
+		println(endString)
+	end
+
+	return endString
+end
+
+-- function that converts a CVector presented as string into a real CVector
+-- useful for getting the CVectors out of SetVar variables
+function StringToCVector(strVal)
+	local endCVector = strVal
+	local funcCVectorCode = loadstring("local t = CVector"..endCVector.."; return t")
+	endCVector = funcCVectorCode()
+
+	return endCVector
+end
+
+-- function that converts a Quaternion into a string
+-- useful for storing Quaternions in SetVar variables
+function QuaternionToString(quaternion)
+	local endString = "("
+	if type(quaternion)=="userdata" then
+		endString = endString..quaternion.x..", "..quaternion.y..", "..quaternion.z..", "..quaternion.w..")"
+	else
+		endString = "idi nahui eto ne userdata)))0)"
+		println(endString)
+	end
+
+	return endString
+end
+
+-- function that converts a Quaternion presented as string into a real Quaternion
+-- useful for getting the Quaternions out of SetVar variables
+function StringToQuaternion(strVal)
+	local endQuaternion = strVal
+	local funcQuaternionCode = loadstring("local t = Quaternion"..endQuaternion.."; return t")
+	endQuaternion = funcQuaternionCode()
+
+	return endQuaternion
 end
 
 -- function that calculates the total amount of mushrooms on the map

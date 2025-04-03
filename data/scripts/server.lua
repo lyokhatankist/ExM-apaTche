@@ -1534,9 +1534,24 @@ function RestoreAllToleranceStatus()
 	SaveAfterCin = GetVar( "SaveAfterCin" ).AsString
 	CompQuest1 = GetVar( "CompQuest1" ).AsString
 	CompQuest2 = GetVar( "CompQuest2" ).AsString
+	SetPos = GetVar( "SetPos" ).AsString
+	SetRot = GetVar( "SetRot" ).AsString
+        RemoveVelocity = GetVar( "RemoveVelocity" ).AsString
 	SetVar( "SaveAfterCin", "" )
 	SetVar( "CompQuest1", "" )
 	SetVar( "CompQuest2", "" )
+	SetVar( "SetPos", "" )
+	SetVar( "SetRot", "" )
+        SetVar( "RemoveVelocity", "" )
+        if string.len( SetPos ) > 0 then
+		vehPlayer:SetGamePositionOnGround(StringToCVector(SetPos))
+	end
+	if string.len( SetRot ) > 0 then
+		vehPlayer:SetRotation(StringToQuaternion(SetRot))
+	end
+        if string.len( RemoveVelocity ) > 0 then
+		vehPlayer:SetCustomLinearVelocity( 0 )
+	end
 	if string.len( SaveAfterCin ) > 0 then		 
 		 SaveGame( SaveAfterCin  )
 	end
@@ -1546,7 +1561,6 @@ function RestoreAllToleranceStatus()
 	if string.len( CompQuest2 ) > 0 then
 		CompleteQuest( CompQuest2 )
 	end
-
 end
 
 function SetGodTeam (name , godstatus)

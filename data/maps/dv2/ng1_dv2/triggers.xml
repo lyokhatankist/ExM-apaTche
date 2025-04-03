@@ -1162,7 +1162,8 @@ p("cinStartMap_End")
 		CameraModeRaceM() 
 		local vehPlayer = GetPlayerVehicle()
 		if vehPlayer then
-			vehPlayer:SetPosition( CVector( 397.401, 266.134, 1256.355 ) )
+			vehPlayer:SetRotation(Quaternion(-0.143, 0.127, -0.000, -0.981))
+			vehPlayer:SetGamePositionOnGround( CVector( 396.470, 264.884, 1261.011 ) )
 			vehPlayer:SetCustomLinearVelocity( 0 )
 			vehPlayer:SetThrottle( 0 )
 		end;
