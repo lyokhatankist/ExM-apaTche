@@ -8,7 +8,21 @@
     	trigger:Deactivate()
 		</script>
 	</trigger>
-
+	
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -821,7 +835,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	StopPlayingCustomMusic()
  	trigger:Deactivate()
  	CompasOff()
-	FlyShort ( { time = 7 , msg = { 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012 }, CompQuest1 = "dv7_q1_2" } )	
+	FlyShort ( { time = 7 , msg = { 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012 }, CompQuest1 = "dv7_q1_2", removeWeapon = 1 } )	
 	--CompleteQuest( "dv7_q1_2" )	
 	if not ( dontLoad == 1 ) then
 		TActivate( "trWin" )

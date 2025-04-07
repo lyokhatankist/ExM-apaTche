@@ -76,6 +76,7 @@ function FlyShort ( arg )
 	end
 	SaveAllToleranceStatus( RS_NEUTRAL )
 	TActivate( "RestoreTolerance" )
+	-- apaTche
 	if arg.setPos then
 		SetVar( "SetPos", CVectorToString(arg.setPos) )
 	end
@@ -86,6 +87,10 @@ function FlyShort ( arg )
 		local xD = arg.removeVelocity
 		SetVar( "RemoveVelocity", ""..xD.."" )
 	end
+	if arg.removeWeapon then
+		BonusWeaponRemove()
+	end
+	-- apaTche end
 	if arg.saveMap then
 		SetVar( "SaveAfterCin", arg.saveMap )
 	end
@@ -429,186 +434,4 @@ function trToxicGo(trigger)
 			p("trPreInitFightBoss 3")
 		end
 	end
-end
-
--- ==================== --
--- ApaTchE functions --
--- ==================== --
-
--- function that converts a table into a string
--- useful for storing tables in SetVar variables
--- modo is used for storing tables of strings inside the table
--- modo 1 turns double quotations (") into singular ones (')
--- modo 2 turns double quotations (") into paragraph signs (¶)
--- modo 2 is useful for actually storing tables of strings inside the table in SetVar variables
--- because paragraph signs are automatically converted into single quotation marks by StringToTable
--- and if you use single quotations for that, your dynamicscene will get fucked if you save the game
--- so use modo 2, you have been warned
-function TableToString(table, modo)
-	local endString = "{"
-	local tableLength
-	if type(table)=="table" then
-		tableLength = getn(table)
-		for i=1, tableLength do
-			if type(table[i])=="string" then
-				if modo==1 then
-					endString = endString.."'"..table[i].."'"
-				elseif modo==2 then
-					endString = endString.."¶"..table[i].."¶"
-				else
-					endString = endString..'"'..table[i]..'"'
-				end
-			else
-				endString = endString..table[i]
-			end
-
-			if i==tableLength then
-				endString = endString.."}"
-			else
-				endString = endString..", "
-			end
-		end
-	else
-		endString = '{"idi nahui eto ne massiff)))0)"}'
-		println(endString)
-	end
-
-	return endString
-end
-
--- function that converts a table presented as string into a real table
--- useful for getting the tables out of SetVar variables
-function StringToTable(strVal)
-	local endTable = strVal
-	endTable = string.gsub(endTable, "¶", "'")
-	local funcTableCode = loadstring("local t = "..endTable.."; return t")
-	endTable = funcTableCode()
-
-	return endTable
-end
-
--- function that converts a CVector into a string
--- useful for storing CVectors in SetVar variables
-function CVectorToString(cvector)
-	local endString = "("
-	if type(cvector)=="userdata" then
-		endString = endString..cvector.x..", "..cvector.y..", "..cvector.z..")"
-	else
-		endString = "idi nahui eto ne userdata)))0)"
-		println(endString)
-	end
-
-	return endString
-end
-
--- function that converts a CVector presented as string into a real CVector
--- useful for getting the CVectors out of SetVar variables
-function StringToCVector(strVal)
-	local endCVector = strVal
-	local funcCVectorCode = loadstring("local t = CVector"..endCVector.."; return t")
-	endCVector = funcCVectorCode()
-
-	return endCVector
-end
-
--- function that converts a Quaternion into a string
--- useful for storing Quaternions in SetVar variables
-function QuaternionToString(quaternion)
-	local endString = "("
-	if type(quaternion)=="userdata" then
-		endString = endString..quaternion.x..", "..quaternion.y..", "..quaternion.z..", "..quaternion.w..")"
-	else
-		endString = "idi nahui eto ne userdata)))0)"
-		println(endString)
-	end
-
-	return endString
-end
-
--- function that converts a Quaternion presented as string into a real Quaternion
--- useful for getting the Quaternions out of SetVar variables
-function StringToQuaternion(strVal)
-	local endQuaternion = strVal
-	local funcQuaternionCode = loadstring("local t = Quaternion"..endQuaternion.."; return t")
-	endQuaternion = funcQuaternionCode()
-
-	return endQuaternion
-end
-
--- function that calculates the total amount of mushrooms on the map
--- tables is the numerical parts of the objects' names in dynamicscene.xml
--- one way to use it is to check from 1 to whatever number you want, like this:
--- ShroomCalc({{1, 20000}})
--- but that is very ineffective and may cause severe lag on execution
--- better check for different ranges of numbers (look into dynamicscene to find out what they are), like this:
--- ShroomCalc({{322, 357}, {627, 1337}, {6969, 8080}, {8841, 9000}})
--- after checking if shrooms with these numbers exist, the function stores the names in a SetVar variable
--- said variable is later used by ShroomRewardCalc
-function ShroomCalc(tables)
-	local objNamae
-	local names = {}
-	local amount = 1
-
-	for i=1, getn(tables) do
-		for i=tables[i][1], tables[i][2] do
-			objNamae = "Breakable_Mushrooms_Explosive"..i
-			if getObj(objNamae) then
-				names[amount] = objNamae
-				amount = amount + 1
-			end 
-		end
-	end
-	
-	println("there are "..amount.." mushrooms") LOG("there are "..amount.." mushrooms")
-
-	SetVar("Mushrooms", TableToString(names))
-end
-
--- function that calculates the reward for destroying mushrooms;
--- maxR is the maximum possible reward (for destroying all mushrooms);
--- minR is the minimum reward (for destroying 1 mushroom);
--- maxB is the maximum possible bonus reward which scales in geometric progression;
--- the main reward is calculated with the use of arithmetic progression;
--- reach is the amount of reachable mushrooms, used only by geometric progression;
--- if the player destroys this amount of mushrooms, he'll receive a bonus reward;
--- this parameter is completely optional, it's only used in missions in which
--- the player can't realistically destroy all mushrooms present on the map.
-function ShroomRewardCalc(maxR, minR, maxB, reach)
-	local maxReward = 50; if maxR then maxReward = maxR end
-	local minReward = 1; if minR then minReward = minR end
-	local maxBonus = 200; if maxB then maxBonus = maxB end
-	
-	local names = StringToTable(GetVar("Mushrooms").AsString)
-	local objNamae
-	local shroomsKilled = 0
-	local reward = 0
-
-	for i=1, getn(names) do
-		objNamae = names[i]
-		if not(getObj(objNamae)) then
-			shroomsKilled = shroomsKilled + 1
-		end 
-	end
-	
-	println("shroomsKilled "..shroomsKilled) LOG("shroomsKilled "..shroomsKilled)
-
-	-- reward calc
-	if shroomsKilled~=0 then
-		local ratioArithm = maxReward / getn(names)
-		local reachable = getn(names); if reach then reachable = reach end
-		local ratioGeom = (maxBonus / minReward)^(1/(reachable-1))
---		local completion = shroomsKilled / reach
-		reward = (shroomsKilled * ratioArithm) + (minReward * ratioGeom^(shroomsKilled-1))
-	end
-	
-	println("reward "..reward) LOG("reward "..reward)
-	return reward
-end
-
--- function that calculates and gives out the reward for destroying mushrooms
--- used at the end of the mission
-function ShroomRewardGive(maxReward, minReward, maxBonus, reachable)
-	local reward = ShroomRewardCalc(maxReward, minReward, maxBonus, reachable)
-	
-	AddPlayerMoney(reward)
 end

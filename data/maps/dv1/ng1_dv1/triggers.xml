@@ -9,7 +9,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="trSave"	active="0">
 	<event	timeout="0"		eventid="GE_TIME_PERIOD" />
 <script>
@@ -798,7 +811,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 				playa:AddModifier("hp", "- 1337")
 			end
 		else
-			FlyShort ( { time = 20 , msg = { 10031, 10032 }, CompQuest1 ="ng1_dv1_q1_2"} )	
+			FlyShort ( { time = 20 , msg = { 10031, 10032 }, CompQuest1 ="ng1_dv1_q1_2", removeWeapon = 1} )	
 	--		CompleteQuest( "dv1_q1_2" )
 
 			local cinematic = GetCinematic()

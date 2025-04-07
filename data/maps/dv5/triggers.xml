@@ -9,7 +9,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -452,7 +465,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		ShroomRewardGive(shroomCalcParam[1], shroomCalcParam[2], shroomCalcParam[3])
 		
 --		CompleteQuest( "dv5_q1_2" )	
-		FlyShort ( { time = 65 , msg = { 5007, 5008, 5010, 50103, 50104, 11, 50102, 12, 13, 14, 50101, 15 },CompQuest1 ="dv5_q1_2"} )	
+		FlyShort ( { time = 65 , msg = { 5007, 5008, 5010, 50103, 50104, 11, 50102, 12, 13, 14, 50101, 15 },CompQuest1 ="dv5_q1_2", removeWeapon = 1} )	
 		TActivate("trWin2")
 --		CompasOff()
 </script>

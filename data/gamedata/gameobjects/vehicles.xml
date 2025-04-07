@@ -1412,6 +1412,7 @@
 		Class						= "Vehicle"
 		Name						= "Police_00"
 		AllowedRoles				= "roleMeat roleCheater roleBarrier"
+		LookRadius					= "125.0"
 		ParentPrototype 			= "Fighter">
 		<Parts>
 			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
@@ -1436,6 +1437,7 @@
 		Class						= "Vehicle"
 		Name						= "Police_02"
 		AllowedRoles				= "roleMeat roleBarrier"
+		LookRadius					= "125.0"
 		ParentPrototype 			= "Fighter">
 		<Parts>
 			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>

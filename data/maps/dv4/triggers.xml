@@ -8,7 +8,21 @@
     	trigger:Deactivate()
 		</script>
 	</trigger>
-
+	
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 	<trigger	Name="trStartMap"	active="0">
 		<event	timeout="0"		eventid="GE_TIME_PERIOD" />
 		<script>
@@ -548,7 +562,7 @@
 		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="EndGame"/>
 <script>
 	trigger:Deactivate()
-	FlyShort ( { time = 24 , msg = { 11, 12, 13, 14 }, CompQuest1 ="dv4_q1_2"} )	
+	FlyShort ( { time = 24 , msg = { 11, 12, 13, 14 }, CompQuest1 ="dv4_q1_2", removeWeapon = 1} )	
 	TActivate("trEndGame_end")
 </script>
 </trigger>

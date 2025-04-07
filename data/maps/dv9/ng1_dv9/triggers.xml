@@ -9,7 +9,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -617,7 +630,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		end
 	else
 		SetVar( "AfterCin", "" );
-		FlyShort ( { time = 9 , msg = { 90050, 90051, 9006 }} );
+		FlyShort ( { time = 9 , msg = { 90050, 90051, 9006 }, removeWeapon = 1} );
 		TDeactivate("trBossRunEnd")
 		TDeactivate("trTalk_01")
 		TDeactivate("trAnalitic")

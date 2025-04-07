@@ -9,7 +9,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -507,7 +520,7 @@ p("BombCounter")
 		else
 			trigger:Deactivate()
 			TActivate("trWin")	
-			FlyShort ( { time = 5 , msg = { 6007, 6008, 60081, 60082, 60083 }, CompQuest1 ="ng1_dv6_q2_2"} )	
+			FlyShort ( { time = 5 , msg = { 6007, 6008, 60081, 60082, 60083 }, CompQuest1 ="ng1_dv6_q2_2", removeWeapon = 1} )	
 			
 			local shroomCalcParam = StringToTable(GetVar("ShroomCalcParam").AsString)
 			ShroomRewardGive(shroomCalcParam[1], shroomCalcParam[2], shroomCalcParam[3])

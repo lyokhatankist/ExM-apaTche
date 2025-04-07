@@ -16,7 +16,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -987,7 +1000,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	r_c = r_c + 1
   if r_c == 15 then
   	QuestCounter:Hide()  	
-  	FlyShort ( { time = 7 , msg = { 80041, 80042 }, CompQuest1 = "dv8_q1" } )	
+  	FlyShort ( { time = 7 , msg = { 80041, 80042 }, CompQuest1 = "dv8_q1", removeWeapon = 1 } )	
   	TActivate("trPreWin")
  -- 	CompleteQuest( "dv8_q1" )
  	trigger:Deactivate()

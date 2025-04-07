@@ -26579,7 +26579,7 @@
 		Belong="1101"
 		Prototype="genericLocation"
 		Pos="2033.140 254.904 763.874"
-		Radius="50.000"
+		Radius="100.000"
 		SpawnEffect="BUGcargo"
 		SpawnEffectStatic="BUGcargo" />
 <!--
@@ -33363,4 +33363,32 @@
 		SpawnObjectsPrototypes="Repair"
 		SpawnTimeouts="30000000.000"
 		SpawnEffect="ET_PS_REPAIR_PICKUP"/>
+
+	<Object
+		Name="PoliceAmbush_loc"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2033.140 254.904 763.874"
+		Radius="110.000" />
+
+	<Object
+		Name="PowerUp_Repair_13_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1986.878 255.628 835.970"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"/>
+
+	<Object
+		Name="BonusWeaponRemover_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="32.000 303.000 32.000"
+		Radius="2.500"
+		SpawnObjectsPrototypes="scout_00_weapon"
+		SpawnTimeouts="30000000.000"
+		SpawneeLifeTime="0.001"
+		SpawneeHover="5.000" />
 </DynamicScene>
