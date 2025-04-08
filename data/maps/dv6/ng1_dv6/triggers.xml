@@ -325,7 +325,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 
 --		CompleteQuest( "dv6_q1_2" )	
 		TakeQuest( "ng1_dv6_q2" )
-    HudTimer:Start( 20 * 60 )
+--    HudTimer:Start( 20 * 60 )
     QuestCounter:Setup( 2 )
 		QuestCounter:Show()
 
@@ -349,7 +349,8 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		<event	timeout="1.0"		eventid="GE_TIME_PERIOD" />
 		<script>
 			trigger:Deactivate()
-
+			
+			HudTimer:Start( 20 * 60 )
 			CompasOn( 13, 6 )
 		</script>
 	</trigger>
