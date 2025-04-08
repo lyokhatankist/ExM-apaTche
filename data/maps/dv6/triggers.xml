@@ -338,11 +338,19 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
 <script>
    	trigger:Deactivate()
+	TActivate("trCoolCompasFix")
    	SavesManager:SaveCheckpoint( "dv6_startRun" )
 </script>
 </trigger>
 
+	<trigger	Name="trCoolCompasFix"	active="0">
+		<event	timeout="1.0"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
 
+			CompasOn( 13, 6 )
+		</script>
+	</trigger>
 
 <trigger	Name="trBomb1"	active="0">
 		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Explode_01" />
@@ -440,7 +448,9 @@ p("BombCounter")
 		end
 
 		QuestCounter:IncValue(1)
-		TActivate( "trSave2" )
+		if Bomb2 == -1 then
+			TActivate( "trSave2" )
+		end
 		CameraModeRaceM() 
 	end
 	if Bomb2 == 0 then	
@@ -448,7 +458,8 @@ p("BombCounter")
 		TDeactivate( "trBomb2" )  TDeactivate( "trBomb2_x" )
 		SetVar( "Bomb2", -2 )
 		TActivate("trWin1")
-		CompasOff()
+--		CompasOff()
+		CompasOn( 8, 10 )
 
 		local r_l = { "point_2_1", "point_2_2", "point_2_3" }
 		for i, v in r_l do
