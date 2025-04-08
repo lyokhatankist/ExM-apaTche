@@ -952,9 +952,18 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		vehPlayer:SetCustomControlEnabled( true )
 		vehPlayer:SetCruisingSpeed(0)
 		local PlfID = GetPlayerVehicleId()
-		CreateNewDummyObject( "BUGcargo", "camToch01", -1, -1, CVector(3304.442, 253.104, 1374.951), Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+		CreateNewDummyObject( "BUGcargo", "camToch01", -1, -1, CVector(3304.442, 251.104, 1374.951), Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+		CreateNewDummyObject( "BUGcargo", "camToch02", -1, -1, CVector(0, 0, 0), Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+--		local camToch01ID = GetEntityByName("camToch01"):GetId()
 		local camToch01ID = GetEntityByName("camToch01"):GetId()
-		FlyLinked( "RedFirstRun_cam01", PlfID, 7, 0, 1, camToch01ID )
+		if getObj("RedTeam_r_1_vehicle_0") then
+			camToch01ID = GetEntityByName("RedTeam_r_1_vehicle_0"):GetId()
+		end
+		if getObj("RedTeam_r_1_vehicle_1") then
+			camToch01ID = GetEntityByName("RedTeam_r_1_vehicle_1"):GetId()
+		end
+		local camToch02ID = GetEntityByName("camToch02"):GetId()
+		FlyLinked( "RedFirstRun_cam01", camToch02ID, 7, 0, 1, camToch01ID )
 		StartCinematic()
 
 		AddCinematicMessage( 8002, 0.25)
@@ -1054,7 +1063,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	
 
 	local locZ = { "Ambush28", "Ambush28_s", "Ambush29" }
-	AZId = {}
+	local AZId = {}
 	local mn = "DetonationZombieLongRunner"
 	for i, v in locZ do
 		local pos = getPos( v )
@@ -1064,6 +1073,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 			table.insert( AZId, ZId )
 		end
 	end                       
+	SetVar("AZId", TableToString(AZId))
 	TActivate( "trMushroomsZombieCounter" )
 	
 	TActivate( "trSave1" )
@@ -1094,6 +1104,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<event	timeout="3"		eventid="GE_TIME_PERIOD" />
 <script>
 	local allNonDead = nil
+	local AZId = StringToTable(GetVar("AZId").AsString)
 	for i, v in AZId do
 		if not getObj(v):GetDeadState() then
 			allNonDead = 1 
