@@ -555,9 +555,26 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	if getObj("Ambush06") then
 		getObj("Ambush06"):SetProperty("Active", 1)
 	end
+
+	local playa = GetPlayerVehicle()
+	if playa then
+		playa:setImmortalMode(1)
+		TActivate("trPlayaDie")
+	end
 </script>
 </trigger>
 
+	<trigger	Name="trPlayaDie"	active="0">
+		<event eventid="GE_VEHICLE_WITHOUT_HEALTH" ObjName="MyCar" />
+		<script>           
+			trigger:Deactivate()
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:setImmortalMode(0)
+				playa:AddModifier("hp", "- 1448")
+			end
+		</script>
+	</trigger>
 
 <trigger	Name="trCarDie"	active="1">
 	<event	eventid="GE_OBJECT_DIE" ObjName="Car_Explosive15444" />
@@ -776,10 +793,13 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		AddCinematicMessage( 1486, 0.1)
 
 		if playa then
+			playa:setImmortalMode(0)
 			playa:setGodMode(1)
 			playa:SetGamePositionOnGround(CVector(3520, 310, 1975))
 			playa:SetRotation(Quaternion(-0.012, 1.000, 0.006, 0.000))
 		end
+
+		TDeactivate("trPlayaDie")
 		
 		TActivate("trDBTCredits_Cam01")
 		TActivate("trDBTCredits_Cam02")
