@@ -1745,6 +1745,138 @@ function StringToQuaternion(strVal)
 	return endQuaternion
 end
 
+-- function that allows for an easy fix of trigger duplication caused by GE_TIME_PERIOD timer
+-- note that it doesn't prevent the timer itself from duplicating
+-- meaning that you might experience severe frame drop if the timers duplicate enough times
+-- that is because the trigger will be running this check every time each duplicated timer is triggered
+-- (which may be a lot of times, depending on how much times you saved&loaded)
+-- you MUST resort to the PendulumVehicle for triggers that have to run at all times (see how it's done in Armada)
+--[[ to use this in your trigger with GE_TIME_PERIOD event, put this at the beginning of the trigger:
+
+	if TimerHack(5) then -- arg is the trigger timeout
+		return
+	end
+]]--
+-- seconds is the timeout value of your trigger
+-- unique_id is the identifier of the timer hack for cases when you use it for multiple GE_TIME_PERIOD triggers at the same time
+-- known issues:
+-- - the trigger will not go through the first time the timer is triggered, first activation happens at the second timeout
+--   (you can fix it by setting the SetVar variable "PreviousTime" to the timeout value of the trigger, before you activate it)
+-- - the trigger will always activate at the first timer available (even if it's a duplicated one) after loading the game
+--   (this happens because this hack accounts for the real time, and, obviously, some time passes while you're menuing)
+function TimerHack(seconds, unique_id)
+	local retVal = true
+	local currentTime = "etto"..os.time()
+	currentTime = string.sub(currentTime, 9)
+	local triggerID = ""
+	if unique_id then
+		triggerID = triggerID..unique_id
+	end
+
+	previousTime = GetVar("PreviousTime"..triggerID).AsInt
+	-- println("currentTime is "..currentTime..", previousTime is "..previousTime)
+	if previousTime <= 0 then
+		-- println("previousTime is undefined")
+		previousTime = currentTime
+		SetVar("PreviousTime"..triggerID, previousTime)
+	end
+
+	local timeDifference = currentTime - previousTime
+	if seconds >= 10 then
+		timeDifference = timeDifference + 1
+	end
+
+	-- println("timeDifference is "..timeDifference)
+	if seconds <= timeDifference then
+		-- println("it's more than "..seconds)
+		retVal = false
+		SetVar("PreviousTime"..triggerID, currentTime)
+	end
+
+	return retVal
+end
+
+-- this the first of the three Arcade-specific functions that try to fix the timer on loading the save
+-- unfortunately, it breaks the timer numbers coloring as time elapses
+-- but the timer works flawlessly on save load, so there's that
+-- anyway, this function starts the timer
+-- seconds is how long the timer should last
+-- trigger is the name of the trigger that has the remaining timer logic and its outcomes
+--[[ such a trigger should look something like this:
+	
+	<trigger	Name="trArcadeTimer"	active="0">
+		<event	timeout="5"		eventid="GE_TIME_PERIOD" />
+		<script>           
+			if TimerHack(5) then -- arg is the trigger timeout
+				return
+			end
+
+			local timerOutcome = ArcadeTimer(5) -- arg is the trigger timeout
+			if timerOutcome==1 then -- if time runs out
+				-- your code here
+				-- in most cases should contain activation of another trigger
+				trigger:Deactivate()
+			elseif timerOutcome>=2 then -- if timer is stopped by ArcadeTimerStop()
+				-- your code here
+				-- in most cases should contain just the trigger:Deactivate() function
+				trigger:Deactivate()
+			end
+		</script>
+	</trigger>
+]]--
+function ArcadeTimerStart(seconds, trigger)
+	local timer = 60
+	if seconds then
+		timer = seconds
+	end
+
+	local triggerName = "trArcadeTimer"
+	if trigger then
+		triggerName = trigger
+	end
+
+	HudTimer:Start( timer )
+	SetVar("SavedTimerValue", timer)
+	TActivate(triggerName)
+end
+
+-- function that operates the timer itself, saving the time value and updating the timer
+-- requires trArcadeTimer trigger (or any alternative)
+-- interval is the timeout (GE_TIME_PERIOD) of the trigger that contains this function
+-- returns 0 if the timer continues
+-- returns 1 if the time has run out
+-- returns 2 if the timer has been stopped
+-- this value is used in the trigger to specify the outcome
+function ArcadeTimer(interval)
+	local timer = GetVar("SavedTimerValue").AsInt
+	local retVal = 0
+	local timeDifference = 1
+	if interval then
+		timeDifference = interval
+	end
+
+	timer = timer - timeDifference
+	if timer < -627627 then
+		retVal = 2
+	elseif timer < 0 then
+		retVal = 1
+		timer = 60
+	else
+		HudTimer:Start( timer )
+	end
+
+	SetVar("SavedTimerValue", timer)
+
+	return retVal
+end
+
+-- a shortcut function to properly stop the NEW TIMER:tm:
+-- pretty much self-explanatory
+function ArcadeTimerStop()
+	HudTimer:Stop()
+	SetVar("SavedTimerValue", -627627)
+end
+
 -- function that calculates the total amount of mushrooms on the map
 -- tables is the numerical parts of the objects' names in dynamicscene.xml
 -- one way to use it is to check from 1 to whatever number you want, like this:
@@ -1824,6 +1956,7 @@ function ShroomRewardGive(maxReward, minReward, maxBonus, reachable)
 end
 
 -- function that removes the bonus weapon from player's vehicle
+-- requires trRemoveWeapon trigger
 -- used at the end of the mission
 function BonusWeaponRemove()
 	local playa = GetPlayerVehicle()

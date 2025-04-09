@@ -455,30 +455,37 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
 <script>                                                              
 	trigger:Deactivate()
-	TActivate("trTimerStart")
+
+	
+--	ArcadeTimerStart(30)
+	ArcadeTimerStart(60*12, "trTimerStart")
+
 	if getObj("Ambush15") then
 		getObj("Ambush15"):SetProperty("Active", 1)
 	end
 </script>
 </trigger>
 
-<trigger	Name="trTimerStart"	active="0">
-	<event	timeout="1"		eventid="GE_TIME_PERIOD" />
-<script>           
-		trigger:Deactivate()
-		HudTimer:Start( 12 * 60 )
-		TActivate("trTimeOut")
-</script>
-</trigger>
+	<trigger	Name="trTimerStart"	active="0">
+		<event	timeout="5"		eventid="GE_TIME_PERIOD" />
+		<script>           
+	--		trigger:Deactivate()
+	--		HudTimer:Start( 12 * 60 )
+			if TimerHack(5) then -- arg is the trigger timeout
+				return
+			end
 
-<trigger	Name="trTimeOut"	active="0">
-	<event eventid="GE_TIMER_STOPPED" ObjName="Player1" />
-<script>           
-		trigger:Deactivate()
-		GetPlayerVehicle():AddModifier( "hp", "- 1000000" )
-</script>
-</trigger>
-
+			local timerOutcome = ArcadeTimer(5) -- arg is the trigger timeout
+			if timerOutcome==1 then -- if time runs out
+				local playa = GetPlayerVehicle()
+				playa:setGodMode(0)
+				playa:AddModifier( "hp", "- 1000000" )
+				trigger:Deactivate()
+			elseif timerOutcome>=2 then -- if timer is stopped by ArcadeTimerStop()
+				trigger:Deactivate()
+			end
+		</script>
+	</trigger>
 
 
 <trigger	Name="trBossRunEnd"	active="1">
@@ -486,8 +493,10 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <script>                                                              
 	trigger:Deactivate()
 --	CompleteQuest( "dv9_q1" )
-	HudTimer:Stop()
-	TDeactivate( "trTimeOut" )
+--	HudTimer:Stop()
+	
+	ArcadeTimerStop()
+
 	FlyShort ( { time = 23 , msg = { 9002, 90021, 9001 }, CompQuest1 = "dv9_q1"} )	
 --	FlyShort ( { time = 9 , msg = { 9001, 9002 } } )	
 --	FlyShort ( { time = 9 , msg = { 90000, 90001, 90002, 90003, 90004, 90015 }} )	
