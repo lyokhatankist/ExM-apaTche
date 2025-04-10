@@ -228,6 +228,11 @@
 		value="You brainless critters. Worthless subhumans! You have no idea what you're doing! It was our key to the highest state of…"
 		sound="data\sounds\dv_sounds\dialogs\dv9_24.wav"
 		time="10" />
+
+	<string
+		id="9007"
+		value=""
+		time="2" />
 		
 	<string
 		id="627"

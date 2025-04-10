@@ -629,6 +629,9 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	vehicle:SetGamePositionOnGround( getPos( "bossBorn" ) )]]
 	local bt = CreateTeam( "Boss_main", 1114, getPos( "bossBorn" ), { "Boss_03" } )
 	local b = bt:GetVehicle( 0 )
+	if b then
+		b:setImmortalMode(1)
+	end
 	BossHp:Setup( b:GetId() )         
 	BossHp:Show()
 	
@@ -642,12 +645,39 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 
 
 <trigger	Name="trBossDie"	active="0">
-	<event	eventid="GE_OBJECT_DIE" ObjName="Boss_main" />
+	<event eventid="GE_VEHICLE_WITHOUT_HEALTH" ObjName="Boss_main_vehicle_0" />
 <script>           
 	trigger:Deactivate()
 	--BossHp:Hide()
 	SetVar( "AfterCin", "" );
-	FlyShort ( { time = 9 , msg = { 90050, 90051, 9006 }, removeWeapon = 1} );
+--	FlyShort ( { time = 9 , msg = { 90050, 90051, 9006 }, removeWeapon = 1} );
+	local b = getObj("Boss_main_vehicle_0")
+	local camTochBossPos = CVector(0, 0, 0)
+	if b then
+		b:SetMaxSpeed(0)
+		b:SetMaxTorque(1)
+		camTochBossPos = b:GetPosition()
+		camTochBossPos.y = camTochBossPos.y - 2
+	end
+	CreateNewDummyObject( "point", "camTochBoss", -1, -1, camTochBossPos, Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+	local camTochBoss = GetEntityByName("camTochBoss")
+	local camTochBossID = camTochBoss:GetId()
+	local playaID = GetPlayerVehicleId()
+	local a = random( 360 )
+	FlyAround( 2, -0.5, 25, 13, GetPlayerVehicle():GetPosition() + CVector( 60 * sin(a), 85, 60 * cos(a) ), playaID, 0, 0, nil, 1, nil, nil  )	
+	FlyLinked( "BossDie_Cam01", playaID, 16, 0, 0, camTochBossID )
+	StartCinematic()
+
+	AddCinematicMessage( 90050, 0.25 )
+	AddCinematicMessage( 90051, 0.25 )
+
+	TActivate("trBossDieCam")
+
+	SaveAllToleranceStatus( RS_NEUTRAL )
+	TActivate( "RestoreTolerance" )
+	BonusWeaponRemove()
+
+
 	TDeactivate("trBossRunEnd")
 	TDeactivate("trTalk_01")
 	TDeactivate("trAnalitic")
@@ -670,6 +700,39 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 </script>
 </trigger>
 
+	<trigger	Name="trBossDieCam"	active="0">
+		<event flypath="BossDie_Cam01" eventid="GE_START_CINEMATIC_FLY" ObjName="Player1" />
+		<script>           
+			trigger:Deactivate()
+
+			local b = getObj("Boss_main_vehicle_0")
+
+			local camTochBossPos = CVector(0,0,0)
+			if b then
+				camTochBossPos = b:GetPosition()
+			end
+			local camTochBoss = getObj("camTochBoss")
+			if camTochBoss then
+				camTochBoss:SetPosition(camTochBossPos)
+			end
+				
+			AddCinematicMessage( 9006, 0.25 )
+			AddCinematicMessage( 9007, 0 )
+			TActivate("trBossCinematicDie")
+		</script>
+	</trigger>
+
+	<trigger	Name="trBossCinematicDie"	active="0">
+		<event msgid="9007" eventid="GE_START_CINEMATIC_MSG" ObjName="Player1" />
+		<script>           
+			trigger:Deactivate()
+			local b = getObj("Boss_main_vehicle_0")
+			if b then
+				b:setImmortalMode(0)
+				b:AddModifier("hp", "- 9000")
+			end
+		</script>
+	</trigger>
 
 <trigger	Name="trAnalitic"	active="0">
 		<event	timeout="99"		eventid="GE_TIME_PERIOD" />
@@ -709,6 +772,12 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <script>
 		trigger:Deactivate()
 		
+		local b = getObj("Boss_main_vehicle_0")
+		if b then
+			b:setImmortalMode(0)
+			b:AddModifier("hp", "- 9000")
+		end
+
 		GetPlayerVehicle():UnlimitMaxSpeed()
 		GetPlayerVehicle():PlaceToEndOfPath("Credits")
 		
