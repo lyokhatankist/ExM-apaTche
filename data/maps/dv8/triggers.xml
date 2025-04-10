@@ -1071,23 +1071,22 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 </trigger>
 
 	<trigger	Name="trMushroomsTimer"	active="0">
-		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+		<event	timeout="5"		eventid="GE_TIME_PERIOD" />
 		<script>
-			trigger:Deactivate()
-			HudTimer:Start( 60 * 15 )
-			TActivate("trMushroomsFailed")
+			if TimerHack(5) then -- arg is the trigger timeout
+				return
+			end
+
+			local timerOutcome = ArcadeTimer(5) -- arg is the trigger timeout
+			if timerOutcome==1 then -- if time runs out
+				FailQuest( "dv8_q3" )
+				CompasOn( 27, 22 )  
+				trigger:Deactivate()
+			elseif timerOutcome>=2 then -- if timer is stopped by ArcadeTimerStop()
+				trigger:Deactivate()
+			end
 		</script>
 	</trigger>
-
-<trigger	Name="trMushroomsFailed"	active="0">
-	<event eventid="GE_TIMER_STOPPED" ObjName="Player1" />
-<script>
-	FailQuest( "dv8_q3_2" )
-	trigger:Deactivate()
-	HudTimer:Stop( )
-	CompasOn( 27, 22 )  
-</script>
-</trigger>
 
 
 <trigger	Name="trMushroomsZombieCounter"	active="0">
@@ -1104,7 +1103,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		trigger:Deactivate()
 --		CompleteQuest( "dv8_q3" )
 		CompasOn( 27, 22 )  
-		HudTimer:Stop( )
+		ArcadeTimerStop()
 		FlyShort ( { time = 7 , msg = { 8004 }, CompQuest1 = "dv8_q3" } )	
 	end
 </script>
@@ -1311,7 +1310,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<event	timeout="2.5"		eventid="GE_TIME_PERIOD" />
 <script>           
 		trigger:Deactivate()
-		TActivate( "trMushroomsTimer" )
+		ArcadeTimerStart(15*60, "trMushroomsTimer" )
 		SaveGame( "dv8_BeforeZombie" )
 </script>
 </trigger>

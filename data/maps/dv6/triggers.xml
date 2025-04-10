@@ -348,8 +348,29 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		<script>
 			trigger:Deactivate()
 			
-			HudTimer:Start( 20 * 60 )
+--			HudTimer:Start( 20 * 60 )
+			ArcadeTimerStart(20 * 60, "trTimerStart")
+
 			CompasOn( 13, 6 )
+		</script>
+	</trigger>
+
+	<trigger	Name="trTimerStart"	active="0">
+		<event	timeout="5"		eventid="GE_TIME_PERIOD" />
+		<script>           
+			if TimerHack(5) then -- arg is the trigger timeout
+				return
+			end
+
+			local timerOutcome = ArcadeTimer(5) -- arg is the trigger timeout
+			if timerOutcome==1 then -- if time runs out
+				local playa = GetPlayerVehicle()
+				playa:setGodMode(0)
+				playa:AddModifier( "hp", "- 1000000" )
+				trigger:Deactivate()
+			elseif timerOutcome>=2 then -- if timer is stopped by ArcadeTimerStop()
+				trigger:Deactivate()
+			end
 		</script>
 	</trigger>
 
@@ -490,9 +511,10 @@ p("BombCounter")
 --		CompleteQuest( "dv6_q2" )			
 		TActivate( "trBurnZombie" )
 		CompasOn( 8, 10 )
-		HudTimer:Stop()
+--		HudTimer:Stop()
+		ArcadeTimerStop()
 
-		TDeactivate( "trTimerLose" )
+--		TDeactivate( "trTimerLose" )
 		QuestCounter:Hide()
 
 		--SafeRemove("Cemetery_01") 19
@@ -501,17 +523,6 @@ p("BombCounter")
 		
 		TActivate("trShroomNote2")
 	end
-</script>
-</trigger>
-
-
-<trigger	Name="trTimerLose"	active="0">
-	<event eventid="GE_TIMER_STOPPED" ObjName="Player1" />
-<script>
-	
---!!! Тиме даун
-	trigger:Deactivate()
-	GetPlayerVehicle():AddModifier( "hp", "- 1000000" )
 </script>
 </trigger>
 

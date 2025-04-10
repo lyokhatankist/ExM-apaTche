@@ -1761,7 +1761,7 @@ end
 -- unique_id is the identifier of the timer hack for cases when you use it for multiple GE_TIME_PERIOD triggers at the same time
 -- known issues:
 -- - the trigger will not go through the first time the timer is triggered, first activation happens at the second timeout
---   (you can fix it by setting the SetVar variable "PreviousTime" to the timeout value of the trigger, before you activate it)
+--   (you can fix it by setting the SetVar variable "PreviousTime" to the timeout value of the trigger before you activate it)
 -- - the trigger will always activate at the first timer available (even if it's a duplicated one) after loading the game
 --   (this happens because this hack accounts for the real time, and, obviously, some time passes while you're menuing)
 function TimerHack(seconds, unique_id)
