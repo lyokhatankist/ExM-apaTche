@@ -22242,6 +22242,19 @@
 		SpawneeHover="5.000" />
 
 	<Object
+		Name="Weapon_ShotgunDV1_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3892.318 304.824 1904.664"
+		Radius="2.500"
+		SpawnObjectsPrototypes="shotgunDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="30000000.000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000" />
+
+	<Object
 		Name="BonusWeaponRemover_mp_rs"
 		Belong="1100"
 		Prototype="genericLocation"

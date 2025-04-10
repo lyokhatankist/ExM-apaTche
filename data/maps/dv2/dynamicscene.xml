@@ -33382,6 +33382,26 @@
 		SpawnEffect="ET_PS_REPAIR_PICKUP"/>
 
 	<Object
+		Name="PowerUp_Armor_06_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="1980.741 256.612 853.975"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"/>
+
+	<Object
+		Name="PowerUp_Damage_02_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2052.776 277.101 1043.073"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Damage"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_QUAD_PICKUP" />
+
+	<Object
 		Name="BonusWeaponRemover_mp_rs"
 		Belong="1100"
 		Prototype="genericLocation"
