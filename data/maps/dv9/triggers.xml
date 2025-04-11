@@ -840,6 +840,12 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 				end
 			end
 		end
+
+		local b = getObj("Boss_main_vehicle_0")
+		if b then
+			b:setImmortalMode(0)
+			b:AddModifier("hp", "- 9000")
+		end
 		
 		RuleConsole("cinematic_spring_coeff 15")
 		SaveAllToleranceStatus( RS_NEUTRAL )
