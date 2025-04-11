@@ -959,10 +959,7 @@ p("cinStartMap")
 			Fly	("Start_cam_01", CINEMATIC_NO_AIM, 0, 5, 0, 1)
 
 			StartCinematic()
-			local cinematic = GetCinematic()
-			cinematic:SetSkippable( true )
-			UpdateCinematic( 0 )
---			UpdateCinematic( 1 )
+			UpdateCinematic( 1 )
 
 			AddCinematicMessage( 2001, 1 )
 

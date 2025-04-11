@@ -814,11 +814,6 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 			FlyShort ( { time = 20 , msg = { 10031, 10032 }, CompQuest1 ="ng1_dv1_q1_2", removeWeapon = 1} )	
 	--		CompleteQuest( "dv1_q1_2" )
 
-			local cinematic = GetCinematic()
-			cinematic:SetSkippable( false )
-			cinematic:StartCinematic()
-			UpdateCinematic( 0 )
-
 			TActivate( "trLoadNext" )
 		end
 	</script>
