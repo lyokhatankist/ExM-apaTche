@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name		= "Intermission"
+		class		= "Intermission"
+		org			= "-0.5 -0.5 1024 768"
+		style		= "16896">
+
+		<Node
+			name		= "btnResults"
+			class		= "TabButton"
+			org			= "592 23 128 64"
+			style		= "265728"
+			id			= "2000"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			tip			= "^Results^"
+			btnIsImaged	= "1"
+			btnImage	="data\if_dv\ico\Intermission\im_tab_01_e.tga"
+			btnImageDown="data\if_dv\ico\Intermission\im_tab_01_p.tga"
+			btnImageIn	="data\if_dv\ico\Intermission\im_tab_01_h.tga"
+			btnImageSel	="data\if_dv\ico\Intermission\im_tab_01_s.tga"
+		/>
+
+		<Node
+			name		= "btnGarage"
+			class		= "TabButton"
+			org			= "736 23 128 64"
+			style		= "265728"
+			id			= "2001"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			tip			= "^Garage^"
+			btnIsImaged	= "1"
+			btnImage	="data\if_dv\ico\Intermission\im_tab_02_e.tga"
+			btnImageDown="data\if_dv\ico\Intermission\im_tab_02_p.tga"
+			btnImageIn	="data\if_dv\ico\Intermission\im_tab_02_h.tga"
+			btnImageSel	="data\if_dv\ico\Intermission\im_tab_02_s.tga"
+		/>
+
+		<Node
+			name		= "btnBriefing"
+			class		= "TabButton"
+			org			= "880 23 128 64"
+			style		= "265728"
+			id			= "2002"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			tip			= "^Briefing^"
+			btnIsImaged	= "1"
+			btnImage	="data\if_dv\ico\Intermission\im_tab_03_e.tga"
+			btnImageDown="data\if_dv\ico\Intermission\im_tab_03_p.tga"
+			btnImageIn	="data\if_dv\ico\Intermission\im_tab_03_h.tga"
+			btnImageSel	="data\if_dv\ico\Intermission\im_tab_03_s.tga"
+		/>
+
+		<Node
+			name		= "btnStart"                             	
+			class		= "ButtonWnd"
+			org			= "284 651 211 46"
+			style		= "265728"
+			id			= "2003"
+			paneName	= "MainMenuBtn"
+			paneFlags	= "1"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			caption		= "^StartMission^"
+		/>
+
+		<Node
+			name		= "btnMainMenu"
+			class		= "ButtonWnd"
+			org			= "529 651 211 46"
+			style		= "265728"
+			id			= "2004"
+			paneName	= "MainMenuBtn"
+			paneFlags	= "1"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			caption		= "^MainMenu^"
+		/>
+
+       	<Node
+       		name		= "topPanel"
+       		class		= "Wnd"
+       		org			= "0 0 1024 128"
+       		style		= "768"
+			paneFlags	= "0"
+			backimage	= "data/if_dv/ico/LoadingScreen/l_load_top.tga"
+       	/>
+
+		<Node
+			name		= "bottomPanel1"
+			class		= "Wnd"
+			org			= "0 632 1024 128"
+			style		= "768"
+			backimage	= "data\if_dv\ico\PlayScreen\bottom_back.tga"
+		/>  
+
+		<Node
+			name		= "bottomPanel0"
+			class		= "Wnd"
+			org			= "0 640 1024 128"
+			style		= "768"
+			backimage	= "data\if_dv\ico\LoadingScreen\l_load_bottom_back.tga"
+		/>  
+
+	</Node>
+</Prefabs>

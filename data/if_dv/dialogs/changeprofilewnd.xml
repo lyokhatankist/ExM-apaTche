@@ -10,7 +10,7 @@
 		<Node
 			name		= "btnDelete"
 			class		= "ButtonWnd"
-			org			= "600 360 144 36"
+			org			= "600 360 144 38"
 			style		= "265728"
 			id			= "300001"
 			caption		= "^Delete^"
@@ -27,7 +27,7 @@
 		<Node
 			name		= "btnCreate"
 			class		= "ButtonWnd"
-			org			= "600 257 144 36"
+			org			= "600 257 144 38"
 			style		= "265728"
 			id			= "300002"
 			caption		= "^Create^"
@@ -44,7 +44,7 @@
 		<Node
 			name		= "btnChose"
 			class		= "ButtonWnd"
-			org			= "600 205 144 36"
+			org			= "600 205 144 38"
 			style		= "265728"
 			id			= "300000"
 			caption		= "^Chose^"

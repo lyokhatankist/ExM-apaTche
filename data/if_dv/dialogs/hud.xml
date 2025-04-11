@@ -257,9 +257,9 @@
 			valColor			= "ffdddddd"
 			tipColor			= "ffff9900"
 			valFont				= "SM_Impact"
-			valFontSize			= "24"
+			valFontSize			= "28"
 			tipFont				= "SM_Impact"
-			tipFontSize			= "15"
+			tipFontSize			= "22"
 		/>
 
 		<!-- Boss health indicator -->

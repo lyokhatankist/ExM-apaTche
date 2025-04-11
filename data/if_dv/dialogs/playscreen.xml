@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+
+	<Node
+		name				= "playScreen"
+		class				= "PlayScreen"
+		org					= "-0.5 -0.5 1024 768"
+		paneFlags			= "0"
+		style				= "512"
+		backimage			= "data\if\frames\menu\darkdot.dds">
+
+		<Node
+			name			= "separator"
+			class			= "LineWnd"
+			org				= "308 126 2 504"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			paneFlags		= "7"
+			lineDirection	= "1"
+		/>
+
+    	<Node
+    		name				= "loadList"
+    		class				= "LoadList"
+			id					= "1002"
+    		org					= "308 126 711 504"
+    		paneFlags			= "0"
+    		style				= "393728"
+			scrollPaneName		= "Scroll1"
+			clientEdges			= "0 0 0 0">
+
+			<ItemInfo
+				size				= "678 128"
+				space				= "-56"
+				levelTextRect		= "20 0 657 70"
+				checkpointTextRect	= "40 0 637 70"
+				lockRect			= "610 3 64 64"
+				textColorEnabled	= "ffcccccc"
+				textColorDisabled	= "ff666666"
+				levelFont			= "SM_Impact"
+				levelFontSize		= "22"
+				checkpointFont		= "SM_Tahoma"
+				checkpointFontSize	= "15"
+				bgRegularTex		= "LoadItemBgRegular"
+				bgSelectedTex		= "LoadItemBgSelected"
+				lockTex				= "Lock"
+			/>
+
+    	</Node>
+
+    	<Node
+    		name				= "diz"
+    		class				= "Wnd"
+    		org					= "24 301 264 308"
+    		paneFlags			= "7"
+    		style				= "768"
+			paneName			= "MainMenu_A"
+			clientEdges			= "-4 -4 -4 -4"
+			fontName			= "SM_Tahoma"
+			fontSize			= "15"
+			textColor			= "ffcccccc"
+			format				= "3"
+			clientEdges			= "2 2 2 2"
+    	/>
+
+    	<Node
+    		name				= "image"
+    		class				= "Wnd"
+    		org					= "28 149 256 128"
+    		paneFlags			= "0"
+    		style				= "768"
+    	/>
+
+    	<Node
+    		name				= "imageFrame"
+    		class				= "Wnd"
+    		org					= "24 145 264 136"
+    		paneFlags			= "7"
+    		style				= "768"
+			paneName			= "MainMenu_A"
+    	/>
+
+    	<Node
+    		name				= "bg"
+    		class				= "Wnd"
+    		org					= "0 121 1024 514"
+    		paneFlags			= "7"
+    		style				= "768"
+			paneName			= "MainMenu_B"
+    	/>
+
+       	<Node
+       		name			= "btnLoad"
+       		class			= "ButtonWnd"
+       		org				= "284 651 211 46"
+       		style			= "265728"
+   			id				= "1000"
+   			caption			= "^load^"
+   			font			= "3"
+			textColor		= "ffff9900"
+			paneName		= "MainMenuBtn"
+			paneFlags		= "1"
+       	/>
+
+       	<Node
+       		name			= "btnCancel"
+       		class			= "ButtonWnd"
+       		org				= "529 651 211 46"
+       		style			= "265728"
+   			id				= "1001"
+   			caption			= "^Cancel^"
+   			font			= "3"
+			textColor		= "ffff9900"
+			paneName		= "MainMenuBtn"
+			paneFlags		= "1"
+       	/>
+
+    	<Node
+    		name				= "bottomPanel"
+    		class				= "Wnd"
+    		org					= "0 632 1024 128"
+    		paneFlags			= "0"
+    		style				= "768"
+			backimage			= "data/if_dv/ico/PlayScreen/bottom_back.tga"
+    	/>
+
+	</Node>
+
+</Prefabs>
+
+		

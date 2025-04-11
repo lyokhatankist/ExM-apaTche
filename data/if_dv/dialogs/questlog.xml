@@ -124,7 +124,7 @@
 			paneName	= "defaultBtn"
 			paneFlags	= "7"
 			fontName	= "SM_Impact"
-			fontSize	= "16"
+			fontSize	= "14"
 			textColor	= "ffff9900"
 			wrap		= "0"
 			format		= "0"

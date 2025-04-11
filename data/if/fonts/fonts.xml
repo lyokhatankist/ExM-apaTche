@@ -2,9 +2,9 @@
 <Fonts>
 	<Item
 		name="SM_Tahoma"
-		height="12.000"
-		heightVirtual="12.000"
-		file="data\if\fonts\SM_Tahoma_12.000_00.dds">
+		height="16.000"
+		heightVirtual="16.000"
+		file="sm_tahoma_12.000_00.dds">
 		<Symbol
 			value=" "
 			abc="0.000 1.000 4.000"
@@ -1128,8 +1128,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="10.000"
-		heightVirtual="10.000"
+		height="14.000"
+		heightVirtual="14.000"
 		file="data\if\fonts\SM_Tahoma_10.000_00.dds">
 		<Symbol
 			value=" "
@@ -2254,8 +2254,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="9.375"
-		heightVirtual="12.000"
+		height="13.375"
+		heightVirtual="13.375"
 		file="data\if\fonts\SM_Tahoma_9.375_00.dds">
 		<Symbol
 			value=" "
@@ -3380,8 +3380,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="7.813"
-		heightVirtual="10.000"
+		height="11.813"
+		heightVirtual="11.813"
 		file="data\if\fonts\SM_Tahoma_7.813_00.dds">
 		<Symbol
 			value=" "
@@ -4506,8 +4506,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="13.500"
-		heightVirtual="12.000"
+		height="17.500"
+		heightVirtual="17.500"
 		file="data\if\fonts\SM_Tahoma_13.500_00.dds">
 		<Symbol
 			value=" "
@@ -5632,8 +5632,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="11.250"
-		heightVirtual="10.000"
+		height="15.250"
+		heightVirtual="15.250"
 		file="data\if\fonts\SM_Tahoma_11.250_00.dds">
 		<Symbol
 			value=" "
@@ -6758,8 +6758,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="15.000"
-		heightVirtual="12.000"
+		height="19.000"
+		heightVirtual="19.000"
 		file="data\if\fonts\SM_Tahoma_15.000_00.dds">
 		<Symbol
 			value=" "
@@ -7884,8 +7884,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="12.500"
-		heightVirtual="10.000"
+		height="16.500"
+		heightVirtual="16.500"
 		file="data\if\fonts\SM_Tahoma_12.500_00.dds">
 		<Symbol
 			value=" "
@@ -9010,8 +9010,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="18.750"
-		heightVirtual="12.000"
+		height="22.750"
+		heightVirtual="22.750"
 		file="data\if\fonts\SM_Tahoma_18.750_00.dds">
 		<Symbol
 			value=" "
@@ -10136,8 +10136,8 @@
 
 	<Item
 		name="SM_Tahoma"
-		height="15.625"
-		heightVirtual="10.000"
+		height="19.625"
+		heightVirtual="19.625"
 		file="data\if\fonts\SM_Tahoma_15.625_00.dds">
 		<Symbol
 			value=" "
@@ -11263,8 +11263,8 @@
 
 	<Item
 		name="SM_Impact"
-		height="39.000"
-		heightVirtual="39.000"
+		height="55.000"
+		heightVirtual="55.000"
 		space = "-4"
 		file="data\if\fonts\SM_Impact_39.000_00.dds">
 		<Symbol

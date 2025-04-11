@@ -17,7 +17,7 @@
 		levelNameFont		= "SM_Impact"
 		levelNameFontSz		= "30"
 		tipFont				= "SM_Tahoma"	
-		tipFontSz			= "14"
+		tipFontSz			= "15"
 		pressKeyFont		= "SM_Impact"
 		pressKeyFontSz		= "18"
 		levelNameColor		= "ffffddaa"

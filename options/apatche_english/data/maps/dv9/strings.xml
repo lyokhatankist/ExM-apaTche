@@ -242,12 +242,12 @@
 	<string
 		id="1486"
 		msgType="SCROLL"
-		image="data\models\vehicles\empty.dds"
-		upOverlay="data\models\vehicles\empty.dds"
-		downOverlay="data\models\vehicles\empty.dds"
-		value="| | | |@ffccccccHTA:@ffef8d00apa@ffab1e1eT@ffef8d00che| | | | |@ffef8d00Developer studio|@ffcccccc“DOLBOYASCHERS TEAM”| | | | |@ffef8d00CEO of moronic|@ffccccccAlexey “lyokhatankist” Smirnov| | |@ffef8d003D modeling, technical support, QA|@ffccccccIvan “ICAS-14” Cherepanov| | |@ffef8d003D modeling|@ffccccccDmitry “Gnome627” Saschenko| | |@ffef8d00Caravan external paths, QA|@ffccccccAndrey “Linkor” Krylov| | |@ffef8d00Testing|@ffccccccICAS-14|MrKarfen|Mr Kirov|Gnome627|Seel| | |@ffef8d00Feedback|@ffccccccStive Metal|E Jet|MADVAN1378|Andrey Dragunov|ExerTheExer| | |@ffef8d00Special thanks:|@ffccccccEM2ch community|Deus Ex Machina community|FunnyScout|Pavlik RPG|emerehhhhh|stakanyash| | | | |@ffef8d00Should you encounter a bug or come up with an idea on how to improve this project, please do contact us in whatever way you find most convenient: be it Discord, YouTube (comment section for the mod's trailer will suffice) or VK (if you happen to have a page there), we are eager to discuss anything you might bring to the table.||@ffab1e1eEM2ch Discord:|@ffccccccdiscord.com/invite/AzZQsgDJaD||@ffab1e1eEM2ch YouTube:|@ffccccccyoutube.com/@em2ch||@ffab1e1eEM2ch VK:|@ffccccccvk.com/em2ch| | | | | | | | |@ffef8d00Your journey in the universe of Hard Truck Apocalypse isn't over just yet, for this was only the beginning. Have a safe ride, hardtruckers!||@ffccccccThank you for playing HTA:apaTche!"
+		image="data\maps\dv9\credits_back.dds"
+		upOverlay="data\maps\dv9\credits_overlay_up.dds"
+		downOverlay="data\maps\dv9\credits_overlay.dds"
+		value="| | | |@ffccccccHTA:@ffef8d00apa@ffab1e1eT@ffef8d00che| | | | |@ffef8d00Developer studio|@ffcccccc“DOLBOYASCHERS TEAM”| | | | |@ffef8d00CEO of moronic|@ffccccccAlexey “lyokhatankist” Smirnov| | |@ffef8d003D modeling, technical support, QA|@ffccccccIvan “ICAS-14” Cherepanov| | |@ffef8d003D modeling|@ffccccccDmitry “Gnome627” Saschenko| | |@ffef8d00Fonts fix|@ffccccccEgor “Joomer” Alexeev| | |@ffef8d00Caravan external paths, QA|@ffccccccAndrey “Linkor” Krylov| | |@ffef8d00Testing|@ffccccccICAS-14|MrKarfen|Mr Kirov|Gnome627|Seel| | |@ffef8d00Feedback|@ffccccccStive Metal|E Jet|MADVAN1378|Andrey Dragunov|ExerTheExer| | |@ffef8d00Special thanks:|@ffccccccEM2ch community|Deus Ex Machina community|FunnyScout|Pavlik RPG|emerehhhhh|stakanyash| | | | |@ffef8d00Should you encounter a bug or come up with an idea on how to improve this project, please do contact us in whatever way you find most convenient: be it Discord, YouTube (comment section for the mod's trailer will suffice) or VK (if you happen to have a page there), we are eager to discuss anything you might bring to the table.||@ffab1e1eEM2ch Discord:|@ffccccccdiscord.com/invite/AzZQsgDJaD||@ffab1e1eEM2ch YouTube:|@ffccccccyoutube.com/@em2ch||@ffab1e1eEM2ch VK:|@ffccccccvk.com/em2ch| | | | | | | | |@ffef8d00Your journey in the universe of Hard Truck Apocalypse isn't over just yet, for this was only the beginning. Have a safe ride, hardtruckers!||@ffccccccThank you for playing HTA:apaTche!"
 		fontSize="22"
-		scrollSpeed="0.57"
+		scrollSpeed="0.6"
 		time="3" />
 		
 	<string
