@@ -1260,7 +1260,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		DamageType			="PIERCING"
 		Price							= "3450"		
 		Decal							= "DC_SML_MACHINEGUN"
-		ChargeSize     		= "1"
+		ChargeSize     		= "1000"
 		RechargingTime 		= "3"
 		Durability				= "60"
 		Damageable				= "false" />
@@ -1285,7 +1285,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		DamageType			="PIERCING"
 		Price							= "3450"		
 		Decal							= "DC_SML_MACHINEGUN"
-		ChargeSize     		= "1"
+		ChargeSize     		= "1000"
 		RechargingTime 		= "3"
 		Durability				= "60"
 		Damageable				= "false" />
@@ -1293,7 +1293,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 	<Prototype
 		Class							= "BulletLauncher"
 		Name							= "rogue_02_weapon"
-		ModelFile					= "flag01"
+		ModelFile					= "storm01"
 		ResourceType			= "BIG_GUN"
 		NodeScale					= "1 1 1"
 		Mass							= "1.0"		
@@ -1301,7 +1301,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		ExplosionType			= "MACHINEGUN"
 		FiringEffect			= "none"
 		Damage						= "250"
-		FiringRate				= "100"
+		FiringRate				= "34"
 		GroupingAngle			= "13.77"
 		NumBulletsInShot	= "60"
 		FiringRange				= "200"
@@ -1310,7 +1310,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		DamageType			="PIERCING"
 		Price							= "3450"		
 		Decal							= "DC_SML_MACHINEGUN"
-		ChargeSize     		= "1"
+		ChargeSize     		= "1000"
 		RechargingTime 		= "1.75"
 		Durability				= "60"
 		Damageable				= "false" />
