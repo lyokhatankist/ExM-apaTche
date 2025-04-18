@@ -343,6 +343,8 @@
 	<Item	id="vorota"	file="data\models\AnimModels.xml"/>
 	<Item	id="kst01"	file="data\models\AnimModels.xml"/>
 	<Item	id="kst01gun"	file="data\models\AnimModels.xml"/>
+	<Item	id="iroquois01"	file="data\models\AnimModels.xml"/>
+	<Item	id="iroquois01gun"	file="data\models\AnimModels.xml"/>
 	<Item	id="vulcan01"	file="data\models\AnimModels.xml"/>
 	<Item	id="vulcan01gun"	file="data\models\AnimModels.xml"/>
 	<Item	id="vulcan02"	file="data\models\AnimModels.xml"/>

@@ -43,6 +43,14 @@
 		file_end	="data\sounds\dv_sounds\weapons\dv_weapon3_v5_tail.wav"
 		group="BURNING_SMALL"
 		/>
+
+	<model
+		id="S_SHOOTING_IROQUOIS"
+		type="DOUBLE"
+		file_start	="data\sounds\dv_sounds\weapons\dv_weapon3_v2_loop.wav"
+		file_end	="data\sounds\dv_sounds\weapons\dv_weapon3_v2_tail.wav"
+		group="BURNING_SMALL"
+		/>
 		
 	<model
 		id="S_SHOOTING_VULCAN"
