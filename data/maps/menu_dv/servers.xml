@@ -222,6 +222,8 @@
 	<Item	id="truckWheel02r"	file="data\models\AnimModels.xml"/>
 	<Item	id="tube2"	file="data\models\AnimModels.xml"/>
 	<Item	id="tube3"	file="data\models\AnimModels.xml"/>
+	<Item	id="hedgemaster01"	file="data\models\AnimModels.xml"/>
+	<Item	id="hedgemaster01gun"	file="data\models\AnimModels.xml"/>
 	<Item	id="iroquois01"	file="data\models\AnimModels.xml"/>
 	<Item	id="iroquois01gun"	file="data\models\AnimModels.xml"/>
 	<Item	id="vulcan01"	file="data\models\AnimModels.xml"/>

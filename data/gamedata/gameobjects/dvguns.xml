@@ -628,27 +628,36 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 	<Prototype
 		Class							= "BulletLauncher"
 		Name							= "zenithDV3"
-		ModelFile					= "kpvt01"
+		ModelFile					= "hedgemaster01"
 		ResourceType			= "BIG_GUN"
 		NodeScale					= "1 1 1"
 		Mass							= "1.0"		
 		BulletPrototype		= "raybullet"
-		ExplosionType			= "AUTOCANNON"
+		BlastWavePrototype	= "zenithDV3_blast"
+		ExplosionType			= "CANNON"
 		FiringEffect			= "none"
-		Damage						= "25"
-		FiringRate				= "1000"
-		GroupingAngle			= "3.3"
+		Damage						= "120"
+		FiringRate				= "240"
+		GroupingAngle			= "0.3"
 		FiringRange				= "1400"
-		RecoilForce				= "300"
+		RecoilForce				= "1500"
 		CanBeUsedInAutogenerating  =  "0"		
 		Decal							= "DC_BIG_MACHINEGUN"
-		ChargeSize     		= "130"
+		ChargeSize     		= "10000"
 		RechargingTime 		= "0"
 		Price							= "6400"
 		FiringType				= "MachineGun"
 		DamageType			="ENERGY"
 		Durability				= "60"
 		Damageable				= "false"	/>
+
+	<Prototype
+		Class							= "BlastWave"
+		Name							= "zenithDV3_blast"
+		Radius						= "13.0"
+		Effect						= "ET_PS_INCENDIARY_SHOT"
+		WaveForceIntensity= "1"
+		WaveDamageIntensity	= "120.0" />
 
 <!-- guns apaTche -->
 <!-- ÄÐÎÁÎÂÈÊ -->

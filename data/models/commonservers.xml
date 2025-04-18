@@ -703,6 +703,8 @@
 			id="S_ENGINE_HUNTER_1_HIGH" />
 			
 		<Item
+			id="S_SHOOTING_HEDGEMASTER" />
+		<Item
 			id="S_SHOOTING_JAVELIN" />
 		<Item
 			id="S_SHOOTING_HURRYCAT" />
