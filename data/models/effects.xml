@@ -2393,15 +2393,20 @@
 	      <Node name="Sound3" class="SgSoundSourceNode" id="S_CAR_GR" looped="0" />
 	</Node>
 	<Node name="ET_PS_CANNONROADEXPLOSION" class="SgNode">
-		<Node name="Object1" class="SgParticlesNode" id="PS_ASP_MACHINEGUN_DUST_SMALL" psNumEmitterMesh="-1" />
-		<Node name="Object2" class="SgParticlesNode" id="PS_ASP_MACHINEGUN_TRAIL_BIG" psNumEmitterMesh="-1" />
+		<Node name="Object2" class="SgParticlesNode" id="PS_CANNON_EXP_MAIN1" psNumEmitterMesh="-1" />
+		<Node name="Object111" class="SgParticlesNode" id="PS_CANNON_EXP_MAIN" psNumEmitterMesh="-1" />
+		<Node name="Object1" class="SgParticlesNode" id="PS_GROUND_CANNON_GROUND" psNumEmitterMesh="-1" />
+		<Node name="Object11" class="SgParticlesNode" id="PS_GROUND_CANNON_GROUND1" psNumEmitterMesh="-1" />
+		<Node name="Object92" class="SgParticlesNode" id="PS_GROUND_CANNON_TRAIL_BIG" psNumEmitterMesh="-1" />
+		<Node name="Object921" class="SgParticlesNode" id="PS_GROUND_CANNON_TRAIL_BIG" psNumEmitterMesh="-1" />
 	      <Node name="Sound3" class="SgSoundSourceNode" id="S_ROAD_GR" looped="0" />
 	</Node>
 	<Node name="ET_PS_CANNONROCKEXPLOSION" class="SgNode">
 		<Node name="Object2" class="SgParticlesNode" id="PS_CANNON_EXP_MAIN1" psNumEmitterMesh="-1" />
 		<Node name="Object1" class="SgParticlesNode" id="PS_CANNON_EXP_MAIN" psNumEmitterMesh="-1" />
 		<Node name="Object3" class="SgParticlesNode" id="PS_CANNON_EXP_MAIN2" psNumEmitterMesh="-1" />
-
+		<Node name="Object1" class="SgParticlesNode" id="PS_GROUND_CANNON_GROUND" psNumEmitterMesh="-1" />
+		<Node name="Object11" class="SgParticlesNode" id="PS_GROUND_CANNON_GROUND1" psNumEmitterMesh="-1" />
 	      <Node name="Sound3" class="SgSoundSourceNode" id="S_ROCK_GR" looped="0" />
 	</Node>
 
