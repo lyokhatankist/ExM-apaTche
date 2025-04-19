@@ -899,7 +899,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <script>
 	trigger:Deactivate()
 
-	local red = "NG1_Humvee_01"
+	local red = "NG1_Humvee_03"
 	local tr_D = getObj( "trRedDieCounter" )
 	-- 15 машин!
 	local m_c = 15;

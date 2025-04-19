@@ -1732,7 +1732,7 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
 			<Part id = "CABIN"					Prototype = "vanCab02" />
-			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV2" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV1" />
 		</Parts>
 	</Prototype>
 	
@@ -1746,7 +1746,7 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
 			<Part id = "CABIN"					Prototype = "vanCab02" />
-			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV3" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV2" />
 		</Parts>
 	</Prototype>
 	
@@ -1773,7 +1773,7 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
 			<Part id = "CABIN"					Prototype = "vanCab02" />
-			<Part id = "CABIN_SMALL_GUN"		Prototype = "rocketDV1" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "hunter_00_weapon" />
 		</Parts>
 	</Prototype>
 	
@@ -1846,9 +1846,9 @@
 		ParentPrototype 		= "HunterTruck">
 		<Parts>
 			<Part id = "CABIN"					Prototype = "truckCab" />
-			<Part id = "CABIN_BIG_GUN"			Prototype = "rocketDV1" /> 
-			<Part id = "CABIN_BIG_GUN_2"		Prototype = "rocketDV1" /> 
-			<Part id = "CABIN_GIANT_GUN"		Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_BIG_GUN"			Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "zenithDV3" /> 
 		</Parts>
 	</Prototype>
 	
@@ -1877,14 +1877,44 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
 			<Part id = "CABIN"					Prototype = "HumveeCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV1" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV1" />  
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Humvee_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "HumveeCab" />
 			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV2" /> 
 			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV2" />  
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Humvee_02"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "DeltaCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV3" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "shotgunDV2" />  
 		</Parts>
 	</Prototype>
 	
 	<Prototype
 		Class					= "Vehicle"
-		Name					= "NG1_Humvee_01"
+		Name					= "NG1_Humvee_03"
 		VisibleInEncyclopedia   = "false"
 		AllowedRoles			= "roleCheater"
 		EnemyType				= "MINIBOSS"

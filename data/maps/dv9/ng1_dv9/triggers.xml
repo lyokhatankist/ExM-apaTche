@@ -106,40 +106,40 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
  	trigger:Deactivate()
 
  	Ambushs = {
-		{ onEnter = "Ambush00", onSpawn = "Ambush00_s", spawnTeam = { "NG1_Light_04", "NG1_Heavy_03", "NG1_Light_04" }, belong = 1114 };
-		{ onEnter = "Ambush000", onSpawn = "Ambush000_s", spawnTeam = { "NG1_Medium_04", "NG1_Heavy_02" }, belong = 1114 };
-		{ onEnter = "Ambush001", onSpawn = "Ambush001_s", spawnTeam = { "NG1_Heavy_01", "NG1_Humvee_00" }, belong = 1114 };
+		{ onEnter = "Ambush00", onSpawn = "Ambush00_s", spawnTeam = { "NG1_Light_04", "NG1_Light_03", "NG1_Light_04" }, belong = 1114 };
+		{ onEnter = "Ambush000", onSpawn = "Ambush000_s", spawnTeam = { "NG1_Heavy_04", "NG1_Light_05" }, belong = 1116 };
+		{ onEnter = "Ambush001", onSpawn = "Ambush001_s", spawnTeam = { "NG1_Humvee_02", "NG1_Humvee_03" }, belong = 1115 };
 		{ onEnter = "Ambush002", onSpawn = "Ambush002_s", spawnTeam = { "NG1_Light_03", "NG1_Heavy_01" }, belong = 1114 };
 		{ onEnter = "Ambush003", onSpawn = "Ambush003_s", spawnTeam = { "NG1_Medium_04", "NG1_Light_03" }, belong = 1114 };
-		{ onEnter = "Ambush004", onSpawn = "Ambush004_s", spawnTeam = { "NG1_Heavy_02", "NG1_Humvee_00" }, belong = 1114 };
+		{ onEnter = "Ambush004", onSpawn = "Ambush004_s", spawnTeam = { "NG1_Humvee_02", "NG1_Humvee_00" }, belong = 1115 };
 		{ onEnter = "Ambush005", onSpawn = "Ambush005_s", spawnTeam = { "NG1_Shotgun_05", "NG1_Light_05" }, belong = 1116 };
-		{ onEnter = "Ambush006", onSpawn = "Ambush006_s", spawnTeam = { "NG1_Medium_04", "NG1_Light_03" } };
-		{ onEnter = "Ambush007", onSpawn = "Ambush007_s", spawnTeam = { "NG1_Humvee_01" }, belong = 1115 };
+		{ onEnter = "Ambush006", onSpawn = "Ambush006_s", spawnTeam = { "NG1_Medium_04", "NG1_Heavy_04" }, belong = 1114 };
+		{ onEnter = "Ambush007", onSpawn = "Ambush007_s", spawnTeam = { "NG1_Humvee_02" }, belong = 1115 };
 		{ onEnter = "Ambush008", onSpawn = "Ambush008_s", spawnTeam = { "NG1_Shotgun_05", "NG1_Shotgun_05" }, belong = 1116 };
 		{ onEnter = "Ambush009", onSpawn = "Ambush009_s", spawnTeam = { "NG1_Heavy_03", "NG1_Medium_04" }, belong = 1114 };
 		{ onEnter = "Ambush01", onSpawn = "Ambush01_s", spawnTeam = { "NG1_Heavy_05", "NG1_Medium_04" }, belong = 1114 };
 		{ onEnter = "Ambush02", onSpawn = "Ambush02_s", spawnTeam = { "NG1_Light_03", "NG1_Heavy_03", "NG1_Light_03"}, belong = 1114 };
 		{ onEnter = "Ambush03", onSpawn = "Ambush03_s", spawnTeam = { "NG1_Shotgun_05", "NG1_Medium_03" }, belong = 1116 };
-		{ onEnter = "Ambush04", onSpawn = "Ambush04_s", spawnTeam = { "NG1_Light_03", "NG1_Heavy_03", "NG1_Humvee_00", "NG1_Light_03" }, belong = 1114 };
-		{ onEnter = "Ambush05", onSpawn = "Ambush05_s", spawnTeam = { "NG1_Medium_05", "NG1_Medium_03" }, belong = 1116 };
-		{ onEnter = "Ambush06", onSpawn = "Ambush06_s", spawnTeam = { "NG1_Light_03", "NG1_Light_03", "NG1_Medium_04", "NG1_Humvee_00" }, belong = 1115 };
-		{ onEnter = "Ambush07", onSpawn = "Ambush07_s", spawnTeam = { "NG1_Heavy_03", "NG1_Medium_04" }, belong = 1114 };
-		{ onEnter = "Ambush08", onSpawn = "Ambush08_s", spawnTeam = { "NG1_Humvee_00", "NG1_Heavy_05", "NG1_Shotgun_04" }, belong = 1114 };
-		{ onEnter = "Ambush09", onSpawn = "Ambush09_s", spawnTeam = { "NG1_Medium_05", "NG1_Shotgun_05" , "NG1_Light_02" }, belong = 1116};
-		{ onEnter = "Ambush10", onSpawn = "Ambush10_s", spawnTeam = { "NG1_Humvee_00", "NG1_Shotgun_01", "NG1_Medium_04"  }, belong = 1115 };
-		{ onEnter = "Ambush11", onSpawn = "Ambush11_s", spawnTeam = { "NG1_Humvee_00", "NG1_Medium_04", "NG1_Humvee_00" }, belong = 1115 };
+		{ onEnter = "Ambush04", onSpawn = "Ambush04_s", spawnTeam = { "NG1_Light_03", "NG1_Heavy_04", "NG1_Light_01", "NG1_Light_03" }, belong = 1114 };
+		{ onEnter = "Ambush05", onSpawn = "Ambush05_s", spawnTeam = { "NG1_Medium_03", "NG1_Medium_03" }, belong = 1116 };
+		{ onEnter = "Ambush06", onSpawn = "Ambush06_s", spawnTeam = { "NG1_Light_03", "NG1_Light_03", "NG1_Medium_04", "NG1_Heavy_04" }, belong = 1114 };
+		{ onEnter = "Ambush07", onSpawn = "Ambush07_s", spawnTeam = { "NG1_Medium_05", "NG1_Medium_03" }, belong = 1116 };
+		{ onEnter = "Ambush08", onSpawn = "Ambush08_s", spawnTeam = { "NG1_Light_04", "NG1_Heavy_02", "NG1_Shotgun_04" }, belong = 1114 };
+		{ onEnter = "Ambush09", onSpawn = "Ambush09_s", spawnTeam = { "NG1_Medium_03", "NG1_Shotgun_05" , "NG1_Light_02" }, belong = 1116};
+		{ onEnter = "Ambush10", onSpawn = "Ambush10_s", spawnTeam = { "NG1_Light_04", "NG1_Shotgun_01", "NG1_Medium_04"  }, belong = 1114 };
+		{ onEnter = "Ambush11", onSpawn = "Ambush11_s", spawnTeam = { "NG1_Humvee_00", "NG1_Humvee_03" }, belong = 1115 };
 		{ onEnter = "Ambush12", onSpawn = "Ambush12_s", spawnTeam = { "NG1_Shotgun_05", "NG1_Shotgun_05", "NG1_Medium_03" }, belong = 1116 };
-		{ onEnter = "Ambush13", onSpawn = "Ambush13_s", spawnTeam = { "NG1_Humvee_00", "NG1_Medium_04", "NG1_Light_03", "NG1_Light_03" }, belong = 1115 };
-		{ onEnter = "Ambush14", onSpawn = "Ambush14_s", spawnTeam = { "NG1_Humvee_00", "NG1_Humvee_00", "NG1_Heavy_05", "NG1_Medium_04" }, belong = 1114 };
+		{ onEnter = "Ambush13", onSpawn = "Ambush13_s", spawnTeam = { "NG1_Medium_02", "NG1_Medium_04", "NG1_Light_03", "NG1_Light_03" }, belong = 1114 };
+		{ onEnter = "Ambush14", onSpawn = "Ambush14_s", spawnTeam = { "NG1_Humvee_00", "NG1_Humvee_00", "NG1_Humvee_02" }, belong = 1115 };
 		{ onEnter = "Ambush15", onSpawn = "Ambush15_s", spawnTeam = { "NG1_Medium_02", "NG1_Medium_03" , "NG1_Heavy_05" }, belong = 1114};
-		{ onEnter = "Ambush16", onSpawn = "Ambush16_s", spawnTeam = { "NG1_Humvee_00" , "NG1_Heavy_05", "NG1_Humvee_00" }, belong = 1114};
-		{ onEnter = "Ambush17", onSpawn = "Ambush17_s", spawnTeam = { "NG1_Humvee_00", "NG1_Humvee_01" }, belong = 1115 };
-		{ onEnter = "Ambush18", onSpawn = "Ambush18_s", spawnTeam = { "NG1_Heavy_05", "NG1_Humvee_00" }, belong = 1114 };
-		{ onEnter = "Ambush19", onSpawn = "Ambush19_s", spawnTeam = { "NG1_Medium_04"  , "NG1_Heavy_05"}, belong = 1114};
-		{ onEnter = "Ambush20", onSpawn = "Ambush20_s", spawnTeam = { "NG1_Shotgun_04"  , "NG1_Shotgun_03", "NG1_Heavy_05" }, belong = 1114};
-		{ onEnter = "Ambush21", onSpawn = "Ambush21_s", spawnTeam = { "NG1_Humvee_01", "NG1_Medium_04" }, belong = 1115 };
-		{ onEnter = "Ambush22", onSpawn = "Ambush22_s", spawnTeam = { "NG1_Humvee_00", "NG1_Shotgun_04" , "NG1_Heavy_05"}, belong = 1114 };
-		{ onEnter = "Ambush23", onSpawn = "Ambush23_s", spawnTeam = { "NG1_Heavy_04", "NG1_Shotgun_04" , "NG1_Humvee_00", "NG1_Heavy_03"}, belong = 1114 };
+		{ onEnter = "Ambush16", onSpawn = "Ambush16_s", spawnTeam = { "NG1_Humvee_00" , "NG1_Humvee_00" }, belong = 1115};
+		{ onEnter = "Ambush17", onSpawn = "Ambush17_s", spawnTeam = { "NG1_Humvee_01", "NG1_Humvee_02" }, belong = 1115 };
+		{ onEnter = "Ambush18", onSpawn = "Ambush18_s", spawnTeam = { "NG1_Humvee_01", "NG1_Humvee_00" }, belong = 1115 };
+		{ onEnter = "Ambush19", onSpawn = "Ambush19_s", spawnTeam = { "NG1_Medium_04"  , "NG1_Heavy_03"}, belong = 1114};
+		{ onEnter = "Ambush20", onSpawn = "Ambush20_s", spawnTeam = { "NG1_Shotgun_04"  , "NG1_Shotgun_03", "NG1_Medium_04" }, belong = 1114};
+		{ onEnter = "Ambush21", onSpawn = "Ambush21_s", spawnTeam = { "NG1_Humvee_01", "NG1_Humvee_02" }, belong = 1115 };
+		{ onEnter = "Ambush22", onSpawn = "Ambush22_s", spawnTeam = { "NG1_Light_02", "NG1_Shotgun_05" , "NG1_Light_05"}, belong = 1116 };
+		{ onEnter = "Ambush23", onSpawn = "Ambush23_s", spawnTeam = { "NG1_Heavy_04", "NG1_Shotgun_04" , "NG1_Shotgun_04", "NG1_Heavy_04"}, belong = 1114 };
  		}
 
 	local tr_Start = getObj("trAmbStart")
