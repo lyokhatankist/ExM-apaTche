@@ -107,7 +107,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 
  	Ambushs = {
 		{ onEnter = "Ambush00", onSpawn = "Ambush00_s", spawnTeam = { "NG1_Light_04", "NG1_Light_03", "NG1_Light_04" }, belong = 1114 };
-		{ onEnter = "Ambush000", onSpawn = "Ambush000_s", spawnTeam = { "NG1_Heavy_04", "NG1_Light_05" }, belong = 1116 };
+		{ onEnter = "Ambush000", onSpawn = "Ambush000_s", spawnTeam = { "NG1_Heavy_04", "NG1_Light_04" }, belong = 1114 };
 		{ onEnter = "Ambush001", onSpawn = "Ambush001_s", spawnTeam = { "NG1_Humvee_02", "NG1_Humvee_03" }, belong = 1115 };
 		{ onEnter = "Ambush002", onSpawn = "Ambush002_s", spawnTeam = { "NG1_Light_03", "NG1_Heavy_01" }, belong = 1114 };
 		{ onEnter = "Ambush003", onSpawn = "Ambush003_s", spawnTeam = { "NG1_Medium_04", "NG1_Light_03" }, belong = 1114 };

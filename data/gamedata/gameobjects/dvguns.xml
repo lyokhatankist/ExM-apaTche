@@ -628,7 +628,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 	<Prototype
 		Class							= "BulletLauncher"
 		Name							= "zenithDV3"
-		ModelFile					= "hedgemaster01"
+		ModelFile					= "joustlance01"
 		ResourceType			= "BIG_GUN"
 		NodeScale					= "1 1 1"
 		Mass							= "1.0"		
@@ -636,7 +636,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		BlastWavePrototype	= "zenithDV3_blast"
 		ExplosionType			= "CANNON"
 		FiringEffect			= "none"
-		Damage						= "120"
+		Damage						= "60"
 		FiringRate				= "240"
 		GroupingAngle			= "0.3"
 		FiringRange				= "1400"

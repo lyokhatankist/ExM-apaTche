@@ -27,14 +27,14 @@
 		<Node name="Sound3" class="SgSoundSourceNode" id="S_SHOOTING_IROQUOIS" looped="1"/>
 	</Node>
 
-	<Node name="ET_PS_HEDGEMASTER_FIRE" class="SgNode">
+	<Node name="ET_PS_JOUSTLANCE_FIRE" class="SgNode">
 		<Node name="Object1" class="SgParticlesNode" id="PS_DRAGON01_FIRE_MAIN" psNumEmitterMesh="-1" />
 		<Node name="Object2" class="SgParticlesNode" id="PS_DRAGON01_FIRE_MAIN1" psNumEmitterMesh="-1" />
 		<Node name="Object3" class="SgParticlesNode" id="PS_RAPIER01_FIRE_SMOKE1" psNumEmitterMesh="-1" />
 		<Node name="Object4" class="SgParticlesNode" id="PS_RAPIER01_FIRE_SMOKE" psNumEmitterMesh="-1" />
 		<Node name="Object5" class="SgParticlesNode" id="PS_CYCLOPS01_FIRE_MAIN" psNumEmitterMesh="-1" />
 		<Node name="Object6" class="SgParticlesNode" id="PS_CYCLOPS01_FIRE_MAIN1" psNumEmitterMesh="-1" />
-		<Node name="Sound1" class="SgSoundSourceNode" id="S_SHOOTING_HEDGEMASTER" looped="0" />
+		<Node name="Sound1" class="SgSoundSourceNode" id="S_SHOOTING_JOUSTLANCE" looped="0" />
 	</Node>
 	
 	<Node name="ET_PS_JAVELIN_FIRE" class="SgNode">

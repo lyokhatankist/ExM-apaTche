@@ -738,7 +738,7 @@
 		
 	<Upgrade
 		Type="ZENITH"
-		UP="80000, 50000, 50000"
+		UP="80000, 40000, 100000"
 		Base="zenithDV1"
 		Extra="zenithDV2"
 		Superior="zenithDV3"/>

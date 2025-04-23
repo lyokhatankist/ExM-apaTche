@@ -2837,7 +2837,7 @@
 	</model>
 
 	<model
-		id="hedgemaster01"
+		id="joustlance01"
 		shadow="1"
 		windwavy="0"
 		file="data\models\guns\Baza_kpvt.sam">
@@ -2860,15 +2860,15 @@
 	</model>
 
 	<model
-		id="hedgemaster01gun"
+		id="joustlance01gun"
 		shadow="1"
 		windwavy="0"
-		file="data\models\guns\hedgemaster01_gun.sam">
+		file="data\models\guns\joustlance01_gun.sam">
 		<action
 			name="MOVE1">
 			<lp
 				id="LP_EXH01"
-				effect_id="ET_PS_HEDGEMASTER_FIRE"
+				effect_id="ET_PS_JOUSTLANCE_FIRE"
 				restartOnAnimationChange="1"
 				ImmediateRemove="0" />
 		</action>

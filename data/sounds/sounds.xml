@@ -13,7 +13,7 @@
 		/>
 		
 	<model
-		id="S_SHOOTING_HEDGEMASTER"
+		id="S_SHOOTING_JOUSTLANCE"
 		file="data\sounds\dv_sounds\weapons\dv_weapon13.wav"
 		group="GUNFIRE"
 		/>
