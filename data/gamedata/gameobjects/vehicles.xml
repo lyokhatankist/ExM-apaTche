@@ -1104,6 +1104,7 @@
 			<PartDescription 		id = "CABIN" 						partResourceType = "BOSS02_CABIN" 	lpName = "LP_CAB01" >
 				<PartDescription 	id = "CABIN_BIG_GUN" 		partResourceType = "BIG_GUN" 				lpName = "LP_BIG01" />
 			</PartDescription>
+			<PartDescription 		id = "BASKET" 						partResourceType = "FAKE_BASKET" 	lpName = "LP_CAB01" />
 		</MainPartDescription>
 		<Parts>
 			<Part id = "CHASSIS"			Prototype = "boss02Chassis" />
@@ -1123,6 +1124,7 @@
 		VisibleInEncyclopedia	= "true" >
 		<Parts>
 			<Part id = "CABIN"							Prototype = "boss02Cab" />
+			<Part id = "BASKET"							Prototype = "boss02Cargo" />
 			<Part id = "CABIN_BIG_GUN"			Prototype = "Boss02ToxicThrower" />  
 		</Parts>
 	</Prototype>

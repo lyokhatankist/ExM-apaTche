@@ -13450,7 +13450,7 @@
 
 	<Object
 		Name="Boss"
-		Belong="1101"
+		Belong="1114"
 		Prototype="lastBoss" />
 
 	<Object

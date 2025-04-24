@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+
+<!--
+$Id: $
+-->
+
+<Prototypes>
+
+
+<Prototype
+		Class						= "VehicleRoleBossToxo"
+		Name						= "roleToxicBoss"
+		ExternalPathForSpawnPoints 	= "Boss_spawn"
+		ExternalPathForMoveAlong 	= "Boss_run"
+		DisappearEffect 			= "ET_PS_MUSHROOMS_EXPLOSION"
+		BreakableLocation			= "Boss_mimic_zone"
+		FadeTimeWhenHit 			= "3.0"
+/>
+
+
+	<Prototype
+		Class					= "VehicleRoleBossBull"
+		Name					= "roleBull"
+		vehnam 					= "Boss_03"
+		PathNames				= "boss_00"
+		WaitBeforeRamTime		= "1.0"
+		WaitOnStuckTime			= "1.5"
+		MaxSpeedAlongPath		= "250.0"
+		MaxSpeedRamming			= "700.0"
+		TurboAccelerationTime 	= "5.0"
+		TurboAccelerationValue 	= "5.0"
+		DmgCoeffAlongPath		= "1.0"
+		DmgCoeffOnStuck			= "5.0"
+		MoveAlongPathTime 		= "10"
+		MaxRamTurnSpeed			= "10.0"
+		AdditionalDamageOnRam 	= "100.0"
+	/>
+
+	<Prototype
+		Class 					= "VehicleRoleManiac"
+		Name					= "roleManiac"
+		MinRadius				= "8"
+		MaxRadius				= "27"
+		ChaseDistance 			= "100"
+	/>
+	<Prototype
+		Class 					= "VehicleRoleSideAttack"
+		Name					= "roleSideAttack"
+		ChaseDistance			= "25"
+		SpotRadius				= "40"
+	/>
+
+	<Prototype
+		Class 					= "VehicleRoleRockets"
+		Name					= "roleRockets"
+		MaxRadiusToStop 		= "100"
+		MinRadiusToStop 		= "45"
+		MaxRadiusToStartMoving 	= "120"
+		MinRadiusToStartMoving 	= "40"
+		TimeForLockUp  			= "3"
+		TimeToKeepFire 			= "5"
+	/>
+
+
+
+	<Prototype
+		Class 				= "VehicleRoleMeat"
+		Name				= "roleMeat"
+		MinRadius			= "5"
+		MaxRadius			= "10"
+	/>
+
+	<Prototype
+		Class 				= "VehicleRoleMeat"
+		Name				= "roleMeat2"
+		MinRadius			= "15"
+		MaxRadius			= "25"
+	/>
+
+	<Prototype
+		Class 				= "VehicleRoleMeat8"
+		Name				= "roleMeat8"
+
+		MinInnerRadius		= "2"
+		MaxInnerRadius		= "10"
+		
+		MinOuterRadius		= "30"
+		MaxOuterRadius		= "50"
+	/>
+	
+
+	<Prototype
+		Class 				= "VehicleRoleCheater"
+		Name				= "roleCheater"
+
+		MinInnerRadius		= "5"
+		MaxInnerRadius		= "10"
+		
+		MinOuterRadius		= "30"
+		MaxOuterRadius		= "50"
+	/>
+
+
+	<Prototype
+		Class 				= "VehicleRoleSniper"
+		Name				= "roleSniper"
+	/>
+	
+
+	<Prototype
+		Class 				= "VehicleRoleRam"
+		Name				= "roleRam"
+
+		MinDistToRam		= "30"
+		MaxDistToRam		= "50"
+	/>
+
+
+
+	<Prototype
+		Class 				= "VehicleRoleCoward"
+		Name				= "roleCoward"
+
+		MinCircleRadius		= "5"
+		MaxCircleRadius		= "10"
+		
+		MinCriticalDamage	= "0.4"
+		MaxCriticalDamage	= "0.6"
+	/>
+	
+
+	<Prototype
+		Class 				= "VehicleRoleBarrier"
+		Name				= "roleBarrier"
+	/>
+	
+
+</Prototypes>

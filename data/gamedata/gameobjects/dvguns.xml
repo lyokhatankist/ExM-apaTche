@@ -345,7 +345,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		FiringRange       = "700"
 		RecoilForce       = "300"
 		FiringType        = "Rocket"
-		DamageType				=	"BLAST"
+		DamageType				=	"PIERCING"
 		ChargeSize     		= "1000"
 		RechargingTime 		= "3"
 		CanBeUsedInAutogenerating  =  "0"
@@ -361,7 +361,7 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		Radius						= "30.0"
 		Effect						= "ET_PS_AIRWAVE1"
 		WaveForceIntensity= "700"
-		WaveDamageIntensity	= "80.0" />
+		WaveDamageIntensity	= "100.0" />
 		
 	<Prototype
 		Class							= "Rocket"
@@ -389,13 +389,13 @@ $Id: DVGuns.xml,v 1.2 2006/01/26 09:14:58  Exp $
 		BlastWavePrototype= "rocketDV2_blast"
 		ExplosionType     = "GRENADE"
 		FiringEffect      = "none"
-		Damage						= "200"
+		Damage						= "225"
 		FiringRate        = "90"
 		GroupingAngle     = "1"
 		FiringRange       = "700"
 		RecoilForce       = "300"
 		FiringType        = "Rocket"
-		DamageType				=	"BLAST"
+		DamageType				=	"PIERCING"
 		ChargeSize     		= "1000"
 		RechargingTime 		= "0.75"
 		CanBeUsedInAutogenerating  =  "0"

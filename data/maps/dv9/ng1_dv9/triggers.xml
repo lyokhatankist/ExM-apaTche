@@ -638,8 +638,27 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	end
 
 	TActivate("trBossDie")
+	TActivate("trBossRestore")
 </script>
 </trigger>
+
+
+	<trigger	Name="trBossRestore"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+		<script>           
+			if TimerHack(1) then -- arg is the trigger timeout
+				return
+			end
+
+			local b = getObj("Boss_main_vehicle_0")
+			if b then
+				b:GetPartByName("CABIN"):SetProperty("Durability", b:GetPartByName("CABIN"):GetProperty("MaxDurability").AsInt)
+				b:GetPartByName("BASKET"):SetProperty("Durability", b:GetPartByName("BASKET"):GetProperty("MaxDurability").AsInt)
+			else
+				trigger:Deactivate()
+			end
+		</script>
+	</trigger>
 
 
 <trigger	Name="trBossDie"	active="0">
@@ -667,18 +686,23 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		local camTochBoss = GetEntityByName("camTochBoss")
 		local camTochBossID = camTochBoss:GetId()
 		local playaID = GetPlayerVehicleId()
+		local playa = GetPlayerVehicle()
 		local a = random( 360 )
-		FlyAround( 2, -0.5, 25, 13, GetPlayerVehicle():GetPosition() + CVector( 60 * sin(a), 85, 60 * cos(a) ), playaID, 0, 0, nil, 1, nil, nil  )	
-		FlyLinked( "BossDie_Cam01", playaID, 16, 0, 0, camTochBossID )
-		StartCinematic()
+		if playa then
+			playa:SetCustomLinearVelocity(0)
+			FlyAround( 2, -0.5, 25, 13, playa:GetPosition() + CVector( 60 * sin(a), 85, 60 * cos(a) ), playaID, 0, 0, nil, 1, nil, nil  )	
+			FlyLinked( "BossDie_Cam01", playaID, 16, 0, 0, camTochBossID )
+			StartCinematic()
 
-		AddCinematicMessage( 90050, 0.25 )
-		AddCinematicMessage( 90051, 0.25 )
+			AddCinematicMessage( 90050, 0.25 )
+			AddCinematicMessage( 90051, 0.25 )
 
-		TActivate("trBossDieCam")
+			TActivate("trBossDieCam")
 
-		SaveAllToleranceStatus( RS_NEUTRAL )
-		TActivate( "RestoreTolerance" )
+			SaveAllToleranceStatus( RS_NEUTRAL )
+			TActivate( "RestoreTolerance" )
+		end
+		TDeactivate("trDontFlee")
 		BonusWeaponRemove()
 
 
@@ -927,7 +951,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		local playa = GetPlayerVehicle()
 		if playa then
 			playa:LimitMaxSpeed(30)
-			playa:SetCustomLinearVelocity(70)
+			playa:SetCustomLinearVelocity(75)
 		end
 	</script>
 </trigger>
