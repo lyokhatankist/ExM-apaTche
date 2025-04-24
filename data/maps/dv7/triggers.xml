@@ -594,6 +594,9 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <trigger	Name="trBossToxicGate"	active="0">
 		<event	timeout="2"		eventid="GE_TIME_PERIOD" />
 <script>
+	if TimerHack(2, Gate) then -- arg is the trigger timeout
+		return
+	end
 	--LOG("hui")
 	eff_t = eff_t or 1
 	eff_t = eff_t - 1
@@ -929,8 +932,11 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	</trigger>
 	
 	<trigger	Name="trToxicity"	active="0">
-		<event	timeout="0.5"		eventid="GE_TIME_PERIOD" />
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
 		<script>
+			if TimerHack(1, Toxicity) then -- arg is the trigger timeout
+				return
+			end
 			local count = GetVar("ToxicityCount").AsInt
 			local playa = GetPlayerVehicle()
 			local dist
@@ -939,17 +945,17 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 				println(dist)
 				if dist>400 then
 					if getObj("trBossToxicGate"):IsActivated() == 0 then
-						playa:AddModifier("hp", "- 1")
+						playa:AddModifier("hp", "- 2")
 					else
-						playa:AddModifier("hp", "- 15")
+						playa:AddModifier("hp", "- 30")
 					end
 
-					if math.floor(count/10)==count/10 then
+					if math.floor(count/5)==count/5 then
 						RuleConsole("g_postEffect DamageIntegrated")
 						AddImportantFadingMsgId("fm_player_toxicity")
 					end
 					
-					if count>=50 then
+					if count>=25 then
 						AddFadingMsgId("fm_player_toxicity_detail")
 						count = 0
 					end
