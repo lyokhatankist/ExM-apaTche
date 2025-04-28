@@ -106,7 +106,7 @@
 			<Part id = "CHASSIS"							Prototype = "MHBossChassis" />
 			<Part id = "CABIN"							Prototype = "MHCab" />
 			<Part id = "MAIN_GUN_SLOT"			Prototype = "zenithDV3" /> 
-			<Part id = "AUX_GUN_SLOT"			Prototype = "rocketDV2" />  
+			<Part id = "AUX_GUN_SLOT"			Prototype = "shotgunDV2" />  
 			<Part id = "THORN_SLOT"				Prototype = "pilaDV3" />
 			<Part id = "MINE_PUSHER_SLOT"		Prototype = "mineDV3" />
 		</Parts>
