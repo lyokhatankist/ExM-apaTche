@@ -11,6 +11,14 @@
 		file="data\sounds\driving\motors\truck05_high.wav"
 		group="VEHICLEONGROUND"
 		/>
+
+	<model
+		id="S_SHOOTING_BROKESON"
+		type="DOUBLE"
+		file_start	="data\sounds\dv_sounds\weapons\dv_weapon14_loop.wav"
+		file_end	="data\sounds\dv_sounds\weapons\dv_weapon14_tail.wav"
+		group="GUNFIRE"
+		/>
 		
 	<model
 		id="S_SHOOTING_JOUSTLANCE"

@@ -680,7 +680,7 @@
 		Slot="THORN_SLOT"
 		Base="pilaDV1"
 		Extra="pilaDV2"
-		Superior="5000"/>
+		Superior="pilaDV3"/>
 
 	<Upgrade
 		Type="MINE_PUSHER"
@@ -738,7 +738,7 @@
 		
 	<Upgrade
 		Type="ZENITH"
-		UP="80000, 40000, 100000"
+		UP="70000, 50000, 100000"
 		Base="zenithDV1"
 		Extra="zenithDV2"
 		Superior="zenithDV3"/>

@@ -1642,7 +1642,7 @@ end
 
 
 -- ==================== --
--- ApaTchE functions --
+-- apaTche functions --
 -- ==================== --
 
 -- function that converts a table into a string

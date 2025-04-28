@@ -322,6 +322,8 @@
 	<Item	id="tube3"	file="data\models\AnimModels.xml"/>
 	<Item	id="kst01"	file="data\models\AnimModels.xml"/>
 	<Item	id="kst01gun"	file="data\models\AnimModels.xml"/>
+	<Item	id="brokeson01"	file="data\models\AnimModels.xml"/>
+	<Item	id="brokeson01gun"	file="data\models\AnimModels.xml"/>
 	<Item	id="joustlance01"	file="data\models\AnimModels.xml"/>
 	<Item	id="joustlance01gun"	file="data\models\AnimModels.xml"/>
 	<Item	id="iroquois01"	file="data\models\AnimModels.xml"/>
