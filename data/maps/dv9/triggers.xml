@@ -1102,7 +1102,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	LOG("jopniq umer")
 	local jop = GetPlayerVehicle()
 	if jop then
-		jop:SetNewPart("AUX_GUN_SLOT", "zenithDV3")
+		jop:SetNewPart("AUX_GUN_SLOT", "zenithDV2")
 	end
 	LOG("hueta perenesena")
 	jop = getObj("gate01")
