@@ -333,6 +333,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 			tr_Start:Activate()
 			tr_End:Activate()
 			TActivate("trRadiationWork")
+			TActivate("trRadiationWorkApply")
 	</script>
 </trigger>
 
@@ -353,12 +354,68 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<script>
 		local count_R = GetVar("PlayersRadioactiveZones").AsInt
 		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+--[[
 		if count_R > 0 then
 			local v = GetPlayerVehicle()
-			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )					
+			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )			
 		end
+]]--
+		-- apaTche --
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 1
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		if count_R > 0 then
+			local v = GetPlayerVehicle()
+			radiationDamageDone = radiationDamageDone + (count_R * damage_per_second_from_one_zone * 0.2)
+			radiationTriggerActivationCount = radiationTriggerActivationCount + 1
+		end
+
+		SetVar("RadiationDamageDone", radiationDamageDone)
+		SetVar("RadiationTriggerActivationCount", radiationTriggerActivationCount)
+		-- apaTche end --
 	</script>
 </trigger>
+
+<!-- apaTche -->
+<trigger	Name="trRadiationWorkApply"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+	<script>
+		if TimerHack(1, "RadiationWorkApply") then -- arg is the trigger timeout
+			return
+		end
+
+		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 0
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		local v = GetPlayerVehicle()
+		if radiationTriggerActivationCount > 0 then
+			if 5 > radiationTriggerActivationCount then
+				v:AddModifier( "hp", "- " .. tostring( radiationDamageDone ) )
+			else
+				v:AddModifier( "hp", "- " .. tostring( damage_per_second_from_one_zone ) )	
+			end
+		end
+
+		SetVar("RadiationDamageDone", 0)
+		SetVar("RadiationTriggerActivationCount", 0)
+	</script>
+</trigger>
+<!-- apaTche end-->
 
 
 <!-- 
@@ -511,6 +568,10 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <trigger	Name="trToxicGo"	active="0">
 		<event	timeout=	"1"		eventid="GE_TIME_PERIOD" />
 <script>
+	if TimerHack(1, ToxicGo) then -- arg is the trigger timeout
+		return
+	end
+
 	trToxicGo( trigger )
 </script>
 </trigger>

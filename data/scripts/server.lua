@@ -1758,7 +1758,7 @@ end
 	end
 ]]--
 -- seconds is the timeout value of your trigger
--- unique_id is the identifier of the timer hack for cases when you use it for multiple GE_TIME_PERIOD triggers at the same time
+-- unique_id is the identifier of the timer hack for cases when you use it for multiple GE_TIME_PERIOD triggers at the same time, must be a string or int
 -- known issues:
 -- - the trigger will not go through the first time the timer is triggered, first activation happens at the second timeout
 --   (you can fix it by setting the SetVar variable "PreviousTime" to the timeout value of the trigger before you activate it)
