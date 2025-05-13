@@ -1144,6 +1144,13 @@
 	<!-- <Item	id="zeus01Rgun"	file="data\models\AnimModels.xml"/> -->
 	<Item	id="zion"	file="data\models\AnimModels.xml"/>
 	<Item	id="zion_gate"	file="data\models\AnimModels.xml"/>
+
+	<Item	id="zabor_White_Crash"	file="data\models\AnimModels.xml"/>
+	<Item	id="postal_box_crash"	file="data\models\AnimModels.xml"/>
+	<Item	id="watch_tower_dyn"	file="data\models\AnimModels.xml"/>
+	<Item	id="vorota_Crash"	file="data\models\AnimModels.xml"/>
+	<Item	id="zabor_01_Crash"	file="data\models\AnimModels.xml"/>
+	<Item	id="wonderful_fence_dyn"	file="data\models\AnimModels.xml"/>
 	</AnimatedModelsServer>
 
 	<StaticModelsServer />

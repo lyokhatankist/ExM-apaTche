@@ -261,6 +261,8 @@
 
 ■ Changed the weather on Mission 8 "The Big Hunt". The weather on this level is no longer randomized.
 
+■ Fixed the dynamic objects destruction effects in Mission 8 "The Big Hunt".
+
 ## | Cutscenes |
 ■ Changed General's model to a previously unused model from the game files, made specifically for this character by the original devs.
 
