@@ -16,7 +16,7 @@ description: |
   apaTche is the first ever HTA:Arcade mod that does anything even remotely useful. Fixes bugs and other gameplay hindering issues, as well as introduces some gameplay and visual changes.
   
 # optional human readable info
-release_date: "04.01.2025"
+release_date: "01.04.2025"
 
 link: https://github.com/lyokhatankist/ExM-apaTche
 
@@ -24,7 +24,7 @@ link: https://github.com/lyokhatankist/ExM-apaTche
 logo: assets/apatche_logo.png
 install_banner: assets/apatche_banner.png
 
-tags: [gameplay, bugfix, story, visual]
+tags: [gameplay, bugfix, visual]
 
 # additional text info
 change_log: assets/change_list_eng.md
@@ -32,10 +32,16 @@ change_log: assets/change_list_eng.md
 screenshots:
   - img: assets/screen_1.jpg
     text: | 
-      Shotgun Mk 1 and Rocket launcher Mk 1.
+      Rocket launcher Mk 1 and Shotgun Mk 1.
   - img: assets/screen_2.jpg
     text: |
       Mk 2 and Mk 3 variants of Rocket launcher.
+  - img: assets/screen_10.jpg
+    text: |
+      Machinegun Mk 1 and Flak cannon Mk 1.
+  - img: assets/screen_11.jpg
+    text: |
+      Flak cannon Mk 3.
   - img: assets/screen_3.jpg
     text: |
       New Van model.
@@ -50,10 +56,10 @@ screenshots:
       Restored character dialogue.
   - img: assets/screen_7.jpg
     text: |
-      New weather on Mission 7 “Desert heat”.
+      New weather in Mission 7 “Desert heat”.
   - img: assets/screen_8.jpg
     text: |
-      New weather on Mission 8 “The Big Hunt”.
+      New weather in Mission 8 “The Big Hunt”.
   - img: assets/screen_9-eng.jpg
     text: |
       New game+.
@@ -68,6 +74,7 @@ config_options:
     camFovSpeedFactor: 0
     g_fixedCameraAngle: 9
     g_fixedCameraRotationCoeff: 12
+    fov: 90
     
 no_base_content: false
 
@@ -79,7 +86,7 @@ optional_content:
     display_name: English Localization
     forced_option: True
     description: |
-      Full English localization of apaTche. Features rewritten dialogue and, finally, voiceover.
+      Full English localization of apaTche. Features rewritten dialogue and, finally, a voiceover.
   - name: completion_sound
     display_name: Different quest completion sound
     default_option: skip

@@ -1751,6 +1751,10 @@ end
 -- that is because the trigger will be running this check every time each duplicated timer is triggered
 -- (which may be a lot of times, depending on how much times you saved&loaded)
 -- you MUST resort to the PendulumVehicle for triggers that have to run at all times (see how it's done in Armada)
+-- also, even though this hack supports timers that last less than a second and float numbers in general,
+-- i advise strongly against that (i'm looking at you, E Jet)
+-- this hack works best with timers that have timeout value of 5 and more
+
 --[[ to use this in your trigger with GE_TIME_PERIOD event, put this at the beginning of the trigger:
 
 	if TimerHack(5) then -- arg is the trigger timeout
@@ -1768,27 +1772,36 @@ function TimerHack(seconds, unique_id)
 	local retVal = true
 	local currentTime = "etto"..os.time()
 	currentTime = string.sub(currentTime, 9)
+	if math.floor(seconds)~=seconds then
+		currentTime = os.clock()
+	end
 	local triggerID = ""
 	if unique_id then
 		triggerID = triggerID..unique_id
 	end
 
 	previousTime = GetVar("PreviousTime"..triggerID).AsInt
-	-- println("currentTime is "..currentTime..", previousTime is "..previousTime)
+	if previousTime ~= -1 then
+		previousTime = tonumber(GetVar("PreviousTime"..triggerID).AsString)
+--		println("currentTime is "..currentTime..", previousTime is "..previousTime)
+	end
+	
 	if previousTime <= 0 then
-		-- println("previousTime is undefined")
+--		println("previousTime is undefined")
 		previousTime = currentTime
 		SetVar("PreviousTime"..triggerID, previousTime)
 	end
 
-	local timeDifference = currentTime - previousTime
+	local timeDifference = math.abs(currentTime - previousTime)
 	if seconds >= 10 then
 		timeDifference = timeDifference + 1
+	elseif seconds < 1 then
+		timeDifference = timeDifference + 0.025
 	end
 
-	-- println("timeDifference is "..timeDifference)
+--	println("timeDifference is "..timeDifference)
 	if seconds <= timeDifference then
-		-- println("it's more than "..seconds)
+--		println("it's more than "..seconds)
 		retVal = false
 		SetVar("PreviousTime"..triggerID, currentTime)
 	end

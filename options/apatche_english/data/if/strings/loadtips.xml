@@ -46,7 +46,7 @@
 		
 	<string
 		id="LoadTip_11"
-		value="Machine gun is an all-round choice for armament. The third upgrade gives you a permanent second weapon." />
+		value="Machine gun is an all-round choice for armament. The third level of upgrade gives you a permanent second weapon." />
 		
 	<string
 		id="LoadTip_12"
@@ -54,7 +54,7 @@
 		
 	<string
 		id="LoadTip_13"
-		value="Shotgun is great at taking out entire groups of enemies. The third upgrade of the weapon boasts explosive ammunition." />
+		value="Shotgun is great at taking out entire groups of enemies. The fully upgraded weapon boasts explosive ammo." />
 		
 	<string
 		id="LoadTip_14"
@@ -62,7 +62,7 @@
 		
 	<string
 		id="LoadTip_15"
-		value="Rocket launcher is a weapon that is ideal for destroying enemies from long distances." />
+		value="Rocket launcher is a weapon that is ideal for destroying enemies from a long distance." />
 		
 	<string
 		id="LoadTip_16"
@@ -74,15 +74,15 @@
 		
 	<string
 		id="LoadTip_18"
-		value="Jumping device is set to the Space key by default." />
+		value="Press the Space key to engage the Jumping device." />
 		
 	<string
 		id="LoadTip_19"
-		value="Accelerator is activated by pressing the Alt key." />
+		value="Hold the Alt key to use the Turbo." />
 		
 	<string
 		id="LoadTip_20"
-		value="If your vehicle seems to be stuck, you can try using the &quot;Get out of difficult spot&quot; feature by pressing O." />
+		value="If your vehicle seems to be stuck, you can try using the &quot;Get out of a difficult spot&quot; feature by pressing O." />
 		
 	<string
 		id="LoadTip_21"

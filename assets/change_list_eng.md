@@ -57,7 +57,7 @@
 
 ■ Fixed timers that should start upon loading a checkpoint.
 
-■ Added new weapon pickup on boss fight arenas.
+■ Added new weapon pickups on boss fight arenas.
 
 ■ Expanded the analytics that are given during boss battles, now they give actually useful information for defeating bosses.
 
