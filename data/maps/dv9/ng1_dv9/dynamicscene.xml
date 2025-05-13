@@ -816,7 +816,7 @@
 		Name="Ambush006"
 		Belong="1100"
 		Prototype="genericLocation"
-		Pos="3178.223 287.137 1781.386"
+		Pos="3182.391 289.072 1525.276"
 		Radius="76.881"
 		SpawnEffect="BUGcargo"
 		SpawnEffectStatic="BUGcargo" />
@@ -13450,7 +13450,7 @@
 
 	<Object
 		Name="Boss"
-		Belong="1101"
+		Belong="1114"
 		Prototype="lastBoss" />
 
 	<Object
@@ -22239,5 +22239,69 @@
 		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
 		SpawnTimeouts="30000000.000"
 		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000" />
+
+	<Object
+		Name="Weapon_ShotgunDV1_01_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="590.074 286.296 1947.343"
+		Radius="2.500"
+		SpawnObjectsPrototypes="shotgunDV1"
+		SpawnEffect="ET_PS_WEAPON_PICKUP"
+		SpawnEffectStatic="ET_PS_WEAPON_PLACE"
+		SpawnTimeouts="30000000.000"
+		SpawneeLifeTime="45.000"
+		SpawneeHover="5.000" />
+
+	<Object
+		Name="PowerUp_Repair_12_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3405.693 272.659 426.808"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Repair"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_REPAIR_PICKUP"/>
+
+	<Object
+		Name="PowerUp_Armor_05_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="2395.300 288.958 402.985"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"/>
+
+	<Object
+		Name="PowerUp_Armor_06_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3147.854 309.301 760.547"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"/>
+
+	<Object
+		Name="PowerUp_Armor_07_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="3328.556 323.559 1621.855"
+		Radius="2.500"
+		SpawnObjectsPrototypes="Armor"
+		SpawnTimeouts="30000000.000"
+		SpawnEffect="ET_PS_ARMOR_PICKUP"/>
+
+	<Object
+		Name="BonusWeaponRemover_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="32.000 472.000 32.000"
+		Radius="2.500"
+		SpawnObjectsPrototypes="scout_00_weapon"
+		SpawnTimeouts="30000000.000"
+		SpawneeLifeTime="0.001"
 		SpawneeHover="5.000" />
 </DynamicScene>

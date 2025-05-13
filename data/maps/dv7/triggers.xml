@@ -8,7 +8,21 @@
     	trigger:Deactivate()
 		</script>
 	</trigger>
-
+	
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -318,6 +332,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 			tr_Start:Activate()
 			tr_End:Activate()
 			TActivate("trRadiationWork")
+			TActivate("trRadiationWorkApply")
 	</script>
 </trigger>
 
@@ -338,12 +353,68 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<script>
 		local count_R = GetVar("PlayersRadioactiveZones").AsInt
 		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+--[[
 		if count_R > 0 then
 			local v = GetPlayerVehicle()
-			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )					
+			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )			
 		end
+]]--
+		-- apaTche --
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 1
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		if count_R > 0 then
+			local v = GetPlayerVehicle()
+			radiationDamageDone = radiationDamageDone + (count_R * damage_per_second_from_one_zone * 0.2)
+			radiationTriggerActivationCount = radiationTriggerActivationCount + 1
+		end
+
+		SetVar("RadiationDamageDone", radiationDamageDone)
+		SetVar("RadiationTriggerActivationCount", radiationTriggerActivationCount)
+		-- apaTche end --
 	</script>
 </trigger>
+
+<!-- apaTche -->
+<trigger	Name="trRadiationWorkApply"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+	<script>
+		if TimerHack(1, "RadiationWorkApply") then -- arg is the trigger timeout
+			return
+		end
+
+		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 0
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		local v = GetPlayerVehicle()
+		if radiationTriggerActivationCount > 0 then
+			if 5 > radiationTriggerActivationCount then
+				v:AddModifier( "hp", "- " .. tostring( radiationDamageDone ) )
+			else
+				v:AddModifier( "hp", "- " .. tostring( damage_per_second_from_one_zone ) )	
+			end
+		end
+
+		SetVar("RadiationDamageDone", 0)
+		SetVar("RadiationTriggerActivationCount", 0)
+	</script>
+</trigger>
+<!-- apaTche end-->
 
 
 <!-- 
@@ -496,6 +567,10 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <trigger	Name="trToxicGo"	active="0">
 		<event	timeout=	"1"		eventid="GE_TIME_PERIOD" />
 <script>
+	if TimerHack(1, "ToxicGo") then -- arg is the trigger timeout
+		return
+	end
+
 	trToxicGo( trigger )
 </script>
 </trigger>
@@ -580,6 +655,9 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 <trigger	Name="trBossToxicGate"	active="0">
 		<event	timeout="2"		eventid="GE_TIME_PERIOD" />
 <script>
+	if TimerHack(2, "Gate") then -- arg is the trigger timeout
+		return
+	end
 	--LOG("hui")
 	eff_t = eff_t or 1
 	eff_t = eff_t - 1
@@ -821,7 +899,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	StopPlayingCustomMusic()
  	trigger:Deactivate()
  	CompasOff()
-	FlyShort ( { time = 7 , msg = { 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012 }, CompQuest1 = "dv7_q1_2" } )	
+	FlyShort ( { time = 7 , msg = { 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012 }, CompQuest1 = "dv7_q1_2", removeWeapon = 1 } )	
 	--CompleteQuest( "dv7_q1_2" )	
 	if not ( dontLoad == 1 ) then
 		TActivate( "trWin" )
@@ -915,8 +993,11 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	</trigger>
 	
 	<trigger	Name="trToxicity"	active="0">
-		<event	timeout="0.5"		eventid="GE_TIME_PERIOD" />
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
 		<script>
+			if TimerHack(1, "Toxicity") then -- arg is the trigger timeout
+				return
+			end
 			local count = GetVar("ToxicityCount").AsInt
 			local playa = GetPlayerVehicle()
 			local dist
@@ -925,17 +1006,17 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 				println(dist)
 				if dist>400 then
 					if getObj("trBossToxicGate"):IsActivated() == 0 then
-						playa:AddModifier("hp", "- 1")
+						playa:AddModifier("hp", "- 2")
 					else
-						playa:AddModifier("hp", "- 15")
+						playa:AddModifier("hp", "- 30")
 					end
 
-					if math.floor(count/10)==count/10 then
+					if math.floor(count/5)==count/5 then
 						RuleConsole("g_postEffect DamageIntegrated")
 						AddImportantFadingMsgId("fm_player_toxicity")
 					end
 					
-					if count>=50 then
+					if count>=25 then
 						AddFadingMsgId("fm_player_toxicity_detail")
 						count = 0
 					end

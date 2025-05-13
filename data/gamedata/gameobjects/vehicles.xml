@@ -106,7 +106,7 @@
 			<Part id = "CHASSIS"							Prototype = "MHBossChassis" />
 			<Part id = "CABIN"							Prototype = "MHCab" />
 			<Part id = "MAIN_GUN_SLOT"			Prototype = "zenithDV3" /> 
-			<Part id = "AUX_GUN_SLOT"			Prototype = "rocketDV2" />  
+			<Part id = "AUX_GUN_SLOT"			Prototype = "shotgunDV2" />  
 			<Part id = "THORN_SLOT"				Prototype = "pilaDV3" />
 			<Part id = "MINE_PUSHER_SLOT"		Prototype = "mineDV3" />
 		</Parts>
@@ -592,19 +592,19 @@
 		CameraHeight					= "4"
 		CameraMaxDist					= "16"
 		HitForce							= "10"
-		MassSize							= "4 3 7.5"
-		MassTranslation				= "0 -1.2 -0.2" 
+		MassSize							= "5 3 10"
+		MassTranslation				= "0 -1.0 0.2" 
 		DestroyEffectPiercing	= "ET_PS_VEH_EXP1_MED"
 		DestroyEffectBlast		= "ET_PS_VEH_EXP2_MED"
 		DestroyEffectEnergy		= "ET_PS_VEH_EXP3_MED"
 		DestroyEffectWater		= "ET_PS_VEH_EXP2_MED"
 		ForMultiplayer				= "true"
-		WheelSpringCoeffSmall	= "9000.0"
-		WheelSpringCoeffBig		= "12000.0"
+		WheelSpringCoeffSmall	= "4000.0"
+		WheelSpringCoeffBig		= "8000.0"
 		WheelUpDampingCoeff		= "100.0f"
 		WheelDownDampingCoeff	= "600.0f"
 		WheelSuspensionRange	= "0.5"
-		WheelCriticalSuspensionDelta    = "0.25"
+		WheelCriticalSuspensionDelta    = "0.3"
 		AllowedRoles					= "roleRockets"
 		Abstract 		= "true"	>  
 		<MainPartDescription 	id = "CHASSIS" 					partResourceType = "truckChassis" >
@@ -1104,6 +1104,7 @@
 			<PartDescription 		id = "CABIN" 						partResourceType = "BOSS02_CABIN" 	lpName = "LP_CAB01" >
 				<PartDescription 	id = "CABIN_BIG_GUN" 		partResourceType = "BIG_GUN" 				lpName = "LP_BIG01" />
 			</PartDescription>
+			<PartDescription 		id = "BASKET" 						partResourceType = "FAKE_BASKET" 	lpName = "LP_CAB01" />
 		</MainPartDescription>
 		<Parts>
 			<Part id = "CHASSIS"			Prototype = "boss02Chassis" />
@@ -1123,6 +1124,7 @@
 		VisibleInEncyclopedia	= "true" >
 		<Parts>
 			<Part id = "CABIN"							Prototype = "boss02Cab" />
+			<Part id = "BASKET"							Prototype = "boss02Cargo" />
 			<Part id = "CABIN_BIG_GUN"			Prototype = "Boss02ToxicThrower" />  
 		</Parts>
 	</Prototype>
@@ -1412,6 +1414,7 @@
 		Class						= "Vehicle"
 		Name						= "Police_00"
 		AllowedRoles				= "roleMeat roleCheater roleBarrier"
+		LookRadius					= "125.0"
 		ParentPrototype 			= "Fighter">
 		<Parts>
 			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
@@ -1436,6 +1439,7 @@
 		Class						= "Vehicle"
 		Name						= "Police_02"
 		AllowedRoles				= "roleMeat roleBarrier"
+		LookRadius					= "125.0"
 		ParentPrototype 			= "Fighter">
 		<Parts>
 			<Part id = "CHASSIS"			Prototype = "fighterChassis"/>
@@ -1730,7 +1734,7 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
 			<Part id = "CABIN"					Prototype = "vanCab02" />
-			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV2" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV1" />
 		</Parts>
 	</Prototype>
 	
@@ -1744,7 +1748,7 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
 			<Part id = "CABIN"					Prototype = "vanCab02" />
-			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV3" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "zenithDV2" />
 		</Parts>
 	</Prototype>
 	
@@ -1771,7 +1775,7 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "swatvanChassis" />
 			<Part id = "CABIN"					Prototype = "vanCab02" />
-			<Part id = "CABIN_SMALL_GUN"		Prototype = "rocketDV1" />
+			<Part id = "CABIN_SMALL_GUN"		Prototype = "hunter_00_weapon" />
 		</Parts>
 	</Prototype>
 	
@@ -1844,9 +1848,9 @@
 		ParentPrototype 		= "HunterTruck">
 		<Parts>
 			<Part id = "CABIN"					Prototype = "truckCab" />
-			<Part id = "CABIN_BIG_GUN"			Prototype = "rocketDV1" /> 
-			<Part id = "CABIN_BIG_GUN_2"		Prototype = "rocketDV1" /> 
-			<Part id = "CABIN_GIANT_GUN"		Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_BIG_GUN"			Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_BIG_GUN_2"		Prototype = "shotgunDV2" /> 
+			<Part id = "CABIN_GIANT_GUN"		Prototype = "zenithDV3" /> 
 		</Parts>
 	</Prototype>
 	
@@ -1875,14 +1879,44 @@
 		<Parts>
 			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
 			<Part id = "CABIN"					Prototype = "HumveeCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV1" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV1" />  
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Humvee_01"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "HumveeCab" />
 			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV2" /> 
 			<Part id = "AUX_GUN_SLOT"			Prototype = "vulcanDV2" />  
+		</Parts>
+	</Prototype>
+
+	<Prototype
+		Class					= "Vehicle"
+		Name					= "NG1_Humvee_02"
+		VisibleInEncyclopedia   = "false"
+		AllowedRoles			= "roleCheater"
+		EnemyType				= "MINIBOSS"
+		ParentPrototype 		= "HumveeVehicle">
+		<Parts>
+			<Part id = "CHASSIS"				Prototype = "HumveeChassis" />
+			<Part id = "CABIN"					Prototype = "DeltaCab" />
+			<Part id = "MAIN_GUN_SLOT"			Prototype = "vulcanDV3" /> 
+			<Part id = "AUX_GUN_SLOT"			Prototype = "shotgunDV2" />  
 		</Parts>
 	</Prototype>
 	
 	<Prototype
 		Class					= "Vehicle"
-		Name					= "NG1_Humvee_01"
+		Name					= "NG1_Humvee_03"
 		VisibleInEncyclopedia   = "false"
 		AllowedRoles			= "roleCheater"
 		EnemyType				= "MINIBOSS"

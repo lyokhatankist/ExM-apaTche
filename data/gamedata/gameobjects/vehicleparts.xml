@@ -868,8 +868,8 @@ $Id: VehicleParts.xml,v 1.5 2006/01/26 09:16:31 vano Exp $
 			ModelFile				= "boss02Cab"
 			ResourceType		= "BOSS02_CABIN"
 			NodeScale				= "1 1 1"
-			Durability			= "80"
-			DurCoeffsForDamageTypes	= "40 25 25"
+			Durability			= "300"
+			DurCoeffsForDamageTypes	= "40 55 0"
 			VisibleInEncyclopedia	= "false"
 			Mass						= "30.0"
 			EngineHighSound	= "ET_S_ENGINE_FIGHTER_1_HIGH"
@@ -886,6 +886,23 @@ $Id: VehicleParts.xml,v 1.5 2006/01/26 09:16:31 vano Exp $
 					Breakable2	= "3"
 					Breakable3	= "3"
 				/>
+		</Prototype>
+
+		<Prototype
+			Class				= "Basket"
+			Name				= "boss02Cargo"
+			VisibleInEncyclopedia   = "false"
+			ModelFile			= "cub"
+			ResourceType		= "FAKE_BASKET"
+			Durability			= "300"
+			DurCoeffsForDamageTypes	= "0 50 0"
+			NodeScale			= "1 1 1"
+			BlowEffect	= "ET_PS_VEH_PART_BLOW_SMALL_CAB"
+			Price				= "0"
+			RepairCoef			= "0"
+			Mass				= "5.0">
+			<RepositoryDescription>
+			</RepositoryDescription>
 		</Prototype>
 		
 		<Prototype

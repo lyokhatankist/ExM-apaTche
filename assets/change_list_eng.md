@@ -41,15 +41,23 @@
 
 ■ Increased the Flamethrower projectile speed and radius.
 
-■ Reassigned the standard keybind of the “Get out of a difficult place” function to the O key.
+■ Reassigned the standard keybind of the "Get out of a difficult place" function to the O key.
 
-■ Changed the texture fonts with Windows ones, so now text of any size looks good on all resolutions.
+■ Changed the texture fonts with Windows ones, so now text of any size looks good on all resolutions. Fixed font display on wide screen resolutions (big thanks to Joomer for providing the fix).
+
+■ Fixed game crash upon loading the next level if player finished the mission with a bonus weapon still present on their vehicle.
+
+■ Fixed the damage dealt by biotoxic hot-spots increasing upon loading a checkpoint.
+
+■ Globally fixed timers. Timers now restore upon loading a checkpoint. Timer are now restored to the proper value after player unpauses the game.
 
 ■ Fixed an issue with player being able to get a secret entry without picking up a disk.
 
 ■ Added an option for a different quest completion sound.
 
 ■ Fixed timers that should start upon loading a checkpoint.
+
+■ Added new weapon pickups on boss fight arenas.
 
 ■ Expanded the analytics that are given during boss battles, now they give actually useful information for defeating bosses.
 
@@ -99,7 +107,19 @@
 
 — Level three: tandem-charge ATGM (3D-model by Gnome627), cost is 80000.
 
-■ Increased the Flak cannon rate of fire on upgrade levels two and three.
+■ Reworked the Flak cannon:
+
+— Each level of upgrade now features its own 3D-model.
+
+— Level one: twin machine gun with incendiary ammunition (3D-model authors: ICAS-14, lyokhatankist).
+
+— Level two: quad heavy machine gun.
+
+— Level three: rapid-firing chain gun with area of effect damage.
+
+— Fixed and updated hit effects for all Flak cannon variations.
+
+■ Replaced Machinegun level one 3D-model with a properly stylized visual. Reworked the firing rate and damage parameters while keeping the damage per minute the same as it was.
 
 ■ Replaced the OG Van truck vehicle with properly stylized visual:
 
@@ -121,14 +141,21 @@
 
 ■ Two pillboxes located near the place of the skirmish with the police have been added to the list of targets that need to be destroyed to activate the quest "Ray in the Darkness" in Mission 1 "Under siege".
 
-■ Fixed the second checkpoint in Mission 2 "Base No. 31". In the original, it was unusable due to too low fps/crash when loading it. Unfortunately, this required sacrificing the zombie spawner at the destroyed power plant.
-Instead, the player will now be met by several police cars there.
+■ Fixed player vehicle positioning after the "top-down camera" sections in Mission 2 "Base No. 31".
+
+■ Fixed the second checkpoint in Mission 2 "Base No. 31". In the original, it was unusable due to too low fps/crash when loading it. Unfortunately, this required sacrificing the zombie spawner at the destroyed power plant. Instead, the player will now be met by several police cars there.
+
+■ Added 4x-damage, repair and armor pickups near the power plant in Mission 2 "Base No. 31".
 
 ■ The pillboxes at the entrance to the chemical lab in Mission 2 "Base No. 31" will now be automatically destroyed at the start of the cutscene before the skirmish with the zombies. No more pillboxes attacking the player upon loading the checkpoint.
 
 ■ Added two Repair pickups after the chemical laboratory in Mission 2 "Base No. 31".
 
 ■ The Truck-miniboss in Mission 2 "Base No. 31" will now only appear when the player approaches the skirmish with the miniboss. Thus, the skirmish will always take place on the road, as intended.
+
+■ Fixed the GPS-navigator in Mission 5 "Swamp roads".
+
+■ Fixed the final cutscene playing twice in Mission 5 "Swamp roads".
 
 ■ The toxic wave in Mission 6 "Last man standing" now starts after the second cutscene, in which the General informs the player about its approach.
 
@@ -137,6 +164,8 @@ Instead, the player will now be met by several police cars there.
 ■ Fixed early spawning of the boss in Mission 6 "Last man standing" at the end of the toxic wave, which led to the instant death of the player if they did not reach the boss fight arena (which frankly looked like a bug). Instead of instant death, the player's health will slowly deteriorate. Duplication of the boss was also fixed.
 
 ■ Fixed thermite charges in Mission 5 "Swamp roads" having a collision. Previously, hitting them could launch the player high into the sky.
+
+■ Fixed the bug that prevented players from completing the quest of destroying zombies at Road River in Mission 7 "Desert Heat" when loading the checkpoint in a new game session. Also, this quest now actually fails when the timer expires.
 
 ■ Fixed enemy spawns in Mission 8 "The Big Hunt":
 
@@ -147,6 +176,18 @@ Instead, the player will now be met by several police cars there.
 — Added another wave of enemies to the second phase of the boss.
 
 ■ Enlarged the boss fight area in Mission 8 "The Big Hunt" to prevent the player from dying through no fault of their own by driving too close to one of the rocks.
+
+■ Fixed a crash when colliding with the final boss vehicle when they perform a ram.
+
+■ Reworked the final boss:
+
+— Fixed the affiliation of boss' vehicle.
+
+— Removed the 10x player damage reduction period.
+
+— Reworked boss resistance values to compensate for the change above.
+
+■ Reworked the final cutscene.
 
 ■ Replaced the visuals of the cars thrown by the boss in Mission 8 "The Big Hunt". They are also now immune to damage (thus fixing the crash that occurs when a thrown car is destroyed with a Rocket launcher).
 
@@ -197,6 +238,8 @@ Instead, the player will now be met by several police cars there.
 ■ Fixed materials of Truck wheels and chassis, fixed material of destroyed second variation of the Truck.
 
 ■ Restored the cut Truck's third axle.
+
+■ Fixed Truck suspension.
 
 ■ Fixed the presence of a visual effect in the quest completion sound effect.
 

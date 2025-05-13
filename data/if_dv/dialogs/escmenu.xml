@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name		= "EscMenu"
+		class		= "EscMenu"
+		org			= "-0.5 -0.5 1024 768"
+		style		= "16896"
+		paneFlags	= "0"
+		backimage	= "data\if\frames\menu\darkdot.dds">
+
+		<Node
+    		name		= "btnContinue"
+    		class		= "ButtonWnd"
+			id			= "1000"
+    		org			= "384 252 256 38"
+    		style		= "278016"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+			caption		= "^ResumeGame^"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+    		name		= "btnRestart"
+    		class		= "ButtonWnd"
+			id			= "1001"
+    		org			= "384 300 256 38"
+    		style		= "278016"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+			caption		= "^RestartGame^"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+    		name		= "btnLoad"
+    		class		= "ButtonWnd"
+			id			= "1002"
+    		org			= "384 348 256 38"
+    		style		= "278016"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+			caption		= "^Load Game^"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+    		name		= "btnOptions"
+    		class		= "ButtonWnd"
+			id			= "1003"
+    		org			= "384 396 256 38"
+    		style		= "278016"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+			caption		= "^Options^"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+    		name		= "btnMainMenu"
+    		class		= "ButtonWnd"
+			id			= "1004"
+    		org			= "384 444 256 38"
+    		style		= "278016"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+			caption		= "^Quit to Main Menu^"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+    		name		= "btnExit"
+    		class		= "ButtonWnd"
+			id			= "1005"
+    		org			= "384 504 256 38"
+    		style		= "278016"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+			caption		= "^Quit to Windows^"
+			wrap		= "0"
+			format		= "0"
+		/>     
+
+		<Node
+    		name		= "topBg"
+    		class		= "Wnd"
+    		org			= "256 124 512 128"
+    		style		= "768"
+			backimage	= "data/if_dv/ico/menu/esc_top.tga"
+		/>
+
+		<Node
+    		name		= "middleBg"
+    		class		= "Wnd"
+    		org			= "256 252 512 288"
+    		style		= "768"
+			backimage	= "data/if_dv/ico/menu/esc_middle.tga"
+		/>
+
+		<Node
+    		name		= "bottomBg"
+    		class		= "Wnd"
+    		org			= "256 540 512 32"
+    		style		= "768"
+			backimage	= "data/if_dv/ico/menu/esc_bottom.tga"
+		/>
+
+	</Node>
+
+</Prefabs>
+
+	

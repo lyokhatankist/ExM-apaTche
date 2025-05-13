@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+    	
+	<Node
+		name			= "mainMenu"
+		class			= "MainMenu"
+		org				= "-0.5 -0.5 1024 768"
+		style			= "512"
+		paneFlags		= "0" 
+		decalSzRange	= "64 128"
+		decalTimeRange	= "1.5 5"
+		decalFadeTime	= "1"
+		decalTex		= "MainMenu_decal"
+		decalsRect		= "0 123 1024 512"
+		curProfileColor	= "ffff8800"
+		crosshair		= "data/cursors/default.cursor">
+
+       	<Node
+       		name		= "version"
+       		class		= "Wnd"
+       		org			= "15.000 15.000 950.000 18.000"
+       		style		= "2816"
+			paneFlags	= "0"
+   			font		= "0"
+			wrap		= "0"
+			format 		= "1"
+       	/>
+
+       	<Node
+       		name		= "TargemLogo"
+       		class		= "ButtonWnd"
+       		org			= "880 23 128 64"
+       		style		= "262656"
+			id			= "204"
+			paneFlags	= "0"
+			btnIsImaged	= "1"
+			btnImage="data\if_dv\ico\MainMenu\mm_logotab_e.tga"
+			btnImageDown="data\if_dv\ico\MainMenu\mm_logotab_p.tga"
+			btnImageIn="data\if_dv\ico\MainMenu\mm_logotab_h.tga"
+       	/>
+
+       	<Node
+       		name			= "btnPlay"
+       		class			= "ButtonWnd"
+       		org				= "39 651 211 46"
+       		style			= "265728"
+   			id				= "200"
+   			caption			= "^Play^"
+   			font			= "3"
+			textColor		= "ffff9900"
+			paneName		= "MainMenuBtn"
+			paneFlags		= "1"
+       	/>
+
+       	<Node
+       		name			= "btnOptions"
+       		class			= "ButtonWnd"
+       		org				= "284 651 211 46"
+       		style			= "265728"
+   			id				= "201"
+   			caption			= "^Options^"
+   			font			= "3"
+			textColor		= "ffff9900"
+			paneName		= "MainMenuBtn"
+			paneFlags		= "1"
+       	/>
+
+       	<Node
+       		name			= "btnProfile"
+       		class			= "ButtonWnd"
+       		org				= "529 651 211 46"
+       		style			= "265728"
+   			id				= "202"
+   			caption			= "^Profile^"
+   			font			= "3"
+			textColor		= "ffff9900"
+			paneName		= "MainMenuBtn"
+			paneFlags		= "1"
+       	/>
+
+       	<Node
+       		name			= "btnExit"
+       		class			= "ButtonWnd"
+       		org				= "774 651 211 46"
+       		style			= "265728"
+   			id				= "203"
+   			caption			= "^Exit^"
+   			font			= "3"
+			textColor		= "ffff9900"
+			paneName		= "MainMenuBtn"
+			paneFlags		= "1"
+       	/>
+
+       	<Node
+       		name		= "btnsBg"
+       		class		= "Wnd"
+       		org			= "0 632 1024 128"
+       		style		= "768"
+   			paneFlags	= "0"
+   			backimage	= "data/if_dv/ico/MainMenu/bottom_back_a.tga"
+       	/>
+
+       	<Node
+       		name		= "curProfile"
+       		class		= "Wnd"
+       		org			= "40 723 944 30"
+       		style		= "3840"
+   			paneFlags	= "0"
+   			fontName	= "SM_Tahoma"
+			fontSize	= "16"
+   			wrap		= "0"
+   			format		= "0"
+   			textColor	= "ffcccccc"
+       	/>
+
+       	<Node
+       		name		= "curProfileBg"
+       		class		= "Wnd"
+       		org			= "0 711 1024 64"
+       		style		= "768"
+   			paneFlags	= "0"
+   			backimage	= "data/if_dv/ico/MainMenu/bottom_back_b.tga"
+       	/>
+
+       	<Node
+       		name		= "topPanel"
+       		class		= "Wnd"
+       		org			= "0 0 1024 128"
+       		style		= "768"
+			paneFlags	= "0"
+			backimage	= "data/if_dv/ico/LoadingScreen/l_load_top.tga"
+       	/>
+
+	</Node>
+</Prefabs>

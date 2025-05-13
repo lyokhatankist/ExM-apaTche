@@ -33802,4 +33802,15 @@
 		SpawnTimeouts="30000000.000"
 		SpawneeLifeTime="45.000"
 		SpawneeHover="5.000" />
+
+	<Object
+		Name="BonusWeaponRemover_mp_rs"
+		Belong="1100"
+		Prototype="genericLocation"
+		Pos="32.000 303.000 32.000"
+		Radius="2.500"
+		SpawnObjectsPrototypes="scout_00_weapon"
+		SpawnTimeouts="30000000.000"
+		SpawneeLifeTime="0.001"
+		SpawneeHover="5.000" />
 </DynamicScene>

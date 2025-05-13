@@ -9,7 +9,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -310,7 +323,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 
 --		CompleteQuest( "dv6_q1_2" )	
 		TakeQuest( "dv6_q2" )
-    HudTimer:Start( 20 * 60 )
+--    HudTimer:Start( 20 * 60 )
     QuestCounter:Setup( 2 )
 		QuestCounter:Show()
 
@@ -325,11 +338,41 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
 <script>
    	trigger:Deactivate()
+	TActivate("trCoolCompasFix")
    	SavesManager:SaveCheckpoint( "dv6_startRun" )
 </script>
 </trigger>
 
+	<trigger	Name="trCoolCompasFix"	active="0">
+		<event	timeout="1.0"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+			
+--			HudTimer:Start( 20 * 60 )
+			ArcadeTimerStart(20 * 60, "trTimerStart")
 
+			CompasOn( 13, 6 )
+		</script>
+	</trigger>
+
+	<trigger	Name="trTimerStart"	active="0">
+		<event	timeout="5"		eventid="GE_TIME_PERIOD" />
+		<script>           
+			if TimerHack(5) then -- arg is the trigger timeout
+				return
+			end
+
+			local timerOutcome = ArcadeTimer(5) -- arg is the trigger timeout
+			if timerOutcome==1 then -- if time runs out
+				local playa = GetPlayerVehicle()
+				playa:setGodMode(0)
+				playa:AddModifier( "hp", "- 1000000" )
+				trigger:Deactivate()
+			elseif timerOutcome>=2 then -- if timer is stopped by ArcadeTimerStop()
+				trigger:Deactivate()
+			end
+		</script>
+	</trigger>
 
 <trigger	Name="trBomb1"	active="0">
 		<event	eventid="GE_OBJECT_ENTERS_LOCATION" ObjName="Explode_01" />
@@ -427,7 +470,9 @@ p("BombCounter")
 		end
 
 		QuestCounter:IncValue(1)
-		TActivate( "trSave2" )
+		if Bomb2 == -1 then
+			TActivate( "trSave2" )
+		end
 		CameraModeRaceM() 
 	end
 	if Bomb2 == 0 then	
@@ -435,7 +480,8 @@ p("BombCounter")
 		TDeactivate( "trBomb2" )  TDeactivate( "trBomb2_x" )
 		SetVar( "Bomb2", -2 )
 		TActivate("trWin1")
-		CompasOff()
+--		CompasOff()
+		CompasOn( 8, 10 )
 
 		local r_l = { "point_2_1", "point_2_2", "point_2_3" }
 		for i, v in r_l do
@@ -465,9 +511,10 @@ p("BombCounter")
 --		CompleteQuest( "dv6_q2" )			
 		TActivate( "trBurnZombie" )
 		CompasOn( 8, 10 )
-		HudTimer:Stop()
+--		HudTimer:Stop()
+		ArcadeTimerStop()
 
-		TDeactivate( "trTimerLose" )
+--		TDeactivate( "trTimerLose" )
 		QuestCounter:Hide()
 
 		--SafeRemove("Cemetery_01") 19
@@ -480,23 +527,13 @@ p("BombCounter")
 </trigger>
 
 
-<trigger	Name="trTimerLose"	active="0">
-	<event eventid="GE_TIMER_STOPPED" ObjName="Player1" />
-<script>
-	
---!!! Тиме даун
-	trigger:Deactivate()
-	GetPlayerVehicle():AddModifier( "hp", "- 1000000" )
-</script>
-</trigger>
-
-
 <trigger	Name="trBurnZombie"	active="0">
 		<event	timeout="149"		eventid="GE_TIME_PERIOD" />
 <script>
---		CompleteQuest( "dv6_q2_2" )			
+--		CompleteQuest( "dv6_q2_2" )	
+		trigger:Deactivate()
 		TActivate("trWin")	
-		FlyShort ( { time = 5 , msg = { 6007, 6008, 60081, 60082, 60083 }, CompQuest1 ="dv6_q2_2"} )	
+		FlyShort ( { time = 5 , msg = { 6007, 6008, 60081, 60082, 60083 }, CompQuest1 ="dv6_q2_2", removeWeapon = 1} )	
 		
 		local shroomCalcParam = StringToTable(GetVar("ShroomCalcParam").AsString)
 		ShroomRewardGive(shroomCalcParam[1], shroomCalcParam[2], shroomCalcParam[3])

@@ -329,7 +329,7 @@
 	
 	<Model Name="Turbo1" ExitConditionsUnite="And">
 		<Unit VarName="MotionBlur" InitVal="1" Param1="0" Param2="0" Param3="0" Param4="0" Action="Save"/>
-		<Unit VarName="MotionBlurAlpha" InitVal="-1" Param1="1" Param2="5" Param3="0" Param4="0" Action="Save"/>
+		<Unit VarName="MotionBlurAlpha" InitVal="-1" Param1="1" Param2="2" Param3="0" Param4="0" Action="Save"/>
 		<Unit VarName="Sepia" InitVal="1" Param1="0.1" Param2="0.1" Param3="0" Param4="0" Action="Save"/>
 		<Unit VarName="SepiaColorR" InitVal="1" Param1="1" Param2="1" Param3="0" Param4="0" Action="Save"/>
 		<Unit VarName="SepiaColorG" InitVal="1" Param1="1" Param2="1" Param3="0" Param4="0" Action="Save"/>
@@ -349,7 +349,7 @@
 		<Unit VarName="SepiaColorG" InitVal="-1" Param1="0" Param2="0" Param3="0" Param4="0" Action="none"/>
 		<Unit VarName="SepiaColorB" InitVal="-1" Param1="0" Param2="0" Param3="0" Param4="0" Action="none"/>
 		<Unit VarName="SepiaIntensity" InitVal="-1" Param1="1" Param2="-0.25" Param3="-1" Param4="0" Action="none"/>
-		<ExitConditions VarName="MotionBlurAlpha" LimitVal="-1"/>
+		<ExitConditions VarName="MotionBlurAlpha" LimitVal="0"/>
 	</Model>
 	<Model Name="TurboOff" ExitConditionsUnite="Or">
 		<Unit VarName="MotionBlur" InitVal="0" Param1="0" Param2="0" Param3="0" Param4="0" Action="Restore"/>
@@ -363,7 +363,7 @@
 	
 	<Sequence Name="TurboPostFX" Loop="false">
 		<Unit Name="Turbo1"/>
-		<Unit Name="Turbo2"/>
+
 		<Unit Name="Turbo3"/>
 		<Unit Name="TurboOff"/>
 	</Sequence>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name		= "Options"
+		class		= "OptionsDV"
+		org			= "-0.5 -0.5 1024 768"
+		style		= "16896"
+		paneFlags	= "0"
+		backimage	= "data\if\frames\menu\darkdot.dds">
+
+		<Node
+			name				= "cbResolution"
+			class				= "ComboBoxWnd"
+			org					= "529 191 192 32"
+			style				= "262720"
+			id					= "1000"
+			paneName			= "MainMenu_C"
+			scrollPaneName		= "Scroll1"
+			paneFlags			= "7"
+			wrap				= "2"
+			format				= "1"
+			fontName			= "SM_Impact"
+			fontSize			= "12"
+			comboStyle			= "7"
+			maxListHeight		= "200.000"
+			selTextFixedHeight	= "38"
+			textColor			= "ffff9900"
+			selTextColor		= "ffffffff"
+			selColor			= "ffff9900"
+		/>
+
+		<Node
+			name				= "cbGraphicQuality"
+			class				= "ComboBoxWnd"
+			org					= "529 271 192 32"
+			style				= "262720"
+			id					= "1004"
+			paneName			= "MainMenu_C"
+			scrollPaneName		= "Scroll1"
+			paneFlags			= "7"
+			wrap				= "2"
+			format				= "1"
+			fontName			= "SM_Impact"
+			fontSize			= "12"
+			comboStyle			= "7"
+			maxListHeight		= "200.000"
+			selTextFixedHeight	= "38"
+			textColor			= "ffff9900"
+			selTextColor		= "ffffffff"
+			selColor			= "ffff9900"
+		/>
+
+		<Node
+			name				= "cbGrass"
+			class				= "ComboBoxWnd"
+			org					= "529 331 192 32"
+			style				= "262720"
+			id					= "1005"
+			paneName			= "MainMenu_C"
+			scrollPaneName		= "Scroll1"
+			paneFlags			= "7"
+			wrap				= "2"
+			format				= "1"
+			fontName			= "SM_Impact"
+			fontSize			= "12"
+			comboStyle			= "7"
+			maxListHeight		= "200.000"
+			selTextFixedHeight	= "38"
+			textColor			= "ffff9900"
+			selTextColor		= "ffffffff"
+			selColor			= "ffff9900"
+		/>  
+
+		<Node
+			name				= "cbWater"
+			class				= "ComboBoxWnd"
+			org					= "529 371 192 32"
+			style				= "262720"
+			id					= "1006"
+			paneName			= "MainMenu_C"
+			scrollPaneName		= "Scroll1"
+			paneFlags			= "7"
+			wrap				= "2"
+			format				= "1"
+			fontName			= "SM_Impact"
+			fontSize			= "12"
+			comboStyle			= "7"
+			maxListHeight		= "200.000"
+			selTextFixedHeight	= "38"
+			textColor			= "ffff9900"
+			selTextColor		= "ffffffff"
+			selColor			= "ffff9900"
+		/> 
+
+		<Node
+			name			= "sl3dSounds"
+			class			= "SliderWnd"
+			org				= "561 523 128 32"
+			style			= "262656"
+			id				= "1013"
+		/>
+
+		<Node
+			name		= "btn3dSoundsMinus"
+			class		= "ButtonWnd"
+			org			= "529 523 32 32"
+			style		= "265728"
+			id			= "1014"
+			paneName	= "SliderBtnMinus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name		= "btn3dSoundsPlus"
+			class		= "ButtonWnd"
+			org			= "689 523 32 32"
+			style		= "265728"
+			id			= "1015"
+			paneName	= "SliderBtnPlus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name			= "slMusic"
+			class			= "SliderWnd"
+			org				= "561 483 128 32"
+			style			= "262656"
+			id				= "1010"
+		/>
+
+		<Node
+			name		= "btnMusicMinus"
+			class		= "ButtonWnd"
+			org			= "529 483 32 32"
+			style		= "265728"
+			id			= "1011"
+			paneName	= "SliderBtnMinus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name		= "btnMusicPlus"
+			class		= "ButtonWnd"
+			org			= "689 483 32 32"
+			style		= "265728"
+			id			= "1012"
+			paneName	= "SliderBtnPlus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name			= "sl2dSounds"
+			class			= "SliderWnd"
+			org				= "561 563 128 32"
+			style			= "262656"
+			id				= "1007"
+		/>
+
+		<Node
+			name		= "btn2dSoundsMinus"
+			class		= "ButtonWnd"
+			org			= "529 563 32 32"
+			style		= "265728"
+			id			= "1008"
+			paneName	= "SliderBtnMinus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name		= "btn2dSoundsPlus"
+			class		= "ButtonWnd"
+			org			= "689 563 32 32"
+			style		= "265728"
+			id			= "1009"
+			paneName	= "SliderBtnPlus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name			= "slGamma"
+			class			= "SliderWnd"
+			org				= "561 231 128 32"
+			style			= "262656"
+			id				= "1001"
+		/>
+
+		<Node
+			name		= "btnGammaMinus"
+			class		= "ButtonWnd"
+			org			= "529 231 32 32"
+			style		= "265728"
+			id			= "1002"
+			paneName	= "SliderBtnMinus"
+			paneFlags	= "1"
+		/>
+
+		<Node
+			name		= "btnGammaPlus"
+			class		= "ButtonWnd"
+			org			= "689 231 32 32"
+			style		= "265728"
+			id			= "1003"
+			paneName	= "SliderBtnPlus"
+			paneFlags	= "1"
+		/>
+
+
+		<Node
+			name		= "lbl3dSounds"
+			class		= "Wnd"
+			org			= "176 523 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^Fx vol^"
+		/> 
+
+		<Node
+			name		= "lblMusic"
+			class		= "Wnd"
+			org			= "176 483 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^Music vol^"
+		/> 
+
+		<Node
+			name		= "lbl2dSounds"
+			class		= "Wnd"
+			org			= "176 563 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^Speak vol^"
+		/> 
+
+		<Node
+			name		= "lblWater"
+			class		= "Wnd"
+			org			= "176 371 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^WaterQuality^"
+		/> 
+
+		<Node
+			name		= "lblGrass"
+			class		= "Wnd"
+			org			= "176 331 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^Grass^"
+		/> 
+
+		<Node
+			name		= "lblGraphicQualoty"
+			class		= "Wnd"
+			org			= "176 271 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^GraphicQuality^"
+		/>  
+
+		<Node
+			name		= "lblGamma"
+			class		= "Wnd"
+			org			= "176 231 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^Gamma^"
+		/>  
+
+		<Node
+			name		= "lblResolution"
+			class		= "Wnd"
+			org			= "176 191 319 32"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			wrap		= "0"
+			format		= "2"
+			textColor	= "ffffffff"
+			caption		= "^Resolution^"
+		/>  
+
+		<Node
+			name			= "separator3"
+			class			= "LineWnd"
+			org				= "4 471 1016 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			paneFlags		= "1"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name			= "separator2"
+			class			= "LineWnd"
+			org				= "4 433 1016 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			paneFlags		= "1"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name			= "separator1"
+			class			= "LineWnd"
+			org				= "4 169 1016 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			paneFlags		= "1"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name		= "lblAudio"
+			class		= "Wnd"
+			org			= "112 435 800 36"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffaa9966"
+			caption		= "^Audio^"
+		/>
+
+		<Node
+			name		= "lblVideo"
+			class		= "Wnd"
+			org			= "112 127 800 42"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffaa9966"
+			caption		= "^Video^"
+		/>
+
+		<Node
+			name		= "mainFrame"
+			class		= "Wnd"
+			org			= "0 123 1024 512"
+			style		= "768"
+			paneName	= "MainMenu_B"
+			paneFlags	= "7"
+		/>
+
+		<Node
+			name		= "btnCancel"
+			class		= "ButtonWnd"
+			org			= "529 651 211 46"
+			style		= "265728"
+			id			= "1017"
+			paneName	= "MainMenuBtn"
+			paneFlags	= "1"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			caption		= "^Back^"
+		/>
+
+		<Node
+			name		= "btnApply"
+			class		= "ButtonWnd"
+			org			= "284 651 211 46"
+			style		= "265728"
+			id			= "1016"
+			paneName	= "MainMenuBtn"
+			paneFlags	= "1"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			wrap		= "0"
+			format		= "0"
+			textColor	= "ffff9900"
+			caption		= "^Apply^"
+		/>
+
+		<Node
+			name		= "bottomPanel"
+			class		= "Wnd"
+			org			= "0 632 1024 128"
+			style		= "768"
+			backimage	= "data/if_dv/ico/PlayScreen/bottom_back.tga"
+		/>  
+
+	</Node>
+</Prefabs>

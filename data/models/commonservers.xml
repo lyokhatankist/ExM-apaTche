@@ -703,6 +703,10 @@
 			id="S_ENGINE_HUNTER_1_HIGH" />
 			
 		<Item
+			id="S_SHOOTING_BROKESON" />
+		<Item
+			id="S_SHOOTING_JOUSTLANCE" />
+		<Item
 			id="S_SHOOTING_JAVELIN" />
 		<Item
 			id="S_SHOOTING_HURRYCAT" />
@@ -712,6 +716,8 @@
 			id="S_SHOOTING_FLAG_TAIL" />
 		<Item
 			id="S_SHOOTING_KST" />
+		<Item
+			id="S_SHOOTING_IROQUOIS" />
 		<Item
 			id="S_SHOOTING_VULCAN2" />
 

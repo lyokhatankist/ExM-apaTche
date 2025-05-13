@@ -16,6 +16,19 @@
 </script>
 </trigger>
 
+<!-- apatche -->
+<trigger	Name="trRemoveWeapon"	active="0">
+	<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+	<script>
+		trigger:Deactivate()
+
+		local playa = GetPlayerVehicle()
+		if playa then
+			playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+		end
+	</script>
+</trigger>
+<!-- apatche end -->
 
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
@@ -340,6 +353,7 @@
 			tr_Start:Activate()
 			tr_End:Activate()
 			TActivate("trRadiationWork")
+			TActivate("trRadiationWorkApply")
 	</script>
 </trigger>
 
@@ -360,12 +374,68 @@
 	<script>
 		local count_R = GetVar("PlayersRadioactiveZones").AsInt
 		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+--[[
 		if count_R > 0 then
 			local v = GetPlayerVehicle()
-			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )					
+			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )			
 		end
+]]--
+		-- apaTche --
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 1
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		if count_R > 0 then
+			local v = GetPlayerVehicle()
+			radiationDamageDone = radiationDamageDone + (count_R * damage_per_second_from_one_zone * 0.2)
+			radiationTriggerActivationCount = radiationTriggerActivationCount + 1
+		end
+
+		SetVar("RadiationDamageDone", radiationDamageDone)
+		SetVar("RadiationTriggerActivationCount", radiationTriggerActivationCount)
+		-- apaTche end --
 	</script>
 </trigger>
+
+<!-- apaTche -->
+<trigger	Name="trRadiationWorkApply"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+	<script>
+		if TimerHack(1, "RadiationWorkApply") then -- arg is the trigger timeout
+			return
+		end
+
+		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 0
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		local v = GetPlayerVehicle()
+		if radiationTriggerActivationCount > 0 then
+			if 5 > radiationTriggerActivationCount then
+				v:AddModifier( "hp", "- " .. tostring( radiationDamageDone ) )
+			else
+				v:AddModifier( "hp", "- " .. tostring( damage_per_second_from_one_zone ) )	
+			end
+		end
+
+		SetVar("RadiationDamageDone", 0)
+		SetVar("RadiationTriggerActivationCount", 0)
+	</script>
+</trigger>
+<!-- apaTche end-->
 <!-- 
 ******************************************************************************************
 ******************************************************************************************
@@ -959,9 +1029,9 @@ p("cinStartMap")
 			Fly	("Start_cam_01", CINEMATIC_NO_AIM, 0, 5, 0, 1)
 			
 			StartCinematic()
-			local cinematic = GetCinematic()
-			cinematic:SetSkippable( true )
-			UpdateCinematic( 0 )
+--			local cinematic = GetCinematic()
+--			cinematic:SetSkippable( true )
+--			UpdateCinematic( 0 )
 --			UpdateCinematic( 1 )
 
 			AddCinematicMessage( 2001, 1 )
@@ -1080,8 +1150,8 @@ p("cinStartMap_End")
 	local pos = getObj("Zombie_00"):GetPosition()
 	local car
 	local rot = {Quaternion(0.000, 0.000, 0.000, 1.000), Quaternion(0.000, -0.250, 0.000, 0.750 ), Quaternion(0.000, -0.500, 0.000, 0.500), Quaternion(0.000, -0.625, 0.000, 0.375), Quaternion(0.000, -0.875, 0.000, 0.125), Quaternion(0.000, 0.875, 0.000, 0.125), Quaternion(0.000, 0.500, 0.000, 0.500 ), Quaternion(0.000, 0.250, 0.000, 0.750), Quaternion(0.000, 0.125, 0.000, 0.875)}
-	CreateTeam( "policeTeam00" , 1116, pos, {"Police_00","Police_01","Police_00","Police_02"})
-	for i=0,3 do
+	CreateTeam( "policeTeam00" , 1116, pos, {"Scout_02","Scout_02"})
+	for i=0,1 do
 		car = getObj("policeTeam00_vehicle_"..i)
 		if car then
 			pos = car:GetPosition()
@@ -1093,6 +1163,60 @@ p("cinStartMap_End")
 	end
 </script>
 </trigger>
+
+	<trigger	Name="trPoliceAmbush"	active="1">
+		<event	eventid="GE_OBJECT_ENTERS_LOCATION"	ObjName="PoliceAmbush_loc" />
+		<script>
+			trigger:Deactivate()
+
+			local car
+			local carTeam
+
+			CreateTeam( "policeTeam01", 1116, CVector(2018, 277, 1107), {"Police_02"})
+			car = getObj("policeTeam01_vehicle_0")
+			if car then
+				car:SetRotation(Quaternion(-0.003, 0.935, 0.004, 0.354))
+			end
+			carTeam = GetEntityByName("policeTeam01")
+			if carTeam then
+				carTeam:SetExternalPathByName("Police01_path")
+--[[			carTeam:StackOpen()
+				carTeam:SetDestination(CVector(2083, 277, 1027))
+				carTeam:SetDestination(CVector(2225, 267, 887))
+				carTeam:SetDestination(CVector(2049, 255, 783))
+				carTeam:StackClose() ]]--
+			end
+
+			CreateTeam( "policeTeam02", 1116, CVector(2003, 277, 1129), {"Police_00"})
+			car = getObj("policeTeam02_vehicle_0")
+			if car then
+				car:SetRotation(Quaternion(-0.003, 0.935, 0.004, 0.354))
+			end
+			carTeam = GetEntityByName("policeTeam02")
+			if carTeam then
+				carTeam:SetExternalPathByName("Police02_path")
+			end
+
+			CreateTeam( "policeTeam03", 1116, CVector(2390, 254, 719), {"Police_02","Police_01"})
+			car = getObj("policeTeam03_vehicle_0")
+			if car then
+				car:SetRotation(Quaternion(0.046, 0.616, 0.051, -0.785))
+			end
+			car = getObj("policeTeam03_vehicle_1")
+			if car then
+				car:SetPosition(CVector(2417, 254, 713))
+				car:SetRotation(Quaternion(0.046, 0.616, 0.051, -0.785))
+			end
+			carTeam = GetEntityByName("policeTeam03")
+			if carTeam then
+				carTeam:StackOpen()
+				carTeam:SetDestination(CVector(2083, 277, 1027))
+				carTeam:SetDestination(CVector(2225, 267, 887))
+				carTeam:SetDestination(CVector(2049, 255, 783))
+				carTeam:StackClose()
+			end
+		</script>
+	</trigger>
 
 <!-- 
 ******************************************************************************************
@@ -1175,11 +1299,12 @@ p("cinStartMap_End")
 		CameraModeRaceM() 
 		local vehPlayer = GetPlayerVehicle()
 		if vehPlayer then
-			vehPlayer:SetPosition( CVector( 397.401, 266.134, 1256.355 ) )
+			vehPlayer:SetRotation(Quaternion(-0.143, 0.127, -0.000, -0.981))
+			vehPlayer:SetGamePositionOnGround( CVector( 396.470, 264.884, 1261.011 ) )
 			vehPlayer:SetCustomLinearVelocity( 0 )
 			vehPlayer:SetThrottle( 0 )
 		end;
-		FlyShort ( { time = 9 , msg = { 2005 }, CompQuest1 = "dv2_q1", saveMap = "dv2_AfterVill"} )	
+		FlyShort ( { time = 9 , msg = { 2005 }, CompQuest1 = "dv2_q1", saveMap = "dv2_AfterVill", setRot = Quaternion(-0.143, 0.127, -0.000, -0.981), setPos = CVector( 396.470, 264.884, 1261.011 ), removeVelocity = 1} )	
 		--CompleteQuest( "dv2_q1" )	
 		
 		CompasOn( 13, 5 )
@@ -1241,9 +1366,11 @@ p("cinStartMap_End")
 		vehPlayer:Remove()
 	end
 	
-	vehPlayer = getObj("policeTeam00")
-	if vehPlayer then
-		vehPlayer:Remove()
+	for i=0, 3 do
+		vehPlayer = getObj("policeTeam0"..i)
+		if vehPlayer then
+			vehPlayer:Remove()
+		end
 	end
 	
 	for i=4,5 do
@@ -1299,7 +1426,9 @@ end
 		trigger:Deactivate()
 		local vehPlayer = GetPlayerVehicle()
 		if vehPlayer then
-			vehPlayer:SetPosition( getPos("Way_12") + CVector( 0, 0.5, 0 ) )
+--			vehPlayer:SetPosition( getPos("Way_12") + CVector( 0, 0.5, 0 ) )
+			vehPlayer:SetGamePositionOnGround( CVector(2226.132, 268.137, 497.414) )
+			vehPlayer:SetRotation( Quaternion(-0.018, -0.668, 0.012, -0.744) )
 			vehPlayer:SetCustomLinearVelocity( 0 )
 			vehPlayer:SetThrottle( 0 )
 		end;
@@ -1309,7 +1438,7 @@ end
 				getObj("zz_"..i):Remove()
 			end
 		end
-		FlyShort ( { time = 7 , msg = { 2008, 20081, 20082 }, CompQuest1 = "dv2_q2", saveMap = "dv2_AfterTown2" } )	
+		FlyShort ( { time = 7 , msg = { 2008, 20081, 20082 }, CompQuest1 = "dv2_q2", saveMap = "dv2_AfterTown2", setRot = Quaternion(-0.018, -0.668, 0.012, -0.744), setPos = CVector(2226.132, 268.137, 497.414), removeVelocity = 1 } )	
 --		FlyShort ( { time = 7 , msg = { 2008, 20081, 20082 }, CompQuest1 = "dv2_q2"} )	
 --		CompleteQuest( "dv2_q2" )	
 		TakeQuest( "dv2_q3" )
@@ -1365,7 +1494,7 @@ end
 
 	TakeQuest("dv2_q3_2")
 	
-	FlyShort ( { time = 12, msg = { 2010, 2011, 2012 }, CompQuest1 = "dv2_q3_2" } )	
+	FlyShort ( { time = 12, msg = { 2010, 2011, 2012 }, CompQuest1 = "dv2_q3_2", removeWeapon = 1 } )	
 --	CompleteQuest( "dv2_q3_2" )
 	CompasOff( )
 

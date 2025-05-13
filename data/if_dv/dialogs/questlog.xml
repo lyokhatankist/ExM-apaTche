@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+
+	<Node
+		name		= "QuestLog"
+		class		= "QuestLog"
+		org			= "-0.5 -0.5 1024 768"
+		style		= "16896"
+		paneFlags	= "0"
+		backimage	= "data\if\frames\menu\darkdot.dds">
+
+
+		<Node
+			name		= "title"
+			class		= "Wnd"
+			org			= "112 127 800 52"
+			style		= "2816"
+			paneFlags	= "0"
+			caption		= "^QuestLog^"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			textColor	= "ffaa9966"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+			name			= "separator1"
+			class			= "LineWnd"
+			org				= "4 179 1016 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name			= "separator2"
+			class			= "LineWnd"
+			org				= "4 576 1016 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name		= "list"
+			class		= "QuestList"
+			org			= "41 209 435 339"
+			style		= "262656"
+			id			= "1000"
+			drawFlags	= "7">
+
+			<ItemInfo
+				size					= "435 32"
+				icoRect					= "0 0 32 32"
+				textRect				= "48 0 387 32"
+				selRect					= "48 0 387 32"
+				textColorCompleted		= "ffaaaaaa" 
+				textColorNoncompleted	= "ffffffff"
+				textColorSelected		= "ffff9900"
+				selColor				= "ff706844"
+				textFont				= "SM_Impact"
+				textFontSize			= "18"
+				completedIco			= "questCompleted"
+				noncompletedIco			= "questNoncompleted"
+				space					= "16"
+			/>			
+		</Node>
+
+		<Node
+			name		= "listFrame"
+			class		= "Wnd"
+			org			= "21 189 475 379"
+			style		= "768"
+			paneName	= "MainMenu_C"
+			paneFlags	= "7"
+			id			= "1000"
+		/>
+
+		<Node
+			name			= "separator3"
+			class			= "LineWnd"
+			org				= "531 244 437 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name		= "questName"
+			class		= "Wnd"
+			org			= "532 193 435 50"
+			style		= "2816"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			textColor	= "ffff9900"
+			wrap		= "0"
+			format		= "0"
+		/>                  
+
+		<Node
+			name		= "diz"
+			class		= "TextBoxWnd"
+			style		= "512"
+			org			= "528 189 475 379"
+			paneName	= "MainMenu_C"
+			paneFlags	= "7"
+			format		= "3"
+			fontName	= "SM_Tahoma"
+			fontSize	= "12"
+			textColor	= "ffffffff"
+			drawFlags	= "13"
+			clientEdges	= "11 65 19 11"
+		/>
+
+		<Node
+			name		= "btnClose"
+			class		= "ButtonWnd"
+			style		= "265728"
+			org			= "440 586 144 36"
+			id			= "1"
+			caption		= "^Close^"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			fontName	= "SM_Impact"
+			fontSize	= "14"
+			textColor	= "ffff9900"
+			wrap		= "0"
+			format		= "0"
+		/>
+
+		<Node
+			name		= "mainFrame"
+			class		= "Wnd"
+			org			= "0 123 1024 512"
+			style		= "768"
+			paneName	= "MainMenu_B"
+			paneFlags	= "7"
+		/>
+
+	</Node>
+
+</Prefabs>
+
+	

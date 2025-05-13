@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<Prefabs>
+	<Node
+		name		= "ChangeProfileDlg"
+		class		= "ModalWnd"
+		org			= "-0.5 -0.5 1024 768"
+		style		= "16896"
+		paneFlags	= "0">
+
+		<Node
+			name		= "btnDelete"
+			class		= "ButtonWnd"
+			org			= "600 360 144 38"
+			style		= "265728"
+			id			= "300001"
+			caption		= "^Delete^"
+			tip			= "^DeleteProfile^"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			wrap		= "0"
+			format		= "0"
+   			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+		/>
+
+		<Node
+			name		= "btnCreate"
+			class		= "ButtonWnd"
+			org			= "600 257 144 38"
+			style		= "265728"
+			id			= "300002"
+			caption		= "^Create^"
+			tip			= "^CreateProfile^"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			wrap		= "0"
+			format		= "0"
+   			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+		/>
+
+		<Node
+			name		= "btnChose"
+			class		= "ButtonWnd"
+			org			= "600 205 144 38"
+			style		= "265728"
+			id			= "300000"
+			caption		= "^Chose^"
+			tip			= "^ChoseProfile^"
+			paneName	= "defaultBtn"
+			paneFlags	= "7"
+			wrap		= "0"
+			format		= "0"
+   			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffff9900"
+		/>
+
+		<Node
+			name		= "wndProfileList"
+			class		= "StringsListBoxWnd"
+			org			= "285 205 283 192"
+			style		= "406048"
+			id			= "300003"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffffffff"
+			selTextColor= "ff777777"
+			selColor	= "ffff9900"
+			drawFlags	= "0"
+			clientEdges	= "0 5 5 5"
+		/>
+
+		<Node
+			name		= "wndProfileListFrame"
+			class		= "Wnd"
+			org			= "280 205 256 192"
+			style		= "768"
+			paneName	= "MainMenu_C"
+			paneFlags	= "7"
+		/>
+
+		<Node
+			name			= "wndSeparator1"
+			class			= "LineWnd"
+			org				= "4 179 1016 2"
+			style			= "768"
+			paneName		= "LineMainMenu"
+			lineDirection	= "0"
+		/>
+
+		<Node
+			name		= "lblCurProfileName"
+			class		= "Wnd"
+			org			= "112 127 800 52"
+			style		= "2880"
+			paneFlags	= "0"
+			wrap		= "0"
+			format		= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "20"
+			textColor	="ffaa9966"
+		/>
+
+    	<Node
+    		name		= "btnExit"
+    		class		= "ButtonWnd"
+    		org			= "407 649 211 46"
+    		style		= "265728"
+			id			= "1"
+			tip			= "^CloseWindow^"
+			caption		= "^Back^"
+			paneName	= "MainMenuBtn"
+			paneFlags	= "1"
+   			fontName	= "SM_Impact"
+			fontSize	= "20"
+			textColor	= "ffff9900"
+		/>
+
+    	<Node
+    		name		= "bottomPanel"
+    		class		= "Wnd"
+    		org			= "0 632 1024 128"
+    		style		= "768"
+			backimage	= "data/if_dv/ico/profile/bottom_back.tga"
+		/>
+
+    	<Node
+    		name		= "diz"
+    		class		= "TextBoxWnd"
+    		org			= "280 421 464 192"
+    		style		= "768"
+			paneFlags	= "0"
+			fontName	= "SM_Impact"
+			fontSize	= "16"
+			textColor	= "ffffffff"
+			drawFlags	= "0"
+		/>
+
+    	<Node
+    		name		= "dizFrame"
+    		class		= "Wnd"
+    		org			= "280 421 432 192"
+    		style		= "768"
+			paneName	= "MainMenu_C"
+			paneFlags	= "6"
+		/>
+
+    	<Node
+    		name		= "topPanel"
+    		class		= "Wnd"
+    		org			= "0 123 1024 512"
+    		style		= "768"
+			paneName	= "MainMenu_B"
+			paneFlags	= "7"
+		/>
+
+	</Node>
+</Prefabs>

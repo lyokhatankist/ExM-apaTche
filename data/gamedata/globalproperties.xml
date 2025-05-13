@@ -388,7 +388,7 @@
 
 			BaseGunsPrototypes		= ""
 
-			AuxGunsPrototypes		= "vulcanDV1 vulcanDV2 vulcanDV3 rocketDV1 rocketDV2 rocketDV3 fireDV1 fireDV2 fireDV3 zenithDV1 zenithDV2 zenithDV3 shotgunDV1 shotgunDV2 shotgunDV3"
+			AuxGunsPrototypes		= "vulcanDV1 vulcanDV2 vulcanDV3 rocketDV1 rocketDV2 rocketDV3 fireDV1 fireDV2 fireDV3 zenithDV1 zenithDV2 zenithDV3 shotgunDV1 shotgunDV2 shotgunDV3 scout_00_weapon"
 
 			SpecialGunsPrototypes		= ""
 			

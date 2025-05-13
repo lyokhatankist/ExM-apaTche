@@ -16,7 +16,20 @@
 		</script>
 	</trigger>
 
-
+	<!-- apatche -->
+	<trigger	Name="trRemoveWeapon"	active="0">
+		<event	timeout="0.01"		eventid="GE_TIME_PERIOD" />
+		<script>
+			trigger:Deactivate()
+	
+			local playa = GetPlayerVehicle()
+			if playa then
+				playa:SetPosition(StringToCVector(GetVar("BonusWeaponRemoveSavedPos").AsString))
+			end
+		</script>
+	</trigger>
+	<!-- apatche end -->
+	
 <trigger	Name="RestoreTolerance"	active="0">
 	<event eventid="GE_END_CINEMATIC" ObjName="Player1" />
 	<event eventid="GE_SKIP_CINEMATIC" ObjName="Player1" />
@@ -306,6 +319,7 @@
 			tr_Start:Activate()
 			tr_End:Activate()
 			TActivate("trRadiationWork")
+			TActivate("trRadiationWorkApply")
 	</script>
 </trigger>
 
@@ -326,12 +340,68 @@
 	<script>
 		local count_R = GetVar("PlayersRadioactiveZones").AsInt
 		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+--[[
 		if count_R > 0 then
 			local v = GetPlayerVehicle()
-			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )					
+			v:AddModifier( "hp", "- " .. tostring( count_R * damage_per_second_from_one_zone * 0.2 ) )			
 		end
+]]--
+		-- apaTche --
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 1
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		if count_R > 0 then
+			local v = GetPlayerVehicle()
+			radiationDamageDone = radiationDamageDone + (count_R * damage_per_second_from_one_zone * 0.2)
+			radiationTriggerActivationCount = radiationTriggerActivationCount + 1
+		end
+
+		SetVar("RadiationDamageDone", radiationDamageDone)
+		SetVar("RadiationTriggerActivationCount", radiationTriggerActivationCount)
+		-- apaTche end --
 	</script>
 </trigger>
+
+<!-- apaTche -->
+<trigger	Name="trRadiationWorkApply"	active="0">
+		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+	<script>
+		if TimerHack(1, "RadiationWorkApply") then -- arg is the trigger timeout
+			return
+		end
+
+		local damage_per_second_from_one_zone = GetVar( "damage_per_second_from_one_zone").AsInt
+		local radiationDamageDone = 0
+		if GetVar("RadiationDamageDone").AsInt~=-1 then
+			radiationDamageDone = GetVar("RadiationDamageDone").AsInt
+		end
+
+		local radiationTriggerActivationCount = 0
+		if GetVar("RadiationTriggerActivationCount").AsInt~=-1 then
+			radiationTriggerActivationCount = GetVar("RadiationTriggerActivationCount").AsInt
+		end
+
+		local v = GetPlayerVehicle()
+		if radiationTriggerActivationCount > 0 then
+			if 5 > radiationTriggerActivationCount then
+				v:AddModifier( "hp", "- " .. tostring( radiationDamageDone ) )
+			else
+				v:AddModifier( "hp", "- " .. tostring( damage_per_second_from_one_zone ) )	
+			end
+		end
+
+		SetVar("RadiationDamageDone", 0)
+		SetVar("RadiationTriggerActivationCount", 0)
+	</script>
+</trigger>
+<!-- apaTche end-->
 
 
 
@@ -938,9 +1008,18 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		vehPlayer:SetCustomControlEnabled( true )
 		vehPlayer:SetCruisingSpeed(0)
 		local PlfID = GetPlayerVehicleId()
-		CreateNewDummyObject( "BUGcargo", "camToch01", -1, -1, CVector(3304.442, 253.104, 1374.951), Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+		CreateNewDummyObject( "BUGcargo", "camToch01", -1, -1, CVector(3304.442, 251.104, 1374.951), Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+		CreateNewDummyObject( "BUGcargo", "camToch02", -1, -1, CVector(0, 0, 0), Quaternion(0.0000, 0.0000, 0.0000, 1.0000), 0)
+--		local camToch01ID = GetEntityByName("camToch01"):GetId()
 		local camToch01ID = GetEntityByName("camToch01"):GetId()
-		FlyLinked( "RedFirstRun_cam01", PlfID, 7, 0, 1, camToch01ID )
+		if getObj("RedTeam_r_1_vehicle_0") then
+			camToch01ID = GetEntityByName("RedTeam_r_1_vehicle_0"):GetId()
+		end
+		if getObj("RedTeam_r_1_vehicle_1") then
+			camToch01ID = GetEntityByName("RedTeam_r_1_vehicle_1"):GetId()
+		end
+		local camToch02ID = GetEntityByName("camToch02"):GetId()
+		FlyLinked( "RedFirstRun_cam01", camToch02ID, 7, 0, 1, camToch01ID )
 		StartCinematic()
 
 		AddCinematicMessage( 8002, 0.25)
@@ -987,7 +1066,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	r_c = r_c + 1
   if r_c == 15 then
   	QuestCounter:Hide()  	
-  	FlyShort ( { time = 7 , msg = { 80041, 80042 }, CompQuest1 = "dv8_q1" } )	
+  	FlyShort ( { time = 7 , msg = { 80041, 80042 }, CompQuest1 = "dv8_q1", removeWeapon = 1 } )	
   	TActivate("trPreWin")
  -- 	CompleteQuest( "dv8_q1" )
  	trigger:Deactivate()
@@ -1031,7 +1110,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 --	HudTimer:Start( 60 * 15 )
 
 	local locZ = { "Ambush28", "Ambush28_s", "Ambush29" }
-	AZId = {}
+	local AZId = {}
 	local mn = "DetonationZombie"
 	for i, v in locZ do
 		local pos = getPos( v )
@@ -1041,6 +1120,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 			table.insert( AZId, ZId )
 		end
 	end                       
+	SetVar("AZId", TableToString(AZId))
 	TActivate( "trMushroomsZombieCounter" )
 --	TActivate( "trMushroomsTimer" )
 	TActivate( "trSave1" )
@@ -1048,29 +1128,29 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 </trigger>
 
 	<trigger	Name="trMushroomsTimer"	active="0">
-		<event	timeout="1"		eventid="GE_TIME_PERIOD" />
+		<event	timeout="5"		eventid="GE_TIME_PERIOD" />
 		<script>
-			trigger:Deactivate()
-			HudTimer:Start( 60 * 15 )
-			TActivate("trMushroomsFailed")
+			if TimerHack(5) then -- arg is the trigger timeout
+				return
+			end
+
+			local timerOutcome = ArcadeTimer(5) -- arg is the trigger timeout
+			if timerOutcome==1 then -- if time runs out
+				FailQuest( "dv8_q3" )
+				CompasOn( 27, 22 )  
+				trigger:Deactivate()
+			elseif timerOutcome>=2 then -- if timer is stopped by ArcadeTimerStop()
+				trigger:Deactivate()
+			end
 		</script>
 	</trigger>
-
-<trigger	Name="trMushroomsFailed"	active="0">
-	<event eventid="GE_TIMER_STOPPED" ObjName="Player1" />
-<script>
-	FailQuest( "dv8_q3_2" )
-	trigger:Deactivate()
-	HudTimer:Stop( )
-	CompasOn( 27, 22 )  
-</script>
-</trigger>
 
 
 <trigger	Name="trMushroomsZombieCounter"	active="0">
 	<event	timeout="3"		eventid="GE_TIME_PERIOD" />
 <script>
 	local allNonDead = nil
+	local AZId = StringToTable(GetVar("AZId").AsString)
 	for i, v in AZId do
 		if not getObj(v):GetDeadState() then
 			allNonDead = 1 
@@ -1080,7 +1160,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 		trigger:Deactivate()
 --		CompleteQuest( "dv8_q3" )
 		CompasOn( 27, 22 )  
-		HudTimer:Stop( )
+		ArcadeTimerStop()
 		FlyShort ( { time = 7 , msg = { 8004 }, CompQuest1 = "dv8_q3" } )	
 	end
 </script>
@@ -1287,7 +1367,7 @@ CreateNewPhysicDummyObject( modelName, objName, parentId, belong, pos, rot, skin
 	<event	timeout="2.5"		eventid="GE_TIME_PERIOD" />
 <script>           
 		trigger:Deactivate()
-		TActivate( "trMushroomsTimer" )
+		ArcadeTimerStart(15*60, "trMushroomsTimer" )
 		SaveGame( "dv8_BeforeZombie" )
 </script>
 </trigger>

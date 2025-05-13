@@ -2,8 +2,8 @@
 name: apatche
 installment: arcade
 
-version: "1.0"
-build: "250401"
+version: "1.1"
+build: "250512"
 
 language: ru
 
@@ -16,7 +16,7 @@ description: |
   apaTche — первый в истории мод для Аркады, делающий хоть что-то полезное. Исправляет баги и прочие косяки, которые мешали игровому процессу, а также привносит некоторые геймплейные и визуальные изменения.
   
 # optional human readable info
-release_date: "04.01.2025"
+release_date: "01.04.2025"
 
 link: https://github.com/lyokhatankist/ExM-apaTche
 
@@ -24,7 +24,7 @@ link: https://github.com/lyokhatankist/ExM-apaTche
 logo: assets/apatche_logo.png
 install_banner: assets/apatche_banner.png
 
-tags: [gameplay, bugfix, story, visual]
+tags: [gameplay, bugfix, visual]
 
 # additional text info
 change_log: assets/change_list_ru.md
@@ -32,10 +32,16 @@ change_log: assets/change_list_ru.md
 screenshots:
   - img: assets/screen_1.jpg
     text: | 
-      Дробовик первого уровня и Ракетная установка первого уровня.
+      Ракетная установка первого уровня и Дробовик первого уровня.
   - img: assets/screen_2.jpg
     text: |
       Ракетная установка второго и третьего уровня.
+  - img: assets/screen_10.jpg
+    text: |
+      Пулемёт первого уровня и Зенитка первого уровня.
+  - img: assets/screen_11.jpg
+    text: |
+      Зенитка третьего уровня.
   - img: assets/screen_3.jpg
     text: |
       Изменённая модель Фургона.
@@ -70,6 +76,7 @@ config_options:
     camFovSpeedFactor: 0
     g_fixedCameraAngle: 9
     g_fixedCameraRotationCoeff: 12
+    fov: 90
 
 no_base_content: false
 
